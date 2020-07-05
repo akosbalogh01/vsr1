@@ -4,7 +4,8 @@
 namespace vs {
     class renderable {
         public:
-            virtual void render() = 0;
+            virtual void render() const = 0;
+            virtual void update() = 0;
     };
 };
 

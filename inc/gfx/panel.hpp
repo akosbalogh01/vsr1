@@ -14,6 +14,7 @@ namespace vs {
             Panel();
             void add(renderable*);
             void render();
+            void update() const;
         };
     }
 }

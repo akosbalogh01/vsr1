@@ -12,4 +12,6 @@ void vs::gfx::Panel::render() {
 
 }
 
+void vs::gfx::Panel::update() const {
 
+}
