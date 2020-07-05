@@ -1,17 +1,18 @@
 #include "gfx/panel.hpp"
 
 vs::gfx::Panel::Panel() {
-    renderVector.clear();
-}
-
-void vs::gfx::Panel::add(renderable* param) {
-    renderVector.push_back(param);
-}
-
-void vs::gfx::Panel::render() {
 
 }
 
-void vs::gfx::Panel::update() const {
-
+void vs::gfx::Panel::add(const std::shared_ptr<renderable>& param) {
+    rvec.add(param);
 }
+
+void vs::gfx::Panel::render() const {
+    rvec.render();
+}
+
+void vs::gfx::Panel::update() {
+    rvec.update();
+}
+

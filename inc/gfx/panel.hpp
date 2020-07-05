@@ -1,20 +1,23 @@
 #ifndef VISU_PANEL
 #define VISU_PANEL
 
-#include <vector>
+#include <memory>
 #include "interfaces.hpp"
+#include "gfx/rendervector.hpp"
 
 namespace vs {
     namespace gfx {
         class Panel : public renderable {
         private:
-            std::vector <renderable*> renderVector;
+            rendervector rvec;
 
         public:
             Panel();
-            void add(renderable*);
-            void render();
-            void update() const;
+
+            void add(const std::shared_ptr<renderable>&);
+
+            void render() const;
+            void update();
         };
     }
 }
