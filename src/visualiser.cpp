@@ -1,5 +1,6 @@
 #include "visualiser.hpp"
 
-vs::visualiser() {
+vs::visualiser::visualiser() {
 
 }
+
