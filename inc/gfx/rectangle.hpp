@@ -13,28 +13,28 @@ namespace vs {
 		class rectangle : public renderable {
 		private:
 			rWindow renderTarget;
-			sf::Rectangle rect;
-			
+			sf::RectangleShape rect;
+
 		public:
 			rectangle(
 				const rWindow&,
-				const sf::Vector2d&,
-				const sf::Vector2d&,
+				const sf::Vector2f&,
+				const sf::Vector2f&,
 				const sf::Color&,
 				const sf::Color&,
 				const unsigned frame
 			);
-			
-			const sf::Vector2d& getSize() const;
-			const sf::Vector2d& getPos() const;
-			
-			void setSize(const sf::Vec2d&);
-			void setPos(const sf::Vec2d&);
+
+			const sf::Vector2f& getSize() const;
+			const sf::Vector2f& getPos() const;
+
+			void setSize(const sf::Vector2f&);
+			void setPos(const sf::Vector2f&);
 			void setFrameThickness(const unsigned);
 			void setFrameColor(const sf::Color&);
 			void setBackgroundColor(const sf::Color&);
-			void setRenderTarget(const std::shared_ptr <sf::RenderWindow>&);
-			
+			void setRenderTarget(const rWindow&);
+
 			void render() const;
 			void update();
 		};
