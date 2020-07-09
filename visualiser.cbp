@@ -74,14 +74,7 @@
 			<Add directory="C:/Projects/lib/SFML-2.5.1/lib" />
 			<Add directory="C:/Users/akosb/Programming/SFML-2.5.1/lib" />
 		</Linker>
-		<Unit filename="inc/gfx/panel.hpp" />
-		<Unit filename="inc/gfx/rectangle.hpp" />
-		<Unit filename="inc/gfx/rendervector.hpp" />
-		<Unit filename="inc/interfaces.hpp" />
 		<Unit filename="inc/visualiser.hpp" />
-		<Unit filename="src/gfx/panel.cpp" />
-		<Unit filename="src/gfx/rectangle.cpp" />
-		<Unit filename="src/gfx/rendervector.cpp" />
 		<Unit filename="src/main.cpp" />
 		<Unit filename="src/visualiser.cpp" />
 		<Extensions>
