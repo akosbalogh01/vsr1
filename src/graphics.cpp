@@ -21,3 +21,7 @@ void vs::windowman::windowClose(const sf::Event& event) {
 void vs::windowman::windowResize(const sf::Event& event) {
     std::cout << "Resizing window" << std::endl;
 }
+
+void vs::windowman::setBrightness(const sf::Event& event) {
+    std::cout << "Set brightness" << std::endl;
+}

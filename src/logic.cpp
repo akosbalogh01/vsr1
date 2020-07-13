@@ -2,7 +2,8 @@
 
 vs::logic::logic() {
     eman.add(sf::Event::Resized, vs::fpair (std::bind(&vs::windowman::windowResize, &wman, std::placeholders::_1), std::bind(&vs::windowman::windowResize, &wman, std::placeholders::_1)), &wman);
-    eman.add(sf::Event::Closed,   vs::fpair (std::bind(&vs::windowman::windowClose, &wman, std::placeholders::_1),  std::bind(&vs::windowman::windowClose, &wman,  std::placeholders::_1)), &wman);
+    eman.add(sf::Event::Closed,  vs::fpair (std::bind(&vs::windowman::windowClose, &wman, std::placeholders::_1),  std::bind(&vs::windowman::windowClose, &wman,  std::placeholders::_1)), &wman);
+    eman.add(sf::Event::MouseWheelScrolled, vs::fpair(std::bind(&vs::audioman::setVolume, &aman, std::placeholders::_1), std::bind(&vs::windowman::setBrightness, &wman, std::placeholders::_1)), &wman);
 }
 
 bool vs::logic::pollEvent(sf::Event& event) {

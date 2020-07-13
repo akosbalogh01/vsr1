@@ -18,6 +18,8 @@ namespace vs {
 
         void windowClose(const sf::Event&);
         void windowResize(const sf::Event&);
+
+        void setBrightness(const sf::Event&);
     };
 }
 

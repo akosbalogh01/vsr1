@@ -11,12 +11,11 @@ namespace vs {
 
     class eventman {
     private:
-        std::map         <sf::Event::EventType, void*> objmap;
         std::multimap <sf::Event::EventType, fpair>   eventmap;
 
     public:
         void add(const sf::Event::EventType, const fpair&, void*);
-        void exec(const sf::Event&);
+        void exec(const sf::Event);
     };
 }
 
