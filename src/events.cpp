@@ -5,7 +5,7 @@
 
 typedef std::multimap <sf::Event::EventType, vs::fpair> evtmmap;
 
-void vs::eventman::add(const sf::Event::EventType type, const fpair& functions, void* obj) {
+void vs::eventman::add(const sf::Event::EventType type, const fpair& functions) {
     eventmap.insert(std::pair<sf::Event::EventType, vs::fpair>(type, functions));
 }
 

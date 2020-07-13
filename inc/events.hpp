@@ -14,7 +14,7 @@ namespace vs {
         std::multimap <sf::Event::EventType, fpair>   eventmap;
 
     public:
-        void add(const sf::Event::EventType, const fpair&, void*);
+        void add(const sf::Event::EventType, const fpair&);
         void exec(const sf::Event);
     };
 }
