@@ -1,0 +1,23 @@
+#ifndef VISU_EVENTS
+#define VISU_EVENTS
+
+#include <map>
+#include <functional>
+#include "SFML/Window/Event.hpp"
+
+namespace vs {
+    typedef std::function <void (const sf::Event&)> efun;
+    typedef std::pair <efun, efun> fpair;
+
+    class eventman {
+    private:
+        std::map         <sf::Event::EventType, void*> objmap;
+        std::multimap <sf::Event::EventType, fpair>   eventmap;
+
+    public:
+        void add(const sf::Event::EventType, const fpair&, void*);
+        void exec(const sf::Event&);
+    };
+}
+
+#endif // VISU_EVENTS

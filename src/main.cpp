@@ -1,25 +1,22 @@
-#include <iostream>
-#include <string>
-#include <vector>
+#include "logic.hpp"
+
+/*
+    space - pause playback, ctrl + space - toggle autoplay
+    mousewheel - volume, ctrl + mousewheel - brightness
+    v - toggle fft visualisation, cltr + v - toggle vs transmission
+    left cursor - prev song, ctrl + left - prev 10 sec
+    right cursor - next song, ctrl + right - next 10 sec
+*/
 
 int main(int argc, char* argv[]) {
-    std::vector <std::string> songlist;
-    for (int i = 1; i < argc; i++) {
-        songlist.push_back(argv[i]);
-    }
-/*
-    SongPlayer sp(songlist);
-    Visualiser vs;
+    vs::logic program;
 
-    while (vs.isRunning()) {
-        vs.processEvents();
-        if (vs.isPaused) continue;
-
-        sp.play();
+    while (program.isRunning()) {
+        sf::Event event;
+        while (program.pollEvent(event)) {
+            program.procEvent(event);
+        }
     }
 
     return 0;
-    */
-
-    //window.setKeyRepeatEnabled(false);
 }

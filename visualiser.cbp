@@ -74,7 +74,16 @@
 			<Add directory="C:/Projects/lib/SFML-2.5.1/lib" />
 			<Add directory="C:/Users/akosb/Programming/SFML-2.5.1/lib" />
 		</Linker>
+		<Unit filename="inc/audio.hpp" />
+		<Unit filename="inc/events.hpp" />
+		<Unit filename="inc/graphics.hpp" />
+		<Unit filename="inc/logic.hpp" />
+		<Unit filename="inc/pause.hpp" />
 		<Unit filename="inc/visualiser.hpp" />
+		<Unit filename="src/audio.cpp" />
+		<Unit filename="src/events.cpp" />
+		<Unit filename="src/graphics.cpp" />
+		<Unit filename="src/logic.cpp" />
 		<Unit filename="src/main.cpp" />
 		<Unit filename="src/visualiser.cpp" />
 		<Extensions>
