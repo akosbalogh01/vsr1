@@ -7,6 +7,23 @@
 #include "pause.hpp"
 
 namespace vs {
+    class song {
+    private:
+        std::string filepath;
+        std::string title;
+        std::string artist;
+        std::string album;
+        std::string genre;
+
+    public:
+        song(const std::string&);
+
+        const std::string& getTitle() const;
+        const std::string& getArtist() const;
+        const std::string& getAlbum() const;
+        const std::string& getGenre() const;
+    };
+
     class audioman : public pausable {
     private:
         const unsigned vol0 = 50;

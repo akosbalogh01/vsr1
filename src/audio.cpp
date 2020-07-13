@@ -1,3 +1,4 @@
+#include <fstream>
 #include <iostream>
 #include "audio.hpp"
 
@@ -6,7 +7,15 @@ vs::audioman::audioman() {
 }
 
 void vs::audioman::buildPlaylist(const std::vector<std::string>& filelist) {
-
+    for (auto filename: filelist) {
+        std::ifstream f(filename.c_str());
+        if (f.good()) {
+            std::cout << "Found file: " << filename << std::endl;
+        }
+        else {
+            std::cout << "Not found: " << filename << std::endl;
+        }
+    }
 }
 
 void vs::audioman::setVolume(const sf::Event& event) {
