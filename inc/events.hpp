@@ -8,10 +8,11 @@
 namespace vs {
     typedef std::function <void (const sf::Event&)> efun;
     typedef std::pair <efun, efun> fpair;
+    typedef std::multimap <sf::Event::EventType, vs::fpair> multimap;
 
     class eventman {
     private:
-        std::multimap <sf::Event::EventType, fpair>   eventmap;
+        vs::multimap eventmap;
 
     public:
         void add(const sf::Event::EventType, const fpair&);
