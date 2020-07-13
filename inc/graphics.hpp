@@ -4,11 +4,13 @@
 #include "SFML/Graphics.hpp"
 #include "SFML/Window/Event.hpp"
 #include "pause.hpp"
+#include "visualiser.hpp"
 
 namespace vs {
     class windowman : public pausable {
     private:
         sf::Window window;
+        visualiser vis;
 
     public:
         windowman();
@@ -20,6 +22,8 @@ namespace vs {
         void windowResize(const sf::Event&);
 
         void setBrightness(const sf::Event&);
+        void toggleVisualisation(const sf::Event&);
+        void toggleTransmission(const sf::Event&);
     };
 }
 

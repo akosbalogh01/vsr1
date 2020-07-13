@@ -1,6 +1,8 @@
 #ifndef VISU_AUDIO
 #define VISU_AUDIO
 
+#include <vector>
+#include <string>
 #include "SFML/Window/Event.hpp"
 #include "pause.hpp"
 
@@ -15,7 +17,14 @@ namespace vs {
     public:
         audioman();
 
+        void buildPlaylist(const std::vector<std::string>&);
+
         void setVolume(const sf::Event&);
+        void toggleAutoplay(const sf::Event&);
+        void prevSong(const sf::Event&);
+        void nextSong(const sf::Event&);
+        void jumpBack(const sf::Event&);
+        void jumpForward(const sf::Event&);
     };
 }
 

@@ -1,6 +1,7 @@
 #ifndef VISU_LOGIC
 #define VISU_LOGIC
 
+#include <vector>
 #include "pause.hpp"
 #include "events.hpp"
 #include "audio.hpp"
@@ -14,14 +15,14 @@ namespace vs {
         windowman wman;
 
     public:
-        logic();
+        logic(const int, const char**);
 
         bool isRunning() const;
 
         bool pollEvent(sf::Event&);
         void procEvent(const sf::Event&);
 
-        void togglePaused();
+        void togglePaused(const sf::Event&);
     };
 }
 

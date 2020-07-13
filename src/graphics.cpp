@@ -20,8 +20,17 @@ void vs::windowman::windowClose(const sf::Event& event) {
 
 void vs::windowman::windowResize(const sf::Event& event) {
     std::cout << "Resizing window" << std::endl;
+    window.setSize(sf::Vector2u(event.size.width, event.size.height));
 }
 
 void vs::windowman::setBrightness(const sf::Event& event) {
-    std::cout << "Set brightness" << std::endl;
+    vis.setBrightness(event);
+}
+
+void vs::windowman::toggleVisualisation(const sf::Event& event) {
+    vis.toggleEnabled(event);
+}
+
+void vs::windowman::toggleTransmission(const sf::Event& event) {
+    vis.toggleTransmission(event);
 }
