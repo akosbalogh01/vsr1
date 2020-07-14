@@ -1,3 +1,4 @@
+#include "taglib/fileref.h"
 #include "audio.hpp"
 
 vs::song::song(const std::string& filepath) {
