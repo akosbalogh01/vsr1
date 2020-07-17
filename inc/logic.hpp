@@ -2,6 +2,7 @@
 #define VISU_LOGIC
 
 #include <vector>
+#include "ini/inifile.hpp"
 #include "pause.hpp"
 #include "events.hpp"
 #include "audio.hpp"
@@ -10,6 +11,7 @@
 namespace vs {
     class logic : public pausable {
     private:
+        ini::inifile     settings;
         eventman    eman;
         audioman    aman;
         windowman wman;

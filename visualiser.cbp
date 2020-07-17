@@ -72,7 +72,6 @@
 			<Add directory="inc" />
 		</Compiler>
 		<Linker>
-			<Add library="libtag" />
 			<Add directory="C:/Projects/lib/SFML-2.5.1/lib" />
 			<Add directory="C:/Projects/lib/taglib/lib" />
 			<Add directory="C:/Users/akosb/Programming/SFML-2.5.1/lib" />
@@ -80,12 +79,22 @@
 		<Unit filename="inc/audio.hpp" />
 		<Unit filename="inc/events.hpp" />
 		<Unit filename="inc/graphics.hpp" />
+		<Unit filename="inc/ini/inifile.hpp" />
+		<Unit filename="inc/ini/key.hpp" />
+		<Unit filename="inc/ini/section.hpp" />
+		<Unit filename="inc/interfaces.hpp" />
 		<Unit filename="inc/logic.hpp" />
 		<Unit filename="inc/pause.hpp" />
 		<Unit filename="inc/visualiser.hpp" />
 		<Unit filename="src/audio.cpp" />
 		<Unit filename="src/events.cpp" />
 		<Unit filename="src/graphics.cpp" />
+		<Unit filename="src/ini/inifile.cpp" />
+		<Unit filename="src/ini/key.cpp" />
+		<Unit filename="src/ini/load.cpp" />
+		<Unit filename="src/ini/save.cpp" />
+		<Unit filename="src/ini/section.cpp" />
+		<Unit filename="src/ini/value.cpp" />
 		<Unit filename="src/logic.cpp" />
 		<Unit filename="src/main.cpp" />
 		<Unit filename="src/songs.cpp" />

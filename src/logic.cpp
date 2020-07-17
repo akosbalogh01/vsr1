@@ -5,6 +5,9 @@
 using namespace std::placeholders;
 
 vs::logic::logic(const int argc, const char** argv) {
+    settings.load(std::string("settings.ini"));
+    std::cout << settings;
+
     eman.add(sf::Event::Resized, vs::fpair (std::bind(&vs::windowman::windowResize, &wman, _1), std::bind(&vs::windowman::windowResize, &wman, _1)));
     eman.add(sf::Event::Closed,  vs::fpair (std::bind(&vs::windowman::windowClose, &wman, _1),  std::bind(&vs::windowman::windowClose, &wman,  _1)));
     eman.add(sf::Event::MouseWheelScrolled, vs::fpair(std::bind(&vs::audioman::setVolume, &aman, _1), std::bind(&vs::windowman::setBrightness, &wman, _1)));
