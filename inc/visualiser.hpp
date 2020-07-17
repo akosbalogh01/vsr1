@@ -17,6 +17,8 @@ namespace vs {
         void setBrightness(const sf::Event&);
         void toggleEnabled(const sf::Event&);
         void toggleTransmission(const sf::Event&);
+
+        void render();
     };
 };
 

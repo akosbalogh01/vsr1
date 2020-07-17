@@ -40,3 +40,7 @@ void vs::visualiser::toggleTransmission(const sf::Event& event) {
         }
     }
 }
+
+void vs::visualiser::render() {
+
+}

@@ -34,3 +34,7 @@ void vs::windowman::toggleVisualisation(const sf::Event& event) {
 void vs::windowman::toggleTransmission(const sf::Event& event) {
     vis.toggleTransmission(event);
 }
+
+void vs::windowman::render() {
+    vis.render();
+}

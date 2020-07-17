@@ -45,3 +45,11 @@ void vs::logic::togglePaused(const sf::Event& event) {
         }
     }
 }
+
+void vs::logic::update() {
+    //TODO: update data structures, calculate FFT, transmit
+}
+
+void vs::logic::render() {
+
+}

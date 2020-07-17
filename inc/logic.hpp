@@ -23,6 +23,9 @@ namespace vs {
         void procEvent(const sf::Event&);
 
         void togglePaused(const sf::Event&);
+
+        void update();
+        void render();
     };
 }
 
