@@ -4,6 +4,7 @@
 #include <vector>
 #include <string>
 #include "SFML/Window/Event.hpp"
+#include "SFML/Audio.hpp"
 #include "pause.hpp"
 
 namespace vs {
@@ -15,6 +16,8 @@ namespace vs {
         std::string album;
         std::string genre;
 
+        sf::SoundBuffer buffer;
+
     public:
         song(const std::string&);
 
@@ -23,6 +26,7 @@ namespace vs {
         const std::string& getAlbum() const;
         const std::string& getGenre() const;
         const std::string& getFile() const;
+        const sf::SoundBuffer& getBuffer() const;
     };
 
     class audioman : public pausable {
@@ -33,6 +37,7 @@ namespace vs {
         bool autoplay;
 
         std::vector <song> playlist;
+        sf::Sound current_song;
 
     public:
         audioman();

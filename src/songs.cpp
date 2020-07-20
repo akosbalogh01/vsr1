@@ -12,6 +12,7 @@ vs::song::song(const std::string& filepath) {
     album = std::string(tag->album().toCString());
     genre = std::string(tag->genre().toCString());
 
+    buffer.loadFromFile(filepath);
     std::cout << "Parsed song: (" << genre << ") "<< artist << ", " << album << ": " << title  << std::endl;
 }
 
@@ -33,4 +34,8 @@ const std::string& vs::song::getGenre() const {
 
 const std::string& vs::song::getFile() const {
     return filepath;
+}
+
+const sf::SoundBuffer& vs::song::getBuffer() const {
+    return buffer;
 }

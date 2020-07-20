@@ -11,6 +11,7 @@
 				<Option object_output="obj/Debug/" />
 				<Option type="1" />
 				<Option compiler="gcc" />
+				<Option parameters="album.m3u" />
 				<Compiler>
 					<Add option="-g" />
 				</Compiler>
@@ -31,6 +32,7 @@
 					<Add library="vorbis" />
 					<Add library="ogg" />
 					<Add library="ws2_32" />
+					<Add library="tag" />
 				</Linker>
 			</Target>
 			<Target title="Release">
@@ -66,6 +68,7 @@
 			<Add option="-Wall" />
 			<Add option="-std=c++1y" />
 			<Add option="-DSFML_STATIC" />
+			<Add option="-DTAGLIB_STATIC" />
 			<Add directory="C:/Projects/lib/SFML-2.5.1/include" />
 			<Add directory="C:/Projects/lib/taglib/include" />
 			<Add directory="C:/Users/akosb/Programming/SFML-2.5.1/include" />
@@ -73,7 +76,7 @@
 		</Compiler>
 		<Linker>
 			<Add directory="C:/Projects/lib/SFML-2.5.1/lib" />
-			<Add directory="C:/Projects/lib/taglib/lib" />
+			<Add directory="C:/Projects/lib/taglib" />
 			<Add directory="C:/Users/akosb/Programming/SFML-2.5.1/lib" />
 		</Linker>
 		<Unit filename="inc/audio.hpp" />
