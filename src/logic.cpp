@@ -1,4 +1,6 @@
+#include <stdexcept>
 #include <iostream>
+#include <fstream>
 #include <string>
 #include "logic.hpp"
 
@@ -16,12 +18,20 @@ vs::logic::logic(const int argc, const char** argv) {
     eman.add(sf::Event::KeyReleased, vs::fpair(std::bind(&vs::audioman::prevSong, &aman, _1), std::bind(&vs::audioman::jumpBack, &aman, _1)));
     eman.add(sf::Event::KeyReleased, vs::fpair(std::bind(&vs::audioman::nextSong, &aman, _1), std::bind(&vs::audioman::jumpForward, &aman, _1)));
 
+    std::ifstream playlist("playlist.m3u");
+    std::string line;
     std::vector <std::string> filelist;
-    for (int i = 1; i < argc; i++) {
-        filelist.push_back(argv[i]);
-    }
+    if (playlist.good()) {
+        while (std::getline(playlist, line)) {
+            filelist.push_back(line);
+        }
 
-    aman.buildPlaylist(filelist);
+        aman.buildPlaylist(filelist);
+    }
+    else {
+        std::invalid_argument playlist_exception("Invalid playlist file");
+        throw playlist_exception;
+    }
 }
 
 bool vs::logic::pollEvent(sf::Event& event) {

@@ -22,6 +22,7 @@ namespace vs {
         const std::string& getArtist() const;
         const std::string& getAlbum() const;
         const std::string& getGenre() const;
+        const std::string& getFile() const;
     };
 
     class audioman : public pausable {
@@ -30,6 +31,8 @@ namespace vs {
         const unsigned coef = 5;
         unsigned volume;
         bool autoplay;
+
+        std::vector <song> playlist;
 
     public:
         audioman();

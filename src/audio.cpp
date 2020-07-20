@@ -8,9 +8,9 @@ vs::audioman::audioman() {
 
 void vs::audioman::buildPlaylist(const std::vector<std::string>& filelist) {
     for (auto filename: filelist) {
-        std::ifstream f(filename.c_str());
+        std::ifstream f(filename);
         if (f.good()) {
-            std::cout << "Found file: " << filename << std::endl;
+            playlist.push_back(vs::song(filename));
         }
         else {
             std::cout << "Not found: " << filename << std::endl;
