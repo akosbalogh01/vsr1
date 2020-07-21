@@ -6,29 +6,9 @@
 #include "SFML/Window/Event.hpp"
 #include "SFML/Audio.hpp"
 #include "pause.hpp"
+#include "song.hpp"
 
 namespace vs {
-    class song {
-    private:
-        std::string filepath;
-        std::string title;
-        std::string artist;
-        std::string album;
-        std::string genre;
-
-        sf::SoundBuffer buffer;
-
-    public:
-        song(const std::string&);
-
-        const std::string& getTitle() const;
-        const std::string& getArtist() const;
-        const std::string& getAlbum() const;
-        const std::string& getGenre() const;
-        const std::string& getFile() const;
-        const sf::SoundBuffer& getBuffer() const;
-    };
-
     class audioman : public pausable {
     private:
         const unsigned vol0 = 50;
@@ -36,8 +16,8 @@ namespace vs {
         unsigned volume;
         bool autoplay;
 
-        std::vector <song> playlist;
-        sf::Sound current_song;
+        std::vector <vs::song> playlist;
+        sf::Music playing;
 
     public:
         audioman();
@@ -45,6 +25,7 @@ namespace vs {
         void buildPlaylist(const std::vector<std::string>&);
 
         void setVolume(const sf::Event&);
+        void togglePaused(const sf::Event&);
         void toggleAutoplay(const sf::Event&);
         void prevSong(const sf::Event&);
         void nextSong(const sf::Event&);

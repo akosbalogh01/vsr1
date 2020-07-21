@@ -1,7 +1,7 @@
 #include <iostream>
 #include <taglib/fileref.h>
 #include <taglib/tag.h>
-#include "audio.hpp"
+#include "song.hpp"
 
 vs::song::song(const std::string& filepath) {
     TagLib::FileRef f(filepath.c_str());
@@ -12,8 +12,7 @@ vs::song::song(const std::string& filepath) {
     album = std::string(tag->album().toCString());
     genre = std::string(tag->genre().toCString());
 
-    buffer.loadFromFile(filepath);
-    std::cout << "Parsed song: (" << genre << ") "<< artist << ", " << album << ": " << title  << std::endl;
+    std::cout << "Parsed song: " << *this << std::endl;
 }
 
 const std::string& vs::song::getTitle() const {
@@ -36,6 +35,9 @@ const std::string& vs::song::getFile() const {
     return filepath;
 }
 
-const sf::SoundBuffer& vs::song::getBuffer() const {
-    return buffer;
+namespace vs {
+    std::ostream& operator<<(std::ostream& stream, vs::song& song) {
+        stream << "(" << song.getGenre() << ") "<< song.getArtist() << ", " << song.getAlbum() << ": " << song.getTitle();
+        return stream;
+    }
 }

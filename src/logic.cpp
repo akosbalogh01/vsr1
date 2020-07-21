@@ -49,8 +49,9 @@ bool vs::logic::isRunning() const {
 void vs::logic::togglePaused(const sf::Event& event) {
     if (event.key.code == sf::Keyboard::Space) {
         if (paused) {
-            std::cout << "Paused playback" << std::endl;
             paused = false;
+            aman.togglePaused(event);
+            std::cout << "Paused playback" << std::endl;
         }
         else {
             std::cout << "Resumed playback" << std::endl;
