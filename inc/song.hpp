@@ -22,7 +22,7 @@ namespace vs {
         const std::string& getGenre() const;
         const std::string& getFile() const;
 
-        friend std::ostream& operator<< (std::ostream&, vs::song&);
+        friend std::ostream& operator<< (std::ostream&, const vs::song&);
     };
 }
 

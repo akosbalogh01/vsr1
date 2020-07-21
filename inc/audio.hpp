@@ -9,19 +9,26 @@
 #include "song.hpp"
 
 namespace vs {
+    namespace audio {
+        const unsigned bufsize = 3;
+        const unsigned vol0 = 50;
+        const unsigned vmul = 5;
+    }
+
     class audioman : public pausable {
     private:
-        const unsigned vol0 = 50;
-        const unsigned coef = 5;
-        unsigned volume;
         bool autoplay;
-
+        unsigned volume, bufindex;
         std::vector <vs::song> playlist;
+
+    private:
         sf::Music playing;
+        sf::SoundBuffer buffer[audio::bufsize];
 
     public:
         audioman();
 
+        void loadBuffer(const vs::song&);
         void buildPlaylist(const std::vector<std::string>&);
 
         void setVolume(const sf::Event&);

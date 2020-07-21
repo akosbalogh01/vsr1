@@ -7,6 +7,7 @@ vs::song::song(const std::string& filepath) {
     TagLib::FileRef f(filepath.c_str());
     TagLib::Tag* tag = f.tag();
 
+    this->filepath = filepath;
     title = std::string(tag->title().toCString());
     artist = std::string(tag->artist().toCString());
     album = std::string(tag->album().toCString());
@@ -36,7 +37,7 @@ const std::string& vs::song::getFile() const {
 }
 
 namespace vs {
-    std::ostream& operator<<(std::ostream& stream, vs::song& song) {
+    std::ostream& operator<<(std::ostream& stream, const vs::song& song) {
         stream << "(" << song.getGenre() << ") "<< song.getArtist() << ", " << song.getAlbum() << ": " << song.getTitle();
         return stream;
     }

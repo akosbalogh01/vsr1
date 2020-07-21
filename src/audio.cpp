@@ -3,9 +3,16 @@
 #include "audio.hpp"
 
 vs::audioman::audioman() {
-    volume = vol0;
+    bufindex = 0;
+    volume = vs::audio::vol0;
     playing.setVolume(volume);
     paused = true;
+}
+
+void vs::audioman::loadBuffer(const vs::song& song) {
+    buffer[bufindex].loadFromFile(song.getFile());
+    std::cout << "Buffering [" << bufindex << "]: " << song << std::endl;
+    bufindex = ((bufindex + 1) == vs::audio::bufsize) ? 0 : (bufindex + 1);
 }
 
 void vs::audioman::buildPlaylist(const std::vector<std::string>& filelist) {
@@ -18,10 +25,14 @@ void vs::audioman::buildPlaylist(const std::vector<std::string>& filelist) {
             std::cout << "Not found: " << filename << std::endl;
         }
     }
+
+    for (unsigned i = 0; i < vs::audio::bufsize; i++) {
+        loadBuffer(playlist[i]);
+    }
 }
 
 void vs::audioman::setVolume(const sf::Event& event) {
-    const int delta = coef * (int) event.mouseWheelScroll.delta;
+    const int delta = vs::audio::vmul * (int) event.mouseWheelScroll.delta;
     const int temp = volume + delta;
     if ((temp >= 0) && (temp <= 100)) {
         volume = temp;
