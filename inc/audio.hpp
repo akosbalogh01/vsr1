@@ -11,18 +11,18 @@
 namespace vs {
     namespace audio {
         const unsigned bufsize = 3;
-        const unsigned vol0 = 50;
+        const unsigned vol0 = 30;
         const unsigned vmul = 5;
     }
 
     class audioman : public pausable {
     private:
         bool autoplay;
-        unsigned volume, bufindex;
+        unsigned volume, bufindex, songindex;
         std::vector <vs::song> playlist;
 
     private:
-        sf::Music playing;
+        sf::Sound playing;
         sf::SoundBuffer buffer[audio::bufsize];
 
     public:

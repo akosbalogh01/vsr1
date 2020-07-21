@@ -51,10 +51,11 @@ void vs::logic::togglePaused(const sf::Event& event) {
         if (paused) {
             paused = false;
             aman.togglePaused(event);
-            std::cout << "Paused playback" << std::endl;
+            std::cout << "Resumed playback" << std::endl;
         }
         else {
-            std::cout << "Resumed playback" << std::endl;
+            std::cout << "Paused playback" << std::endl;
+            aman.togglePaused(event);
             paused = true;
         }
     }

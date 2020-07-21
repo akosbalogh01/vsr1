@@ -4,14 +4,16 @@
 
 vs::audioman::audioman() {
     bufindex = 0;
+    songindex = 0;
     volume = vs::audio::vol0;
     playing.setVolume(volume);
     paused = true;
+    autoplay = true;
 }
 
 void vs::audioman::loadBuffer(const vs::song& song) {
-    buffer[bufindex].loadFromFile(song.getFile());
     std::cout << "Buffering [" << bufindex << "]: " << song << std::endl;
+    buffer[bufindex].loadFromFile(song.getFile());
     bufindex = ((bufindex + 1) == vs::audio::bufsize) ? 0 : (bufindex + 1);
 }
 
@@ -29,6 +31,8 @@ void vs::audioman::buildPlaylist(const std::vector<std::string>& filelist) {
     for (unsigned i = 0; i < vs::audio::bufsize; i++) {
         loadBuffer(playlist[i]);
     }
+
+    playing.setBuffer(buffer[songindex]);
 }
 
 void vs::audioman::setVolume(const sf::Event& event) {
@@ -81,13 +85,22 @@ void vs::audioman::nextSong(const sf::Event& event) {
 
 void vs::audioman::jumpBack(const sf::Event& event) {
     if (event.key.code == sf::Keyboard::Left) {
-        std::cout << "Jump back 10 sec" << std::endl;
+        if (playing.getPlayingOffset() - sf::seconds(10.f) > sf::seconds(0.f)) {
+            std::cout << "Jump back 10 sec" << std::endl;
+            playing.setPlayingOffset(playing.getPlayingOffset() - sf::seconds(10.f));
+        }
+        else {
+            playing.setPlayingOffset(sf::seconds(0.f));
+        }
     }
 }
 
 void vs::audioman::jumpForward(const sf::Event& event) {
     if (event.key.code == sf::Keyboard::Right) {
-        std::cout << "Jump forward 10 sec" << std::endl;
+        if (playing.getPlayingOffset() + sf::seconds(10.f) < playing.getBuffer()->getDuration()) {
+            std::cout << "Jump forward 10 sec" << std::endl;
+            playing.setPlayingOffset(playing.getPlayingOffset() + sf::seconds(10.f));
+        }
     }
 }
 
