@@ -1,7 +1,8 @@
+#include <memory>
 #include "logic.hpp"
 
 int main(const int argc, const char* argv[]) {
-    vs::logic program(argc, argv);
+    vs::logic program(argc, argv, std::make_shared<vs::music>("null"));
 
     while (program.isRunning()) {
         sf::Event event;

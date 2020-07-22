@@ -85,10 +85,13 @@
 		<Unit filename="inc/ini/inifile.hpp" />
 		<Unit filename="inc/ini/key.hpp" />
 		<Unit filename="inc/ini/section.hpp" />
-		<Unit filename="inc/interfaces.hpp" />
 		<Unit filename="inc/logic.hpp" />
+		<Unit filename="inc/metadata.hpp" />
+		<Unit filename="inc/music.hpp" />
+		<Unit filename="inc/parents.hpp" />
 		<Unit filename="inc/pause.hpp" />
 		<Unit filename="inc/visualiser.hpp" />
+		<Unit filename="inc/window.hpp" />
 		<Unit filename="src/audio.cpp" />
 		<Unit filename="src/events.cpp" />
 		<Unit filename="src/graphics.cpp" />
@@ -100,8 +103,10 @@
 		<Unit filename="src/ini/value.cpp" />
 		<Unit filename="src/logic.cpp" />
 		<Unit filename="src/main.cpp" />
-		<Unit filename="src/songs.cpp" />
+		<Unit filename="src/metadata.cpp" />
+		<Unit filename="src/music.cpp" />
 		<Unit filename="src/visualiser.cpp" />
+		<Unit filename="src/window.cpp" />
 		<Extensions>
 			<code_completion />
 			<envvars />

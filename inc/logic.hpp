@@ -3,13 +3,14 @@
 
 #include <vector>
 #include "ini/inifile.hpp"
-#include "pause.hpp"
+#include "parents.hpp"
 #include "events.hpp"
 #include "audio.hpp"
-#include "graphics.hpp"
+#include "window.hpp"
+#include "music.hpp"
 
 namespace vs {
-    class logic : public pausable {
+    class logic : public pausable, public player {
     private:
         ini::inifile     settings;
         eventman    eman;
@@ -17,7 +18,9 @@ namespace vs {
         windowman wman;
 
     public:
-        logic(const int, const char**);
+        logic() = delete;
+        logic(const logic&) = delete;
+        explicit logic(const int, const char**, mvec);
 
         bool isRunning() const;
 

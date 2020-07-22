@@ -2,26 +2,17 @@
 #include <iostream>
 #include "audio.hpp"
 
-vs::audioman::audioman() {
-    bufindex = 0;
-    songindex = 0;
+vs::audioman::audioman(vs::mvec m): player(m) {
     volume = vs::audio::vol0;
-    playing.setVolume(volume);
     paused = true;
     autoplay = true;
-}
-
-void vs::audioman::loadBuffer(const vs::song& song) {
-    std::cout << "Buffering [" << bufindex << "]: " << song << std::endl;
-    buffer[bufindex].loadFromFile(song.getFile());
-    bufindex = ((bufindex + 1) == vs::audio::bufsize) ? 0 : (bufindex + 1);
 }
 
 void vs::audioman::buildPlaylist(const std::vector<std::string>& filelist) {
     for (auto filename: filelist) {
         std::ifstream f(filename);
         if (f.good()) {
-            playlist.push_back(vs::song(filename));
+            playlist.push_back(vs::music(filename));
         }
         else {
             std::cout << "Not found: " << filename << std::endl;
@@ -29,10 +20,12 @@ void vs::audioman::buildPlaylist(const std::vector<std::string>& filelist) {
     }
 
     for (unsigned i = 0; i < vs::audio::bufsize; i++) {
-        loadBuffer(playlist[i]);
+        playlist[i].initBuffer();
     }
 
-    playing.setBuffer(buffer[songindex]);
+    playing = std::make_shared<vs::music>(playlist[0]);
+    //playing.initBuffer();
+    //playing.setVolume(volume);
 }
 
 void vs::audioman::setVolume(const sf::Event& event) {
@@ -42,17 +35,17 @@ void vs::audioman::setVolume(const sf::Event& event) {
         volume = temp;
     }
 
-    playing.setVolume(volume);
+    //playing.setVolume(volume);
     std::cout << "Set volume: " << volume << std::endl;
 }
 
 void vs::audioman::togglePaused(const sf::Event& event) {
     if (paused) {
-        playing.play();
+        //playing.play();
         paused = false;
     }
     else {
-        playing.pause();
+        //playing.pause();
         paused = true;
     }
 }
@@ -85,30 +78,27 @@ void vs::audioman::nextSong(const sf::Event& event) {
 
 void vs::audioman::jumpBack(const sf::Event& event) {
     if (event.key.code == sf::Keyboard::Left) {
+        std::cout << "Jump back 10 sec" << std::endl;
+        /*
         if (playing.getPlayingOffset() - sf::seconds(10.f) > sf::seconds(0.f)) {
-            std::cout << "Jump back 10 sec" << std::endl;
+
             playing.setPlayingOffset(playing.getPlayingOffset() - sf::seconds(10.f));
         }
         else {
             playing.setPlayingOffset(sf::seconds(0.f));
         }
+        */
     }
 }
 
 void vs::audioman::jumpForward(const sf::Event& event) {
     if (event.key.code == sf::Keyboard::Right) {
+        std::cout << "Jump forward 10 sec" << std::endl;
+        /*
         if (playing.getPlayingOffset() + sf::seconds(10.f) < playing.getBuffer()->getDuration()) {
-            std::cout << "Jump forward 10 sec" << std::endl;
+
             playing.setPlayingOffset(playing.getPlayingOffset() + sf::seconds(10.f));
         }
+        */
     }
 }
-
-
-
-
-
-
-
-
-

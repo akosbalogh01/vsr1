@@ -2,22 +2,29 @@
 #define VISU_VISUALISER
 
 #include "SFML/Window/Event.hpp"
+#include "parents.hpp"
 
 namespace vs {
-    class visualiser {
+    namespace gfx {
+        const unsigned lum0 = 30;
+        const unsigned mlum = 5;
+    }
+
+    class visualiser : public renderable, public player {
     private:
-        const unsigned lum0 = 50;
-        const unsigned coef  = 5;
         unsigned brightness;
         bool tx, en;
 
     public:
-        visualiser();
+        visualiser() = delete;
+        visualiser(const visualiser&) = delete;
+        visualiser(mvec);
 
         void setBrightness(const sf::Event&);
         void toggleEnabled(const sf::Event&);
         void toggleTransmission(const sf::Event&);
 
+        void update();
         void render();
     };
 };

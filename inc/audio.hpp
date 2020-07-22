@@ -5,8 +5,8 @@
 #include <string>
 #include "SFML/Window/Event.hpp"
 #include "SFML/Audio.hpp"
-#include "pause.hpp"
-#include "song.hpp"
+#include "parents.hpp"
+#include "music.hpp"
 
 namespace vs {
     namespace audio {
@@ -15,20 +15,17 @@ namespace vs {
         const unsigned vmul = 5;
     }
 
-    class audioman : public pausable {
+    class audioman : public pausable, public player {
     private:
         bool autoplay;
-        unsigned volume, bufindex, songindex;
-        std::vector <vs::song> playlist;
-
-    private:
-        sf::Sound playing;
-        sf::SoundBuffer buffer[audio::bufsize];
+        unsigned volume;
+        std::vector <vs::music> playlist;
 
     public:
-        audioman();
+        audioman() = delete;
+        audioman(const audioman&) = delete;
+        explicit audioman(mvec);
 
-        void loadBuffer(const vs::song&);
         void buildPlaylist(const std::vector<std::string>&);
 
         void setVolume(const sf::Event&);

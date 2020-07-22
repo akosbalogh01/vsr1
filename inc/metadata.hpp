@@ -1,11 +1,11 @@
-#ifndef VISU_SONG
-#define VISU_SONG
+#ifndef VISU_META
+#define VISU_META
 
 #include <string>
 #include <iostream>
 
 namespace vs {
-    class song {
+    class metadata {
     private:
         std::string filepath;
         std::string title;
@@ -14,7 +14,7 @@ namespace vs {
         std::string genre;
 
     public:
-        song(const std::string&);
+        metadata(const std::string&);
 
         const std::string& getTitle() const;
         const std::string& getArtist() const;
@@ -22,8 +22,8 @@ namespace vs {
         const std::string& getGenre() const;
         const std::string& getFile() const;
 
-        friend std::ostream& operator<< (std::ostream&, const vs::song&);
+        friend std::ostream& operator<< (std::ostream&, const vs::metadata&);
     };
 }
 
-#endif //VISU_SONG
+#endif //VISU_META

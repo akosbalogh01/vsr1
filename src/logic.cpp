@@ -6,12 +6,14 @@
 
 using namespace std::placeholders;
 
-vs::logic::logic(const int argc, const char** argv) {
+vs::logic::logic(const int argc, const char** argv, mvec m): player(m),  aman(m), wman(m) {
     settings.load(std::string("settings.ini"));
     std::cout << settings;
+    wman.windowCreate(std::stoi(settings.value("Window", "width")), std::stoi(settings.value("Window", "height")));
 
     eman.add(sf::Event::Resized, vs::fpair (std::bind(&vs::windowman::windowResize, &wman, _1), std::bind(&vs::windowman::windowResize, &wman, _1)));
     eman.add(sf::Event::Closed,  vs::fpair (std::bind(&vs::windowman::windowClose, &wman, _1),  std::bind(&vs::windowman::windowClose, &wman,  _1)));
+    eman.add(sf::Event::KeyReleased, vs::fpair (std::bind(&vs::windowman::windowClose, &wman, _1),  std::bind(&vs::windowman::windowClose, &wman,  _1)));
     eman.add(sf::Event::MouseWheelScrolled, vs::fpair(std::bind(&vs::audioman::setVolume, &aman, _1), std::bind(&vs::windowman::setBrightness, &wman, _1)));
     eman.add(sf::Event::KeyReleased, vs::fpair(std::bind(&vs::logic::togglePaused, this, _1), std::bind(&vs::audioman::toggleAutoplay, &aman, _1)));
     eman.add(sf::Event::KeyReleased, vs::fpair(std::bind(&vs::windowman::toggleVisualisation, &wman, _1), std::bind(&vs::windowman::toggleTransmission, &wman, _1)));
@@ -66,5 +68,5 @@ void vs::logic::update() {
 }
 
 void vs::logic::render() {
-
+    wman.render();
 }
