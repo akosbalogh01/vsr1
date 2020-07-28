@@ -14,6 +14,7 @@ namespace vs {
         std::string genre;
 
     public:
+        metadata() = delete;
         metadata(const std::string&);
 
         const std::string& getTitle() const;

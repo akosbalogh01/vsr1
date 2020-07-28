@@ -8,7 +8,7 @@
 namespace vs {
     class music {
     private:
-        const vs::metadata meta;
+        vs::metadata meta;
         sf::SoundBuffer buffer;
         sf::Sound sound;
 
@@ -16,12 +16,21 @@ namespace vs {
         music() = delete;
         music(const std::string&);
         music(const vs::music&);
+        music(vs::music&&);
 
+        void init(const vs::music&);
         void initBuffer();
         void dropBuffer();
 
+        const std::string& getTitle() const;
+        const std::string& getArtist() const;
+        const std::string& getAlbum() const;
+        const std::string& getGenre() const;
+        const std::string& getFile() const;
         const vs::metadata& getMeta() const;
 
+
+        void setMetadata(const vs::metadata&);
         void setVolume(const unsigned);
         void play();
         void pause();

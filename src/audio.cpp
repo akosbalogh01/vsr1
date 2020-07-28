@@ -23,9 +23,9 @@ void vs::audioman::buildPlaylist(const std::vector<std::string>& filelist) {
         playlist[i].initBuffer();
     }
 
-    playing = std::make_shared<vs::music>(playlist[0]);
-    //playing.initBuffer();
-    //playing.setVolume(volume);
+    playing->setMetadata(playlist[0].getMeta());
+    playing->initBuffer();
+    playing->setVolume(volume);
 }
 
 void vs::audioman::setVolume(const sf::Event& event) {
@@ -35,17 +35,17 @@ void vs::audioman::setVolume(const sf::Event& event) {
         volume = temp;
     }
 
-    //playing.setVolume(volume);
+    playing->setVolume(volume);
     std::cout << "Set volume: " << volume << std::endl;
 }
 
 void vs::audioman::togglePaused(const sf::Event& event) {
     if (paused) {
-        //playing.play();
+        playing->play();
         paused = false;
     }
     else {
-        //playing.pause();
+        playing->pause();
         paused = true;
     }
 }

@@ -21,7 +21,7 @@ namespace vs {
         player() = delete;
         player(const player&) = delete;
 
-        player(mvec m): playing(m) {
+        explicit player(mvec m): playing(m) {
 
         }
     };

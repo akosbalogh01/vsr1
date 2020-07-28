@@ -51,4 +51,5 @@ void vs::graphics::update() {
 void vs::graphics::render() {
     drawText("Yolo", sf::Vector2f(200, 100), 30);
     drawRect(sf::Vector2f(10, wsize.y - 60), sf::Vector2f(wsize.x - 20, 50), vs::gfx::lbgcolor);
+    drawText(playing->getFile(), sf::Vector2f(15, wsize.y - 60), 25);
 }

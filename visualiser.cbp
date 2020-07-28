@@ -89,7 +89,6 @@
 		<Unit filename="inc/metadata.hpp" />
 		<Unit filename="inc/music.hpp" />
 		<Unit filename="inc/parents.hpp" />
-		<Unit filename="inc/pause.hpp" />
 		<Unit filename="inc/visualiser.hpp" />
 		<Unit filename="inc/window.hpp" />
 		<Unit filename="src/audio.cpp" />

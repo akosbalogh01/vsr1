@@ -20,6 +20,9 @@ vs::metadata::metadata(const std::string& filepath) {
 
         std::cout << "Parsed song: " << *this << std::endl;
     }
+    else {
+        this->filepath = filepath;
+    }
 }
 
 const std::string& vs::metadata::getTitle() const {
