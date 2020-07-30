@@ -1,8 +1,8 @@
 #include <iostream>
 #include "window.hpp"
 
-vs::windowman::windowman(vs::mvec m): player(m), gui(&window, m) {
-
+vs::windowman::windowman(vs::mptr m): player(m), gui(&window, m) {
+    window.setFramerateLimit(60);
 }
 
 bool vs::windowman::pollEvent(sf::Event& event) {
@@ -42,6 +42,10 @@ void vs::windowman::toggleVisualisation(const sf::Event& event) {
 
 void vs::windowman::toggleTransmission(const sf::Event& event) {
     gui.toggleTransmission(event);
+}
+
+void vs::windowman::displayMetadata() {
+    gui.toggleMetadata();
 }
 
 void vs::windowman::render() {

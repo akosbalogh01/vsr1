@@ -2,6 +2,7 @@
 #define VISU_MUSIC
 
 #include <string>
+#include <memory>
 #include "SFML/Audio.hpp"
 #include "metadata.hpp"
 
@@ -22,13 +23,14 @@ namespace vs {
         void initBuffer();
         void dropBuffer();
 
+
         const std::string& getTitle() const;
         const std::string& getArtist() const;
         const std::string& getAlbum() const;
         const std::string& getGenre() const;
         const std::string& getFile() const;
         const vs::metadata& getMeta() const;
-
+        const std::pair<const sf::Time&, const sf::Time&> getTime() const;
 
         void setMetadata(const vs::metadata&);
         void setVolume(const unsigned);

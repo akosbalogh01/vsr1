@@ -24,7 +24,7 @@ namespace vs {
     public:
         audioman() = delete;
         audioman(const audioman&) = delete;
-        explicit audioman(mvec);
+        explicit audioman(mptr);
 
         void buildPlaylist(const std::vector<std::string>&);
 

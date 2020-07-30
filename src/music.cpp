@@ -55,6 +55,13 @@ const vs::metadata& vs::music::getMeta() const {
     return meta;
 }
 
+const std::pair<const sf::Time&, const sf::Time&> vs::music::getTime() const {
+    sf::Time t1 = sound.getPlayingOffset();
+    sf::Time t2 = buffer.getDuration();
+    std::pair <sf::Time, sf::Time> t(t1, t2);
+    return t;
+}
+
 void vs::music::setMetadata(const vs::metadata& meta) {
     dropBuffer();
     this->meta = meta;

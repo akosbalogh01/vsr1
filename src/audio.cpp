@@ -2,7 +2,7 @@
 #include <iostream>
 #include "audio.hpp"
 
-vs::audioman::audioman(vs::mvec m): player(m) {
+vs::audioman::audioman(vs::mptr m): player(m) {
     volume = vs::audio::vol0;
     paused = true;
     autoplay = true;

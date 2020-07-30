@@ -2,7 +2,7 @@
 #include "logic.hpp"
 
 int main(const int argc, const char* argv[]) {
-    vs::mvec playing = std::make_shared<vs::music>("null");
+    vs::mptr playing = std::make_shared<vs::music>("null");
     vs::logic program(argc, argv, playing);
 
     while (program.isRunning()) {
@@ -10,8 +10,9 @@ int main(const int argc, const char* argv[]) {
         while (program.pollEvent(event)) {
             program.procEvent(event);
             program.update();
-            program.render();
         }
+
+        program.render();
     }
 
     return 0;

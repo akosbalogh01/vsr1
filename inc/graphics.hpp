@@ -10,7 +10,7 @@
 
 namespace vs {
     namespace gfx {
-        const sf::Color gbgcolor = sf::Color(64, 64, 64);
+        const sf::Color gbgcolor = sf::Color(32, 32, 32);
         const sf::Color lbgcolor = sf::Color(12, 12, 12);
         const std::string fontpath = "Roboto-Regular.ttf";
         const sf::Color textcolor = sf::Color(128, 128, 128);
@@ -20,6 +20,7 @@ namespace vs {
 
     class graphics : public renderable, public player {
     private:
+        sf::Clock mtimer;
         sf::Vector2u wsize;
         sf::RenderWindow* const target;
         visualiser vis;
@@ -30,16 +31,19 @@ namespace vs {
     private:
         void drawText(const std::string&, const sf::Vector2f&, const unsigned);
         void drawRect(const sf::Vector2f&, const sf::Vector2f&, const sf::Color&);
+        void drawMetadata();
+        void drawTimedata();
 
     public:
         graphics() = delete;
         graphics(const graphics&) = delete;
-        explicit graphics(sf::RenderWindow* const, mvec);
+        explicit graphics(sf::RenderWindow* const, mptr);
 
         void resizeInterface(const sf::Vector2u&);
         void setBrightness(const sf::Event&);
         void toggleVisualisation(const sf::Event&);
         void toggleTransmission(const sf::Event&);
+        void toggleMetadata();
 
         void update();
         void render();

@@ -12,16 +12,16 @@ namespace vs {
         virtual void update() = 0;
     };
 
-    typedef std::shared_ptr<music> mvec;
+    typedef std::shared_ptr<music> mptr;
     class player {
     protected:
-        mvec playing;
+        mptr playing;
 
     public:
         player() = delete;
         player(const player&) = delete;
 
-        explicit player(mvec m): playing(m) {
+        explicit player(mptr m): playing(m) {
 
         }
     };

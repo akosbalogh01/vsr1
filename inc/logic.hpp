@@ -20,7 +20,7 @@ namespace vs {
     public:
         logic() = delete;
         logic(const logic&) = delete;
-        explicit logic(const int, const char**, mvec);
+        explicit logic(const int, const char**, mptr);
 
         bool isRunning() const;
 

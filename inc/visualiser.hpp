@@ -18,7 +18,7 @@ namespace vs {
     public:
         visualiser() = delete;
         visualiser(const visualiser&) = delete;
-        visualiser(mvec);
+        visualiser(mptr);
 
         void setBrightness(const sf::Event&);
         void toggleEnabled(const sf::Event&);

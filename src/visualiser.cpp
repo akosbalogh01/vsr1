@@ -1,7 +1,7 @@
 #include <iostream>
 #include "visualiser.hpp"
 
-vs::visualiser::visualiser(vs::mvec m): player(m) {
+vs::visualiser::visualiser(vs::mptr m): player(m) {
     brightness = vs::gfx::lum0;
 }
 

@@ -15,7 +15,7 @@ namespace vs {
     public:
         windowman() = delete;
         windowman(const windowman&) = delete;
-        explicit windowman(mvec);
+        explicit windowman(mptr);
 
         bool pollEvent(sf::Event&);
         bool isOpen() const;
@@ -27,6 +27,7 @@ namespace vs {
         void setBrightness(const sf::Event&);
         void toggleVisualisation(const sf::Event&);
         void toggleTransmission(const sf::Event&);
+        void displayMetadata();
 
         void render();
     };

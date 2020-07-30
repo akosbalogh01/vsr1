@@ -6,7 +6,7 @@
 
 using namespace std::placeholders;
 
-vs::logic::logic(const int argc, const char** argv, mvec m): player(m),  aman(m), wman(m) {
+vs::logic::logic(const int argc, const char** argv, mptr m): player(m),  aman(m), wman(m) {
     settings.load(std::string("settings.ini"));
     std::cout << settings;
     wman.windowCreate(std::stoi(settings.value("Window", "width")), std::stoi(settings.value("Window", "height")));
@@ -41,6 +41,7 @@ bool vs::logic::pollEvent(sf::Event& event) {
 }
 
 void vs::logic::procEvent(const sf::Event& event) {
+    wman.displayMetadata();
     eman.exec(event);
 }
 
