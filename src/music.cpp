@@ -62,6 +62,10 @@ const std::pair<const sf::Time&, const sf::Time&> vs::music::getTime() const {
     return t;
 }
 
+const bool vs::music::isOver() const {
+    return (sound.getStatus() == sf::SoundSource::Stopped);
+}
+
 void vs::music::setMetadata(const vs::metadata& meta) {
     dropBuffer();
     this->meta = meta;

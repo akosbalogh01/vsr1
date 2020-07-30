@@ -9,9 +9,9 @@ int main(const int argc, const char* argv[]) {
         sf::Event event;
         while (program.pollEvent(event)) {
             program.procEvent(event);
-            program.update();
         }
 
+        program.update();
         program.render();
     }
 

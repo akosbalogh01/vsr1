@@ -23,7 +23,6 @@ namespace vs {
         void initBuffer();
         void dropBuffer();
 
-
         const std::string& getTitle() const;
         const std::string& getArtist() const;
         const std::string& getAlbum() const;
@@ -31,6 +30,7 @@ namespace vs {
         const std::string& getFile() const;
         const vs::metadata& getMeta() const;
         const std::pair<const sf::Time&, const sf::Time&> getTime() const;
+        const bool isOver() const;
 
         void setMetadata(const vs::metadata&);
         void setOffset(const sf::Time&);

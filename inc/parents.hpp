@@ -2,7 +2,6 @@
 #define VISU_PARENTS
 
 #include <memory>
-#include "SFML/Window/Event.hpp"
 #include "music.hpp"
 
 namespace vs {
@@ -31,7 +30,7 @@ namespace vs {
             bool paused;
 
     public:
-            virtual void togglePaused(const sf::Event&) {
+            virtual void togglePaused() {
                 paused = !paused;
             }
     };

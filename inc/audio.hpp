@@ -28,13 +28,16 @@ namespace vs {
 
         void buildPlaylist(const std::vector<std::string>&);
 
+        void eventPaused(const sf::Event&);
+        void togglePaused();
         void setVolume(const sf::Event&);
-        void togglePaused(const sf::Event&);
         void toggleAutoplay(const sf::Event&);
         void prevSong(const sf::Event&);
         void nextSong(const sf::Event&);
         void jumpBack(const sf::Event&);
         void jumpForward(const sf::Event&);
+
+        const bool getAutoplay() const;
     };
 }
 

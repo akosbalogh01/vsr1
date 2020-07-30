@@ -7,6 +7,7 @@
 using namespace std::placeholders;
 
 vs::logic::logic(const int argc, const char** argv, mptr m): player(m),  aman(m), wman(m) {
+    started = false;
     settings.load(std::string("settings.ini"));
     std::cout << settings;
     wman.windowCreate(std::stoi(settings.value("Window", "width")), std::stoi(settings.value("Window", "height")));
@@ -15,7 +16,7 @@ vs::logic::logic(const int argc, const char** argv, mptr m): player(m),  aman(m)
     eman.add(sf::Event::Closed,  vs::fpair (std::bind(&vs::windowman::windowClose, &wman, _1),  std::bind(&vs::windowman::windowClose, &wman,  _1)));
     eman.add(sf::Event::KeyReleased, vs::fpair (std::bind(&vs::windowman::windowClose, &wman, _1),  std::bind(&vs::windowman::windowClose, &wman,  _1)));
     eman.add(sf::Event::MouseWheelScrolled, vs::fpair(std::bind(&vs::audioman::setVolume, &aman, _1), std::bind(&vs::windowman::setBrightness, &wman, _1)));
-    eman.add(sf::Event::KeyReleased, vs::fpair(std::bind(&vs::logic::togglePaused, this, _1), std::bind(&vs::audioman::toggleAutoplay, &aman, _1)));
+    eman.add(sf::Event::KeyReleased, vs::fpair(std::bind(&vs::logic::eventPaused, this, _1), std::bind(&vs::audioman::toggleAutoplay, &aman, _1)));
     eman.add(sf::Event::KeyReleased, vs::fpair(std::bind(&vs::windowman::toggleVisualisation, &wman, _1), std::bind(&vs::windowman::toggleTransmission, &wman, _1)));
     eman.add(sf::Event::KeyReleased, vs::fpair(std::bind(&vs::audioman::prevSong, &aman, _1), std::bind(&vs::audioman::jumpBack, &aman, _1)));
     eman.add(sf::Event::KeyReleased, vs::fpair(std::bind(&vs::audioman::nextSong, &aman, _1), std::bind(&vs::audioman::jumpForward, &aman, _1)));
@@ -49,22 +50,39 @@ bool vs::logic::isRunning() const {
     return wman.isOpen();
 }
 
-void vs::logic::togglePaused(const sf::Event& event) {
+void vs::logic::eventPaused(const sf::Event& event) {
     if (event.key.code == sf::Keyboard::Space) {
-        if (paused) {
-            paused = false;
-            aman.togglePaused(event);
-            std::cout << "Resumed playback" << std::endl;
-        }
-        else {
-            std::cout << "Paused playback" << std::endl;
-            aman.togglePaused(event);
-            paused = true;
-        }
+        togglePaused();
+    }
+}
+
+void vs::logic::togglePaused() {
+    if (paused) {
+        started = true;
+        paused = false;
+        aman.togglePaused();
+        std::cout << "Resumed playback" << std::endl;
+    }
+    else {
+        std::cout << "Paused playback" << std::endl;
+        aman.togglePaused();
+        paused = true;
     }
 }
 
 void vs::logic::update() {
+    if (started) {
+        if ((!paused) && (playing->isOver())) {
+            std::cout << "Song over" << std::endl;
+            if (aman.getAutoplay()) {
+                std::cout << "Start next song" << std::endl;
+            }
+            else {
+                togglePaused();
+            }
+        }
+    }
+
     //TODO: update data structures, calculate FFT, transmit
 }
 

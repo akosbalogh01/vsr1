@@ -5,7 +5,7 @@
 vs::audioman::audioman(vs::mptr m): player(m) {
     volume = vs::audio::vol0;
     paused = true;
-    autoplay = true;
+    autoplay = false;
 }
 
 void vs::audioman::buildPlaylist(const std::vector<std::string>& filelist) {
@@ -39,7 +39,7 @@ void vs::audioman::setVolume(const sf::Event& event) {
     std::cout << "Set volume: " << volume << std::endl;
 }
 
-void vs::audioman::togglePaused(const sf::Event& event) {
+void vs::audioman::togglePaused() {
     if (paused) {
         playing->play();
         paused = false;
@@ -80,7 +80,6 @@ void vs::audioman::jumpBack(const sf::Event& event) {
     if (event.key.code == sf::Keyboard::Left) {
         std::cout << "Jump back 10 sec" << std::endl;
         sf::Time t1 = playing->getTime().first;
-        sf::Time t2 = playing->getTime().second;
         if (t1 - sf::seconds(10) > sf::seconds(0)) {
             playing->setOffset(t1 - sf::seconds(10));
         }
@@ -99,4 +98,8 @@ void vs::audioman::jumpForward(const sf::Event& event) {
             playing->setOffset(t1 + sf::seconds(10));
         }
     }
+}
+
+const bool vs::audioman::getAutoplay() const {
+    return autoplay;
 }

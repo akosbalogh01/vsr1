@@ -12,6 +12,7 @@
 namespace vs {
     class logic : public pausable, public player {
     private:
+        bool           started;
         ini::inifile     settings;
         eventman    eman;
         audioman    aman;
@@ -27,7 +28,8 @@ namespace vs {
         bool pollEvent(sf::Event&);
         void procEvent(const sf::Event&);
 
-        void togglePaused(const sf::Event&);
+        void eventPaused(const sf::Event&);
+        void togglePaused();
 
         void update();
         void render();
