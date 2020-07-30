@@ -79,26 +79,24 @@ void vs::audioman::nextSong(const sf::Event& event) {
 void vs::audioman::jumpBack(const sf::Event& event) {
     if (event.key.code == sf::Keyboard::Left) {
         std::cout << "Jump back 10 sec" << std::endl;
-        /*
-        if (playing.getPlayingOffset() - sf::seconds(10.f) > sf::seconds(0.f)) {
-
-            playing.setPlayingOffset(playing.getPlayingOffset() - sf::seconds(10.f));
+        sf::Time t1 = playing->getTime().first;
+        sf::Time t2 = playing->getTime().second;
+        if (t1 - sf::seconds(10) > sf::seconds(0)) {
+            playing->setOffset(t1 - sf::seconds(10));
         }
         else {
-            playing.setPlayingOffset(sf::seconds(0.f));
+            playing->setOffset(sf::seconds(0));
         }
-        */
     }
 }
 
 void vs::audioman::jumpForward(const sf::Event& event) {
     if (event.key.code == sf::Keyboard::Right) {
         std::cout << "Jump forward 10 sec" << std::endl;
-        /*
-        if (playing.getPlayingOffset() + sf::seconds(10.f) < playing.getBuffer()->getDuration()) {
-
-            playing.setPlayingOffset(playing.getPlayingOffset() + sf::seconds(10.f));
+        sf::Time t1 = playing->getTime().first;
+        sf::Time t2 = playing->getTime().second;
+        if (t1 + sf::seconds(10) < t2) {
+            playing->setOffset(t1 + sf::seconds(10));
         }
-        */
     }
 }

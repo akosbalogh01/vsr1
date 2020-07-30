@@ -71,6 +71,12 @@ void vs::music::setVolume(const unsigned vol) {
     sound.setVolume(vol);
 }
 
+void vs::music::setOffset(const sf::Time& offset) {
+    if ((offset >= sf::seconds(0)) && (offset <= buffer.getDuration())) {
+        sound.setPlayingOffset(offset);
+    }
+}
+
 void vs::music::play() {
     sound.play();
 }

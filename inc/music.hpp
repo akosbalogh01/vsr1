@@ -33,6 +33,7 @@ namespace vs {
         const std::pair<const sf::Time&, const sf::Time&> getTime() const;
 
         void setMetadata(const vs::metadata&);
+        void setOffset(const sf::Time&);
         void setVolume(const unsigned);
         void play();
         void pause();
