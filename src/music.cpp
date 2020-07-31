@@ -2,15 +2,17 @@
 #include "music.hpp"
 
 vs::music::music(const std::string& fpath): meta(fpath) {
-
+    buffered = false;
 }
 
 vs::music::music(const vs::music& other): meta(other.meta) {
+    buffered = false;
     this->buffer = sf::SoundBuffer();
     this->sound = sf::Sound();
 }
 
 vs::music::music(vs::music&& other): meta(other.meta) {
+    buffered = false;
     //this->buffer = sf::SoundBuffer();
     //this->sound = sf::Sound();
 }
@@ -23,12 +25,14 @@ void vs::music::initBuffer() {
     std::cout << "Buffering: " << meta << std::endl;
     buffer.loadFromFile(meta.getFile());
     sound.setBuffer(buffer);
+    buffered = true;
 }
 
 void vs::music::dropBuffer() {
     std::cout << "Dropping: " << meta << std::endl;
     sound.resetBuffer();
     buffer = sf::SoundBuffer();
+    buffered = false;
 }
 
 const std::string& vs::music::getTitle() const {
@@ -64,6 +68,10 @@ const std::pair<const sf::Time&, const sf::Time&> vs::music::getTime() const {
 
 const bool vs::music::isOver() const {
     return (sound.getStatus() == sf::SoundSource::Stopped);
+}
+
+const bool vs::music::isBuffered() const {
+    return buffered;
 }
 
 void vs::music::setMetadata(const vs::metadata& meta) {

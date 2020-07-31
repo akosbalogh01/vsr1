@@ -9,6 +9,7 @@
 namespace vs {
     class music {
     private:
+        bool buffered;
         vs::metadata meta;
         sf::SoundBuffer buffer;
         sf::Sound sound;
@@ -30,7 +31,9 @@ namespace vs {
         const std::string& getFile() const;
         const vs::metadata& getMeta() const;
         const std::pair<const sf::Time&, const sf::Time&> getTime() const;
+
         const bool isOver() const;
+        const bool isBuffered() const;
 
         void setMetadata(const vs::metadata&);
         void setOffset(const sf::Time&);

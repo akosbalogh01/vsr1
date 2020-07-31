@@ -69,11 +69,15 @@ void vs::audioman::prevSong(const sf::Event& event) {
     }
 }
 
-void vs::audioman::nextSong(const sf::Event& event) {
+void vs::audioman::eventNextSong(const sf::Event& event) {
     if (event.key.code == sf::Keyboard::Right) {
-        std::cout << "Start next song" << std::endl;
-
+        nextSong();
     }
+}
+
+void vs::audioman::nextSong() {
+    std::cout << "Start next song" << std::endl;
+
 }
 
 void vs::audioman::jumpBack(const sf::Event& event) {

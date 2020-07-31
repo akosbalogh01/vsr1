@@ -33,7 +33,8 @@ namespace vs {
         void setVolume(const sf::Event&);
         void toggleAutoplay(const sf::Event&);
         void prevSong(const sf::Event&);
-        void nextSong(const sf::Event&);
+        void eventNextSong(const sf::Event&);
+        void nextSong();
         void jumpBack(const sf::Event&);
         void jumpForward(const sf::Event&);
 
