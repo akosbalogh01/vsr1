@@ -2,30 +2,14 @@
 #include <iostream>
 #include "audio.hpp"
 
-vs::audioman::audioman(vs::mptr m): player(m) {
+vs::audioman::audioman(vs::mptr m): player(m), pman(m)  {
     volume = vs::audio::vol0;
     paused = true;
-    autoplay = false;
+    autoplay = true;
 }
 
 void vs::audioman::buildPlaylist(const std::vector<std::string>& filelist) {
-    for (auto filename: filelist) {
-        std::ifstream f(filename);
-        if (f.good()) {
-            playlist.push_back(vs::music(filename));
-        }
-        else {
-            std::cout << "Not found: " << filename << std::endl;
-        }
-    }
-
-    for (unsigned i = 0; i < vs::audio::bufsize; i++) {
-        playlist[i].initBuffer();
-    }
-
-    playing->setMetadata(playlist[0].getMeta());
-    playing->initBuffer();
-    playing->setVolume(volume);
+    pman.init(filelist);
 }
 
 void vs::audioman::setVolume(const sf::Event& event) {
@@ -76,8 +60,7 @@ void vs::audioman::eventNextSong(const sf::Event& event) {
 }
 
 void vs::audioman::nextSong() {
-    std::cout << "Start next song" << std::endl;
-
+    pman.next();
 }
 
 void vs::audioman::jumpBack(const sf::Event& event) {

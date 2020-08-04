@@ -34,6 +34,7 @@ namespace vs {
 
         const bool isOver() const;
         const bool isBuffered() const;
+        const bool copyData(const vs::music&);
 
         void setMetadata(const vs::metadata&);
         void setOffset(const sf::Time&);

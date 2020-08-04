@@ -22,17 +22,21 @@ void vs::music::init(const vs::music& other) {
 }
 
 void vs::music::initBuffer() {
-    std::cout << "Buffering: " << meta << std::endl;
-    buffer.loadFromFile(meta.getFile());
-    sound.setBuffer(buffer);
-    buffered = true;
+    if (!buffered) {
+        std::cout << "Buffering: " << meta << std::endl;
+        buffer.loadFromFile(meta.getFile());
+        sound.setBuffer(buffer);
+        buffered = true;
+    }
 }
 
 void vs::music::dropBuffer() {
-    std::cout << "Dropping: " << meta << std::endl;
-    sound.resetBuffer();
-    buffer = sf::SoundBuffer();
-    buffered = false;
+    if (buffered) {
+        std::cout << "Dropping: " << meta << std::endl;
+        sound.resetBuffer();
+        buffer = sf::SoundBuffer();
+        buffered = false;
+    }
 }
 
 const std::string& vs::music::getTitle() const {
@@ -72,6 +76,22 @@ const bool vs::music::isOver() const {
 
 const bool vs::music::isBuffered() const {
     return buffered;
+}
+
+const bool vs::music::copyData(const vs::music& other) {
+    meta = other.meta;
+
+    if (other.buffered) {
+        buffered = true;
+        buffer = other.buffer;
+        sound.setBuffer(buffer);
+        return true;
+    }
+    else {
+        buffered = false;
+        dropBuffer();
+        return false;
+    }
 }
 
 void vs::music::setMetadata(const vs::metadata& meta) {

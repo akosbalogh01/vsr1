@@ -6,7 +6,7 @@
 #include "SFML/Window/Event.hpp"
 #include "SFML/Audio.hpp"
 #include "parents.hpp"
-#include "music.hpp"
+#include "playlist.hpp"
 
 namespace vs {
     namespace audio {
@@ -19,7 +19,7 @@ namespace vs {
     private:
         bool autoplay;
         unsigned volume;
-        std::vector <vs::music> playlist;
+        playlistman pman;
 
     public:
         audioman() = delete;
