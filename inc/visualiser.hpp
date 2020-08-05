@@ -16,7 +16,7 @@ namespace vs {
 
     class visualiser : public renderable, public player {
     private:
-        sf::Vector2u asize;
+        sf::Vector2u wsize, area;
         sf::RectangleShape bars[vs::gfx::ledcnt];
         unsigned brightness;
         bool tx, en;

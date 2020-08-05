@@ -23,7 +23,7 @@ void vs::graphics::toggleMetadata() {
 }
 
 void vs::graphics::update() {
-
+    vis.update();
 }
 
 

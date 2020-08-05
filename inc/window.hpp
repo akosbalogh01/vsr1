@@ -31,6 +31,7 @@ namespace vs {
         void displayMetadata();
 
         void render();
+        void update();
     };
 }
 

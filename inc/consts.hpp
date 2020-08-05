@@ -35,11 +35,12 @@ namespace vs {
         }
 
         namespace layout {
+            const unsigned theight = 15;
             const unsigned frame = 1;
             const unsigned x1 = 10;
             const unsigned y1 = 10;
-            const float xt = 0.05f;
-            const float yt = 0.7f;
+            const float xt = 0.06f;
+            const float yt = 0.8f;
         }
     }
 

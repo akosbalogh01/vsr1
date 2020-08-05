@@ -8,12 +8,10 @@ vs::visualiser::visualiser(vs::t::mptr m, vs::t::rtarget w): renderable(w), play
     for (unsigned i = 0; i < vs::gfx::ledcnt; ++i) {
         bars[i].setFillColor(vs::gfx::color::bg);
         bars[i].setOutlineColor(sf::Color::Black);
-        bars[i].setOutlineThickness(2);
+        bars[i].setOutlineThickness(vs::gfx::layout::frame);
         bars[i].setSize(vs::gfx::minbarsize);
         bars[i].setOrigin(sf::Vector2f(0, vs::gfx::maxbarheight));
     }
-
-    update();
 }
 
 void vs::visualiser::setBrightness(const sf::Event& event) {
@@ -57,5 +55,8 @@ void vs::visualiser::reset() {
 }
 
 void vs::visualiser::update() {
-    asize = target->getSize() - sf::Vector2u(20, 100);
+    wsize = target->getSize();
+    unsigned xoff = (unsigned) wsize.x * vs::gfx::layout::xt;
+    unsigned yoff = (unsigned) wsize.y * vs::gfx::layout::yt;
+    area = sf::Vector2u(wsize.x - 2*xoff, yoff - 2 * vs::gfx::layout::y1);
 }

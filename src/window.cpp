@@ -60,3 +60,7 @@ void vs::windowman::render() {
     window.display();
 }
 
+void vs::windowman::update() {
+    gui.update();
+}
+

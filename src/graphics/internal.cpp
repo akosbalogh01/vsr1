@@ -13,6 +13,17 @@ void vs::graphics::drawText(const std::string& str, const sf::Vector2f& pos, con
     target->draw(text);
 }
 
+void vs::graphics::drawTextCentered(const std::string& str, const sf::Vector2f& pos, const unsigned size) {
+    text.setString(str);
+    text.setCharacterSize(size);
+    sf::FloatRect bounds = text.getGlobalBounds();
+    text.setOrigin((unsigned) bounds.width/2, (unsigned) bounds.height/2);
+    text.setPosition(pos);
+
+    target->draw(text);
+    text.setOrigin(0, 0);
+}
+
 void vs::graphics::drawRect(const sf::Vector2f& pos, const sf::Vector2f& size, const sf::Color& color) {
     rect.setFillColor(color);
     rect.setSize(size);
@@ -27,8 +38,8 @@ void vs::graphics::drawMetadata() {
     if (mtimer.getElapsedTime() < sf::seconds(5)) {
         vs::metadata song = playing->getMeta();
         const std::string str = "(" + song.getGenre() + ") " + song.getArtist() + ", " + song.getAlbum() + ": " + song.getTitle();
-        drawRect(sf::Vector2f(50, 0), sf::Vector2f(wsize.x - 100, 50), vs::gfx::color::bg);
-        drawText(str, sf::Vector2f(75, 5), 30);
+        drawRect(sf::Vector2f((unsigned) wsize.x * vs::gfx::layout::xt, 0), sf::Vector2f(wsize.x - 2 * ((unsigned) wsize.x * vs::gfx::layout::xt), 50), vs::gfx::color::bg);
+        drawText(str, sf::Vector2f((unsigned) wsize.x * vs::gfx::layout::xt + 25, 5), 30);
     }
 }
 
@@ -42,10 +53,16 @@ static inline std::string toString(const sf::Time& time) {
 }
 
 void vs::graphics::drawTimedata() {
+    unsigned xoff = (unsigned) wsize.x * vs::gfx::layout::xt;
+    unsigned yoff = (unsigned) wsize.y * vs::gfx::layout::yt;
     sf::Time t1 = playing->getTime().first;
     sf::Time t2 = playing->getTime().second;
-    drawText(toString(t1), sf::Vector2f(30, wsize.y - 100), 25);
-    drawText(toString(t2), sf::Vector2f(wsize.x - 98, wsize.y - 100), 25);
-    drawRect(sf::Vector2f(100, wsize.y - 93), sf::Vector2f(wsize.x - 220, 16), vs::gfx::color::bg);
-    drawRect(sf::Vector2f(102, wsize.y - 91), sf::Vector2f((wsize.x - 224)*((double) t1.asSeconds()/t2.asSeconds()), 12), vs::gfx::color::accent);
+    drawTextCentered(toString(t1), sf::Vector2f(xoff/2, yoff), 25);
+    drawTextCentered(toString(t2), sf::Vector2f(wsize.x - xoff/2, yoff), 25);
+    drawRect(sf::Vector2f(xoff, yoff), sf::Vector2f(wsize.x - 2*xoff, vs::gfx::layout::theight), vs::gfx::color::bg);
+    drawRect(
+        sf::Vector2f(xoff + 2 * vs::gfx::layout::frame, yoff + 2 * vs::gfx::layout::frame),
+        sf::Vector2f((wsize.x - 2 * (xoff + 2 * vs::gfx::layout::frame)) * ((double) t1.asSeconds()/t2.asSeconds()), vs::gfx::layout::theight - 4 * vs::gfx::layout::frame),
+        vs::gfx::color::accent
+    );
 }

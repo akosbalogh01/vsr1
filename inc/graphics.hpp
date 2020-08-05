@@ -19,6 +19,7 @@ namespace vs {
 
     private:
         void drawText(const std::string&, const sf::Vector2f&, const unsigned);
+        void drawTextCentered(const std::string&, const sf::Vector2f&, const unsigned);
         void drawRect(const sf::Vector2f&, const sf::Vector2f&, const sf::Color&);
         void drawMetadata();
         void drawTimedata();
