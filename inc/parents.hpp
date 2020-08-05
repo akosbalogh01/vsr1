@@ -3,19 +3,19 @@
 
 #include <memory>
 #include "SFML/Graphics.hpp"
+#include "consts.hpp"
 #include "music.hpp"
 
 namespace vs {
-    typedef sf::RenderWindow* const rtarget;
     class renderable {
     protected:
-        const rtarget target;
+        const vs::t::rtarget target;
 
     public:
         renderable() = delete;
         renderable(const renderable&) = delete;
 
-        explicit renderable(rtarget p): target(p) {
+        explicit renderable(vs::t::rtarget p): target(p) {
 
         }
 
@@ -23,16 +23,15 @@ namespace vs {
         virtual void update() {};
     };
 
-    typedef std::shared_ptr<music> mptr;
     class player {
     protected:
-        mptr playing;
+        vs::t::mptr playing;
 
     public:
         player() = delete;
         player(const player&) = delete;
 
-        explicit player(mptr m): playing(m) {
+        explicit player(vs::t::mptr m): playing(m) {
 
         }
     };

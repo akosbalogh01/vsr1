@@ -2,7 +2,7 @@
 #include "logic.hpp"
 
 int main(const int argc, const char* argv[]) {
-    vs::mptr playing = std::make_shared<vs::music>("null");
+    vs::t::mptr playing = std::make_shared<vs::music>("null");
     vs::logic program(argc, argv, playing);
 
     while (program.isRunning()) {

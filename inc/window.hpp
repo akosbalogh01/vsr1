@@ -1,6 +1,7 @@
 #ifndef VISU_WINDOW
 #define VISU_WINDOW
 
+#include <string>
 #include "SFML/Graphics.hpp"
 #include "SFML/Window/Event.hpp"
 #include "parents.hpp"
@@ -15,12 +16,12 @@ namespace vs {
     public:
         windowman() = delete;
         windowman(const windowman&) = delete;
-        explicit windowman(mptr);
+        explicit windowman(vs::t::mptr);
 
         bool pollEvent(sf::Event&);
         bool isOpen() const;
 
-        void windowCreate(const unsigned, const unsigned);
+        void windowCreate(const unsigned, const unsigned, const std::string&);
         void windowClose(const sf::Event&);
         void windowResize(const sf::Event&);
 

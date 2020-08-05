@@ -2,7 +2,7 @@
 #include "graphics.hpp"
 #include "visualiser.hpp"
 
-vs::visualiser::visualiser(vs::mptr m, vs::rtarget w): renderable(w), player(m) {
+vs::visualiser::visualiser(vs::t::mptr m, vs::t::rtarget w): renderable(w), player(m) {
     brightness = vs::gfx::lum0;
 
     for (unsigned i = 0; i < vs::gfx::ledcnt; ++i) {
@@ -52,14 +52,10 @@ void vs::visualiser::toggleTransmission(const sf::Event& event) {
     }
 }
 
-void vs::visualiser::updateArea(const sf::Vector2f& size) {
-    asize = size;
-}
-
 void vs::visualiser::reset() {
 
 }
 
 void vs::visualiser::update() {
-    asize = target->getSize() - sf::Vector2f(20, 100);
+    asize = target->getSize() - sf::Vector2u(20, 100);
 }

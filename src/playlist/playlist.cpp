@@ -3,7 +3,7 @@
 #include "audio.hpp"
 #include "playlist.hpp"
 
-vs::playlistman::playlistman(const mptr& m): player(m) {
+vs::playlistman::playlistman(const vs::t::mptr& m): player(m) {
     current = 0;
 }
 

@@ -21,7 +21,7 @@ namespace vs {
     public:
         logic() = delete;
         logic(const logic&) = delete;
-        explicit logic(const int, const char**, mptr);
+        explicit logic(const int, const char**, vs::t::mptr);
 
         bool isRunning() const;
 

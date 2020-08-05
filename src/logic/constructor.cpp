@@ -4,11 +4,11 @@
 
 using namespace std::placeholders;
 
-vs::logic::logic(const int argc, const char** argv, mptr m): player(m),  aman(m), wman(m) {
+vs::logic::logic(const int argc, const char** argv, vs::t::mptr m): player(m),  aman(m), wman(m) {
     started = false;
     settings.load(std::string("settings.ini"));
     std::cout << settings;
-    wman.windowCreate(std::stoi(settings.value("Window", "width")), std::stoi(settings.value("Window", "height")));
+    wman.windowCreate(std::stoi(settings.value("Window", "width")), std::stoi(settings.value("Window", "height")), settings.value("Window", "fullscreen"));
 
     eman.add(sf::Event::Resized, vs::fpair (std::bind(&vs::windowman::windowResize, &wman, _1), std::bind(&vs::windowman::windowResize, &wman, _1)));
     eman.add(sf::Event::Closed,  vs::fpair (std::bind(&vs::windowman::windowClose, &wman, _1),  std::bind(&vs::windowman::windowClose, &wman,  _1)));

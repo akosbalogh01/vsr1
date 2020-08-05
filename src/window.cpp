@@ -1,7 +1,7 @@
 #include <iostream>
 #include "window.hpp"
 
-vs::windowman::windowman(vs::mptr m): player(m), gui(&window, m) {
+vs::windowman::windowman(vs::t::mptr m): player(m), gui(&window, m) {
     window.setFramerateLimit(60);
 }
 
@@ -13,8 +13,14 @@ bool vs::windowman::isOpen() const {
     return window.isOpen();
 }
 
-void vs::windowman::windowCreate(const unsigned x, const unsigned y) {
-    window.create(sf::VideoMode(x, y), "Visualiser");
+void vs::windowman::windowCreate(const unsigned x, const unsigned y, const std::string& fs) {
+    if (fs == "true") {
+        window.create(sf::VideoMode(x, y), "Visualiser", sf::Style::Fullscreen);
+    }
+    else {
+        window.create(sf::VideoMode(x, y), "Visualiser");
+    }
+
     gui.resizeInterface(sf::Vector2u(x, y));
 }
 

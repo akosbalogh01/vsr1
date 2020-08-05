@@ -13,7 +13,7 @@ namespace vs {
         std::vector <music> songlist;
 
     public:
-        playlistman(const mptr&);
+        playlistman(const vs::t::mptr&);
 
         void init(const std::vector<std::string>&);
         void reset();

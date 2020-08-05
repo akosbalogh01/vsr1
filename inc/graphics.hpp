@@ -36,7 +36,7 @@ namespace vs {
     public:
         graphics() = delete;
         graphics(const graphics&) = delete;
-        explicit graphics(sf::RenderWindow* const, mptr);
+        explicit graphics(vs::t::rtarget, vs::t::mptr);
 
         void resizeInterface(const sf::Vector2u&);
         void setBrightness(const sf::Event&);
