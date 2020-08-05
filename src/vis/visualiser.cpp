@@ -6,7 +6,7 @@ vs::visualiser::visualiser(vs::t::mptr m, vs::t::rtarget w): renderable(w), play
     brightness = vs::gfx::lum0;
 
     for (unsigned i = 0; i < vs::gfx::ledcnt; ++i) {
-        bars[i].setFillColor(vs::gfx::gbgcolor);
+        bars[i].setFillColor(vs::gfx::color::bg);
         bars[i].setOutlineColor(sf::Color::Black);
         bars[i].setOutlineThickness(2);
         bars[i].setSize(vs::gfx::minbarsize);

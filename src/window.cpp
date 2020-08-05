@@ -55,7 +55,7 @@ void vs::windowman::displayMetadata() {
 }
 
 void vs::windowman::render() {
-    window.clear(vs::gfx::gbgcolor);
+    window.clear(vs::gfx::color::bg);
     gui.render();
     window.display();
 }

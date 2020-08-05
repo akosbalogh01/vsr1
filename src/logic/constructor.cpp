@@ -6,9 +6,13 @@ using namespace std::placeholders;
 
 vs::logic::logic(const int argc, const char** argv, vs::t::mptr m): player(m),  aman(m), wman(m) {
     started = false;
-    settings.load(std::string("settings.ini"));
+    settings.load(std::string(vs::path::settings));
     std::cout << settings;
-    wman.windowCreate(std::stoi(settings.value("Window", "width")), std::stoi(settings.value("Window", "height")), settings.value("Window", "fullscreen"));
+    wman.windowCreate(
+        std::stoi(settings.value(vs::settings::width.first, vs::settings::width.second)),
+        std::stoi(settings.value(vs::settings::height.first, vs::settings::height.second)),
+        settings.value(vs::settings::fullscreen.first, vs::settings::fullscreen.second)
+    );
 
     eman.add(sf::Event::Resized, vs::fpair (std::bind(&vs::windowman::windowResize, &wman, _1), std::bind(&vs::windowman::windowResize, &wman, _1)));
     eman.add(sf::Event::Closed,  vs::fpair (std::bind(&vs::windowman::windowClose, &wman, _1),  std::bind(&vs::windowman::windowClose, &wman,  _1)));
@@ -19,7 +23,7 @@ vs::logic::logic(const int argc, const char** argv, vs::t::mptr m): player(m),  
     eman.add(sf::Event::KeyReleased, vs::fpair(std::bind(&vs::audioman::prevSong, &aman, _1), std::bind(&vs::audioman::jumpBack, &aman, _1)));
     eman.add(sf::Event::KeyReleased, vs::fpair(std::bind(&vs::audioman::eventNextSong, &aman, _1), std::bind(&vs::audioman::jumpForward, &aman, _1)));
 
-    std::ifstream playlist("playlist.m3u");
+    std::ifstream playlist(vs::path::playlist);
     std::string line;
     std::vector <std::string> filelist;
     if (playlist.good()) {
@@ -30,7 +34,6 @@ vs::logic::logic(const int argc, const char** argv, vs::t::mptr m): player(m),  
         aman.buildPlaylist(filelist);
     }
     else {
-        std::invalid_argument playlist_exception("Invalid playlist file");
-        throw playlist_exception;
+        throw vs::except::playlist;
     }
 }

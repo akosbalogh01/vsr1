@@ -1,7 +1,6 @@
 #ifndef VISU_GRAPHICS
 #define VISU_GRAPHICS
 
-#include <memory>
 #include "SFML/Graphics.hpp"
 #include "parents.hpp"
 #include "visualiser.hpp"
@@ -9,15 +8,6 @@
 #include "music.hpp"
 
 namespace vs {
-    namespace gfx {
-        const sf::Color gbgcolor = sf::Color(32, 32, 32);
-        const sf::Color lbgcolor = sf::Color(12, 12, 12);
-        const std::string fontpath = "Roboto-Regular.ttf";
-        const sf::Color textcolor = sf::Color(128, 128, 128);
-        const sf::Color framecolor = sf::Color::Black;
-        const unsigned frame = 1; // in pixels
-    }
-
     class graphics : public renderable, public player {
     private:
         sf::Clock mtimer;

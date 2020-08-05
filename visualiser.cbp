@@ -80,6 +80,8 @@
 			<Add directory="C:/Users/akosb/Programming/SFML-2.5.1/lib" />
 		</Linker>
 		<Unit filename="inc/audio.hpp" />
+		<Unit filename="inc/bar.hpp" />
+		<Unit filename="inc/consts.hpp" />
 		<Unit filename="inc/events.hpp" />
 		<Unit filename="inc/graphics.hpp" />
 		<Unit filename="inc/ini/inifile.hpp" />
