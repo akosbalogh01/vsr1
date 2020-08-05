@@ -2,13 +2,25 @@
 #define VISU_PARENTS
 
 #include <memory>
+#include "SFML/Graphics.hpp"
 #include "music.hpp"
 
 namespace vs {
+    typedef sf::RenderWindow* const rtarget;
     class renderable {
+    protected:
+        const rtarget target;
+
     public:
-        virtual void render()  = 0;
-        virtual void update() = 0;
+        renderable() = delete;
+        renderable(const renderable&) = delete;
+
+        explicit renderable(rtarget p): target(p) {
+
+        }
+
+        virtual void render() {};
+        virtual void update() {};
     };
 
     typedef std::shared_ptr<music> mptr;

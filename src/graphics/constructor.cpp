@@ -1,7 +1,7 @@
 #include "metadata.hpp"
 #include "graphics.hpp"
 
-vs::graphics::graphics(sf::RenderWindow* const window, vs::mptr m): player(m), target(window), vis(m) {
+vs::graphics::graphics(vs::rtarget window, vs::mptr m): renderable(window), player(m), vis(m, window) {
     font.loadFromFile(vs::gfx::fontpath);
     text.setFont(font);
     text.setFillColor(vs::gfx::textcolor);

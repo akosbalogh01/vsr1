@@ -1,8 +1,19 @@
 #include <iostream>
+#include "graphics.hpp"
 #include "visualiser.hpp"
 
-vs::visualiser::visualiser(vs::mptr m): player(m) {
+vs::visualiser::visualiser(vs::mptr m, vs::rtarget w): renderable(w), player(m) {
     brightness = vs::gfx::lum0;
+
+    for (unsigned i = 0; i < vs::gfx::ledcnt; ++i) {
+        bars[i].setFillColor(vs::gfx::gbgcolor);
+        bars[i].setOutlineColor(sf::Color::Black);
+        bars[i].setOutlineThickness(2);
+        bars[i].setSize(vs::gfx::minbarsize);
+        bars[i].setOrigin(sf::Vector2f(0, vs::gfx::maxbarheight));
+    }
+
+    update();
 }
 
 void vs::visualiser::setBrightness(const sf::Event& event) {
@@ -41,7 +52,14 @@ void vs::visualiser::toggleTransmission(const sf::Event& event) {
     }
 }
 
+void vs::visualiser::updateArea(const sf::Vector2f& size) {
+    asize = size;
+}
+
+void vs::visualiser::reset() {
+
+}
 
 void vs::visualiser::update() {
-
+    asize = target->getSize() - sf::Vector2f(20, 100);
 }

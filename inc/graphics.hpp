@@ -22,7 +22,6 @@ namespace vs {
     private:
         sf::Clock mtimer;
         sf::Vector2u wsize;
-        sf::RenderWindow* const target;
         visualiser vis;
         sf::Font font;
         sf::Text text;
