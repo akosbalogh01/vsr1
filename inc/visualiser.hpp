@@ -1,9 +1,11 @@
 #ifndef VISU_VISUALISER
 #define VISU_VISUALISER
 
+#include <vector>
 #include "SFML/Graphics.hpp"
 #include "SFML/Window/Event.hpp"
 #include "parents.hpp"
+#include "bar.hpp"
 
 namespace vs {
     namespace gfx {
@@ -17,7 +19,7 @@ namespace vs {
     class visualiser : public renderable, public player {
     private:
         sf::Vector2u wsize, area;
-        sf::RectangleShape bars[vs::gfx::ledcnt];
+        std::vector <vs::bar> bars;
         unsigned brightness;
         bool tx, en;
 

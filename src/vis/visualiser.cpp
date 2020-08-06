@@ -4,14 +4,10 @@
 
 vs::visualiser::visualiser(vs::t::mptr m, vs::t::rtarget w): renderable(w), player(m) {
     brightness = vs::gfx::lum0;
+    bars = std::vector<vs::bar>(vs::gfx::ledcnt, vs::bar(w));
 
-    for (unsigned i = 0; i < vs::gfx::ledcnt; ++i) {
-        bars[i].setFillColor(vs::gfx::color::bg);
-        bars[i].setOutlineColor(sf::Color::Black);
-        bars[i].setOutlineThickness(vs::gfx::layout::frame);
-        bars[i].setSize(vs::gfx::minbarsize);
-        bars[i].setOrigin(sf::Vector2f(0, vs::gfx::maxbarheight));
-    }
+
+    en = true;
 }
 
 void vs::visualiser::setBrightness(const sf::Event& event) {
@@ -59,4 +55,10 @@ void vs::visualiser::update() {
     unsigned xoff = (unsigned) wsize.x * vs::gfx::layout::xt;
     unsigned yoff = (unsigned) wsize.y * vs::gfx::layout::yt;
     area = sf::Vector2u(wsize.x - 2*xoff, yoff - 2 * vs::gfx::layout::y1);
+
+    float width = (float) area.x/vs::gfx::ledcnt;
+    for (unsigned i = 0; i < vs::gfx::ledcnt; ++i) {
+        bars[i].setColor(vs::gfx::color::bg);
+        bars[i].setVertices(sf::Vector2f((wsize.x * vs::gfx::layout::xt) + i * width, wsize.y * vs::gfx::layout::yt - 2 * vs::gfx::layout::y1), sf::Vector2f(width, (wsize.y * vs::gfx::layout::yt)/2));
+    }
 }

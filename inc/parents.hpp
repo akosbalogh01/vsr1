@@ -13,7 +13,6 @@ namespace vs {
 
     public:
         renderable() = delete;
-        renderable(const renderable&) = delete;
 
         explicit renderable(vs::t::rtarget p): target(p) {
 
