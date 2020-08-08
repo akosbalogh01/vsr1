@@ -103,6 +103,8 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.origin("r:de050263-7aec-4e3f-a874-7935d74b9031(playlist.structure)/4927355640491471418");
     b.version(2);
     b.property("stamp", 0x44617bd94982f23bL).type(PrimitiveTypeId.INTEGER).origin("4927355640491471419").done();
+    b.property("brightness", 0x54b5cde27c2af594L).type(PrimitiveTypeId.INTEGER).origin("6104011242600068500").done();
+    b.property("volume", 0x54b5cde27c2af597L).type(PrimitiveTypeId.INTEGER).origin("6104011242600068503").done();
     b.aggregate("begin", 0x44617bd94982f23fL).target(0xe808b2f670da436eL, 0xbf6b14e1ed6cce5fL, 0x44617bd94982f15eL).optional(false).ordered(true).multiple(false).origin("4927355640491471423").done();
     b.aggregate("bins", 0x44617bd94982f23dL).target(0xe808b2f670da436eL, 0xbf6b14e1ed6cce5fL, 0x44617bd94982f15dL).optional(true).ordered(true).multiple(true).origin("4927355640491471421").done();
     b.aggregate("end", 0x44617bd94982f242L).target(0xe808b2f670da436eL, 0xbf6b14e1ed6cce5fL, 0x44617bd94982f15eL).optional(false).ordered(true).multiple(false).origin("4927355640491471426").done();

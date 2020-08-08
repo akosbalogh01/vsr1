@@ -9,6 +9,8 @@
     <language id="e808b2f6-70da-436e-bf6b-14e1ed6cce5f" name="playlist">
       <concept id="4927355640491471418" name="playlist.structure.Timestamp" flags="ng" index="dSSBz">
         <property id="4927355640491471419" name="stamp" index="dSSBy" />
+        <property id="6104011242600068503" name="volume" index="CBNxP" />
+        <property id="6104011242600068500" name="brightness" index="CBNxQ" />
         <child id="4927355640491471426" name="end" index="dSSAr" />
         <child id="4927355640491471421" name="bins" index="dSSB$" />
         <child id="4927355640491471423" name="begin" index="dSSBA" />
@@ -19,7 +21,7 @@
       </concept>
       <concept id="4927355640491471198" name="playlist.structure.Color" flags="ng" index="dSSE7">
         <property id="4927355640491471199" name="r" index="dSSE6" />
-        <property id="4927355640491471208" name="a" index="dSSEL" />
+        <property id="4927355640491471208" name="alpha" index="dSSEL" />
         <property id="4927355640491471201" name="g" index="dSSES" />
         <property id="4927355640491471204" name="b" index="dSSEX" />
       </concept>
@@ -43,6 +45,8 @@
       <property role="dSSFN" value="C:\Users\balogha\Music\Fluke\Puppy\Fluke - Puppy - 01 - Snapshot.flac" />
       <node concept="dSSBz" id="4hxuX_9x1G$" role="dSFt1">
         <property role="dSSBy" value="0" />
+        <property role="CBNxP" value="100" />
+        <property role="CBNxQ" value="100" />
         <node concept="dSSE4" id="4hxuX_9x1GE" role="dSSB$">
           <property role="dSSCJ" value="15" />
           <node concept="dSSE7" id="4hxuX_9x1GF" role="dSSCx">
@@ -67,6 +71,8 @@
       </node>
       <node concept="dSSBz" id="4hxuX_9x1H4" role="dSFt1">
         <property role="dSSBy" value="60000" />
+        <property role="CBNxP" value="100" />
+        <property role="CBNxQ" value="100" />
         <node concept="dSSE4" id="4hxuX_9x1Hf" role="dSSB$">
           <property role="dSSCJ" value="70" />
           <node concept="dSSE7" id="4hxuX_9x1Hg" role="dSSCx">
@@ -94,6 +100,8 @@
       <property role="dSSFN" value="C:\Users\balogha\Music\Fluke\Puppy\Fluke - Puppy - 02 - My Spine.flac" />
       <node concept="dSSBz" id="4hxuX_9x1GY" role="dSFt1">
         <property role="dSSBy" value="0" />
+        <property role="CBNxP" value="100" />
+        <property role="CBNxQ" value="100" />
         <node concept="dSSE7" id="4hxuX_9x1GZ" role="dSSBA">
           <property role="dSSE6" value="128" />
           <property role="dSSES" value="128" />

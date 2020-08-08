@@ -131,6 +131,16 @@
       <property role="TrG5h" value="stamp" />
       <ref role="AX2Wp" to="tpck:fKAQMTA" resolve="integer" />
     </node>
+    <node concept="1TJgyi" id="5iPNu9WaJmk" role="1TKVEl">
+      <property role="IQ2nx" value="6104011242600068500" />
+      <property role="TrG5h" value="brightness" />
+      <ref role="AX2Wp" to="tpck:fKAQMTA" resolve="integer" />
+    </node>
+    <node concept="1TJgyi" id="5iPNu9WaJmn" role="1TKVEl">
+      <property role="IQ2nx" value="6104011242600068503" />
+      <property role="TrG5h" value="volume" />
+      <ref role="AX2Wp" to="tpck:fKAQMTA" resolve="integer" />
+    </node>
     <node concept="1TJgyj" id="4hxuX_9wJ8Z" role="1TKVEi">
       <property role="IQ2ns" value="4927355640491471423" />
       <property role="20lmBu" value="fLJjDmT/aggregation" />

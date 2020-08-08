@@ -11,7 +11,102 @@
   <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1070475587102:jetbrains.mps.baseLanguage.structure.SuperConstructorInvocation" />
   <root>
     <file name="ConstraintsAspectDescriptor.java">
-      <unit at="13,0,31,0" name="playlist.constraints.ConstraintsAspectDescriptor" />
+      <unit at="13,0,33,0" name="playlist.constraints.ConstraintsAspectDescriptor" />
+    </file>
+  </root>
+  <root nodeRef="r:fbac261e-7a0d-4960-b28a-5a86d5009e67(playlist.constraints)/6104011242600198915">
+    <file name="Timestamp_Constraints.java">
+      <node id="6104011242600198915" at="20,34,21,33" concept="8" />
+      <node id="6104011242600198916" at="25,61,26,42" concept="8" />
+      <node id="6104011242600198916" at="29,38,30,18" concept="5" />
+      <node id="6104011242600198916" at="32,0,33,0" concept="6" trace="validatePropertyBreakingPoint" />
+      <node id="6104011242600198916" at="34,109,35,100" concept="4" />
+      <node id="6104011242600198916" at="36,53,37,75" concept="1" />
+      <node id="6104011242600198916" at="38,7,39,20" concept="5" />
+      <node id="6104011242600199893" at="42,59,43,20" concept="5" />
+      <node id="6104011242600199895" at="44,7,45,19" concept="5" />
+      <node id="6104011242600200959" at="49,65,50,46" concept="8" />
+      <node id="6104011242600200959" at="53,38,54,18" concept="5" />
+      <node id="6104011242600200959" at="56,0,57,0" concept="6" trace="validatePropertyBreakingPoint" />
+      <node id="6104011242600200959" at="58,109,59,100" concept="4" />
+      <node id="6104011242600200959" at="60,53,61,75" concept="1" />
+      <node id="6104011242600200959" at="62,7,63,20" concept="5" />
+      <node id="6104011242600201143" at="66,59,67,20" concept="5" />
+      <node id="6104011242600201145" at="68,7,69,19" concept="5" />
+      <node id="6104011242600198915" at="73,84,74,119" concept="4" />
+      <node id="6104011242600198916" at="74,119,75,65" concept="1" />
+      <node id="6104011242600200959" at="75,65,76,73" concept="1" />
+      <node id="6104011242600198915" at="76,73,77,22" concept="5" />
+      <node id="6104011242600198915" at="81,0,82,0" concept="6" trace="Timestamp$wh" />
+      <node id="6104011242600198915" at="85,0,86,0" concept="6" trace="volume$NnBk" />
+      <node id="6104011242600198915" at="86,0,87,0" concept="6" trace="brightness$Nn_R" />
+      <node id="6104011242600198915" at="20,0,23,0" concept="0" trace="Timestamp_Constraints#()V" />
+      <node id="6104011242600198916" at="25,0,28,0" concept="0" trace="Volume_Property#(Ljetbrains/mps/smodel/runtime/ConstraintsDescriptor;)V" />
+      <node id="6104011242600198916" at="35,100,38,7" concept="2" />
+      <node id="6104011242600199882" at="41,82,44,7" concept="2" />
+      <node id="6104011242600200959" at="49,0,52,0" concept="0" trace="Brightness_Property#(Ljetbrains/mps/smodel/runtime/ConstraintsDescriptor;)V" />
+      <node id="6104011242600200959" at="59,100,62,7" concept="2" />
+      <node id="6104011242600201132" at="65,82,68,7" concept="2" />
+      <node id="6104011242600198916" at="28,0,32,0" concept="3" trace="hasOwnValidator#()Z" />
+      <node id="6104011242600200959" at="52,0,56,0" concept="3" trace="hasOwnValidator#()Z" />
+      <node id="6104011242600198916" at="41,0,47,0" concept="7" trace="staticValidateProperty#(Lorg/jetbrains/mps/openapi/model/SNode;I)Z" />
+      <node id="6104011242600200959" at="65,0,71,0" concept="7" trace="staticValidateProperty#(Lorg/jetbrains/mps/openapi/model/SNode;I)Z" />
+      <node id="6104011242600198915" at="72,0,79,0" concept="3" trace="getSpecifiedProperties#()Ljava/util/Map;" />
+      <node id="6104011242600198916" at="33,0,41,0" concept="3" trace="validateValue#(Lorg/jetbrains/mps/openapi/model/SNode;Ljava/lang/Object;Ljetbrains/mps/smodel/runtime/CheckingNodeContext;)Z" />
+      <node id="6104011242600200959" at="57,0,65,0" concept="3" trace="validateValue#(Lorg/jetbrains/mps/openapi/model/SNode;Ljava/lang/Object;Ljetbrains/mps/smodel/runtime/CheckingNodeContext;)Z" />
+      <scope id="6104011242600198915" at="20,34,21,33" />
+      <scope id="6104011242600198916" at="25,61,26,42" />
+      <scope id="6104011242600198916" at="29,38,30,18" />
+      <scope id="6104011242600198916" at="36,53,37,75" />
+      <scope id="6104011242600199892" at="42,59,43,20" />
+      <scope id="6104011242600200959" at="49,65,50,46" />
+      <scope id="6104011242600200959" at="53,38,54,18" />
+      <scope id="6104011242600200959" at="60,53,61,75" />
+      <scope id="6104011242600201142" at="66,59,67,20" />
+      <scope id="6104011242600198915" at="20,0,23,0" />
+      <scope id="6104011242600198916" at="25,0,28,0">
+        <var name="container" id="6104011242600198916" />
+      </scope>
+      <scope id="6104011242600200959" at="49,0,52,0">
+        <var name="container" id="6104011242600200959" />
+      </scope>
+      <scope id="6104011242600198916" at="28,0,32,0" />
+      <scope id="6104011242600199003" at="41,82,45,19" />
+      <scope id="6104011242600200959" at="52,0,56,0" />
+      <scope id="6104011242600201068" at="65,82,69,19" />
+      <scope id="6104011242600198915" at="73,84,77,22">
+        <var name="properties" id="6104011242600198915" />
+      </scope>
+      <scope id="6104011242600198916" at="34,109,39,20">
+        <var name="result" id="6104011242600198916" />
+      </scope>
+      <scope id="6104011242600200959" at="58,109,63,20">
+        <var name="result" id="6104011242600200959" />
+      </scope>
+      <scope id="6104011242600198916" at="41,0,47,0">
+        <var name="node" id="6104011242600198916" />
+        <var name="propertyValue" id="6104011242600198916" />
+      </scope>
+      <scope id="6104011242600200959" at="65,0,71,0">
+        <var name="node" id="6104011242600200959" />
+        <var name="propertyValue" id="6104011242600200959" />
+      </scope>
+      <scope id="6104011242600198915" at="72,0,79,0" />
+      <scope id="6104011242600198916" at="33,0,41,0">
+        <var name="checkingNodeContext" id="6104011242600198916" />
+        <var name="node" id="6104011242600198916" />
+        <var name="propertyValue" id="6104011242600198916" />
+      </scope>
+      <scope id="6104011242600200959" at="57,0,65,0">
+        <var name="checkingNodeContext" id="6104011242600200959" />
+        <var name="node" id="6104011242600200959" />
+        <var name="propertyValue" id="6104011242600200959" />
+      </scope>
+      <unit id="6104011242600198915" at="80,0,83,0" name="playlist.constraints.Timestamp_Constraints$CONCEPTS" />
+      <unit id="6104011242600198915" at="84,0,88,0" name="playlist.constraints.Timestamp_Constraints$PROPS" />
+      <unit id="6104011242600198916" at="24,0,48,0" name="playlist.constraints.Timestamp_Constraints$Volume_Property" />
+      <unit id="6104011242600200959" at="48,0,72,0" name="playlist.constraints.Timestamp_Constraints$Brightness_Property" />
+      <unit id="6104011242600198915" at="19,0,89,0" name="playlist.constraints.Timestamp_Constraints" />
     </file>
   </root>
   <root nodeRef="r:fbac261e-7a0d-4960-b28a-5a86d5009e67(playlist.constraints)/7381120681571977006">

@@ -1,3 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<debug-info version="2" />
+<debug-info version="2">
+  <root nodeRef="r:7df0b85c-1ac1-482d-bd2d-95d15fb6164f(playlist.sandbox)/4927355640491527315">
+    <file name="Puppy.xml">
+      <unit id="4927355640491527315" at="1,0,32,11" name="playlist.sandbox.Puppy" />
+    </file>
+  </root>
+</debug-info>
 
