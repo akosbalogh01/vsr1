@@ -7,23 +7,18 @@ vs::playlistman::playlistman(const vs::t::mptr& m): player(m) {
     current = 0;
 }
 
-void vs::playlistman::init(const std::vector<std::string>& filelist) {
-    for (auto filename: filelist) {
-        std::ifstream f(filename);
-        if (f.good()) {
-            songlist.push_back(vs::music(filename));
-        }
-        else {
-            std::cout << "Not found: " << filename << std::endl;
-        }
-    }
+void vs::playlistman::add(const vs::music& m) {
+    songlist.push_back(m);
+}
 
+void vs::playlistman::init() {
     for (unsigned i = 0; i < vs::audio::bufsize; i++) {
         songlist[i].initBuffer();
     }
 
     playing->copyData(songlist[0]);
 }
+
 
 void vs::playlistman::reset() {
     std::cout << "Reset playlist" << std::endl;

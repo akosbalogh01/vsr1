@@ -15,7 +15,7 @@
       <unit at="10,0,36,0" name="playlist.structure.LanguageConceptSwitch" />
     </file>
     <file name="StructureAspectDescriptor.java">
-      <unit at="15,0,114,0" name="playlist.structure.StructureAspectDescriptor" />
+      <unit at="15,0,112,0" name="playlist.structure.StructureAspectDescriptor" />
     </file>
   </root>
   <root nodeRef="r:de050263-7aec-4e3f-a874-7935d74b9031(playlist.structure)/4927355640491471110">
@@ -192,16 +192,14 @@
       <node id="4927355640491471419" at="104,17,105,112" concept="0" />
       <node id="6104011242600068500" at="105,112,106,117" concept="0" />
       <node id="6104011242600068503" at="106,117,107,113" concept="0" />
-      <node id="4927355640491471423" at="107,113,108,199" concept="0" />
-      <node id="4927355640491471421" at="108,199,109,196" concept="0" />
-      <node id="4927355640491471426" at="109,196,110,197" concept="0" />
-      <node id="4927355640491471418" at="110,197,111,22" concept="4" />
-      <node id="4927355640491471418" at="100,0,113,0" concept="6" trace="createDescriptorForTimestamp#()Ljetbrains/mps/smodel/runtime/ConceptDescriptor;" />
+      <node id="4927355640491471421" at="107,113,108,196" concept="0" />
+      <node id="4927355640491471418" at="108,196,109,22" concept="4" />
+      <node id="4927355640491471418" at="100,0,111,0" concept="6" trace="createDescriptorForTimestamp#()Ljetbrains/mps/smodel/runtime/ConceptDescriptor;" />
       <scope id="4927355640491471418" at="50,43,51,34" />
-      <scope id="4927355640491471418" at="100,67,111,22">
+      <scope id="4927355640491471418" at="100,67,109,22">
         <var name="b" id="4927355640491471418" />
       </scope>
-      <scope id="4927355640491471418" at="100,0,113,0" />
+      <scope id="4927355640491471418" at="100,0,111,0" />
     </file>
   </root>
 </debug-info>

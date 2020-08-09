@@ -5,6 +5,7 @@
 #include <memory>
 #include "SFML/Audio.hpp"
 #include "metadata.hpp"
+#include "point.hpp"
 
 namespace vs {
     class music {
@@ -13,10 +14,12 @@ namespace vs {
         vs::metadata meta;
         sf::SoundBuffer buffer;
         sf::Sound sound;
+        std::vector <vs::point> cvec;
 
     public:
         music() = delete;
         music(const std::string&);
+        music(const std::string&, const std::vector <vs::point>&);
         music(const vs::music&);
         music(vs::music&&);
 

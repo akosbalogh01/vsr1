@@ -15,13 +15,13 @@ public class Bin_TextGen extends TextGenDescriptorBase {
   @Override
   public void generateText(final TextGenContext ctx) {
     final TextGenSupport tgs = new TextGenSupport(ctx);
-    tgs.append("<bin");
+    tgs.indent();
+    tgs.append("<bin index=\"");
     tgs.append("" + SPropertyOperations.getInteger(ctx.getPrimaryInput(), PROPS.index$uW$y));
-    tgs.append(">");
+    tgs.append("\" color=\"");
     tgs.appendNode(SLinkOperations.getTarget(ctx.getPrimaryInput(), LINKS.color$uW_w));
-    tgs.append("</bin");
-    tgs.append("" + SPropertyOperations.getInteger(ctx.getPrimaryInput(), PROPS.index$uW$y));
-    tgs.append(">");
+    tgs.append("\">");
+    tgs.append("</bin>");
     tgs.newLine();
   }
 

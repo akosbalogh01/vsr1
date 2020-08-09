@@ -26,7 +26,7 @@ namespace vs {
         audioman(const audioman&) = delete;
         explicit audioman(vs::t::mptr);
 
-        void buildPlaylist(const std::vector<std::string>&);
+        void buildPlaylist(std::vector<char>&);
 
         void eventPaused(const sf::Event&);
         void togglePaused();

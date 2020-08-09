@@ -5,6 +5,11 @@ vs::music::music(const std::string& fpath): meta(fpath) {
     buffered = false;
 }
 
+vs::music::music(const std::string& fpath, const std::vector <vs::point>& points): meta(fpath) {
+    buffered = false;
+    cvec = points;
+}
+
 vs::music::music(const vs::music& other): meta(other.meta) {
     buffered = false;
     this->buffer = sf::SoundBuffer();

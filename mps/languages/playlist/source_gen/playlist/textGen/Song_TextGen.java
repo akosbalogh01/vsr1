@@ -18,14 +18,11 @@ public class Song_TextGen extends TextGenDescriptorBase {
     final TextGenSupport tgs = new TextGenSupport(ctx);
     tgs.newLine();
     tgs.indent();
-    tgs.append("<Song>");
+    tgs.append("<Song file=\"");
+    tgs.append(SPropertyOperations.getString(ctx.getPrimaryInput(), PROPS.filepath$uHMY));
+    tgs.append("\">");
     tgs.newLine();
     ctx.getBuffer().area().increaseIndent();
-    tgs.indent();
-    tgs.append("<file>");
-    tgs.append(SPropertyOperations.getString(ctx.getPrimaryInput(), PROPS.filepath$uHMY));
-    tgs.append("</file>");
-    tgs.newLine();
     for (SNode item : SLinkOperations.getChildren(ctx.getPrimaryInput(), LINKS.timestamps$b$DG)) {
       tgs.appendNode(item);
     }

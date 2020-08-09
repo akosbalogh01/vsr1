@@ -1,0 +1,32 @@
+<Playlist>
+    <Song>
+      <file>C:\Users\balogha\Music\Fluke\Puppy\Fluke - Puppy - 01 - Snapshot.flac</file>
+      <ControlPoint>
+        <timestamp>0</timestamp>
+        <volume>100</volume>
+        <brightness>100</brightness>
+        <begin>RGBA(128, 128, 128, 255)</begin>
+        <bin15>RGBA(0, 255, 255, 255)</bin15>
+        <end>RGBA(255, 0, 0, 255)</end>
+      </ControlPoint>
+      <ControlPoint>
+        <timestamp>60000</timestamp>
+        <volume>100</volume>
+        <brightness>100</brightness>
+        <begin>RGBA(0, 255, 128, 255)</begin>
+        <bin70>RGBA(0, 128, 128, 255)</bin70>
+        <end>RGBA(0, 255, 0, 255)</end>
+      </ControlPoint>
+    </Song>
+
+    <Song>
+      <file>C:\Users\balogha\Music\Fluke\Puppy\Fluke - Puppy - 02 - My Spine.flac</file>
+      <ControlPoint>
+        <timestamp>0</timestamp>
+        <volume>100</volume>
+        <brightness>100</brightness>
+        <begin>RGBA(128, 128, 128, 255)</begin>
+                <end>RGBA(255, 0, 0, 255)</end>
+      </ControlPoint>
+    </Song>
+</Playlist>

@@ -15,7 +15,8 @@ namespace vs {
     public:
         playlistman(const vs::t::mptr&);
 
-        void init(const std::vector<std::string>&);
+        void add(const vs::music&);
+        void init();
         void reset();
         void initBuffer(const unsigned);
         void dropBuffer(const unsigned);

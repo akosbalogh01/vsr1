@@ -21,7 +21,7 @@ namespace vs {
         bool pollEvent(sf::Event&);
         bool isOpen() const;
 
-        void windowCreate(const unsigned, const unsigned, const std::string&);
+        void windowCreate(const std::string&, const unsigned, const unsigned, const std::string&);
         void windowClose(const sf::Event&);
         void windowResize(const sf::Event&);
 

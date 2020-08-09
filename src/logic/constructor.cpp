@@ -1,4 +1,6 @@
 #include <stdexcept>
+#include <iterator>
+#include <iostream>
 #include <fstream>
 #include "logic.hpp"
 
@@ -9,6 +11,7 @@ vs::logic::logic(const int argc, const char** argv, vs::t::mptr m): player(m),  
     settings.load(std::string(vs::path::settings));
     std::cout << settings;
     wman.windowCreate(
+        std::string(argv[1]),
         std::stoi(settings.value(vs::settings::width.first, vs::settings::width.second)),
         std::stoi(settings.value(vs::settings::height.first, vs::settings::height.second)),
         settings.value(vs::settings::fullscreen.first, vs::settings::fullscreen.second)
@@ -23,15 +26,11 @@ vs::logic::logic(const int argc, const char** argv, vs::t::mptr m): player(m),  
     eman.add(sf::Event::KeyReleased, vs::fpair(std::bind(&vs::audioman::prevSong, &aman, _1), std::bind(&vs::audioman::jumpBack, &aman, _1)));
     eman.add(sf::Event::KeyReleased, vs::fpair(std::bind(&vs::audioman::eventNextSong, &aman, _1), std::bind(&vs::audioman::jumpForward, &aman, _1)));
 
-    std::ifstream playlist(vs::path::playlist);
-    std::string line;
-    std::vector <std::string> filelist;
+    std::ifstream playlist(argv[1]);
     if (playlist.good()) {
-        while (std::getline(playlist, line)) {
-            filelist.push_back(line);
-        }
-
-        aman.buildPlaylist(filelist);
+        std::vector <char> xmlbuffer((std::istreambuf_iterator<char>(playlist)), std::istreambuf_iterator<char>());
+        xmlbuffer.push_back('\0');
+        aman.buildPlaylist(xmlbuffer);
     }
     else {
         throw vs::except::playlist;

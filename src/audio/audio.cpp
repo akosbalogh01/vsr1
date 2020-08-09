@@ -8,10 +8,6 @@ vs::audioman::audioman(vs::t::mptr m): player(m), pman(m)  {
     autoplay = true;
 }
 
-void vs::audioman::buildPlaylist(const std::vector<std::string>& filelist) {
-    pman.init(filelist);
-}
-
 void vs::audioman::setVolume(const sf::Event& event) {
     const int delta = vs::audio::vmul * (int) event.mouseWheelScroll.delta;
     const int temp = volume + delta;

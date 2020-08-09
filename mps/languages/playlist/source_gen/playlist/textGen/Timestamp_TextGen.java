@@ -6,8 +6,8 @@ import jetbrains.mps.text.rt.TextGenDescriptorBase;
 import jetbrains.mps.text.rt.TextGenContext;
 import jetbrains.mps.text.impl.TextGenSupport;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SPropertyOperations;
-import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
 import org.jetbrains.mps.openapi.model.SNode;
+import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
 import org.jetbrains.mps.openapi.language.SProperty;
 import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import org.jetbrains.mps.openapi.language.SContainmentLink;
@@ -17,38 +17,18 @@ public class Timestamp_TextGen extends TextGenDescriptorBase {
   public void generateText(final TextGenContext ctx) {
     final TextGenSupport tgs = new TextGenSupport(ctx);
     tgs.indent();
-    tgs.append("<ControlPoint>");
+    tgs.append("<ControlPoint timestamp=\"");
+    tgs.append("" + SPropertyOperations.getInteger(ctx.getPrimaryInput(), PROPS.stamp$v3Bw));
+    tgs.append("\" volume=\"");
+    tgs.append("" + SPropertyOperations.getInteger(ctx.getPrimaryInput(), PROPS.volume$NnBk));
+    tgs.append("\" brightness=\"");
+    tgs.append("" + SPropertyOperations.getInteger(ctx.getPrimaryInput(), PROPS.brightness$Nn_R));
+    tgs.append("\">");
     tgs.newLine();
     ctx.getBuffer().area().increaseIndent();
-    tgs.indent();
-    tgs.append("<timestamp>");
-    tgs.append("" + SPropertyOperations.getInteger(ctx.getPrimaryInput(), PROPS.stamp$v3Bw));
-    tgs.append("</timestamp>");
-    tgs.newLine();
-    tgs.indent();
-    tgs.append("<volume>");
-    tgs.append("" + SPropertyOperations.getInteger(ctx.getPrimaryInput(), PROPS.volume$NnBk));
-    tgs.append("</volume>");
-    tgs.newLine();
-    tgs.indent();
-    tgs.append("<brightness>");
-    tgs.append("" + SPropertyOperations.getInteger(ctx.getPrimaryInput(), PROPS.brightness$Nn_R));
-    tgs.append("</brightness>");
-    tgs.newLine();
-    tgs.indent();
-    tgs.append("<begin>");
-    tgs.appendNode(SLinkOperations.getTarget(ctx.getPrimaryInput(), LINKS.begin$v3NB));
-    tgs.append("</begin>");
-    tgs.newLine();
-    tgs.indent();
     for (SNode item : SLinkOperations.getChildren(ctx.getPrimaryInput(), LINKS.bins$v3MD)) {
       tgs.appendNode(item);
     }
-    tgs.indent();
-    tgs.append("<end>");
-    tgs.appendNode(SLinkOperations.getTarget(ctx.getPrimaryInput(), LINKS.end$v3P4));
-    tgs.append("</end>");
-    tgs.newLine();
     ctx.getBuffer().area().decreaseIndent();
     tgs.indent();
     tgs.append("</ControlPoint>");
@@ -62,8 +42,6 @@ public class Timestamp_TextGen extends TextGenDescriptorBase {
   }
 
   private static final class LINKS {
-    /*package*/ static final SContainmentLink begin$v3NB = MetaAdapterFactory.getContainmentLink(0xe808b2f670da436eL, 0xbf6b14e1ed6cce5fL, 0x44617bd94982f23aL, 0x44617bd94982f23fL, "begin");
     /*package*/ static final SContainmentLink bins$v3MD = MetaAdapterFactory.getContainmentLink(0xe808b2f670da436eL, 0xbf6b14e1ed6cce5fL, 0x44617bd94982f23aL, 0x44617bd94982f23dL, "bins");
-    /*package*/ static final SContainmentLink end$v3P4 = MetaAdapterFactory.getContainmentLink(0xe808b2f670da436eL, 0xbf6b14e1ed6cce5fL, 0x44617bd94982f23aL, 0x44617bd94982f242L, "end");
   }
 }

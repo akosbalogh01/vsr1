@@ -141,26 +141,12 @@
       <property role="TrG5h" value="volume" />
       <ref role="AX2Wp" to="tpck:fKAQMTA" resolve="integer" />
     </node>
-    <node concept="1TJgyj" id="4hxuX_9wJ8Z" role="1TKVEi">
-      <property role="IQ2ns" value="4927355640491471423" />
-      <property role="20lmBu" value="fLJjDmT/aggregation" />
-      <property role="20kJfa" value="begin" />
-      <property role="20lbJX" value="fLJekj4/_1" />
-      <ref role="20lvS9" node="4hxuX_9wJ5u" resolve="Color" />
-    </node>
     <node concept="1TJgyj" id="4hxuX_9wJ8X" role="1TKVEi">
       <property role="IQ2ns" value="4927355640491471421" />
       <property role="20lmBu" value="fLJjDmT/aggregation" />
       <property role="20kJfa" value="bins" />
       <property role="20lbJX" value="fLJekj5/_0__n" />
       <ref role="20lvS9" node="4hxuX_9wJ5t" resolve="Bin" />
-    </node>
-    <node concept="1TJgyj" id="4hxuX_9wJ92" role="1TKVEi">
-      <property role="IQ2ns" value="4927355640491471426" />
-      <property role="20lmBu" value="fLJjDmT/aggregation" />
-      <property role="20kJfa" value="end" />
-      <property role="20lbJX" value="fLJekj4/_1" />
-      <ref role="20lvS9" node="4hxuX_9wJ5u" resolve="Color" />
     </node>
   </node>
 </model>

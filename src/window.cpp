@@ -13,12 +13,13 @@ bool vs::windowman::isOpen() const {
     return window.isOpen();
 }
 
-void vs::windowman::windowCreate(const unsigned x, const unsigned y, const std::string& fs) {
+void vs::windowman::windowCreate(const std::string& title, const unsigned x, const unsigned y, const std::string& fs) {
+    std::string header = title.substr(0, title.length() - 4);
     if (fs == "true") {
-        window.create(sf::VideoMode(x, y), "Visualiser", sf::Style::Fullscreen);
+        window.create(sf::VideoMode(x, y), header, sf::Style::Fullscreen);
     }
     else {
-        window.create(sf::VideoMode(x, y), "Visualiser");
+        window.create(sf::VideoMode(x, y), header);
     }
 
     gui.resizeInterface(sf::Vector2u(x, y));
