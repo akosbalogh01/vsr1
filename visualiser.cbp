@@ -11,7 +11,7 @@
 				<Option object_output="obj/Debug/" />
 				<Option type="1" />
 				<Option compiler="gcc" />
-				<Option parameters="album.m3u" />
+				<Option parameters="Puppy.xml" />
 				<Compiler>
 					<Add option="-g" />
 				</Compiler>
@@ -40,6 +40,7 @@
 				<Option object_output="obj/Release/" />
 				<Option type="0" />
 				<Option compiler="gcc" />
+				<Option parameters="Puppy.xml" />
 				<Compiler>
 					<Add option="-O2" />
 				</Compiler>
@@ -92,6 +93,7 @@
 		<Unit filename="inc/music.hpp" />
 		<Unit filename="inc/parents.hpp" />
 		<Unit filename="inc/playlist.hpp" />
+		<Unit filename="inc/point.hpp" />
 		<Unit filename="inc/visualiser.hpp" />
 		<Unit filename="inc/window.hpp" />
 		<Unit filename="inc/xml/rapidxml.hpp" />
@@ -99,6 +101,7 @@
 		<Unit filename="inc/xml/rapidxml_print.hpp" />
 		<Unit filename="inc/xml/rapidxml_utils.hpp" />
 		<Unit filename="src/audio/audio.cpp" />
+		<Unit filename="src/audio/buildplaylist.cpp" />
 		<Unit filename="src/bar.cpp" />
 		<Unit filename="src/events.cpp" />
 		<Unit filename="src/graphics/constructor.cpp" />
@@ -120,6 +123,8 @@
 		<Unit filename="src/playlist/next.cpp" />
 		<Unit filename="src/playlist/playlist.cpp" />
 		<Unit filename="src/playlist/prev.cpp" />
+		<Unit filename="src/point/constructor.cpp" />
+		<Unit filename="src/point/point.cpp" />
 		<Unit filename="src/vis/render.cpp" />
 		<Unit filename="src/vis/visualiser.cpp" />
 		<Unit filename="src/window.cpp" />

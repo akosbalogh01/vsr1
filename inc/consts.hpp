@@ -15,7 +15,6 @@ namespace vs {
     namespace path {
         const std::string font = "Roboto-Regular.ttf";
         const std::string settings = "settings.ini";
-        //const std::string playlist = "playlist.xml"; - deprecated
     }
 
     namespace settings {

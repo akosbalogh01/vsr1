@@ -34,6 +34,7 @@ namespace vs {
         const std::string& getFile() const;
         const vs::metadata& getMeta() const;
         const std::pair<const sf::Time&, const sf::Time&> getTime() const;
+        const std::pair<vs::point&, vs::point&> getControlInterval() const;
 
         const bool isOver() const;
         const bool isBuffered() const;

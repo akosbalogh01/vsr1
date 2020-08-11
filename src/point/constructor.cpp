@@ -10,14 +10,22 @@ sf::Color rgba(const std::string& str) {
 }
 
 vs::point::point(const rapidxml::xml_node<>* root) {
-    stamp = std::stoi(root->first_attribute("timestamp")->value());
-    volume = std::stoi(root->first_attribute("volume")->value());
-    brightness = std::stoi(root->first_attribute("brightness")->value());
+    if (root != NULL) {
+        stamp = std::stoi(root->first_attribute("timestamp")->value());
+        volume = std::stoi(root->first_attribute("volume")->value());
+        brightness = std::stoi(root->first_attribute("brightness")->value());
 
-    for (rapidxml::xml_node<>* bin = root->first_node("bin"); bin; bin = bin->next_sibling()) {
-        unsigned i = std::stoi(bin->first_attribute("index")->value());
-        sf::Color color = rgba(bin->first_attribute("color")->value());
-        auto b = std::pair <unsigned, sf::Color>(i, color);
-        bins.push_back(b);
+        for (rapidxml::xml_node<>* bin = root->first_node("bin"); bin; bin = bin->next_sibling()) {
+            unsigned i = std::stoi(bin->first_attribute("index")->value());
+            sf::Color color = rgba(bin->first_attribute("color")->value());
+            auto b = std::pair <unsigned, sf::Color>(i, color);
+            bins.push_back(b);
+        }
+    }
+    else {
+        stamp = 0;
+        volume = 100;
+        brightness = 100;
+        bins.push_back(std::pair <unsigned, sf::Color>(0, sf::Color::White));
     }
 }

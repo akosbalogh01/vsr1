@@ -35,19 +35,3 @@ void vs::audioman::buildPlaylist(std::vector<char>& xmlbuffer) {
     pman.init();
 }
 
-
-/*
-void vs::playlistman::init(const std::vector<std::string>& filelist) {
-    for (auto filename: filelist) {
-        std::ifstream f(filename);
-        if (f.good()) {
-            songlist.push_back(vs::music(filename));
-        }
-        else {
-            std::cout << "Not found: " << filename << std::endl;
-        }
-    }
-
-
-}
-*/

@@ -4,6 +4,7 @@
 #include <vector>
 #include <memory>
 #include "xml/rapidxml.hpp"
+#include "SFML/System/Time.hpp"
 #include "SFML/Graphics/Color.hpp"
 
 namespace vs {
@@ -13,10 +14,9 @@ namespace vs {
         std::vector <std::pair <unsigned, sf::Color>> bins;
 
     public:
-        point() = delete;
-        point(const rapidxml::xml_node<>*);
+        point(const rapidxml::xml_node<>* = NULL);
 
-        const unsigned getStamp() const;
+        const sf::Time getStamp() const;
         const unsigned getVolume() const;
         const unsigned getBrightness() const;
     };
