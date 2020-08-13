@@ -75,22 +75,6 @@ const std::pair<const sf::Time&, const sf::Time&> vs::music::getTime() const {
     return t;
 }
 
-const std::pair<const vs::point&, const vs::point&> vs::music::getControlInterval() const {
-    if (cvec.size() == 0) {
-        return std::pair <vs::point, vs::point>();
-    }
-    else if (cvec.size == 1) {
-        vs::point p = cvec[1];
-        return std::pair <vs::point, vs::point>(p, p);
-    }
-    else {
-        sf::Time t = sound.getPlayingOffset();
-        for (unsigned i = 0; i < cvec.size(); i++) {
-
-        }
-    }
-}
-
 const bool vs::music::isOver() const {
     return (sound.getStatus() == sf::SoundSource::Stopped);
 }

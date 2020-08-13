@@ -73,12 +73,14 @@
 			<Add directory="C:/Projects/lib/SFML-2.5.1/include" />
 			<Add directory="C:/Projects/lib/taglib/include" />
 			<Add directory="C:/Users/akosb/Programming/SFML-2.5.1/include" />
+			<Add directory="C:/Users/akosb/Programming/taglib/include" />
 			<Add directory="inc" />
 		</Compiler>
 		<Linker>
 			<Add directory="C:/Projects/lib/SFML-2.5.1/lib" />
 			<Add directory="C:/Projects/lib/taglib" />
 			<Add directory="C:/Users/akosb/Programming/SFML-2.5.1/lib" />
+			<Add directory="C:/Users/akosb/Programming/taglib/lib" />
 		</Linker>
 		<Unit filename="inc/audio.hpp" />
 		<Unit filename="inc/bar.hpp" />
