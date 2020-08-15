@@ -102,6 +102,7 @@
       <concept id="1079359253375" name="jetbrains.mps.baseLanguage.structure.ParenthesizedExpression" flags="nn" index="1eOMI4">
         <child id="1079359253376" name="expression" index="1eOMHV" />
       </concept>
+      <concept id="1081506773034" name="jetbrains.mps.baseLanguage.structure.LessThanExpression" flags="nn" index="3eOVzh" />
       <concept id="1081516740877" name="jetbrains.mps.baseLanguage.structure.NotExpression" flags="nn" index="3fqX7Q">
         <child id="1081516765348" name="expression" index="3fr31v" />
       </concept>
@@ -833,7 +834,7 @@
           <node concept="3clFbJ" id="40" role="3cqZAp">
             <node concept="1Wc70l" id="43" role="3clFbw">
               <node concept="1eOMI4" id="46" role="3uHU7w">
-                <node concept="2dkUwp" id="49" role="1eOMHV">
+                <node concept="3eOVzh" id="49" role="1eOMHV">
                   <node concept="37vLTw" id="4b" role="3uHU7B">
                     <ref role="3cqZAo" node="3H" resolve="propertyValue" />
                     <node concept="cd27G" id="4e" role="lGtFl">
@@ -852,7 +853,7 @@
                   </node>
                   <node concept="cd27G" id="4d" role="lGtFl">
                     <node concept="3u3nmq" id="4i" role="cd27D">
-                      <property role="3u3nmv" value="2185286514849763486" />
+                      <property role="3u3nmv" value="3378258477822110741" />
                     </node>
                   </node>
                 </node>

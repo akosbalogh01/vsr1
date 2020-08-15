@@ -2,9 +2,22 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c0662186-e863-4c7d-b874-d21e3fe7dd05" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/languages/playlist/sandbox/classes_gen/playlist/sandbox/Puppy.xml" beforeDir="false" afterPath="$PROJECT_DIR$/languages/playlist/sandbox/classes_gen/playlist/sandbox/Puppy.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/languages/playlist/sandbox/classes_gen/playlist/sandbox/trace.info" beforeDir="false" afterPath="$PROJECT_DIR$/languages/playlist/sandbox/classes_gen/playlist/sandbox/trace.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Puppy.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Puppy.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../inc/music.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/../inc/music.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../inc/point.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/../inc/point.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/languages/playlist/classes_gen/playlist/constraints/trace.info" beforeDir="false" afterPath="$PROJECT_DIR$/languages/playlist/classes_gen/playlist/constraints/trace.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/languages/playlist/models/playlist.constraints.mps" beforeDir="false" afterPath="$PROJECT_DIR$/languages/playlist/models/playlist.constraints.mps" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/languages/playlist/sandbox/models/playlist.sandbox.mps" beforeDir="false" afterPath="$PROJECT_DIR$/languages/playlist/sandbox/models/playlist.sandbox.mps" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/languages/playlist/source_gen.caches/playlist/constraints/generated" beforeDir="false" afterPath="$PROJECT_DIR$/languages/playlist/source_gen.caches/playlist/constraints/generated" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/languages/playlist/source_gen.caches/playlist/generated" beforeDir="false" afterPath="$PROJECT_DIR$/languages/playlist/source_gen.caches/playlist/generated" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/languages/playlist/source_gen/playlist/constraints/Bin_Constraints.java" beforeDir="false" afterPath="$PROJECT_DIR$/languages/playlist/source_gen/playlist/constraints/Bin_Constraints.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/languages/playlist/source_gen/playlist/constraints/aspectcps-descriptorclasses.mps" beforeDir="false" afterPath="$PROJECT_DIR$/languages/playlist/source_gen/playlist/constraints/aspectcps-descriptorclasses.mps" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/languages/playlist/source_gen/playlist/constraints/trace.info" beforeDir="false" afterPath="$PROJECT_DIR$/languages/playlist/source_gen/playlist/constraints/trace.info" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/visualiser.iws" beforeDir="false" afterPath="$PROJECT_DIR$/visualiser.iws" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../settings.ini" beforeDir="false" afterPath="$PROJECT_DIR$/../settings.ini" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/music.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/../src/music.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/point/constructor.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/../src/point/constructor.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/point/point.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/../src/point/point.cpp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -17,7 +30,7 @@
         <TabState>
           <option name="title" value="Console" />
           <tab>
-            <model ref="883e44d0-c6c6-408f-9caf-f17863cfb03d/r:86035222-2d23-4fee-80ee-693a3e1e7d43(TempModule883e44d0-c6c6-408f-9caf-f17863cfb03d/ConsoleModel_13309118879300)">
+            <model ref="74fbb18d-873c-41c3-aad9-b0ddd5ded4b0/r:919e6b5f-93ba-472a-8c5d-8d2e9ff90de7(TempModule74fbb18d-873c-41c3-aad9-b0ddd5ded4b0/ConsoleModel_6090655290000)">
               <persistence version="9" />
               <languages>
                 <devkit ref="70d3d6da-af63-483d-a75f-9c8acf8de332(jetbrains.mps.console.devkit)" />
@@ -37,11 +50,11 @@
                   <concept id="757553790980850366" name="jetbrains.mps.console.base.structure.History" flags="ng" index="3balQm" />
                 </language>
               </registry>
-              <node concept="aymSD" id="JqZhcvYS5$">
-                <node concept="3balQm" id="JqZhcvYS5_" role="aymYE" />
-                <node concept="2Clz$F" id="JqZhcvYS5A" role="aymYO" />
-                <node concept="2_V_lH" id="JqZhcvYS5B" role="1PhJh3">
-                  <ref role="2_V_lI" node="JqZhcvYS5A" resolve="CommandHolder" />
+              <node concept="aymSD" id="2VxZ2Zi2q0g">
+                <node concept="3balQm" id="2VxZ2Zi2q0h" role="aymYE" />
+                <node concept="2Clz$F" id="2VxZ2Zi2q0i" role="aymYO" />
+                <node concept="2_V_lH" id="2VxZ2Zi2q0j" role="1PhJh3">
+                  <ref role="2_V_lI" node="2VxZ2Zi2q0i" resolve="CommandHolder" />
                 </node>
               </node>
             </model>
@@ -168,72 +181,6 @@
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="1cddaf4d-4615-4b8f-ac70-6c1bb0779621" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="playlist" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="r:7df0b85c-1ac1-482d-bd2d-95d15fb6164f(playlist.sandbox) in IdeaFile[path: C:/Users/akosb/Programming/visualiser/mps/languages/playlist/sandbox/models/playlist.sandbox.mps]" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Project" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="e808b2f6-70da-436e-bf6b-14e1ed6cce5f(playlist)" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="playlist#01" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Project" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="e808b2f6-70da-436e-bf6b-14e1ed6cce5f(playlist)" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Project" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="1cddaf4d-4615-4b8f-ac70-6c1bb0779621" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Project" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="1cddaf4d-4615-4b8f-ac70-6c1bb0779621" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="playlist" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Project" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
               <option name="myItemId" value="e808b2f6-70da-436e-bf6b-14e1ed6cce5f(playlist)" />
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
@@ -251,8 +198,68 @@
               <option name="myItemId" value="Project" />
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="e808b2f6-70da-436e-bf6b-14e1ed6cce5f(playlist)" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="playlist#01" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
           </PATH>
-          <SELECTED>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Project" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="e808b2f6-70da-436e-bf6b-14e1ed6cce5f(playlist)" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="r:de050263-7aec-4e3f-a874-7935d74b9031(playlist.structure) in IdeaFile[path: C:/Users/akosb/Programming/visualiser/mps/languages/playlist/models/playlist.structure.mps]" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Project" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="1cddaf4d-4615-4b8f-ac70-6c1bb0779621" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="playlist" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Project" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="e808b2f6-70da-436e-bf6b-14e1ed6cce5f(playlist)" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="r:fbac261e-7a0d-4960-b28a-5a86d5009e67(playlist.constraints) in IdeaFile[path: C:/Users/akosb/Programming/visualiser/mps/languages/playlist/models/playlist.constraints.mps]" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Project" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="e808b2f6-70da-436e-bf6b-14e1ed6cce5f(playlist)" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
             <PATH_ELEMENT>
               <option name="myItemId" value="Project" />
               <option name="myItemType" value="" />
@@ -269,8 +276,30 @@
               <option name="myItemId" value="r:7df0b85c-1ac1-482d-bd2d-95d15fb6164f(playlist.sandbox) in IdeaFile[path: C:/Users/akosb/Programming/visualiser/mps/languages/playlist/sandbox/models/playlist.sandbox.mps]" />
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
+          </PATH>
+          <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="2185286514849761597" />
+              <option name="myItemId" value="Project" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Project" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="1cddaf4d-4615-4b8f-ac70-6c1bb0779621" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+          <SELECTED>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Project" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="e808b2f6-70da-436e-bf6b-14e1ed6cce5f(playlist)" />
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
           </SELECTED>

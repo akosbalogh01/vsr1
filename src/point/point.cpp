@@ -11,3 +11,7 @@ const unsigned vs::point::getVolume() const {
 const unsigned vs::point::getBrightness() const {
     return brightness;
 }
+
+const sf::Color vs::point::getBinColor(const unsigned bin) const {
+    return bins[bin];
+}

@@ -42,6 +42,7 @@
       <concept id="1079359253375" name="jetbrains.mps.baseLanguage.structure.ParenthesizedExpression" flags="nn" index="1eOMI4">
         <child id="1079359253376" name="expression" index="1eOMHV" />
       </concept>
+      <concept id="1081506773034" name="jetbrains.mps.baseLanguage.structure.LessThanExpression" flags="nn" index="3eOVzh" />
       <concept id="1081773326031" name="jetbrains.mps.baseLanguage.structure.BinaryOperation" flags="nn" index="3uHJSO">
         <child id="1081773367579" name="rightExpression" index="3uHU7w" />
         <child id="1081773367580" name="leftExpression" index="3uHU7B" />
@@ -70,7 +71,7 @@
           <node concept="3clFbJ" id="6pJ0ysHoKzb" role="3cqZAp">
             <node concept="1Wc70l" id="6pJ0ysHoLNS" role="3clFbw">
               <node concept="1eOMI4" id="6pJ0ysHoLOS" role="3uHU7w">
-                <node concept="2dkUwp" id="1TjGC7i4_2u" role="1eOMHV">
+                <node concept="3eOVzh" id="2VxZ2Zi2uKl" role="1eOMHV">
                   <node concept="1Wqviy" id="6pJ0ysHoLQD" role="3uHU7B" />
                   <node concept="3cmrfG" id="6pJ0ysHoLRH" role="3uHU7w">
                     <property role="3cmrfH" value="120" />

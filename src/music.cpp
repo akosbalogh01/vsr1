@@ -75,6 +75,14 @@ const std::pair<const sf::Time&, const sf::Time&> vs::music::getTime() const {
     return t;
 }
 
+const sf::Color vs::music::getBinColor(const unsigned bin) const {
+    unsigned ctrl = 0;
+    while (cvec[ctrl].getStamp() < sound.getPlayingOffset()) {
+        ++ctrl;
+    }
+    return cvec[ctrl].getBinColor(bin);
+}
+
 const bool vs::music::isOver() const {
     return (sound.getStatus() == sf::SoundSource::Stopped);
 }

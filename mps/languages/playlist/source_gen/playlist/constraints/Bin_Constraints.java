@@ -39,7 +39,7 @@ public class Bin_Constraints extends BaseConstraintsDescriptor {
       return result;
     }
     private static boolean staticValidateProperty(SNode node, int propertyValue) {
-      if ((propertyValue >= 0) && (propertyValue <= 120)) {
+      if ((propertyValue >= 0) && (propertyValue < 120)) {
         return true;
       }
       return false;

@@ -11,7 +11,7 @@ namespace vs {
     class point {
     private:
         unsigned stamp, volume, brightness;
-        std::vector <std::pair <unsigned, sf::Color>> bins;
+        std::vector <sf::Color> bins;
 
     public:
         point(const rapidxml::xml_node<>* = NULL);
@@ -19,6 +19,7 @@ namespace vs {
         const sf::Time getStamp() const;
         const unsigned getVolume() const;
         const unsigned getBrightness() const;
+        const sf::Color getBinColor(const unsigned) const;
     };
 }
 
