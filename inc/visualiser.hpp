@@ -8,14 +8,6 @@
 #include "bar.hpp"
 
 namespace vs {
-    namespace gfx {
-        const unsigned lum0 = 30;
-        const unsigned mlum = 5;
-        const unsigned ledcnt = 120;
-        const sf::Vector2f minbarsize(15, 20);
-        const unsigned maxbarheight = 255;
-    }
-
     class visualiser : public renderable, public player {
     private:
         sf::Vector2u wsize, area;

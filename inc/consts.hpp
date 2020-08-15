@@ -23,8 +23,18 @@ namespace vs {
         const auto fullscreen = std::pair<std::string, std::string> ("Window", "fullscreen");
     }
 
+    namespace audio {
+        const unsigned bufsize = 3;
+
+        namespace volume {
+            const unsigned v0 = 30;
+            const unsigned coeff = 5;
+        }
+    }
+
     namespace gfx {
         const unsigned framelimit = 60;
+        const unsigned ledcount = 120;
 
         namespace color {
             const sf::Color accent = sf::Color(12, 12, 12);
@@ -35,11 +45,17 @@ namespace vs {
 
         namespace layout {
             const unsigned theight = 15;
+            const unsigned bheight = 255;
             const unsigned frame = 1;
             const unsigned x1 = 10;
             const unsigned y1 = 10;
             const float xt = 0.06f;
             const float yt = 0.8f;
+        }
+
+        namespace brightness {
+            const unsigned b0 = 30;
+            const unsigned coeff = 5;
         }
     }
 

@@ -44,7 +44,7 @@ vs::point::point(const rapidxml::xml_node<>* root) {
             bin = bin->next_sibling();
         }
 
-        while (bins.size() < vs::gfx::ledcnt) {
+        while (bins.size() < vs::gfx::ledcount) {
             bins.push_back(prevclr);
         }
     }
@@ -52,6 +52,6 @@ vs::point::point(const rapidxml::xml_node<>* root) {
         stamp = 0;
         volume = 100;
         brightness = 100;
-        for (unsigned i = 0; i < vs::gfx::ledcnt; ++i) bins.push_back(sf::Color::White);
+        for (unsigned i = 0; i < vs::gfx::ledcount; ++i) bins.push_back(sf::Color::White);
     }
 }

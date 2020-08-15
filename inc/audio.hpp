@@ -9,12 +9,6 @@
 #include "playlist.hpp"
 
 namespace vs {
-    namespace audio {
-        const unsigned bufsize = 3;
-        const unsigned vol0 = 30;
-        const unsigned vmul = 5;
-    }
-
     class audioman : public pausable, public player {
     private:
         bool autoplay;

@@ -3,13 +3,13 @@
 #include "audio.hpp"
 
 vs::audioman::audioman(vs::t::mptr m): player(m), pman(m)  {
-    volume = vs::audio::vol0;
+    volume = vs::audio::volume::v0;
     paused = true;
     autoplay = true;
 }
 
 void vs::audioman::setVolume(const sf::Event& event) {
-    const int delta = vs::audio::vmul * (int) event.mouseWheelScroll.delta;
+    const int delta = vs::audio::volume::coeff * (int) event.mouseWheelScroll.delta;
     const int temp = volume + delta;
     if ((temp >= 0) && (temp <= 100)) {
         volume = temp;

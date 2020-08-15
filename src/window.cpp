@@ -2,7 +2,7 @@
 #include "window.hpp"
 
 vs::windowman::windowman(vs::t::mptr m): player(m), gui(&window, m) {
-    window.setFramerateLimit(60);
+    window.setFramerateLimit(vs::gfx::framelimit);
 }
 
 bool vs::windowman::pollEvent(sf::Event& event) {
