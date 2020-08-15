@@ -10,6 +10,7 @@
 namespace vs {
     class music {
     private:
+        unsigned maxvol, volume;
         bool buffered;
         vs::metadata meta;
         sf::SoundBuffer buffer;
@@ -43,6 +44,7 @@ namespace vs {
         void setMetadata(const vs::metadata&);
         void setOffset(const sf::Time&);
         void setVolume(const unsigned);
+        //void setMaxVolume(const unsigned);
         void play();
         void pause();
     };
