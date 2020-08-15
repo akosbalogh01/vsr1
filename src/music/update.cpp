@@ -2,13 +2,15 @@
 #include <math.h>
 #include "music.hpp"
 
-inline const std::complex<double> dft(const uint16_t* data, const unsigned index) {
+const unsigned lofasz = 4096;
+
+inline const std::complex<double> dft(const sf::Int16* data, const unsigned index) {
     const double pi = 3.1415926535;
     const std::complex<double> i(0, 1);
     std::complex<double> res(0, 0);
 
-    for (unsigned j = 0; j < 256; ++j) {
-        std::complex<double> temp(((-2*index*j*pi)/256));
+    for (unsigned j = 0; j < lofasz; ++j) {
+        std::complex<double> temp(((-2*index*j*pi)/lofasz));
         std::complex<double> d(data[j]);
         res += d * exp(temp*i);
     }
@@ -22,16 +24,16 @@ void vs::music::update() {
     uint64_t scount = buffer.getSampleCount();
 
     uint64_t current = t.asMilliseconds() * ((double) srate / 1000);
-    uint16_t data[256] = {0};
+    sf::Int16 data[lofasz] = {0};
 
-    if ((current > 255) && (current < (scount - 256))) {
-        for (unsigned i = 0; i < 256; ++i) {
+    if ((current > lofasz) && (current < (scount - lofasz))) {
+        for (unsigned i = 0; i < lofasz; ++i) {
             data[i] = *(buffer.getSamples() + current + i);
         }
 
-        //data has 256 samples
+        //data has lofasz :) samples
         for (unsigned i = 0; i < 120; ++i) {
-            bins[i] = dft(data, i);
+            bins[i] = dft(data, i*17);
         }
 
     }
