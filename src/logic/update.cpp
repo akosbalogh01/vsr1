@@ -15,5 +15,6 @@ void vs::logic::update() {
     }
 
     wman.update();
+    playing->update();
     //TODO: update data structures, calculate FFT, transmit
 }

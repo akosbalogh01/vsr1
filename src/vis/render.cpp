@@ -3,7 +3,6 @@
 void vs::visualiser::render() {
     if (en) {
         for (unsigned i = 0; i < vs::gfx::ledcount; ++i) {
-            bars[i].setColor(playing->getBinColor(i));
             bars[i].render();
         }
     }

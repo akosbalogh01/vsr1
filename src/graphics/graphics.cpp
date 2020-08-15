@@ -25,4 +25,8 @@ void vs::graphics::update() {
     vis.update();
 }
 
+void vs::graphics::resetVisualiser() {
+    vis.reset();
+}
+
 

@@ -184,6 +184,55 @@
         </node>
       </node>
     </node>
+    <node concept="dSSFY" id="1zWdKXtv87u" role="dSSEv">
+      <property role="dSSFN" value="‪D:\Music\chirp.flac" />
+      <node concept="dSSBz" id="1zWdKXtv87v" role="dSFt1">
+        <property role="CBNxP" value="100" />
+        <property role="CBNxQ" value="100" />
+        <property role="dSSBy" value="0" />
+        <node concept="dSSE4" id="1zWdKXtv89f" role="dSSB$">
+          <property role="dSSCJ" value="0" />
+          <node concept="dSSE7" id="1zWdKXtv89g" role="dSSCx">
+            <property role="dSSE6" value="255" />
+            <property role="dSSES" value="255" />
+            <property role="dSSEX" value="255" />
+            <property role="dSSEL" value="255" />
+          </node>
+        </node>
+        <node concept="dSSE4" id="1zWdKXtv89h" role="dSSB$">
+          <property role="dSSCJ" value="119" />
+          <node concept="dSSE7" id="1zWdKXtv89i" role="dSSCx">
+            <property role="dSSE6" value="255" />
+            <property role="dSSES" value="255" />
+            <property role="dSSEX" value="255" />
+            <property role="dSSEL" value="255" />
+          </node>
+        </node>
+      </node>
+      <node concept="dSSBz" id="1zWdKXtv89c" role="dSFt1">
+        <property role="dSSBy" value="50000" />
+        <property role="CBNxP" value="100" />
+        <property role="CBNxQ" value="100" />
+        <node concept="dSSE4" id="1zWdKXtv89n" role="dSSB$">
+          <property role="dSSCJ" value="0" />
+          <node concept="dSSE7" id="1zWdKXtv89o" role="dSSCx">
+            <property role="dSSE6" value="255" />
+            <property role="dSSES" value="255" />
+            <property role="dSSEX" value="255" />
+            <property role="dSSEL" value="255" />
+          </node>
+        </node>
+        <node concept="dSSE4" id="1zWdKXtv89p" role="dSSB$">
+          <property role="dSSCJ" value="119" />
+          <node concept="dSSE7" id="1zWdKXtv89q" role="dSSCx">
+            <property role="dSSE6" value="255" />
+            <property role="dSSES" value="255" />
+            <property role="dSSEX" value="255" />
+            <property role="dSSEL" value="255" />
+          </node>
+        </node>
+      </node>
+    </node>
     <node concept="dSSFY" id="1TjGC7i4$_0" role="dSSEv">
       <property role="dSSFN" value="D:\Music\Fluke\Puppy\Fluke - Puppy - 02 - My Spine.flac" />
       <node concept="dSSBz" id="ii7yHXM5Ki" role="dSFt1">

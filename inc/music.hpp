@@ -1,6 +1,7 @@
 #ifndef VISU_MUSIC
 #define VISU_MUSIC
 
+#include <complex>
 #include <string>
 #include <memory>
 #include "SFML/Audio.hpp"
@@ -16,6 +17,7 @@ namespace vs {
         sf::SoundBuffer buffer;
         sf::Sound sound;
         std::vector <vs::point> cvec;
+        std::vector <std::complex<double>> bins;
 
     public:
         music() = delete;
@@ -35,7 +37,9 @@ namespace vs {
         const std::string& getFile() const;
         const vs::metadata& getMeta() const;
         const std::pair<const sf::Time&, const sf::Time&> getTime() const;
+
         const sf::Color getBinColor(const unsigned) const;
+        const unsigned getBinHeight(const unsigned) const;
 
         const bool isOver() const;
         const bool isBuffered() const;
@@ -47,6 +51,7 @@ namespace vs {
         //void setMaxVolume(const unsigned);
         void play();
         void pause();
+        void update();
     };
 }
 

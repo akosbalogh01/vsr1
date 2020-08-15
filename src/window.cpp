@@ -23,6 +23,7 @@ void vs::windowman::windowCreate(const std::string& title, const unsigned x, con
     }
 
     gui.resizeInterface(sf::Vector2u(x, y));
+    gui.resetVisualiser();
 }
 
 void vs::windowman::windowClose(const sf::Event& event) {
