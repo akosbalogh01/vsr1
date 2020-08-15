@@ -26,10 +26,24 @@
     </Song>
 
     <Song file="D:\Music\Fluke\Puppy\Fluke - Puppy - 02 - My Spine.flac">
-      <ControlPoint timestamp="30000" volume="70" brightness="70">
-        <bin index="0" color="RGBA(255, 255, 0, 255)"></bin>
-        <bin index="60" color="RGBA(255, 255, 255, 255)"></bin>
-        <bin index="119" color="RGBA(0, 255, 255, 255)"></bin>
+      <ControlPoint timestamp="3000" volume="100" brightness="100">
+        <bin index="0" color="RGBA(51, 26, 0, 255)"></bin>
+        <bin index="60" color="RGBA(13, 77, 0, 255)"></bin>
+        <bin index="119" color="RGBA(0, 26, 77, 255)"></bin>
+      </ControlPoint>
+      <ControlPoint timestamp="30000" volume="100" brightness="100">
+        <bin index="30" color="RGBA(179, 179, 0, 255)"></bin>
+        <bin index="80" color="RGBA(255, 128, 0, 255)"></bin>
+      </ControlPoint>
+      <ControlPoint timestamp="90000" volume="100" brightness="100">
+        <bin index="10" color="RGBA(128, 42, 0, 255)"></bin>
+        <bin index="50" color="RGBA(85, 238, 0, 255)"></bin>
+        <bin index="100" color="RGBA(0, 128, 128, 255)"></bin>
+      </ControlPoint>
+      <ControlPoint timestamp="300000" volume="100" brightness="100">
+        <bin index="20" color="RGBA(0, 13, 77, 255)"></bin>
+        <bin index="70" color="RGBA(0, 77, 38, 255)"></bin>
+        <bin index="110" color="RGBA(255, 77, 77, 255)"></bin>
       </ControlPoint>
     </Song>
 
