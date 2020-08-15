@@ -8,7 +8,6 @@ vs::music::music(const std::string& fpath): meta(fpath) {
 vs::music::music(const std::string& fpath, const std::vector <vs::point>& points): meta(fpath) {
     buffered = false;
     cvec = points;
-    std::cout << "Found " << std::to_string(cvec.size()) << " control points." << std::endl;
 }
 
 vs::music::music(const vs::music& other): meta(other.meta) {
@@ -87,7 +86,7 @@ const sf::Color vs::music::getBinColor(const unsigned bin) const {
         else break;
     }
 
-    if (ctrl == (cvec.size() - 1)) {
+    if ((unsigned) ctrl == (cvec.size() - 1)) {
         return cvec[ctrl].getBinColor(bin);
     }
     else {
