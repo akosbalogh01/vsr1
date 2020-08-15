@@ -23,6 +23,12 @@ void vs::audioman::buildPlaylist(std::vector<char>& xmlbuffer) {
                 points.push_back(cp);
             }
 
+            if (points[0].getStamp() != sf::milliseconds(0)) {
+                vs::point p0 = points[0];
+                p0.setStamp(sf::milliseconds(0));
+                points.insert(points.begin(), p0);
+            }
+
             vs::music m(fpath, points);
             pman.add(m);
         }

@@ -1,64 +1,65 @@
 <Playlist>
-    <Song file="C:\Users\balogha\Music\Fluke\Puppy\Fluke - Puppy - 01 - Snapshot.flac">
+    <Song file="D:\Music\Fluke\Puppy\Fluke - Puppy - 01 - Snapshot.flac">
       <ControlPoint timestamp="0" volume="50" brightness="50">
         <bin index="0" color="RGBA(255, 255, 255, 255)"></bin>
-        <bin index="120" color="RGBA(255, 255, 255, 255)"></bin>
+		<bin index="60" color="RGBA(0, 0, 0, 0, 255)"></bin>
+        <bin index="119" color="RGBA(255, 0, 0, 100)"></bin>
       </ControlPoint>
       <ControlPoint timestamp="60000" volume="50" brightness="50">
-        <bin index="0" color="RGBA(255, 0, 0, 255)"></bin>
-        <bin index="120" color="RGBA(0, 0, 255, 255)"></bin>
+        <bin index="0" color="RGBA(0, 0, 0, 255)"></bin>
+        <bin index="119" color="RGBA(255, 255, 255, 255)"></bin>
       </ControlPoint>
     </Song>
 
-    <Song file="C:\Users\balogha\Music\Fluke\Puppy\Fluke - Puppy - 02 - My Spine.flac">
+    <Song file="D:\Music\Fluke\Puppy\Fluke - Puppy - 02 - My Spine.flac">
       <ControlPoint timestamp="30000" volume="70" brightness="70">
         <bin index="0" color="RGBA(255, 255, 0, 255)"></bin>
         <bin index="60" color="RGBA(255, 255, 255, 255)"></bin>
-        <bin index="120" color="RGBA(0, 255, 255, 255)"></bin>
+        <bin index="119" color="RGBA(0, 255, 255, 255)"></bin>
       </ControlPoint>
     </Song>
 
-    <Song file="C:\Users\balogha\Music\Fluke\Puppy\Fluke - Puppy - 03 - Another Kind of Blues.flac">
+    <Song file="D:\Music\Fluke\Puppy\Fluke - Puppy - 03 - Another Kind of Blues.flac">
       <ControlPoint timestamp="0" volume="50" brightness="50">
       </ControlPoint>
     </Song>
 
-    <Song file="C:\Users\balogha\Music\Fluke\Puppy\Fluke - Puppy - 04 - Hang Tough.flac">
+    <Song file="D:\Music\Fluke\Puppy\Fluke - Puppy - 04 - Hang Tough.flac">
       <ControlPoint timestamp="0" volume="50" brightness="50">
       </ControlPoint>
     </Song>
 
-    <Song file="C:\Users\balogha\Music\Fluke\Puppy\Fluke - Puppy - 05 - Switch,Twitch.flac">
+    <Song file="D:\Music\Fluke\Puppy\Fluke - Puppy - 05 - Switch,Twitch.flac">
       <ControlPoint timestamp="0" volume="50" brightness="50">
       </ControlPoint>
     </Song>
 
-    <Song file="C:\Users\balogha\Music\Fluke\Puppy\Fluke - Puppy - 06 - YKK.flac">
+    <Song file="D:\Music\Fluke\Puppy\Fluke - Puppy - 06 - YKK.flac">
       <ControlPoint timestamp="0" volume="50" brightness="50">
       </ControlPoint>
     </Song>
 
-    <Song file="C:\Users\balogha\Music\Fluke\Puppy\Fluke - Puppy - 07 - Expo.flac">
+    <Song file="D:\Music\Fluke\Puppy\Fluke - Puppy - 07 - Expo.flac">
       <ControlPoint timestamp="0" volume="50" brightness="50">
       </ControlPoint>
     </Song>
 
-    <Song file="C:\Users\balogha\Music\Fluke\Puppy\Fluke - Puppy - 08 - Electric Blue.flac">
+    <Song file="D:\Music\Fluke\Puppy\Fluke - Puppy - 08 - Electric Blue.flac">
       <ControlPoint timestamp="0" volume="50" brightness="50">
       </ControlPoint>
     </Song>
 
-    <Song file="C:\Users\balogha\Music\Fluke\Puppy\Fluke - Puppy - 09 - Baby Pain.flac">
+    <Song file="D:\Music\Fluke\Puppy\Fluke - Puppy - 09 - Baby Pain.flac">
       <ControlPoint timestamp="0" volume="50" brightness="50">
       </ControlPoint>
     </Song>
 
-    <Song file="C:\Users\balogha\Music\Fluke\Puppy\Fluke - Puppy - 10 - Nebulus.flac">
+    <Song file="D:\Music\Fluke\Puppy\Fluke - Puppy - 10 - Nebulus.flac">
       <ControlPoint timestamp="0" volume="50" brightness="50">
       </ControlPoint>
     </Song>
 
-    <Song file="C:\Users\balogha\Music\Fluke\Puppy\Fluke - Puppy - 11 - Blue Sky.flac">
+    <Song file="D:\Music\Fluke\Puppy\Fluke - Puppy - 11 - Blue Sky.flac">
       <ControlPoint timestamp="0" volume="50" brightness="50">
       </ControlPoint>
     </Song>

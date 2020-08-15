@@ -8,18 +8,21 @@ vs::music::music(const std::string& fpath): meta(fpath) {
 vs::music::music(const std::string& fpath, const std::vector <vs::point>& points): meta(fpath) {
     buffered = false;
     cvec = points;
+    std::cout << "Found " << std::to_string(cvec.size()) << " control points." << std::endl;
 }
 
 vs::music::music(const vs::music& other): meta(other.meta) {
     buffered = false;
     this->buffer = sf::SoundBuffer();
     this->sound = sf::Sound();
+    this->cvec = other.cvec;
 }
 
 vs::music::music(vs::music&& other): meta(other.meta) {
     buffered = false;
     //this->buffer = sf::SoundBuffer();
     //this->sound = sf::Sound();
+    this->cvec = other.cvec;
 }
 
 void vs::music::init(const vs::music& other) {
@@ -76,11 +79,33 @@ const std::pair<const sf::Time&, const sf::Time&> vs::music::getTime() const {
 }
 
 const sf::Color vs::music::getBinColor(const unsigned bin) const {
-    unsigned ctrl = 0;
-    while (cvec[ctrl].getStamp() < sound.getPlayingOffset()) {
-        ++ctrl;
+    int ctrl = -1;
+    for (unsigned i = 0; i < cvec.size(); ++i) {
+        if (sound.getPlayingOffset() >= cvec[i].getStamp()) {
+            ++ctrl;
+        }
+        else break;
     }
-    return cvec[ctrl].getBinColor(bin);
+
+    if (ctrl == (cvec.size() - 1)) {
+        return cvec[ctrl].getBinColor(bin);
+    }
+    else {
+        unsigned dt = sf::Time(cvec[ctrl+1].getStamp() - cvec[ctrl].getStamp()).asMilliseconds();
+        unsigned xt = sf::Time(sound.getPlayingOffset() - cvec[ctrl].getStamp()).asMilliseconds();
+        sf::Color nc = cvec[ctrl+1].getBinColor(bin);
+        sf::Color pc = cvec[ctrl].getBinColor(bin);
+        double dr = ((double) nc.r - pc.r)/dt;
+        double dg = ((double) nc.g - pc.g)/dt;
+        double db = ((double) nc.b - pc.b)/dt;
+        double da = ((double) nc.a - pc.a)/dt;
+
+        unsigned nr = pc.r + xt*dr;
+        unsigned ng = pc.g + xt*dg;
+        unsigned nb = pc.b + xt*db;
+        unsigned na = pc.a + xt*da;
+        return sf::Color(nr, ng, nb, na);
+    }
 }
 
 const bool vs::music::isOver() const {
@@ -93,6 +118,7 @@ const bool vs::music::isBuffered() const {
 
 const bool vs::music::copyData(const vs::music& other) {
     meta = other.meta;
+    cvec = other.cvec;
 
     if (other.buffered) {
         buffered = true;

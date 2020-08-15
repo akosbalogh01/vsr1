@@ -26,16 +26,16 @@ vs::point::point(const rapidxml::xml_node<>* root) {
             }
             else {
                 unsigned dw = i - (bins.size() - 1);
-                int dr = color.r - prevclr.r;
-                int dg = color.g - prevclr.g;
-                int db = color.b - prevclr.b;
-                int da = color.a - prevclr.a;
+                double dr = ((double) color.r - prevclr.r)/dw;
+                double dg = ((double) color.g - prevclr.g)/dw;
+                double db = ((double) color.b - prevclr.b)/dw;
+                double da = ((double) color.a - prevclr.a)/dw;
 
                 for (unsigned j = 0; j < dw; ++j) {
-                    unsigned nr = prevclr.r + (j * ((double) dr/dw));
-                    unsigned ng = prevclr.g + (j * ((double) dg/dw));
-                    unsigned nb = prevclr.b + (j * ((double) db/dw));
-                    unsigned na = prevclr.a + (j * ((double) da/dw));
+                    unsigned nr = prevclr.r + (j * dr);
+                    unsigned ng = prevclr.g + (j * dg);
+                    unsigned nb = prevclr.b + (j * db);
+                    unsigned na = prevclr.a + (j * da);
                     bins.push_back(sf::Color(nr, ng, nb, na));
                 }
             }

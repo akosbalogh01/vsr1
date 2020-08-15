@@ -15,3 +15,7 @@ const unsigned vs::point::getBrightness() const {
 const sf::Color vs::point::getBinColor(const unsigned bin) const {
     return bins[bin];
 }
+
+void vs::point::setStamp(const sf::Time& t) {
+    stamp = t.asMilliseconds();
+}

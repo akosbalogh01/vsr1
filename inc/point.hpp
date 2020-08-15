@@ -20,6 +20,8 @@ namespace vs {
         const unsigned getVolume() const;
         const unsigned getBrightness() const;
         const sf::Color getBinColor(const unsigned) const;
+
+        void setStamp(const sf::Time&);
     };
 }
 
