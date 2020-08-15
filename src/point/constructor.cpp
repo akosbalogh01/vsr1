@@ -25,7 +25,7 @@ vs::point::point(const rapidxml::xml_node<>* root) {
                 for (unsigned j = 0; j <= i; ++j) bins.push_back(color);
             }
             else {
-                unsigned dw = i - (bins.size() - 1);
+                unsigned dw = i - bins.size();
                 double dr = ((double) color.r - prevclr.r)/dw;
                 double dg = ((double) color.g - prevclr.g)/dw;
                 double db = ((double) color.b - prevclr.b)/dw;

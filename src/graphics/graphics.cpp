@@ -1,7 +1,6 @@
 #include "metadata.hpp"
 #include "graphics.hpp"
 
-// Public methods
 void vs::graphics::resizeInterface(const sf::Vector2u& size) {
     wsize = size;
 }

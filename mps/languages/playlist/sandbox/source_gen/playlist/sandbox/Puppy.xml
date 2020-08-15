@@ -45,6 +45,18 @@
         <bin index="70" color="RGBA(0, 77, 38, 255)"></bin>
         <bin index="110" color="RGBA(255, 77, 77, 255)"></bin>
       </ControlPoint>
+      <ControlPoint timestamp="360000" volume="100" brightness="100">
+        <bin index="5" color="RGBA(0, 51, 102, 255)"></bin>
+        <bin index="30" color="RGBA(0, 13, 77, 255)"></bin>
+        <bin index="40" color="RGBA(0, 13, 77, 255)"></bin>
+        <bin index="80" color="RGBA(0, 51, 77, 255)"></bin>
+        <bin index="115" color="RGBA(255, 77, 77, 255)"></bin>
+      </ControlPoint>
+      <ControlPoint timestamp="420000" volume="100" brightness="100">
+        <bin index="5" color="RGBA(9, 51, 0, 255)"></bin>
+        <bin index="80" color="RGBA(0, 13, 77, 255)"></bin>
+        <bin index="110" color="RGBA(153, 0, 26, 255)"></bin>
+      </ControlPoint>
     </Song>
 
     <Song file="D:\Music\Fluke\Puppy\Fluke - Puppy - 03 - Another Kind of Blues.flac">
