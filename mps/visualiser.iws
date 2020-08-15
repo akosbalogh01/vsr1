@@ -1,10 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c0662186-e863-4c7d-b874-d21e3fe7dd05" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/languages/playlist/sandbox/models/playlist.sandbox.mps" beforeDir="false" afterPath="$PROJECT_DIR$/languages/playlist/sandbox/models/playlist.sandbox.mps" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/visualiser.iws" beforeDir="false" afterPath="$PROJECT_DIR$/visualiser.iws" afterDir="false" />
-    </list>
+    <list default="true" id="c0662186-e863-4c7d-b874-d21e3fe7dd05" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -170,22 +167,8 @@
               <option name="myItemId" value="e808b2f6-70da-436e-bf6b-14e1ed6cce5f(playlist)" />
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
-          </PATH>
-          <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="Project" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="1cddaf4d-4615-4b8f-ac70-6c1bb0779621" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="playlist" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="r:7df0b85c-1ac1-482d-bd2d-95d15fb6164f(playlist.sandbox) in IdeaFile[path: C:/Users/akosb/Programming/visualiser/mps/languages/playlist/sandbox/models/playlist.sandbox.mps]" />
+              <option name="myItemId" value="r:de050263-7aec-4e3f-a874-7935d74b9031(playlist.structure) in IdeaFile[path: C:/Users/akosb/Programming/visualiser/mps/languages/playlist/models/playlist.structure.mps]" />
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
           </PATH>
@@ -223,39 +206,25 @@
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="1cddaf4d-4615-4b8f-ac70-6c1bb0779621" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="playlist" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Project" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="e808b2f6-70da-436e-bf6b-14e1ed6cce5f(playlist)" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="r:de050263-7aec-4e3f-a874-7935d74b9031(playlist.structure) in IdeaFile[path: C:/Users/akosb/Programming/visualiser/mps/languages/playlist/models/playlist.structure.mps]" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Project" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
               <option name="myItemId" value="e808b2f6-70da-436e-bf6b-14e1ed6cce5f(playlist)" />
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="r:fbac261e-7a0d-4960-b28a-5a86d5009e67(playlist.constraints) in IdeaFile[path: C:/Users/akosb/Programming/visualiser/mps/languages/playlist/models/playlist.constraints.mps]" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Project" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="1cddaf4d-4615-4b8f-ac70-6c1bb0779621" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="playlist" />
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
           </PATH>
@@ -276,6 +245,34 @@
           <PATH>
             <PATH_ELEMENT>
               <option name="myItemId" value="Project" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="1cddaf4d-4615-4b8f-ac70-6c1bb0779621" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="playlist" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="r:7df0b85c-1ac1-482d-bd2d-95d15fb6164f(playlist.sandbox) in IdeaFile[path: C:/Users/akosb/Programming/visualiser/mps/languages/playlist/sandbox/models/playlist.sandbox.mps]" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Project" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Project" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="e808b2f6-70da-436e-bf6b-14e1ed6cce5f(playlist)" />
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
           </PATH>
