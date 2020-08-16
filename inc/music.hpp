@@ -17,7 +17,7 @@ namespace vs {
         sf::SoundBuffer buffer;
         sf::Sound sound;
         std::vector <vs::point> cvec;
-        std::vector <std::complex<double>> bins;
+        std::vector <std::complex<float>> bins;
 
     public:
         music() = delete;

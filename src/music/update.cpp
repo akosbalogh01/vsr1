@@ -4,14 +4,14 @@
 
 const unsigned lofasz = 4096;
 
-inline const std::complex<double> dft(const sf::Int16* data, const unsigned index) {
+inline const std::complex<float> dft(const sf::Int16* data, const unsigned index) {
     const double pi = 3.1415926535;
-    const std::complex<double> i(0, 1);
-    std::complex<double> res(0, 0);
+    const std::complex<float> i(0, 1);
+    std::complex<float> res(0, 0);
 
     for (unsigned j = 0; j < lofasz; ++j) {
-        std::complex<double> temp(((-2*index*j*pi)/lofasz));
-        std::complex<double> d(data[j]);
+        std::complex<float> temp(((-2*index*j*pi)/lofasz));
+        std::complex<float> d(data[j]);
         res += d * exp(temp*i);
     }
 
