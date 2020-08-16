@@ -20,6 +20,7 @@ namespace vs {
         sf::Text text;
         sf::Clock runtime;
         sf::Time timers[dclock::_SIZE];
+        unsigned prev[dclock::_SIZE];
 
         void drawText(const unsigned, const std::string&);
 
@@ -30,7 +31,6 @@ namespace vs {
         void renderOverlay();
 
         void signal(const dclock);
-        unsigned getTime(const dclock);
     };
 }
 

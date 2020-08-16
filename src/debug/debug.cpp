@@ -4,6 +4,7 @@
 vs::debug::debug() {
     for (unsigned i = 0; i < vs::dclock::_SIZE; ++i) {
         timers[i] = sf::Time::Zero;
+        prev[i] = 0;
     }
 
     font.loadFromFile(vs::path::font);
@@ -15,11 +16,14 @@ vs::debug::debug() {
 }
 
 void vs::debug::signal(const vs::dclock t) {
+    prev[t] = runtime.getElapsedTime().asMilliseconds() - timers[t].asMilliseconds();
     timers[t] = runtime.getElapsedTime();
 }
 
+/*
 unsigned vs::debug::getTime(const vs::dclock t) {
     unsigned result = (runtime.getElapsedTime().asMicroseconds() - timers[t].asMicroseconds());
     signal(t);
     return result;
 }
+*/

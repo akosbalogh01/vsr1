@@ -1,5 +1,14 @@
 #include "debug.hpp"
 
+static inline std::string toString(const sf::Time& time) {
+    char buf[10];
+    unsigned m = time.asSeconds()/60;
+    unsigned s = ((int) time.asSeconds()) % 60;
+
+    sprintf(buf, "%d:%02d", m, s);
+    return std::string(buf);
+}
+
 void vs::debug::drawText(const unsigned y, const std::string& str) {
     text.setString(str);
     text.setPosition(sf::Vector2f(10, y));
@@ -9,10 +18,11 @@ void vs::debug::drawText(const unsigned y, const std::string& str) {
 void vs::debug::renderOverlay() {
     if (overlay.isOpen()) {
         overlay.clear(sf::Color::Black);
-        drawText(10, "frame: " + std::to_string(timers[vs::dclock::FRAME].asMicroseconds()) + "us");
-        drawText(30, "event: " + std::to_string(timers[vs::dclock::EVENT].asMicroseconds()) + "us");
-        drawText(50, "update: " + std::to_string(timers[vs::dclock::UPDATE].asMicroseconds()) + "us");
-        drawText(70, "render: " + std::to_string(timers[vs::dclock::RENDER].asMicroseconds()) + "us");
+        drawText(10, "runtime: " + toString(runtime.getElapsedTime()));
+        drawText(30, "frame: " + std::to_string(prev[vs::dclock::FRAME]) + "us");
+        drawText(50, "event: " + std::to_string(prev[vs::dclock::EVENT]) + "us");
+        drawText(70, "update: " + std::to_string(prev[vs::dclock::UPDATE]) + "ms");
+        drawText(90, "render: " + std::to_string(prev[vs::dclock::RENDER]) + "us");
         overlay.display();
     }
 }
