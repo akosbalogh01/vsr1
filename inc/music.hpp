@@ -18,6 +18,7 @@ namespace vs {
         sf::Sound sound;
         std::vector <vs::point> cvec;
         std::vector <std::complex<float>> bins;
+        void fft(const sf::Int16* data);
 
     public:
         music() = delete;

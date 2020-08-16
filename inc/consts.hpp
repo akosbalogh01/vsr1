@@ -3,6 +3,7 @@
 
 #include <memory>
 #include <stdexcept>
+#include "math.h"
 #include "SFML/Graphics.hpp"
 #include "music.hpp"
 
@@ -30,6 +31,11 @@ namespace vs {
             const unsigned vm = 100;
             const unsigned v0 = 5;
             const unsigned coeff = 5;
+        }
+
+        namespace fft {
+            const int scount = 512;
+            constexpr int log2sc = log2(scount);
         }
     }
 
