@@ -1,6 +1,7 @@
 #ifndef VISU_CONSTS
 #define VISU_CONSTS
 
+#include <complex>
 #include <memory>
 #include <stdexcept>
 #include "math.h"
@@ -11,6 +12,7 @@ namespace vs {
     namespace t {
         typedef std::shared_ptr<vs::music> mptr;
         typedef sf::RenderWindow* const rtarget;
+        typedef std::complex<float> cx;
     }
 
     namespace path {

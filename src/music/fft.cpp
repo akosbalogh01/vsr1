@@ -3,6 +3,11 @@
 #include "consts.hpp"
 #include "music.hpp"
 
+/*
+    FFT algorithm copied from:
+    https://www.geeksforgeeks.org/iterative-fast-fourier-transformation-polynomial-multiplication/
+*/
+
 static inline const unsigned bitReverse(unsigned x, const unsigned log2n)
 {
     unsigned n = 0;
@@ -25,21 +30,21 @@ void vs::music::fft(const sf::Int16* a) {
     }
 
     // j is iota
-    const std::complex<float> J(0, 1);
+    const vs::t::cx J(0, 1);
     for (int s = 1; s <= vs::audio::fft::log2sc; ++s) {
         int m = 1 << s; // 2 power s
         int m2 = m >> 1; // m2 = m/2 -1
-        std::complex<float> w(1, 0);
+        vs::t::cx w(1, 0);
 
         // principle root of nth complex
         // root of unity.
-        std::complex<float> wm = exp(J * (PI / m2));
+        vs::t::cx wm = exp(J * (PI / m2));
         for (int j = 0; j < m2; ++j) {
             for (int k = j; k < vs::audio::fft::scount; k += m) {
 
                 // t = twiddle factor
-                std::complex<float> t = w * bins[k + m2];
-                std::complex<float> u = bins[k];
+                vs::t::cx t = w * bins[k + m2];
+                vs::t::cx u = bins[k];
 
                 // similar calculating y[k]
                 bins[k] = u + t;

@@ -110,6 +110,8 @@
 		<Unit filename="src/audio/events.cpp" />
 		<Unit filename="src/bar.cpp" />
 		<Unit filename="src/debug/debug.cpp" />
+		<Unit filename="src/debug/events.cpp" />
+		<Unit filename="src/debug/render.cpp" />
 		<Unit filename="src/events.cpp" />
 		<Unit filename="src/graphics/constructor.cpp" />
 		<Unit filename="src/graphics/graphics.cpp" />
@@ -130,6 +132,7 @@
 		<Unit filename="src/music/bincolor.cpp" />
 		<Unit filename="src/music/binheight.cpp" />
 		<Unit filename="src/music/constructor.cpp" />
+		<Unit filename="src/music/fft.cpp" />
 		<Unit filename="src/music/meta.cpp" />
 		<Unit filename="src/music/music.cpp" />
 		<Unit filename="src/music/update.cpp" />
