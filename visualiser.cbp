@@ -104,6 +104,8 @@
 		<Unit filename="inc/xml/rapidxml_utils.hpp" />
 		<Unit filename="src/audio/audio.cpp" />
 		<Unit filename="src/audio/buildplaylist.cpp" />
+		<Unit filename="src/audio/constructor.cpp" />
+		<Unit filename="src/audio/events.cpp" />
 		<Unit filename="src/bar.cpp" />
 		<Unit filename="src/events.cpp" />
 		<Unit filename="src/graphics/constructor.cpp" />
@@ -120,8 +122,15 @@
 		<Unit filename="src/logic/logic.cpp" />
 		<Unit filename="src/logic/update.cpp" />
 		<Unit filename="src/main.cpp" />
-		<Unit filename="src/metadata.cpp" />
-		<Unit filename="src/music.cpp" />
+		<Unit filename="src/meta/constructor.cpp" />
+		<Unit filename="src/meta/metadata.cpp" />
+		<Unit filename="src/music/bincolor.cpp" />
+		<Unit filename="src/music/binheight.cpp" />
+		<Unit filename="src/music/constructor.cpp" />
+		<Unit filename="src/music/meta.cpp" />
+		<Unit filename="src/music/music.cpp" />
+		<Unit filename="src/music/update.cpp" />
+		<Unit filename="src/music/volume.cpp" />
 		<Unit filename="src/playlist/next.cpp" />
 		<Unit filename="src/playlist/playlist.cpp" />
 		<Unit filename="src/playlist/prev.cpp" />
