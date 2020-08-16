@@ -19,23 +19,24 @@ inline const std::complex<double> dft(const sf::Int16* data, const unsigned inde
 }
 
 void vs::music::update() {
-    sf::Time t = sound.getPlayingOffset();
-    uint16_t srate  = buffer.getSampleRate();
-    uint64_t scount = buffer.getSampleCount();
+    if (sound.getStatus() == sf::Music::Playing) {
+        sf::Time t = sound.getPlayingOffset();
+        uint16_t srate  = buffer.getSampleRate();
+        uint64_t scount = buffer.getSampleCount();
 
-    uint64_t current = t.asMilliseconds() * ((double) srate / 1000);
-    sf::Int16 data[lofasz] = {0};
+        uint64_t current = t.asMilliseconds() * ((double) srate / 1000);
+        sf::Int16 data[lofasz] = {0};
 
-    if ((current > lofasz) && (current < (scount - lofasz))) {
-        for (unsigned i = 0; i < lofasz; ++i) {
-            data[i] = *(buffer.getSamples() + current + i);
+        if ((current > lofasz) && (current < (scount - lofasz))) {
+            for (unsigned i = 0; i < lofasz; ++i) {
+                data[i] = *(buffer.getSamples() + current + i);
+            }
+
+            //data has lofasz :) samples
+            for (unsigned i = 0; i < 120; ++i) {
+                bins[i] = dft(data, i*17);
+            }
+
         }
-
-        //data has lofasz :) samples
-        for (unsigned i = 0; i < 120; ++i) {
-            bins[i] = dft(data, i*17);
-        }
-
     }
-    else return;
 }

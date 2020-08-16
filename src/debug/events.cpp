@@ -1,4 +1,5 @@
 #include <iostream>
+#include "consts.hpp"
 #include "debug.hpp"
 
 void vs::debug::toggleOverlay(const sf::Event& event) {
@@ -10,6 +11,8 @@ void vs::debug::toggleOverlay(const sf::Event& event) {
         else {
             std::cout << "Enabled debug overlay." << std::endl;
             overlay.create(sf::VideoMode(500, 500), "Debug overlay", sf::Style::Titlebar);
+            overlay.setFramerateLimit(vs::gfx::framelimit);
+            overlay.setActive(false);
         }
     }
 }

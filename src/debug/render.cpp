@@ -21,7 +21,7 @@ void vs::debug::renderOverlay() {
         drawText(10, "runtime: " + toString(runtime.getElapsedTime()));
         drawText(30, "frame: " + std::to_string(prev[vs::dclock::FRAME]) + "us");
         drawText(50, "event: " + std::to_string(prev[vs::dclock::EVENT]) + "us");
-        drawText(70, "update: " + std::to_string(prev[vs::dclock::UPDATE]) + "ms");
+        drawText(70, "update: " + std::to_string(prev[vs::dclock::UPDATE]) + "us");
         drawText(90, "render: " + std::to_string(prev[vs::dclock::RENDER]) + "us");
         overlay.display();
     }

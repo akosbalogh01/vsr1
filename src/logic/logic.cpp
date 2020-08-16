@@ -7,8 +7,10 @@ bool vs::logic::pollEvent(sf::Event& event) {
 }
 
 void vs::logic::procEvent(const sf::Event& event) {
+    dman.signal(vs::dclock::EVENT);
     wman.displayMetadata();
     eman.exec(event);
+    dman.signal(vs::dclock::EVENT);
 }
 
 bool vs::logic::isRunning() const {
@@ -23,10 +25,17 @@ void vs::logic::eventPaused(const sf::Event& event) {
 
 void vs::logic::togglePaused() {
     if (paused) {
-        started = true;
-        paused = false;
-        aman.togglePaused();
-        std::cout << "Resumed playback" << std::endl;
+        if (!started) {
+            started = true;
+            paused = false;
+            aman.togglePaused();
+            std::cout << "Started playback" << std::endl;
+        }
+        else {
+            paused = false;
+            aman.togglePaused();
+            std::cout << "Resumed playback" << std::endl;
+        }
     }
     else {
         std::cout << "Paused playback" << std::endl;
@@ -36,6 +45,8 @@ void vs::logic::togglePaused() {
 }
 
 void vs::logic::render() {
+    dman.signal(vs::dclock::RENDER);
     wman.render();
     dman.renderOverlay();
+    dman.signal(vs::dclock::RENDER);
 }

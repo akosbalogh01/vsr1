@@ -16,7 +16,7 @@ vs::debug::debug() {
 }
 
 void vs::debug::signal(const vs::dclock t) {
-    prev[t] = runtime.getElapsedTime().asMilliseconds() - timers[t].asMilliseconds();
+    prev[t] = runtime.getElapsedTime().asMicroseconds() - timers[t].asMicroseconds();
     timers[t] = runtime.getElapsedTime();
 }
 
