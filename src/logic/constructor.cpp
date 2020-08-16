@@ -26,6 +26,7 @@ vs::logic::logic(const int argc, const char** argv, vs::t::mptr m): player(m),  
     eman.add(sf::Event::KeyReleased, vs::fpair(std::bind(&vs::windowman::toggleVisualisation, &wman, _1), std::bind(&vs::windowman::toggleTransmission, &wman, _1)));
     eman.add(sf::Event::KeyReleased, vs::fpair(std::bind(&vs::audioman::prevSong, &aman, _1), std::bind(&vs::audioman::jumpBack, &aman, _1)));
     eman.add(sf::Event::KeyReleased, vs::fpair(std::bind(&vs::audioman::eventNextSong, &aman, _1), std::bind(&vs::audioman::jumpForward, &aman, _1)));
+    eman.add(sf::Event::KeyReleased, vs::fpair(std::bind(&vs::windowman::toggleDebugOverlay, &wman, _1), std::bind(&vs::windowman::toggleDebugOverlay, &wman, _1)));
 
     std::ifstream playlist(argv[1]);
     if (playlist.good()) {

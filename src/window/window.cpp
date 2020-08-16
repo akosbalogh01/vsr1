@@ -3,10 +3,7 @@
 
 vs::windowman::windowman(vs::t::mptr m): player(m), gui(&window, m) {
     window.setFramerateLimit(vs::gfx::framelimit);
-}
-
-bool vs::windowman::pollEvent(sf::Event& event) {
-    return window.pollEvent(event);
+    debug = false;
 }
 
 bool vs::windowman::isOpen() const {
@@ -38,28 +35,6 @@ void vs::windowman::windowResize(const sf::Event& event) {
     sf::Vector2u v(event.size.width, event.size.height);
     window.setSize(v);
     gui.resizeInterface(v);
-}
-
-void vs::windowman::setBrightness(const sf::Event& event) {
-    gui.setBrightness(event);
-}
-
-void vs::windowman::toggleVisualisation(const sf::Event& event) {
-    gui.toggleVisualisation(event);
-}
-
-void vs::windowman::toggleTransmission(const sf::Event& event) {
-    gui.toggleTransmission(event);
-}
-
-void vs::windowman::displayMetadata() {
-    gui.toggleMetadata();
-}
-
-void vs::windowman::render() {
-    window.clear(vs::gfx::color::bg);
-    gui.render();
-    window.display();
 }
 
 void vs::windowman::update() {

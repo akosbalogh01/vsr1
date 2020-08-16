@@ -12,6 +12,7 @@ namespace vs {
     private:
         sf::RenderWindow window;
         graphics gui;
+        bool debug;
 
     public:
         windowman() = delete;
@@ -28,6 +29,7 @@ namespace vs {
         void setBrightness(const sf::Event&);
         void toggleVisualisation(const sf::Event&);
         void toggleTransmission(const sf::Event&);
+        void toggleDebugOverlay(const sf::Event&);
         void displayMetadata();
 
         void render();
