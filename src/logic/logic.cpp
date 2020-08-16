@@ -37,4 +37,5 @@ void vs::logic::togglePaused() {
 
 void vs::logic::render() {
     wman.render();
+    dman.renderOverlay();
 }

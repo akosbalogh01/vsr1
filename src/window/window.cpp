@@ -3,7 +3,6 @@
 
 vs::windowman::windowman(vs::t::mptr m): player(m), gui(&window, m) {
     window.setFramerateLimit(vs::gfx::framelimit);
-    debug = false;
 }
 
 bool vs::windowman::isOpen() const {

@@ -21,15 +21,3 @@ void vs::windowman::displayMetadata() {
     gui.toggleMetadata();
 }
 
-void vs::windowman::toggleDebugOverlay(const sf::Event& event) {
-    if (event.key.code == sf::Keyboard::D) {
-        if (debug) {
-            std::cout << "Disabled debug overlay." << std::endl;
-            debug = false;
-        }
-        else {
-            std::cout << "Enabled debug overlay." << std::endl;
-            debug = true;
-        }
-    }
-}

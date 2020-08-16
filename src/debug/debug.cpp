@@ -1,10 +1,15 @@
+#include "consts.hpp"
 #include "debug.hpp"
 
 vs::debug::debug() {
-    en = false;
     for (unsigned i = 0; i < vs::dclock::_SIZE; ++i) {
         timers[i] = sf::Time::Zero;
     }
+
+    font.loadFromFile(vs::path::font);
+    text.setFont(font);
+    text.setCharacterSize(20);
+    text.setFillColor(sf::Color::Red);
 
     runtime.restart();
 }
