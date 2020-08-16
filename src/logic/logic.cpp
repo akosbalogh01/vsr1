@@ -50,3 +50,7 @@ void vs::logic::render() {
     dman.renderOverlay();
     dman.signal(vs::dclock::RENDER);
 }
+
+void vs::logic::signal() {
+    dman.signal(vs::dclock::FRAME);
+}

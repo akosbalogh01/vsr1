@@ -13,6 +13,7 @@ int main(const int argc, const char* argv[]) {
 
         program.update();
         program.render();
+        program.signal();
     }
 
     return 0;
