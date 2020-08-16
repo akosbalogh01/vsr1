@@ -35,7 +35,6 @@ namespace vs {
 
         void update();
         void render();
-        void signal();
     };
 }
 
