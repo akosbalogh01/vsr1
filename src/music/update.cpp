@@ -4,10 +4,10 @@
 void vs::music::update() {
     if (sound.getStatus() == sf::Music::Playing) {
         sf::Time t = sound.getPlayingOffset();
-        uint16_t srate  = buffer.getSampleRate();
+        double srate  = buffer.getSampleRate() * buffer.getChannelCount();
         uint64_t scount = buffer.getSampleCount();
 
-        uint64_t current = t.asMilliseconds() * ((double) srate / 1000);
+        uint64_t current = t.asMicroseconds() * (srate / 1000000);
         sf::Int16 data[vs::audio::fft::scount] = {0};
 
         if ((current > vs::audio::fft::scount) && (current < (scount - vs::audio::fft::scount))) {

@@ -6,6 +6,7 @@
 #include <stdexcept>
 #include "math.h"
 #include "SFML/Graphics.hpp"
+#include "fft.hpp"
 #include "music.hpp"
 
 namespace vs {
@@ -34,11 +35,6 @@ namespace vs {
             const unsigned v0 = 50;
             const unsigned coeff = 5;
         }
-
-        namespace fft {
-            const int scount = 512;
-            constexpr int log2sc = log2(scount);
-        }
     }
 
     namespace gfx {
@@ -55,7 +51,7 @@ namespace vs {
 
         namespace layout {
             const unsigned theight = 15;
-            const unsigned bheight = 255;
+            const unsigned bheight = 400;
             const unsigned frame = 1;
             const unsigned x1 = 10;
             const unsigned y1 = 10;

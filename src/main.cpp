@@ -5,6 +5,7 @@
     TODO: fix window resizing
     TODO: fix release mode time bar rendering
     TODO: fix application crash
+    TODO: fix bar height setter
     TODO: add tx timer to debug window
 */
 

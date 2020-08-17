@@ -6,7 +6,7 @@ vs::music::music(const std::string& fpath): meta(fpath) {
     maxvol = vs::audio::volume::vm;
     volume = vs::audio::volume::v0;
     buffered = false;
-    bins.resize(vs::gfx::bincount);
+    bins.resize(vs::audio::fft::scount);
     sound.setVolume(volume);
 }
 
@@ -15,7 +15,7 @@ vs::music::music(const std::string& fpath, const std::vector <vs::point>& points
     volume = vs::audio::volume::v0;
     buffered = false;
     cvec = points;
-    bins.resize(vs::gfx::bincount);
+    bins.resize(vs::audio::fft::scount);
     sound.setVolume(volume);
 }
 

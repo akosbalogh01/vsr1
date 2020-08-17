@@ -8,8 +8,7 @@
     https://www.geeksforgeeks.org/iterative-fast-fourier-transformation-polynomial-multiplication/
 */
 
-static inline const unsigned bitReverse(unsigned x, const unsigned log2n)
-{
+static inline const unsigned bitReverse(unsigned x, const unsigned log2n) {
     unsigned n = 0;
     for (unsigned i = 0; i < log2n; i++)
     {
@@ -26,7 +25,7 @@ void vs::music::fft(const sf::Int16* a) {
     // bit reversal of the given array
     for (unsigned int i = 0; i < vs::audio::fft::scount; ++i) {
         int rev = bitReverse(i, vs::audio::fft::log2sc);
-        bins[i] = a[rev];
+        bins[i] = a[rev] * vs::audio::fft::window[rev];
     }
 
     // j is iota

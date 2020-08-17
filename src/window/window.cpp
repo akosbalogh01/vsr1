@@ -33,6 +33,9 @@ void vs::windowman::windowResize(const sf::Event& event) {
     std::cout << "Resizing window" << std::endl;
     sf::Vector2u v(event.size.width, event.size.height);
     window.setSize(v);
+    sf::View view = window.getView();
+    view.setSize(event.size.width, event.size.height);
+    window.setView(view);
     gui.resizeInterface(v);
 }
 

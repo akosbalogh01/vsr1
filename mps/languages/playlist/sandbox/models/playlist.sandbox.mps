@@ -42,6 +42,9 @@
   </registry>
   <node concept="dSSFv" id="1TjGC7i4$$X">
     <property role="TrG5h" value="Puppy" />
+    <node concept="3SaUF2" id="66RAJRWj2Z_" role="dSSEv">
+      <ref role="3SaUF3" node="66RAJRWj2YU" resolve="TEST_DELAY" />
+    </node>
     <node concept="3SaUF2" id="5jhE8MGYBOF" role="dSSEv">
       <ref role="3SaUF3" node="5jhE8MGYpUF" resolve="01 - Snapshot" />
     </node>
@@ -2833,6 +2836,56 @@
           <property role="dSSES" value="64" />
           <property role="dSSEX" value="64" />
           <property role="dSSEL" value="255" />
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="dSSFY" id="66RAJRWj2YU">
+    <property role="TrG5h" value="TEST_DELAY" />
+    <property role="dSSFN" value="D:\Music\am.flac" />
+    <node concept="dSSBz" id="66RAJRWj2YV" role="dSFt1">
+      <property role="dSSBy" value="0" />
+      <property role="CBNxP" value="10" />
+      <property role="CBNxQ" value="100" />
+      <node concept="dSSE4" id="66RAJRWj2Zc" role="dSSB$">
+        <property role="dSSCJ" value="0" />
+        <node concept="dSSE7" id="66RAJRWj2Zd" role="dSSCx">
+          <property role="dSSE6" value="255" />
+          <property role="dSSES" value="255" />
+          <property role="dSSEX" value="255" />
+        </node>
+      </node>
+      <node concept="dSSE4" id="66RAJRWj2Z0" role="dSSB$">
+        <property role="dSSCJ" value="119" />
+        <node concept="dSSE7" id="66RAJRWj2Z1" role="dSSCx">
+          <property role="dSSE6" value="255" />
+          <property role="dSSES" value="255" />
+          <property role="dSSEX" value="255" />
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="dSSFY" id="66RAJRWj2Zi">
+    <property role="TrG5h" value="TEST_CHIRP" />
+    <property role="dSSFN" value="D:\Music\chirp.flac" />
+    <node concept="dSSBz" id="66RAJRWj2Zj" role="dSFt1">
+      <property role="dSSBy" value="0" />
+      <property role="CBNxP" value="10" />
+      <property role="CBNxQ" value="100" />
+      <node concept="dSSE4" id="66RAJRWj2Zk" role="dSSB$">
+        <property role="dSSCJ" value="0" />
+        <node concept="dSSE7" id="66RAJRWj2Zl" role="dSSCx">
+          <property role="dSSE6" value="255" />
+          <property role="dSSES" value="255" />
+          <property role="dSSEX" value="255" />
+        </node>
+      </node>
+      <node concept="dSSE4" id="66RAJRWj2Zo" role="dSSB$">
+        <property role="dSSCJ" value="110" />
+        <node concept="dSSE7" id="66RAJRWj2Zp" role="dSSCx">
+          <property role="dSSE6" value="255" />
+          <property role="dSSES" value="255" />
+          <property role="dSSEX" value="255" />
         </node>
       </node>
     </node>
