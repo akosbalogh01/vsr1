@@ -43,6 +43,7 @@ namespace vs {
         const sf::Color getBinColor(const unsigned) const;
         const unsigned getBinHeight(const unsigned) const;
         const unsigned getMaxVolume() const;
+        const unsigned getModVolume() const;
 
         const bool isOver() const;
         const bool isBuffered() const;

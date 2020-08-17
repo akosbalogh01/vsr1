@@ -23,6 +23,12 @@ void vs::debug::renderOverlay() {
         drawText(50, "event: " + std::to_string(prev[vs::dclock::EVENT]) + "us");
         drawText(70, "update: " + std::to_string(prev[vs::dclock::UPDATE]) + "us");
         drawText(90, "render: " + std::to_string(prev[vs::dclock::RENDER]) + "us");
+        drawText(250, "playing");
+        drawText(270, playing->getTitle());
+        drawText(290, std::to_string(playing->getTime().first.asMilliseconds()) + "ms");
+        drawText(310, std::to_string(playing->getTime().second.asMilliseconds()) + "ms");
+        drawText(330, "max vol: " + std::to_string(playing->getMaxVolume()) + "%");
+        drawText(350, "cur vol: " + std::to_string(playing->getModVolume()) + "%");
         overlay.display();
     }
 }

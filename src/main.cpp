@@ -1,6 +1,13 @@
 #include <memory>
 #include "logic.hpp"
 
+/**
+    TODO: fix window resizing
+    TODO: fix release mode time bar rendering
+    TODO: add tx timer to debug window
+    TODO: add music data to debug window
+*/
+
 int main(const int argc, const char* argv[]) {
     vs::t::mptr playing = std::make_shared<vs::music>("null");
     vs::logic program(argc, argv, playing);

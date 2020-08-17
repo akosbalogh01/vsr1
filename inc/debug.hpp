@@ -3,6 +3,7 @@
 
 #include "SFML/Graphics.hpp"
 #include "SFML/System/Clock.hpp"
+#include "parents.hpp"
 
 namespace vs {
     typedef enum {
@@ -13,7 +14,7 @@ namespace vs {
         _SIZE
     } dclock;
 
-    class debug {
+    class debug: public player {
     private:
         sf::RenderWindow overlay;
         sf::Font font;
@@ -25,7 +26,8 @@ namespace vs {
         void drawText(const unsigned, const std::string&);
 
     public:
-        debug();
+        debug() = delete;
+        explicit debug(const vs::t::mptr);
 
         void toggleOverlay(const sf::Event&);
         void renderOverlay();

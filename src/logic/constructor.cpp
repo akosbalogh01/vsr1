@@ -6,7 +6,7 @@
 
 using namespace std::placeholders;
 
-vs::logic::logic(const int argc, const char** argv, vs::t::mptr m): player(m),  aman(m), wman(m) {
+vs::logic::logic(const int argc, const char** argv, vs::t::mptr m): player(m), aman(m), wman(m), dman(m) {
     started = false;
     paused = true;
     settings.load(std::string(vs::path::settings));
