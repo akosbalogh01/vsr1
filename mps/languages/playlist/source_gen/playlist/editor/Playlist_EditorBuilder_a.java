@@ -131,7 +131,7 @@ import org.jetbrains.mps.openapi.language.SConcept;
       return LINKS.songs$uItz;
     }
     public SAbstractConcept getChildSConcept() {
-      return CONCEPTS.Song$ms;
+      return CONCEPTS.SongRef$B3;
     }
 
     public EditorCell createNodeCell(SNode elementNode) {
@@ -188,7 +188,7 @@ import org.jetbrains.mps.openapi.language.SConcept;
 
   private static final class CONCEPTS {
     /*package*/ static final SConcept PropertyAttribute$jT = MetaAdapterFactory.getConcept(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x2eb1ad060897da56L, "jetbrains.mps.lang.core.structure.PropertyAttribute");
-    /*package*/ static final SConcept Song$ms = MetaAdapterFactory.getConcept(0xe808b2f670da436eL, 0xbf6b14e1ed6cce5fL, 0x44617bd94982f127L, "playlist.structure.Song");
+    /*package*/ static final SConcept SongRef$B3 = MetaAdapterFactory.getConcept(0xe808b2f670da436eL, 0xbf6b14e1ed6cce5fL, 0x54d1a88cacfa024eL, "playlist.structure.SongRef");
   }
 
   private static final class LINKS {

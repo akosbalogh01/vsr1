@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<product version="3" modelHash="3nsturqvb4dy1wplhh9v3qbm177x7eq">
-  <files names="Bin_Editor.java:Bin_EditorBuilder_a.java:Color_Editor.java:Color_EditorBuilder_a.java:EditorAspectDescriptorImpl.java:Playlist_Editor.java:Playlist_EditorBuilder_a.java:Song_Editor.java:Song_EditorBuilder_a.java:Timestamp_Editor.java:Timestamp_EditorBuilder_a.java" />
+<product version="3" modelHash="1b4tob72dzr804a5jwpjuj2hy7fon25">
+  <files names="Bin_Editor.java:Bin_EditorBuilder_a.java:Color_Editor.java:Color_EditorBuilder_a.java:EditorAspectDescriptorImpl.java:Playlist_Editor.java:Playlist_EditorBuilder_a.java:SongRef_Editor.java:SongRef_EditorBuilder_a.java:SongRef_SubstituteMenu.java:Song_Editor.java:Song_EditorBuilder_a.java:Timestamp_Editor.java:Timestamp_EditorBuilder_a.java" />
 </product>
 

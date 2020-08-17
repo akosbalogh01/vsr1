@@ -13,6 +13,7 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
   private ConceptPresentation props_Color;
   private ConceptPresentation props_Playlist;
   private ConceptPresentation props_Song;
+  private ConceptPresentation props_SongRef;
   private ConceptPresentation props_Timestamp;
 
   @Override
@@ -48,10 +49,18 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
         if (props_Song == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
           cpb.shortDesc("song");
-          cpb.rawPresentation("Song");
+          cpb.presentationByName();
           props_Song = cpb.create();
         }
         return props_Song;
+      case LanguageConceptSwitch.SongRef:
+        if (props_SongRef == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.shortDesc("song reference");
+          cpb.presentationByReference(0xe808b2f670da436eL, 0xbf6b14e1ed6cce5fL, 0x54d1a88cacfa024eL, 0x54d1a88cacfa024fL, "target", "", "");
+          props_SongRef = cpb.create();
+        }
+        return props_SongRef;
       case LanguageConceptSwitch.Timestamp:
         if (props_Timestamp == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();

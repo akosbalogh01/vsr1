@@ -56,13 +56,14 @@
       <property role="20lmBu" value="fLJjDmT/aggregation" />
       <property role="20kJfa" value="songs" />
       <property role="20lbJX" value="fLJekj6/_1__n" />
-      <ref role="20lvS9" node="4hxuX_9wJ4B" resolve="Song" />
+      <ref role="20lvS9" node="5jhE8MGYw9e" resolve="SongRef" />
     </node>
   </node>
   <node concept="1TIwiD" id="4hxuX_9wJ4B">
     <property role="EcuMT" value="4927355640491471143" />
     <property role="TrG5h" value="Song" />
     <property role="R4oN_" value="song" />
+    <property role="19KtqR" value="true" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyi" id="4hxuX_9wJ4E" role="1TKVEl">
       <property role="IQ2nx" value="4927355640491471146" />
@@ -75,6 +76,9 @@
       <property role="20kJfa" value="timestamps" />
       <property role="20lbJX" value="fLJekj6/_1__n" />
       <ref role="20lvS9" node="4hxuX_9wJ8U" resolve="Timestamp" />
+    </node>
+    <node concept="PrWs8" id="5jhE8MGYq5X" role="PzmwI">
+      <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
     </node>
   </node>
   <node concept="1TIwiD" id="4hxuX_9wJ5t">
@@ -147,6 +151,18 @@
       <property role="20kJfa" value="bins" />
       <property role="20lbJX" value="fLJekj5/_0__n" />
       <ref role="20lvS9" node="4hxuX_9wJ5t" resolve="Bin" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="5jhE8MGYw9e">
+    <property role="EcuMT" value="6111851491469427278" />
+    <property role="TrG5h" value="SongRef" />
+    <property role="R4oN_" value="song reference" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyj" id="5jhE8MGYw9f" role="1TKVEi">
+      <property role="IQ2ns" value="6111851491469427279" />
+      <property role="20kJfa" value="target" />
+      <property role="20lbJX" value="fLJekj4/_1" />
+      <ref role="20lvS9" node="4hxuX_9wJ4B" resolve="Song" />
     </node>
   </node>
 </model>

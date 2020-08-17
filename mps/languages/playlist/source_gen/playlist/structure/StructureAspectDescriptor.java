@@ -17,6 +17,7 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
   /*package*/ final ConceptDescriptor myConceptColor = createDescriptorForColor();
   /*package*/ final ConceptDescriptor myConceptPlaylist = createDescriptorForPlaylist();
   /*package*/ final ConceptDescriptor myConceptSong = createDescriptorForSong();
+  /*package*/ final ConceptDescriptor myConceptSongRef = createDescriptorForSongRef();
   /*package*/ final ConceptDescriptor myConceptTimestamp = createDescriptorForTimestamp();
   private final LanguageConceptSwitch myIndexSwitch;
 
@@ -32,7 +33,7 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
 
   @Override
   public Collection<ConceptDescriptor> getDescriptors() {
-    return Arrays.asList(myConceptBin, myConceptColor, myConceptPlaylist, myConceptSong, myConceptTimestamp);
+    return Arrays.asList(myConceptBin, myConceptColor, myConceptPlaylist, myConceptSong, myConceptSongRef, myConceptTimestamp);
   }
 
   @Override
@@ -47,6 +48,8 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
         return myConceptPlaylist;
       case LanguageConceptSwitch.Song:
         return myConceptSong;
+      case LanguageConceptSwitch.SongRef:
+        return myConceptSongRef;
       case LanguageConceptSwitch.Timestamp:
         return myConceptTimestamp;
       default:
@@ -85,16 +88,25 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.parent(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L);
     b.origin("r:de050263-7aec-4e3f-a874-7935d74b9031(playlist.structure)/4927355640491471110");
     b.version(2);
-    b.aggregate("songs", 0x44617bd94982f146L).target(0xe808b2f670da436eL, 0xbf6b14e1ed6cce5fL, 0x44617bd94982f127L).optional(false).ordered(true).multiple(true).origin("4927355640491471174").done();
+    b.aggregate("songs", 0x44617bd94982f146L).target(0xe808b2f670da436eL, 0xbf6b14e1ed6cce5fL, 0x54d1a88cacfa024eL).optional(false).ordered(true).multiple(true).origin("4927355640491471174").done();
     return b.create();
   }
   private static ConceptDescriptor createDescriptorForSong() {
     ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("playlist", "Song", 0xe808b2f670da436eL, 0xbf6b14e1ed6cce5fL, 0x44617bd94982f127L);
-    b.class_(false, false, false);
+    b.class_(false, false, true);
+    b.parent(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L);
     b.origin("r:de050263-7aec-4e3f-a874-7935d74b9031(playlist.structure)/4927355640491471143");
     b.version(2);
     b.property("filepath", 0x44617bd94982f12aL).type(PrimitiveTypeId.STRING).origin("4927355640491471146").done();
     b.aggregate("timestamps", 0x44617bd94983cc98L).target(0xe808b2f670da436eL, 0xbf6b14e1ed6cce5fL, 0x44617bd94982f23aL).optional(false).ordered(true).multiple(true).origin("4927355640491527320").done();
+    return b.create();
+  }
+  private static ConceptDescriptor createDescriptorForSongRef() {
+    ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("playlist", "SongRef", 0xe808b2f670da436eL, 0xbf6b14e1ed6cce5fL, 0x54d1a88cacfa024eL);
+    b.class_(false, false, false);
+    b.origin("r:de050263-7aec-4e3f-a874-7935d74b9031(playlist.structure)/6111851491469427278");
+    b.version(2);
+    b.associate("target", 0x54d1a88cacfa024fL).target(0xe808b2f670da436eL, 0xbf6b14e1ed6cce5fL, 0x44617bd94982f127L).optional(false).origin("6111851491469427279").done();
     return b.create();
   }
   private static ConceptDescriptor createDescriptorForTimestamp() {

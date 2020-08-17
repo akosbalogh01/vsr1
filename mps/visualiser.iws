@@ -2,7 +2,62 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c0662186-e863-4c7d-b874-d21e3fe7dd05" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/languages/playlist/sandbox/source_gen/playlist/sandbox/01 - Snapshot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/languages/playlist/sandbox/source_gen/playlist/sandbox/02 - My Spine" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/languages/playlist/sandbox/source_gen/playlist/sandbox/03 - Another Kind of Blues" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/languages/playlist/sandbox/source_gen/playlist/sandbox/04 - Hang Tough" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/languages/playlist/sandbox/source_gen/playlist/sandbox/05 - Switch/Twitch" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/languages/playlist/source_gen/playlist/editor/SongRef_Editor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/languages/playlist/source_gen/playlist/editor/SongRef_EditorBuilder_a.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/languages/playlist/source_gen/playlist/editor/SongRef_SubstituteMenu.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/languages/playlist/source_gen/playlist/textGen/SongRef_TextGen.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Puppy.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Puppy.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/languages/playlist/classes_gen/playlist/editor/EditorAspectDescriptorImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/languages/playlist/classes_gen/playlist/editor/EditorAspectDescriptorImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/languages/playlist/classes_gen/playlist/editor/Playlist_EditorBuilder_a$CONCEPTS.class" beforeDir="false" afterPath="$PROJECT_DIR$/languages/playlist/classes_gen/playlist/editor/Playlist_EditorBuilder_a$CONCEPTS.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/languages/playlist/classes_gen/playlist/editor/Playlist_EditorBuilder_a$songsListHandler_68riv1_c0.class" beforeDir="false" afterPath="$PROJECT_DIR$/languages/playlist/classes_gen/playlist/editor/Playlist_EditorBuilder_a$songsListHandler_68riv1_c0.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/languages/playlist/classes_gen/playlist/editor/Song_EditorBuilder_a$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/languages/playlist/classes_gen/playlist/editor/Song_EditorBuilder_a$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/languages/playlist/classes_gen/playlist/editor/Song_EditorBuilder_a$CONCEPTS.class" beforeDir="false" afterPath="$PROJECT_DIR$/languages/playlist/classes_gen/playlist/editor/Song_EditorBuilder_a$CONCEPTS.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/languages/playlist/classes_gen/playlist/editor/Song_EditorBuilder_a$LINKS.class" beforeDir="false" afterPath="$PROJECT_DIR$/languages/playlist/classes_gen/playlist/editor/Song_EditorBuilder_a$LINKS.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/languages/playlist/classes_gen/playlist/editor/Song_EditorBuilder_a$PROPS.class" beforeDir="false" afterPath="$PROJECT_DIR$/languages/playlist/classes_gen/playlist/editor/Song_EditorBuilder_a$PROPS.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/languages/playlist/classes_gen/playlist/editor/Song_EditorBuilder_a.class" beforeDir="false" afterPath="$PROJECT_DIR$/languages/playlist/classes_gen/playlist/editor/Song_EditorBuilder_a.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/languages/playlist/classes_gen/playlist/editor/trace.info" beforeDir="false" afterPath="$PROJECT_DIR$/languages/playlist/classes_gen/playlist/editor/trace.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/languages/playlist/classes_gen/playlist/structure/ConceptPresentationAspectImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/languages/playlist/classes_gen/playlist/structure/ConceptPresentationAspectImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/languages/playlist/classes_gen/playlist/structure/LanguageConceptSwitch.class" beforeDir="false" afterPath="$PROJECT_DIR$/languages/playlist/classes_gen/playlist/structure/LanguageConceptSwitch.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/languages/playlist/classes_gen/playlist/structure/StructureAspectDescriptor.class" beforeDir="false" afterPath="$PROJECT_DIR$/languages/playlist/classes_gen/playlist/structure/StructureAspectDescriptor.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/languages/playlist/classes_gen/playlist/structure/aspectcps-descriptorclasses.mps" beforeDir="false" afterPath="$PROJECT_DIR$/languages/playlist/classes_gen/playlist/structure/aspectcps-descriptorclasses.mps" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/languages/playlist/classes_gen/playlist/structure/trace.info" beforeDir="false" afterPath="$PROJECT_DIR$/languages/playlist/classes_gen/playlist/structure/trace.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/languages/playlist/classes_gen/playlist/textGen/TextGenAspectDescriptor.class" beforeDir="false" afterPath="$PROJECT_DIR$/languages/playlist/classes_gen/playlist/textGen/TextGenAspectDescriptor.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/languages/playlist/classes_gen/playlist/textGen/trace.info" beforeDir="false" afterPath="$PROJECT_DIR$/languages/playlist/classes_gen/playlist/textGen/trace.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/languages/playlist/models/playlist.editor.mps" beforeDir="false" afterPath="$PROJECT_DIR$/languages/playlist/models/playlist.editor.mps" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/languages/playlist/models/playlist.structure.mps" beforeDir="false" afterPath="$PROJECT_DIR$/languages/playlist/models/playlist.structure.mps" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/languages/playlist/models/playlist.textGen.mps" beforeDir="false" afterPath="$PROJECT_DIR$/languages/playlist/models/playlist.textGen.mps" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/languages/playlist/sandbox/classes_gen/playlist/sandbox/Puppy.xml" beforeDir="false" afterPath="$PROJECT_DIR$/languages/playlist/sandbox/classes_gen/playlist/sandbox/Puppy.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/languages/playlist/sandbox/classes_gen/playlist/sandbox/trace.info" beforeDir="false" afterPath="$PROJECT_DIR$/languages/playlist/sandbox/classes_gen/playlist/sandbox/trace.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/languages/playlist/sandbox/models/playlist.sandbox.mps" beforeDir="false" afterPath="$PROJECT_DIR$/languages/playlist/sandbox/models/playlist.sandbox.mps" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/languages/playlist/sandbox/source_gen.caches/playlist/sandbox/generated" beforeDir="false" afterPath="$PROJECT_DIR$/languages/playlist/sandbox/source_gen.caches/playlist/sandbox/generated" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/languages/playlist/sandbox/source_gen/playlist/sandbox/Puppy.xml" beforeDir="false" afterPath="$PROJECT_DIR$/languages/playlist/sandbox/source_gen/playlist/sandbox/Puppy.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/languages/playlist/sandbox/source_gen/playlist/sandbox/trace.info" beforeDir="false" afterPath="$PROJECT_DIR$/languages/playlist/sandbox/source_gen/playlist/sandbox/trace.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/languages/playlist/source_gen.caches/playlist/editor/dependencies" beforeDir="false" afterPath="$PROJECT_DIR$/languages/playlist/source_gen.caches/playlist/editor/dependencies" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/languages/playlist/source_gen.caches/playlist/editor/generated" beforeDir="false" afterPath="$PROJECT_DIR$/languages/playlist/source_gen.caches/playlist/editor/generated" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/languages/playlist/source_gen.caches/playlist/generated" beforeDir="false" afterPath="$PROJECT_DIR$/languages/playlist/source_gen.caches/playlist/generated" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/languages/playlist/source_gen.caches/playlist/structure/generated" beforeDir="false" afterPath="$PROJECT_DIR$/languages/playlist/source_gen.caches/playlist/structure/generated" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/languages/playlist/source_gen.caches/playlist/textGen/dependencies" beforeDir="false" afterPath="$PROJECT_DIR$/languages/playlist/source_gen.caches/playlist/textGen/dependencies" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/languages/playlist/source_gen.caches/playlist/textGen/generated" beforeDir="false" afterPath="$PROJECT_DIR$/languages/playlist/source_gen.caches/playlist/textGen/generated" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/languages/playlist/source_gen/playlist/editor/EditorAspectDescriptorImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/languages/playlist/source_gen/playlist/editor/EditorAspectDescriptorImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/languages/playlist/source_gen/playlist/editor/Playlist_EditorBuilder_a.java" beforeDir="false" afterPath="$PROJECT_DIR$/languages/playlist/source_gen/playlist/editor/Playlist_EditorBuilder_a.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/languages/playlist/source_gen/playlist/editor/Song_EditorBuilder_a.java" beforeDir="false" afterPath="$PROJECT_DIR$/languages/playlist/source_gen/playlist/editor/Song_EditorBuilder_a.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/languages/playlist/source_gen/playlist/editor/trace.info" beforeDir="false" afterPath="$PROJECT_DIR$/languages/playlist/source_gen/playlist/editor/trace.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/languages/playlist/source_gen/playlist/structure/ConceptPresentationAspectImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/languages/playlist/source_gen/playlist/structure/ConceptPresentationAspectImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/languages/playlist/source_gen/playlist/structure/LanguageConceptSwitch.java" beforeDir="false" afterPath="$PROJECT_DIR$/languages/playlist/source_gen/playlist/structure/LanguageConceptSwitch.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/languages/playlist/source_gen/playlist/structure/StructureAspectDescriptor.java" beforeDir="false" afterPath="$PROJECT_DIR$/languages/playlist/source_gen/playlist/structure/StructureAspectDescriptor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/languages/playlist/source_gen/playlist/structure/aspectcps-descriptorclasses.mps" beforeDir="false" afterPath="$PROJECT_DIR$/languages/playlist/source_gen/playlist/structure/aspectcps-descriptorclasses.mps" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/languages/playlist/source_gen/playlist/structure/trace.info" beforeDir="false" afterPath="$PROJECT_DIR$/languages/playlist/source_gen/playlist/structure/trace.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/languages/playlist/source_gen/playlist/textGen/TextGenAspectDescriptor.java" beforeDir="false" afterPath="$PROJECT_DIR$/languages/playlist/source_gen/playlist/textGen/TextGenAspectDescriptor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/languages/playlist/source_gen/playlist/textGen/aspectcps-descriptorclasses.mps" beforeDir="false" afterPath="$PROJECT_DIR$/languages/playlist/source_gen/playlist/textGen/aspectcps-descriptorclasses.mps" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/languages/playlist/source_gen/playlist/textGen/trace.info" beforeDir="false" afterPath="$PROJECT_DIR$/languages/playlist/source_gen/playlist/textGen/trace.info" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/visualiser.iws" beforeDir="false" afterPath="$PROJECT_DIR$/visualiser.iws" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/logic/update.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/../src/logic/update.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/music/binheight.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/../src/music/binheight.cpp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -15,7 +70,7 @@
         <TabState>
           <option name="title" value="Console" />
           <tab>
-            <model ref="e4d1ebdd-9426-4923-8445-61c30a5e1b0c/r:7b479b20-231b-4d6d-81f9-11db5849736b(TempModulee4d1ebdd-9426-4923-8445-61c30a5e1b0c/ConsoleModel_37837036873300)">
+            <model ref="a74b3842-4af1-4d51-a820-2c2d7f887531/r:05398cef-c9f2-4090-a8fa-fc3d0ca81fde(TempModulea74b3842-4af1-4d51-a820-2c2d7f887531/ConsoleModel_75247929321700)">
               <persistence version="9" />
               <languages>
                 <devkit ref="70d3d6da-af63-483d-a75f-9c8acf8de332(jetbrains.mps.console.devkit)" />
@@ -35,11 +90,11 @@
                   <concept id="757553790980850366" name="jetbrains.mps.console.base.structure.History" flags="ng" index="3balQm" />
                 </language>
               </registry>
-              <node concept="aymSD" id="1zWdKXtupDO">
-                <node concept="3balQm" id="1zWdKXtupDP" role="aymYE" />
-                <node concept="2Clz$F" id="1zWdKXtupDQ" role="aymYO" />
-                <node concept="2_V_lH" id="1zWdKXtupDR" role="1PhJh3">
-                  <ref role="2_V_lI" node="1zWdKXtupDQ" resolve="CommandHolder" />
+              <node concept="aymSD" id="5jhE8MGXPe2">
+                <node concept="3balQm" id="5jhE8MGXPe3" role="aymYE" />
+                <node concept="2Clz$F" id="5jhE8MGXPe4" role="aymYO" />
+                <node concept="2_V_lH" id="5jhE8MGXPe5" role="1PhJh3">
+                  <ref role="2_V_lI" node="5jhE8MGXPe4" resolve="CommandHolder" />
                 </node>
               </node>
             </model>
@@ -184,6 +239,30 @@
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="1cddaf4d-4615-4b8f-ac70-6c1bb0779621" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="playlist" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Project" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="e808b2f6-70da-436e-bf6b-14e1ed6cce5f(playlist)" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Project" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="e808b2f6-70da-436e-bf6b-14e1ed6cce5f(playlist)" />
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
@@ -197,14 +276,28 @@
               <option name="myItemId" value="Project" />
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
+          </PATH>
+          <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="1cddaf4d-4615-4b8f-ac70-6c1bb0779621" />
+              <option name="myItemId" value="Project" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="e808b2f6-70da-436e-bf6b-14e1ed6cce5f(playlist)" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="playlist#01" />
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
               <option name="myItemId" value="Project" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="1cddaf4d-4615-4b8f-ac70-6c1bb0779621" />
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
           </PATH>
@@ -232,49 +325,11 @@
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="1cddaf4d-4615-4b8f-ac70-6c1bb0779621" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="playlist" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Project" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
               <option name="myItemId" value="e808b2f6-70da-436e-bf6b-14e1ed6cce5f(playlist)" />
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="r:de050263-7aec-4e3f-a874-7935d74b9031(playlist.structure) in IdeaFile[path: C:/Users/akosb/Programming/visualiser/mps/languages/playlist/models/playlist.structure.mps]" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Project" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="e808b2f6-70da-436e-bf6b-14e1ed6cce5f(playlist)" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Project" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="e808b2f6-70da-436e-bf6b-14e1ed6cce5f(playlist)" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="playlist#01" />
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
           </PATH>

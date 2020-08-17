@@ -17,7 +17,7 @@ void vs::logic::update() {
     }
 
     wman.update();
-    playing->update();
+    //playing->update();
 
     dman.signal(vs::dclock::UPDATE);
 }
