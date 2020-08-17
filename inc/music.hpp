@@ -19,6 +19,7 @@ namespace vs {
         std::vector <vs::point> cvec;
         std::vector <std::complex<float>> bins;
         void fft(const sf::Int16* data);
+        void modVolume();
 
     public:
         music() = delete;
@@ -41,6 +42,7 @@ namespace vs {
 
         const sf::Color getBinColor(const unsigned) const;
         const unsigned getBinHeight(const unsigned) const;
+        const unsigned getMaxVolume() const;
 
         const bool isOver() const;
         const bool isBuffered() const;
@@ -48,8 +50,7 @@ namespace vs {
 
         void setMetadata(const vs::metadata&);
         void setOffset(const sf::Time&);
-        void setVolume(const unsigned);
-        //void setMaxVolume(const unsigned);
+        void setMaxVolume(const unsigned);
         void play();
         void pause();
         void update();

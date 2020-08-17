@@ -12,7 +12,6 @@ namespace vs {
     class audioman : public pausable, public player {
     private:
         bool autoplay;
-        unsigned volume;
         playlistman pman;
 
     public:
@@ -24,7 +23,7 @@ namespace vs {
 
         void eventPaused(const sf::Event&);
         void togglePaused();
-        void setVolume(const sf::Event&);
+        void setMaxVolume(const sf::Event&);
         void toggleAutoplay(const sf::Event&);
         void prevSong(const sf::Event&);
         void eventNextSong(const sf::Event&);

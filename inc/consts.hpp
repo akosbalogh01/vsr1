@@ -30,8 +30,8 @@ namespace vs {
         const unsigned bufsize = 3;
 
         namespace volume {
-            const unsigned vm = 100;
-            const unsigned v0 = 5;
+            const unsigned vm = 50;
+            const unsigned v0 = 50;
             const unsigned coeff = 5;
         }
 

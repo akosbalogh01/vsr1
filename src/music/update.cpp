@@ -17,5 +17,8 @@ void vs::music::update() {
 
             fft(data);
         }
+
+        modVolume();
+        //modBrightness();
     }
 }

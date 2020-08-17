@@ -2,14 +2,15 @@
 #include <iostream>
 #include "audio.hpp"
 
-void vs::audioman::setVolume(const sf::Event& event) {
+void vs::audioman::setMaxVolume(const sf::Event& event) {
+    unsigned volume = playing->getMaxVolume();
     const int delta = vs::audio::volume::coeff * (int) event.mouseWheelScroll.delta;
     const int temp = volume + delta;
     if ((temp >= 0) && (temp <= 100)) {
         volume = temp;
     }
 
-    playing->setVolume(volume);
+    playing->setMaxVolume(volume);
     std::cout << "Set max volume: " << volume << std::endl;
 }
 
