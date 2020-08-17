@@ -34,3 +34,9 @@ vs::music::music(vs::music&& other): meta(other.meta) {
     buffered = false;
     this->cvec = other.cvec;
 }
+
+vs::music::~music() {
+    dropBuffer();
+    cvec.clear();
+    bins.clear();
+}

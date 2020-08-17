@@ -4,8 +4,8 @@
 /**
     TODO: fix window resizing
     TODO: fix release mode time bar rendering
+    TODO: fix application crash
     TODO: add tx timer to debug window
-    TODO: add music data to debug window
 */
 
 int main(const int argc, const char* argv[]) {

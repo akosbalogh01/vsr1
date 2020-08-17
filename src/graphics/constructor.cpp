@@ -7,3 +7,7 @@ vs::graphics::graphics(vs::t::rtarget window, vs::t::mptr m): renderable(window)
     text.setFillColor(vs::gfx::color::text);
     wsize = target->getSize();
 }
+
+vs::graphics::~graphics() {
+
+}

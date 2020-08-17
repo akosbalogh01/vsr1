@@ -29,6 +29,7 @@ namespace vs {
         debug() = delete;
         explicit debug(const vs::t::mptr);
 
+        void closeOverlay();
         void toggleOverlay(const sf::Event&);
         void renderOverlay();
 

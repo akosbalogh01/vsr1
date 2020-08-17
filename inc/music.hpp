@@ -27,6 +27,7 @@ namespace vs {
         music(const std::string&, const std::vector <vs::point>&);
         music(const vs::music&);
         music(vs::music&&);
+        ~music();
 
         void init(const vs::music&);
         void initBuffer();

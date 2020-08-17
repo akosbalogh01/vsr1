@@ -30,6 +30,7 @@ namespace vs {
         void nextSong();
         void jumpBack(const sf::Event&);
         void jumpForward(const sf::Event&);
+        void stopPlayback();
 
         const bool getAutoplay() const;
     };

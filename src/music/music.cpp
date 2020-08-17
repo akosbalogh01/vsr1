@@ -16,6 +16,9 @@ void vs::music::initBuffer() {
 
 void vs::music::dropBuffer() {
     if (buffered) {
+        if (sound.getStatus() == sf::Sound::Playing) {
+            sound.stop();
+        }
         std::cout << "Dropping: " << meta << std::endl;
         sound.resetBuffer();
         buffer = sf::SoundBuffer();

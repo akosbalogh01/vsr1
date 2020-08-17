@@ -38,3 +38,7 @@ void vs::audioman::nextSong() {
 const bool vs::audioman::getAutoplay() const {
     return autoplay;
 }
+
+void vs::audioman::stopPlayback() {
+    playing->dropBuffer();
+}

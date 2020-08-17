@@ -28,6 +28,7 @@ namespace vs {
         graphics() = delete;
         graphics(const graphics&) = delete;
         explicit graphics(vs::t::rtarget, vs::t::mptr);
+        ~graphics();
 
         void resizeInterface(const sf::Vector2u&);
         void setBrightness(const sf::Event&);
