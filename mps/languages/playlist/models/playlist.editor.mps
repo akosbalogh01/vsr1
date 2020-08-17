@@ -147,12 +147,6 @@
       <node concept="3F0A7n" id="4hxuX_9wJ6P" role="3EZMnx">
         <ref role="1NtTu8" to="sj14:4hxuX_9wJ5$" resolve="b" />
       </node>
-      <node concept="3F0ifn" id="4hxuX_9wJ75" role="3EZMnx">
-        <property role="3F0ifm" value="," />
-      </node>
-      <node concept="3F0A7n" id="4hxuX_9wJ7n" role="3EZMnx">
-        <ref role="1NtTu8" to="sj14:4hxuX_9wJ5C" resolve="alpha" />
-      </node>
       <node concept="3F0ifn" id="4hxuX_9wJ7F" role="3EZMnx">
         <property role="3F0ifm" value=")" />
       </node>

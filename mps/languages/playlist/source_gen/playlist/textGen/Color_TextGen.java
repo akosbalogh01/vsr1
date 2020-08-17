@@ -19,15 +19,12 @@ public class Color_TextGen extends TextGenDescriptorBase {
     tgs.append("" + SPropertyOperations.getInteger(ctx.getPrimaryInput(), PROPS.g$uO8u));
     tgs.append(", ");
     tgs.append("" + SPropertyOperations.getInteger(ctx.getPrimaryInput(), PROPS.b$uO9V));
-    tgs.append(", ");
-    tgs.append("" + SPropertyOperations.getInteger(ctx.getPrimaryInput(), PROPS.alpha$uObR));
-    tgs.append(")");
+    tgs.append(", 255)");
   }
 
   private static final class PROPS {
     /*package*/ static final SProperty r$uJ20 = MetaAdapterFactory.getProperty(0xe808b2f670da436eL, 0xbf6b14e1ed6cce5fL, 0x44617bd94982f15eL, 0x44617bd94982f15fL, "r");
     /*package*/ static final SProperty g$uO8u = MetaAdapterFactory.getProperty(0xe808b2f670da436eL, 0xbf6b14e1ed6cce5fL, 0x44617bd94982f15eL, 0x44617bd94982f161L, "g");
     /*package*/ static final SProperty b$uO9V = MetaAdapterFactory.getProperty(0xe808b2f670da436eL, 0xbf6b14e1ed6cce5fL, 0x44617bd94982f15eL, 0x44617bd94982f164L, "b");
-    /*package*/ static final SProperty alpha$uObR = MetaAdapterFactory.getProperty(0xe808b2f670da436eL, 0xbf6b14e1ed6cce5fL, 0x44617bd94982f15eL, 0x44617bd94982f168L, "alpha");
   }
 }

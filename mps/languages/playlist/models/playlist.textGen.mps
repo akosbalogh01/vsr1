@@ -120,23 +120,7 @@
             </node>
           </node>
           <node concept="la8eA" id="5iPNu9Wb_cu" role="lcghm">
-            <property role="lacIc" value=", " />
-          </node>
-          <node concept="l9hG8" id="5iPNu9Wb__L" role="lcghm">
-            <node concept="3cpWs3" id="5iPNu9Wb__M" role="lb14g">
-              <node concept="2OqwBi" id="5iPNu9Wb__N" role="3uHU7w">
-                <node concept="117lpO" id="5iPNu9Wb__O" role="2Oq$k0" />
-                <node concept="3TrcHB" id="5iPNu9Wb_EF" role="2OqNvi">
-                  <ref role="3TsBF5" to="sj14:4hxuX_9wJ5C" resolve="alpha" />
-                </node>
-              </node>
-              <node concept="Xl_RD" id="5iPNu9Wb__Q" role="3uHU7B">
-                <property role="Xl_RC" value="" />
-              </node>
-            </node>
-          </node>
-          <node concept="la8eA" id="5iPNu9Wb_Ih" role="lcghm">
-            <property role="lacIc" value=")" />
+            <property role="lacIc" value=", 255)" />
           </node>
         </node>
       </node>
