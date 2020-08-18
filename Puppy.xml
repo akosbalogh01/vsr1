@@ -477,4 +477,34 @@
         <bin index="119" color="RGBA(64, 64, 64, 255)"></bin>
       </ControlPoint>
     </Song>
+
+    <Song file="D:\Music\Fluke\Puppy\Fluke - Puppy - 06 - YKK.flac">
+      <ControlPoint timestamp="0" volume="50" brightness="50">
+      </ControlPoint>
+    </Song>
+
+    <Song file="D:\Music\Fluke\Puppy\Fluke - Puppy - 07 - Expo.flac">
+      <ControlPoint timestamp="0" volume="50" brightness="50">
+      </ControlPoint>
+    </Song>
+
+    <Song file="D:\Music\Fluke\Puppy\Fluke - Puppy - 08 - Electric Blue.flac">
+      <ControlPoint timestamp="0" volume="50" brightness="50">
+      </ControlPoint>
+    </Song>
+
+    <Song file="D:\Music\Fluke\Puppy\Fluke - Puppy - 09 - Baby Pain.flac">
+      <ControlPoint timestamp="0" volume="50" brightness="50">
+      </ControlPoint>
+    </Song>
+
+    <Song file="D:\Music\Fluke\Puppy\Fluke - Puppy - 10 - Nebulus.flac">
+      <ControlPoint timestamp="0" volume="50" brightness="50">
+      </ControlPoint>
+    </Song>
+
+    <Song file="D:\Music\Fluke\Puppy\Fluke - Puppy - 11 - Blue Sky.flac">
+      <ControlPoint timestamp="0" volume="50" brightness="50">
+      </ControlPoint>
+    </Song>
 </Playlist>

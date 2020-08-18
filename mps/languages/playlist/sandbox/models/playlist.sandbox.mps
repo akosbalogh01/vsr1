@@ -42,9 +42,6 @@
   </registry>
   <node concept="dSSFv" id="1TjGC7i4$$X">
     <property role="TrG5h" value="Puppy" />
-    <node concept="3SaUF2" id="66RAJRWj2Z_" role="dSSEv">
-      <ref role="3SaUF3" node="66RAJRWj2YU" resolve="TEST_DELAY" />
-    </node>
     <node concept="3SaUF2" id="5jhE8MGYBOF" role="dSSEv">
       <ref role="3SaUF3" node="5jhE8MGYpUF" resolve="01 - Snapshot" />
     </node>
@@ -59,6 +56,24 @@
     </node>
     <node concept="3SaUF2" id="5jhE8MGYBPe" role="dSSEv">
       <ref role="3SaUF3" node="5jhE8MGYq30" resolve="05 - Switch/Twitch" />
+    </node>
+    <node concept="3SaUF2" id="66RAJRWjLuY" role="dSSEv">
+      <ref role="3SaUF3" node="66RAJRWjC7d" resolve="06 - YKK" />
+    </node>
+    <node concept="3SaUF2" id="66RAJRWjLve" role="dSSEv">
+      <ref role="3SaUF3" node="66RAJRWjC7f" resolve="07 - Expo" />
+    </node>
+    <node concept="3SaUF2" id="66RAJRWjLvw" role="dSSEv">
+      <ref role="3SaUF3" node="66RAJRWjC7h" resolve="08 - Electric Blue" />
+    </node>
+    <node concept="3SaUF2" id="66RAJRWjLvO" role="dSSEv">
+      <ref role="3SaUF3" node="66RAJRWjC7j" resolve="09 - Baby Pain" />
+    </node>
+    <node concept="3SaUF2" id="66RAJRWjLwa" role="dSSEv">
+      <ref role="3SaUF3" node="66RAJRWjC7l" resolve="10 - Nebulus" />
+    </node>
+    <node concept="3SaUF2" id="66RAJRWjLwy" role="dSSEv">
+      <ref role="3SaUF3" node="66RAJRWjC7n" resolve="11 - Blue Sky" />
     </node>
   </node>
   <node concept="dSSFY" id="5jhE8MGYpUF">
@@ -2888,6 +2903,60 @@
           <property role="dSSEX" value="255" />
         </node>
       </node>
+    </node>
+  </node>
+  <node concept="dSSFY" id="66RAJRWjC7d">
+    <property role="TrG5h" value="06 - YKK" />
+    <property role="dSSFN" value="D:\Music\Fluke\Puppy\Fluke - Puppy - 06 - YKK.flac" />
+    <node concept="dSSBz" id="66RAJRWjC7e" role="dSFt1">
+      <property role="dSSBy" value="0" />
+      <property role="CBNxP" value="50" />
+      <property role="CBNxQ" value="50" />
+    </node>
+  </node>
+  <node concept="dSSFY" id="66RAJRWjC7f">
+    <property role="TrG5h" value="07 - Expo" />
+    <property role="dSSFN" value="D:\Music\Fluke\Puppy\Fluke - Puppy - 07 - Expo.flac" />
+    <node concept="dSSBz" id="66RAJRWjC7g" role="dSFt1">
+      <property role="dSSBy" value="0" />
+      <property role="CBNxP" value="50" />
+      <property role="CBNxQ" value="50" />
+    </node>
+  </node>
+  <node concept="dSSFY" id="66RAJRWjC7h">
+    <property role="TrG5h" value="08 - Electric Blue" />
+    <property role="dSSFN" value="D:\Music\Fluke\Puppy\Fluke - Puppy - 08 - Electric Blue.flac" />
+    <node concept="dSSBz" id="66RAJRWjC7i" role="dSFt1">
+      <property role="dSSBy" value="0" />
+      <property role="CBNxP" value="50" />
+      <property role="CBNxQ" value="50" />
+    </node>
+  </node>
+  <node concept="dSSFY" id="66RAJRWjC7j">
+    <property role="TrG5h" value="09 - Baby Pain" />
+    <property role="dSSFN" value="D:\Music\Fluke\Puppy\Fluke - Puppy - 09 - Baby Pain.flac" />
+    <node concept="dSSBz" id="66RAJRWjC7k" role="dSFt1">
+      <property role="dSSBy" value="0" />
+      <property role="CBNxP" value="50" />
+      <property role="CBNxQ" value="50" />
+    </node>
+  </node>
+  <node concept="dSSFY" id="66RAJRWjC7l">
+    <property role="TrG5h" value="10 - Nebulus" />
+    <property role="dSSFN" value="D:\Music\Fluke\Puppy\Fluke - Puppy - 10 - Nebulus.flac" />
+    <node concept="dSSBz" id="66RAJRWjC7m" role="dSFt1">
+      <property role="dSSBy" value="0" />
+      <property role="CBNxP" value="50" />
+      <property role="CBNxQ" value="50" />
+    </node>
+  </node>
+  <node concept="dSSFY" id="66RAJRWjC7n">
+    <property role="TrG5h" value="11 - Blue Sky" />
+    <property role="dSSFN" value="D:\Music\Fluke\Puppy\Fluke - Puppy - 11 - Blue Sky.flac" />
+    <node concept="dSSBz" id="66RAJRWjC7o" role="dSFt1">
+      <property role="dSSBy" value="0" />
+      <property role="CBNxP" value="50" />
+      <property role="CBNxQ" value="50" />
     </node>
   </node>
 </model>

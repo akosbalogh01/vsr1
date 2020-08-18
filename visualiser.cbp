@@ -88,6 +88,7 @@
 		<Unit filename="inc/consts.hpp" />
 		<Unit filename="inc/debug.hpp" />
 		<Unit filename="inc/events.hpp" />
+		<Unit filename="inc/fft.hpp" />
 		<Unit filename="inc/graphics.hpp" />
 		<Unit filename="inc/ini/inifile.hpp" />
 		<Unit filename="inc/ini/key.hpp" />
