@@ -15,8 +15,8 @@ mod + right cursor: jump forward 10 seconds in playback
 mod + left cursor: jump backward 10 seconds in playback  
 space: pause/resume playback  
 mod + space: toggle automatic start of next song  
-D: toggle debug overlay
-mod + D: toggle debug overlay
+D: toggle debug overlay  
+mod + D: toggle debug overlay  
 
 
 ### DSL
