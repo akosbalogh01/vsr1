@@ -7,6 +7,7 @@
     TODO: fix application crash
     TODO: fix bar height setter
     TODO: add tx timer to debug window
+    TODO: bin height calculation random spikes?
 */
 
 int main(const int argc, const char* argv[]) {
