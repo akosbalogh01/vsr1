@@ -11,7 +11,7 @@ void vs::playlistman::next() {
         dropBuffer(current - range);
         current++;
         playing->copyData(songlist[current]);
-        std::cout << "Start next song: "<< playing->getMeta() << std::endl;
+        std::cout << "Start next song: " << playing->getMeta() << std::endl;
         playing->play();
         initBuffer(current + range);
     }

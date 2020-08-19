@@ -3,7 +3,7 @@
 
 /**
     TODO: fix window resizing
-    TODO: fix release mode time bar rendering
+    TODO: fix release mode time bar rendering -O1 fucks it up??
     TODO: fix application crash
     TODO: fix bar height setter
     TODO: add tx timer to debug window

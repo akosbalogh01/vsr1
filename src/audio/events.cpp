@@ -7,6 +7,12 @@ void vs::audioman::eventNextSong(const sf::Event& event) {
     }
 }
 
+void vs::audioman::eventPrevSong(const sf::Event& event) {
+    if (event.key.code == sf::Keyboard::Left) {
+        prevSong();
+    }
+}
+
 void vs::audioman::jumpBack(const sf::Event& event) {
     if (event.key.code == sf::Keyboard::Left) {
         std::cout << "Jump back 10 sec" << std::endl;

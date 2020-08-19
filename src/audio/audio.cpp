@@ -25,9 +25,13 @@ void vs::audioman::togglePaused() {
     }
 }
 
-void vs::audioman::prevSong(const sf::Event& event) {
-    if (event.key.code == sf::Keyboard::Left) {
-        std::cout << "Start previous song" << std::endl;
+void vs::audioman::prevSong() {
+    pman.prev();
+    if (paused) {
+        playing->pause();
+    }
+    else {
+        playing->play();
     }
 }
 

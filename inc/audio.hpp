@@ -25,7 +25,8 @@ namespace vs {
         void togglePaused();
         void setMaxVolume(const sf::Event&);
         void toggleAutoplay(const sf::Event&);
-        void prevSong(const sf::Event&);
+        void eventPrevSong(const sf::Event&);
+        void prevSong();
         void eventNextSong(const sf::Event&);
         void nextSong();
         void jumpBack(const sf::Event&);
