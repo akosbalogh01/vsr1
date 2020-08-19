@@ -72,3 +72,15 @@ void vs::music::pause() {
     sound.pause();
 }
 
+const double vs::music::getSampleRate() const {
+    return buffer.getSampleRate() * buffer.getChannelCount();
+}
+
+const unsigned vs::music::getSampleCount() const {
+    return buffer.getSampleCount();
+}
+
+const unsigned vs::music::getChannelCount() const {
+    return buffer.getChannelCount();
+}
+

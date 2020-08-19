@@ -45,6 +45,9 @@ namespace vs {
         const unsigned getBinHeight(const unsigned) const;
         const unsigned getMaxVolume() const;
         const unsigned getModVolume() const;
+        const double getSampleRate() const;
+        const unsigned getSampleCount() const;
+        const unsigned getChannelCount() const;
 
         const bool isOver() const;
         const bool isBuffered() const;

@@ -39,7 +39,7 @@ namespace vs {
 
     namespace gfx {
         const unsigned framelimit = 60;
-        const unsigned ledcount = 120;
+        const unsigned ledcount = 128;
 
         namespace color {
             const sf::Color accent = sf::Color(12, 12, 12);

@@ -1,5 +1,5 @@
 
-<Song file="D:\Music\chirp.flac">
+<Song file="D:\Music\chirps.flac">
   <ControlPoint timestamp="0" volume="10" brightness="100">
     <bin index="0" color="RGBA(255, 255, 255, 255)"></bin>
     <bin index="110" color="RGBA(255, 255, 255, 255)"></bin>

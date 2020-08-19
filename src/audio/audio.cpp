@@ -33,6 +33,12 @@ void vs::audioman::prevSong(const sf::Event& event) {
 
 void vs::audioman::nextSong() {
     pman.next();
+    if (paused) {
+        playing->pause();
+    }
+    else {
+        playing->play();
+    }
 }
 
 const bool vs::audioman::getAutoplay() const {
