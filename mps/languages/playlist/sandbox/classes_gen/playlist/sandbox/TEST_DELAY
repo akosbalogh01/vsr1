@@ -1,0 +1,7 @@
+
+<Song file="D:\Music\am.flac">
+  <ControlPoint timestamp="0" volume="10" brightness="100">
+    <bin index="0" color="RGBA(255, 255, 255, 255)"></bin>
+    <bin index="119" color="RGBA(255, 255, 255, 255)"></bin>
+  </ControlPoint>
+</Song>

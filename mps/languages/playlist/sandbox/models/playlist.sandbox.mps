@@ -42,6 +42,9 @@
   </registry>
   <node concept="dSSFv" id="1TjGC7i4$$X">
     <property role="TrG5h" value="Puppy" />
+    <node concept="3SaUF2" id="3DLHutSYaj3" role="dSSEv">
+      <ref role="3SaUF3" node="66RAJRWj2Zi" resolve="TEST_CHIRP" />
+    </node>
     <node concept="3SaUF2" id="5jhE8MGYBOF" role="dSSEv">
       <ref role="3SaUF3" node="5jhE8MGYpUF" resolve="01 - Snapshot" />
     </node>
@@ -2833,7 +2836,7 @@
     </node>
     <node concept="dSSBz" id="1TjGC7i5bRU" role="dSFt1">
       <property role="CBNxP" value="65" />
-      <property role="CBNxQ" value="50" />
+      <property role="CBNxQ" value="0" />
       <property role="dSSBy" value="570000" />
       <node concept="dSSE4" id="5jhE8MGXPeZ" role="dSSB$">
         <property role="dSSCJ" value="0" />

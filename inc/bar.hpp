@@ -9,6 +9,8 @@ namespace vs {
     private:
         unsigned maxheight;
         sf::VertexArray quad;
+        float prev;
+        const float alpha = 0.95f;
 
     public:
         bar() = delete;

@@ -11,9 +11,11 @@ void vs::bar::setColor(const sf::Color& color) {
 }
 
 void vs::bar::setHeight(const unsigned height) {
+    //TODO: why is this working at all?
     if (height <= vs::gfx::layout::bheight) {
-        quad[2].position = quad[1].position + sf::Vector2f(0, -1.0f * height);
-        quad[3].position = quad[0].position + sf::Vector2f(0, -1.0f * height);
+        prev = alpha*prev + (1 - alpha)*height;
+        quad[2].position = quad[1].position + sf::Vector2f(0, -1.0f * prev);
+        quad[3].position = quad[0].position + sf::Vector2f(0, -1.0f * prev);
     }
 }
 

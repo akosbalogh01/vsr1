@@ -31,8 +31,8 @@ namespace vs {
         const unsigned bufsize = 3;
 
         namespace volume {
-            const unsigned vm = 50;
-            const unsigned v0 = 50;
+            const unsigned vm = 0;
+            const unsigned v0 = 0;
             const unsigned coeff = 5;
         }
     }
@@ -40,7 +40,6 @@ namespace vs {
     namespace gfx {
         const unsigned framelimit = 60;
         const unsigned ledcount = 120;
-        const unsigned bincount = 128;
 
         namespace color {
             const sf::Color accent = sf::Color(12, 12, 12);
