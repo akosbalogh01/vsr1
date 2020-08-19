@@ -23,6 +23,12 @@ void vs::logic::eventPaused(const sf::Event& event) {
     }
 }
 
+void vs::logic::eventTimestamp(const sf::Event& event) {
+    if (event.mouseButton.button == sf::Mouse::Right) {
+        std::cout << std::to_string(playing->getTime().first.asMilliseconds()) << "ms" << std::endl;
+    }
+}
+
 void vs::logic::togglePaused() {
     if (paused) {
         if (!started) {

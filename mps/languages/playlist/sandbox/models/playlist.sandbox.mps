@@ -42,24 +42,6 @@
   </registry>
   <node concept="dSSFv" id="1TjGC7i4$$X">
     <property role="TrG5h" value="Puppy" />
-    <node concept="3SaUF2" id="1JdZPJpH5nQ" role="dSSEv">
-      <ref role="3SaUF3" node="1JdZPJpH5n_" resolve="00 - Electric Shock" />
-    </node>
-    <node concept="3SaUF2" id="5jhE8MGYBOF" role="dSSEv">
-      <ref role="3SaUF3" node="5jhE8MGYpUF" resolve="01 - Snapshot" />
-    </node>
-    <node concept="3SaUF2" id="5jhE8MGYBOK" role="dSSEv">
-      <ref role="3SaUF3" node="5jhE8MGYpYb" resolve="02 - My Spine" />
-    </node>
-    <node concept="3SaUF2" id="5jhE8MGYBOS" role="dSSEv">
-      <ref role="3SaUF3" node="5jhE8MGYq0w" resolve="03 - Another Kind of Blues" />
-    </node>
-    <node concept="3SaUF2" id="5jhE8MGYBP2" role="dSSEv">
-      <ref role="3SaUF3" node="5jhE8MGYq1I" resolve="04 - Hang Tough" />
-    </node>
-    <node concept="3SaUF2" id="5jhE8MGYBPe" role="dSSEv">
-      <ref role="3SaUF3" node="5jhE8MGYq30" resolve="05 - Switch/Twitch" />
-    </node>
     <node concept="3SaUF2" id="66RAJRWjLuY" role="dSSEv">
       <ref role="3SaUF3" node="66RAJRWjC7d" resolve="06 - YKK" />
     </node>
@@ -2911,10 +2893,861 @@
   <node concept="dSSFY" id="66RAJRWjC7d">
     <property role="TrG5h" value="06 - YKK" />
     <property role="dSSFN" value="D:\Music\Fluke\Puppy\Fluke - Puppy - 06 - YKK.flac" />
-    <node concept="dSSBz" id="66RAJRWjC7e" role="dSFt1">
+    <node concept="dSSBz" id="2meLF$kynNF" role="dSFt1">
       <property role="dSSBy" value="0" />
-      <property role="CBNxP" value="50" />
+      <property role="CBNxP" value="65" />
+      <property role="CBNxQ" value="0" />
+      <node concept="dSSE4" id="2meLF$kynNL" role="dSSB$">
+        <property role="dSSCJ" value="0" />
+        <node concept="dSSE7" id="2meLF$kynNM" role="dSSCx">
+          <property role="dSSE6" value="0" />
+          <property role="dSSES" value="0" />
+          <property role="dSSEX" value="0" />
+        </node>
+      </node>
+    </node>
+    <node concept="dSSBz" id="2meLF$kynNA" role="dSFt1">
+      <property role="dSSBy" value="10000" />
+      <property role="CBNxP" value="65" />
       <property role="CBNxQ" value="50" />
+      <node concept="dSSE4" id="2meLF$kynNP" role="dSSB$">
+        <property role="dSSCJ" value="0" />
+        <node concept="dSSE7" id="2meLF$kynNQ" role="dSSCx">
+          <property role="dSSE6" value="51" />
+          <property role="dSSES" value="0" />
+          <property role="dSSEX" value="0" />
+        </node>
+      </node>
+    </node>
+    <node concept="dSSBz" id="2meLF$kynNy" role="dSFt1">
+      <property role="dSSBy" value="21700" />
+      <property role="CBNxP" value="70" />
+      <property role="CBNxQ" value="60" />
+      <node concept="dSSE4" id="2meLF$kynNT" role="dSSB$">
+        <property role="dSSCJ" value="0" />
+        <node concept="dSSE7" id="2meLF$kynNU" role="dSSCx">
+          <property role="dSSE6" value="70" />
+          <property role="dSSES" value="0" />
+          <property role="dSSEX" value="0" />
+        </node>
+      </node>
+    </node>
+    <node concept="dSSBz" id="2meLF$kynNv" role="dSFt1">
+      <property role="dSSBy" value="21900" />
+      <property role="CBNxP" value="80" />
+      <property role="CBNxQ" value="70" />
+      <node concept="dSSE4" id="2meLF$kynNX" role="dSSB$">
+        <property role="dSSCJ" value="10" />
+        <node concept="dSSE7" id="2meLF$kynNY" role="dSSCx">
+          <property role="dSSE6" value="102" />
+          <property role="dSSES" value="0" />
+          <property role="dSSEX" value="0" />
+        </node>
+      </node>
+      <node concept="dSSE4" id="2meLF$kynO1" role="dSSB$">
+        <property role="dSSCJ" value="110" />
+        <node concept="dSSE7" id="2meLF$kynO2" role="dSSCx">
+          <property role="dSSE6" value="204" />
+          <property role="dSSES" value="0" />
+          <property role="dSSEX" value="0" />
+        </node>
+      </node>
+    </node>
+    <node concept="dSSBz" id="2meLF$kynPz" role="dSFt1">
+      <property role="dSSBy" value="22200" />
+      <property role="CBNxP" value="70" />
+      <property role="CBNxQ" value="65" />
+      <node concept="dSSE4" id="2meLF$kynQ0" role="dSSB$">
+        <property role="dSSCJ" value="0" />
+        <node concept="dSSE7" id="2meLF$kynQ1" role="dSSCx">
+          <property role="dSSE6" value="70" />
+          <property role="dSSES" value="0" />
+          <property role="dSSEX" value="0" />
+        </node>
+      </node>
+    </node>
+    <node concept="dSSBz" id="2meLF$kynP7" role="dSFt1">
+      <property role="dSSBy" value="25900" />
+      <property role="CBNxP" value="70" />
+      <property role="CBNxQ" value="65" />
+      <node concept="dSSE4" id="2meLF$kynQ4" role="dSSB$">
+        <property role="dSSCJ" value="0" />
+        <node concept="dSSE7" id="2meLF$kynQ5" role="dSSCx">
+          <property role="dSSE6" value="70" />
+          <property role="dSSES" value="0" />
+          <property role="dSSEX" value="0" />
+        </node>
+      </node>
+    </node>
+    <node concept="dSSBz" id="2meLF$kynOE" role="dSFt1">
+      <property role="dSSBy" value="26100" />
+      <property role="CBNxP" value="85" />
+      <property role="CBNxQ" value="75" />
+      <node concept="dSSE4" id="2meLF$kynQ8" role="dSSB$">
+        <property role="dSSCJ" value="10" />
+        <node concept="dSSE7" id="2meLF$kynQ9" role="dSSCx">
+          <property role="dSSE6" value="115" />
+          <property role="dSSES" value="0" />
+          <property role="dSSEX" value="0" />
+        </node>
+      </node>
+      <node concept="dSSE4" id="2meLF$kynQa" role="dSSB$">
+        <property role="dSSCJ" value="110" />
+        <node concept="dSSE7" id="2meLF$kynQb" role="dSSCx">
+          <property role="dSSE6" value="220" />
+          <property role="dSSES" value="0" />
+          <property role="dSSEX" value="0" />
+        </node>
+      </node>
+    </node>
+    <node concept="dSSBz" id="2meLF$kynOo" role="dSFt1">
+      <property role="dSSBy" value="26400" />
+      <property role="CBNxP" value="80" />
+      <property role="CBNxQ" value="70" />
+      <node concept="dSSE4" id="2meLF$kynQg" role="dSSB$">
+        <property role="dSSCJ" value="0" />
+        <node concept="dSSE7" id="2meLF$kynQh" role="dSSCx">
+          <property role="dSSE6" value="102" />
+          <property role="dSSES" value="0" />
+          <property role="dSSEX" value="0" />
+        </node>
+      </node>
+    </node>
+    <node concept="dSSBz" id="2meLF$kynO7" role="dSFt1">
+      <property role="dSSBy" value="30400" />
+      <property role="CBNxP" value="80" />
+      <property role="CBNxQ" value="70" />
+      <node concept="dSSE4" id="2meLF$kynQk" role="dSSB$">
+        <property role="dSSCJ" value="0" />
+        <node concept="dSSE7" id="2meLF$kynQl" role="dSSCx">
+          <property role="dSSE6" value="102" />
+          <property role="dSSES" value="0" />
+          <property role="dSSEX" value="0" />
+        </node>
+      </node>
+    </node>
+    <node concept="dSSBz" id="2meLF$kynSA" role="dSFt1">
+      <property role="dSSBy" value="30600" />
+      <property role="CBNxP" value="85" />
+      <property role="CBNxQ" value="75" />
+      <node concept="dSSE4" id="2meLF$kynTg" role="dSSB$">
+        <property role="dSSCJ" value="10" />
+        <node concept="dSSE7" id="2meLF$kynTh" role="dSSCx">
+          <property role="dSSE6" value="115" />
+          <property role="dSSES" value="0" />
+          <property role="dSSEX" value="0" />
+        </node>
+      </node>
+      <node concept="dSSE4" id="2meLF$kynTi" role="dSSB$">
+        <property role="dSSCJ" value="110" />
+        <node concept="dSSE7" id="2meLF$kynTj" role="dSSCx">
+          <property role="dSSE6" value="220" />
+          <property role="dSSES" value="0" />
+          <property role="dSSEX" value="0" />
+        </node>
+      </node>
+    </node>
+    <node concept="dSSBz" id="2meLF$kynS1" role="dSFt1">
+      <property role="dSSBy" value="30900" />
+      <property role="CBNxP" value="80" />
+      <property role="CBNxQ" value="70" />
+      <node concept="dSSE4" id="2meLF$kynTo" role="dSSB$">
+        <property role="dSSCJ" value="0" />
+        <node concept="dSSE7" id="2meLF$kynTp" role="dSSCx">
+          <property role="dSSE6" value="102" />
+          <property role="dSSES" value="0" />
+          <property role="dSSEX" value="0" />
+        </node>
+      </node>
+    </node>
+    <node concept="dSSBz" id="2meLF$kynRt" role="dSFt1">
+      <property role="dSSBy" value="34600" />
+      <property role="CBNxP" value="80" />
+      <property role="CBNxQ" value="70" />
+      <node concept="dSSE4" id="2meLF$kynTs" role="dSSB$">
+        <property role="dSSCJ" value="0" />
+        <node concept="dSSE7" id="2meLF$kynTt" role="dSSCx">
+          <property role="dSSE6" value="102" />
+          <property role="dSSES" value="0" />
+          <property role="dSSEX" value="0" />
+        </node>
+      </node>
+    </node>
+    <node concept="dSSBz" id="2meLF$kynQU" role="dSFt1">
+      <property role="dSSBy" value="34800" />
+      <property role="CBNxP" value="85" />
+      <property role="CBNxQ" value="75" />
+      <node concept="dSSE4" id="2meLF$kynTE" role="dSSB$">
+        <property role="dSSCJ" value="10" />
+        <node concept="dSSE7" id="2meLF$kynTF" role="dSSCx">
+          <property role="dSSE6" value="115" />
+          <property role="dSSES" value="0" />
+          <property role="dSSEX" value="0" />
+        </node>
+      </node>
+      <node concept="dSSE4" id="2meLF$kynTG" role="dSSB$">
+        <property role="dSSCJ" value="110" />
+        <node concept="dSSE7" id="2meLF$kynTH" role="dSSCx">
+          <property role="dSSE6" value="220" />
+          <property role="dSSES" value="0" />
+          <property role="dSSEX" value="0" />
+        </node>
+      </node>
+    </node>
+    <node concept="dSSBz" id="2meLF$kynQo" role="dSFt1">
+      <property role="dSSBy" value="35100" />
+      <property role="CBNxP" value="80" />
+      <property role="CBNxQ" value="70" />
+      <node concept="dSSE4" id="2meLF$kyo2t" role="dSSB$">
+        <property role="dSSCJ" value="0" />
+        <node concept="dSSE7" id="2meLF$kyo2u" role="dSSCx">
+          <property role="dSSE6" value="115" />
+          <property role="dSSES" value="0" />
+          <property role="dSSEX" value="0" />
+        </node>
+      </node>
+    </node>
+    <node concept="dSSBz" id="2meLF$kyo1x" role="dSFt1">
+      <property role="dSSBy" value="39100" />
+      <property role="CBNxP" value="80" />
+      <property role="CBNxQ" value="70" />
+      <node concept="dSSE4" id="2meLF$kyo2x" role="dSSB$">
+        <property role="dSSCJ" value="0" />
+        <node concept="dSSE7" id="2meLF$kyo2y" role="dSSCx">
+          <property role="dSSE6" value="115" />
+          <property role="dSSES" value="0" />
+          <property role="dSSEX" value="0" />
+        </node>
+      </node>
+    </node>
+    <node concept="dSSBz" id="2meLF$kyo0A" role="dSFt1">
+      <property role="dSSBy" value="39300" />
+      <property role="CBNxP" value="80" />
+      <property role="CBNxQ" value="70" />
+      <node concept="dSSE4" id="2meLF$kyo2H" role="dSSB$">
+        <property role="dSSCJ" value="10" />
+        <node concept="dSSE7" id="2meLF$kyo2I" role="dSSCx">
+          <property role="dSSE6" value="115" />
+          <property role="dSSES" value="0" />
+          <property role="dSSEX" value="0" />
+        </node>
+      </node>
+      <node concept="dSSE4" id="2meLF$kyo2L" role="dSSB$">
+        <property role="dSSCJ" value="110" />
+        <node concept="dSSE7" id="2meLF$kyo2M" role="dSSCx">
+          <property role="dSSE6" value="115" />
+          <property role="dSSES" value="0" />
+          <property role="dSSEX" value="61" />
+        </node>
+      </node>
+    </node>
+    <node concept="dSSBz" id="2meLF$kynZG" role="dSFt1">
+      <property role="dSSBy" value="51500" />
+      <property role="CBNxP" value="80" />
+      <property role="CBNxQ" value="70" />
+      <node concept="dSSE4" id="2meLF$kyo2R" role="dSSB$">
+        <property role="dSSCJ" value="10" />
+        <node concept="dSSE7" id="2meLF$kyo2S" role="dSSCx">
+          <property role="dSSE6" value="115" />
+          <property role="dSSES" value="0" />
+          <property role="dSSEX" value="0" />
+        </node>
+      </node>
+      <node concept="dSSE4" id="2meLF$kyo2T" role="dSSB$">
+        <property role="dSSCJ" value="110" />
+        <node concept="dSSE7" id="2meLF$kyo2U" role="dSSCx">
+          <property role="dSSE6" value="115" />
+          <property role="dSSES" value="0" />
+          <property role="dSSEX" value="61" />
+        </node>
+      </node>
+    </node>
+    <node concept="dSSBz" id="2meLF$kynYN" role="dSFt1">
+      <property role="dSSBy" value="52500" />
+      <property role="CBNxP" value="80" />
+      <property role="CBNxQ" value="70" />
+      <node concept="dSSE4" id="2meLF$kyo2Z" role="dSSB$">
+        <property role="dSSCJ" value="10" />
+        <node concept="dSSE7" id="2meLF$kyo30" role="dSSCx">
+          <property role="dSSE6" value="115" />
+          <property role="dSSES" value="0" />
+          <property role="dSSEX" value="61" />
+        </node>
+      </node>
+      <node concept="dSSE4" id="2meLF$kyo31" role="dSSB$">
+        <property role="dSSCJ" value="110" />
+        <node concept="dSSE7" id="2meLF$kyo32" role="dSSCx">
+          <property role="dSSE6" value="153" />
+          <property role="dSSES" value="0" />
+          <property role="dSSEX" value="76" />
+        </node>
+      </node>
+    </node>
+    <node concept="dSSBz" id="2meLF$kynXV" role="dSFt1">
+      <property role="dSSBy" value="69000" />
+      <property role="CBNxP" value="80" />
+      <property role="CBNxQ" value="70" />
+      <node concept="dSSE4" id="2meLF$kyo37" role="dSSB$">
+        <property role="dSSCJ" value="10" />
+        <node concept="dSSE7" id="2meLF$kyo38" role="dSSCx">
+          <property role="dSSE6" value="115" />
+          <property role="dSSES" value="0" />
+          <property role="dSSEX" value="61" />
+        </node>
+      </node>
+      <node concept="dSSE4" id="2meLF$kyo39" role="dSSB$">
+        <property role="dSSCJ" value="110" />
+        <node concept="dSSE7" id="2meLF$kyo3a" role="dSSCx">
+          <property role="dSSE6" value="153" />
+          <property role="dSSES" value="0" />
+          <property role="dSSEX" value="76" />
+        </node>
+      </node>
+    </node>
+    <node concept="dSSBz" id="2meLF$kynX4" role="dSFt1">
+      <property role="dSSBy" value="70500" />
+      <property role="CBNxP" value="80" />
+      <property role="CBNxQ" value="70" />
+      <node concept="dSSE4" id="2meLF$kyo3f" role="dSSB$">
+        <property role="dSSCJ" value="10" />
+        <node concept="dSSE7" id="2meLF$kyo3g" role="dSSCx">
+          <property role="dSSE6" value="153" />
+          <property role="dSSES" value="0" />
+          <property role="dSSEX" value="76" />
+        </node>
+      </node>
+      <node concept="dSSE4" id="2meLF$kyo3h" role="dSSB$">
+        <property role="dSSCJ" value="110" />
+        <node concept="dSSE7" id="2meLF$kyo3i" role="dSSCx">
+          <property role="dSSE6" value="153" />
+          <property role="dSSES" value="0" />
+          <property role="dSSEX" value="0" />
+        </node>
+      </node>
+    </node>
+    <node concept="dSSBz" id="2meLF$kynWe" role="dSFt1">
+      <property role="dSSBy" value="88000" />
+      <property role="CBNxP" value="80" />
+      <property role="CBNxQ" value="70" />
+      <node concept="dSSE4" id="2meLF$kyo3n" role="dSSB$">
+        <property role="dSSCJ" value="10" />
+        <node concept="dSSE7" id="2meLF$kyo3o" role="dSSCx">
+          <property role="dSSE6" value="153" />
+          <property role="dSSES" value="0" />
+          <property role="dSSEX" value="76" />
+        </node>
+      </node>
+      <node concept="dSSE4" id="2meLF$kyo3p" role="dSSB$">
+        <property role="dSSCJ" value="110" />
+        <node concept="dSSE7" id="2meLF$kyo3q" role="dSSCx">
+          <property role="dSSE6" value="153" />
+          <property role="dSSES" value="0" />
+          <property role="dSSEX" value="0" />
+        </node>
+      </node>
+    </node>
+    <node concept="dSSBz" id="2meLF$kynVp" role="dSFt1">
+      <property role="dSSBy" value="104000" />
+      <property role="CBNxP" value="80" />
+      <property role="CBNxQ" value="70" />
+      <node concept="dSSE4" id="2meLF$kyoc4" role="dSSB$">
+        <property role="dSSCJ" value="10" />
+        <node concept="dSSE7" id="2meLF$kyoc5" role="dSSCx">
+          <property role="dSSE6" value="204" />
+          <property role="dSSES" value="0" />
+          <property role="dSSEX" value="0" />
+        </node>
+      </node>
+      <node concept="dSSE4" id="2meLF$kyoc8" role="dSSB$">
+        <property role="dSSCJ" value="110" />
+        <node concept="dSSE7" id="2meLF$kyoc9" role="dSSCx">
+          <property role="dSSE6" value="153" />
+          <property role="dSSES" value="0" />
+          <property role="dSSEX" value="76" />
+        </node>
+      </node>
+    </node>
+    <node concept="dSSBz" id="2meLF$kynU_" role="dSFt1">
+      <property role="dSSBy" value="105000" />
+      <property role="CBNxP" value="80" />
+      <property role="CBNxQ" value="70" />
+      <node concept="dSSE4" id="2meLF$kyoce" role="dSSB$">
+        <property role="dSSCJ" value="10" />
+        <node concept="dSSE7" id="2meLF$kyocf" role="dSSCx">
+          <property role="dSSE6" value="153" />
+          <property role="dSSES" value="0" />
+          <property role="dSSEX" value="76" />
+        </node>
+      </node>
+      <node concept="dSSE4" id="2meLF$kyoci" role="dSSB$">
+        <property role="dSSCJ" value="110" />
+        <node concept="dSSE7" id="2meLF$kyocj" role="dSSCx">
+          <property role="dSSE6" value="102" />
+          <property role="dSSES" value="102" />
+          <property role="dSSEX" value="0" />
+        </node>
+      </node>
+    </node>
+    <node concept="dSSBz" id="2meLF$kynTM" role="dSFt1">
+      <property role="dSSBy" value="122000" />
+      <property role="CBNxP" value="80" />
+      <property role="CBNxQ" value="70" />
+      <node concept="dSSE4" id="2meLF$kyoco" role="dSSB$">
+        <property role="dSSCJ" value="10" />
+        <node concept="dSSE7" id="2meLF$kyocp" role="dSSCx">
+          <property role="dSSE6" value="102" />
+          <property role="dSSES" value="102" />
+          <property role="dSSEX" value="0" />
+        </node>
+      </node>
+      <node concept="dSSE4" id="2meLF$kyocs" role="dSSB$">
+        <property role="dSSCJ" value="110" />
+        <node concept="dSSE7" id="2meLF$kyoct" role="dSSCx">
+          <property role="dSSE6" value="51" />
+          <property role="dSSES" value="102" />
+          <property role="dSSEX" value="0" />
+        </node>
+      </node>
+    </node>
+    <node concept="dSSBz" id="2meLF$kyoaA" role="dSFt1">
+      <property role="dSSBy" value="139000" />
+      <property role="CBNxP" value="80" />
+      <property role="CBNxQ" value="70" />
+      <node concept="dSSE4" id="2meLF$kyocy" role="dSSB$">
+        <property role="dSSCJ" value="10" />
+        <node concept="dSSE7" id="2meLF$kyocz" role="dSSCx">
+          <property role="dSSE6" value="0" />
+          <property role="dSSES" value="102" />
+          <property role="dSSEX" value="204" />
+        </node>
+      </node>
+      <node concept="dSSE4" id="2meLF$kyocA" role="dSSB$">
+        <property role="dSSCJ" value="110" />
+        <node concept="dSSE7" id="2meLF$kyocB" role="dSSCx">
+          <property role="dSSE6" value="102" />
+          <property role="dSSES" value="0" />
+          <property role="dSSEX" value="204" />
+        </node>
+      </node>
+    </node>
+    <node concept="dSSBz" id="2meLF$kyo99" role="dSFt1">
+      <property role="dSSBy" value="141000" />
+      <property role="CBNxP" value="80" />
+      <property role="CBNxQ" value="70" />
+      <node concept="dSSE4" id="2meLF$kyocG" role="dSSB$">
+        <property role="dSSCJ" value="10" />
+        <node concept="dSSE7" id="2meLF$kyocH" role="dSSCx">
+          <property role="dSSE6" value="0" />
+          <property role="dSSES" value="51" />
+          <property role="dSSEX" value="102" />
+        </node>
+      </node>
+      <node concept="dSSE4" id="2meLF$kyocK" role="dSSB$">
+        <property role="dSSCJ" value="110" />
+        <node concept="dSSE7" id="2meLF$kyocL" role="dSSCx">
+          <property role="dSSE6" value="51" />
+          <property role="dSSES" value="0" />
+          <property role="dSSEX" value="102" />
+        </node>
+      </node>
+    </node>
+    <node concept="dSSBz" id="2meLF$kyo7H" role="dSFt1">
+      <property role="dSSBy" value="166000" />
+      <property role="CBNxP" value="80" />
+      <property role="CBNxQ" value="70" />
+      <node concept="dSSE4" id="2meLF$kyocQ" role="dSSB$">
+        <property role="dSSCJ" value="10" />
+        <node concept="dSSE7" id="2meLF$kyocR" role="dSSCx">
+          <property role="dSSE6" value="51" />
+          <property role="dSSES" value="0" />
+          <property role="dSSEX" value="102" />
+        </node>
+      </node>
+      <node concept="dSSE4" id="2meLF$kyocU" role="dSSB$">
+        <property role="dSSCJ" value="110" />
+        <node concept="dSSE7" id="2meLF$kyocV" role="dSSCx">
+          <property role="dSSE6" value="102" />
+          <property role="dSSES" value="0" />
+          <property role="dSSEX" value="102" />
+        </node>
+      </node>
+    </node>
+    <node concept="dSSBz" id="2meLF$kyo6i" role="dSFt1">
+      <property role="dSSBy" value="166500" />
+      <property role="CBNxP" value="80" />
+      <property role="CBNxQ" value="75" />
+      <node concept="dSSE4" id="2meLF$kyod0" role="dSSB$">
+        <property role="dSSCJ" value="10" />
+        <node concept="dSSE7" id="2meLF$kyod1" role="dSSCx">
+          <property role="dSSE6" value="102" />
+          <property role="dSSES" value="0" />
+          <property role="dSSEX" value="204" />
+        </node>
+      </node>
+      <node concept="dSSE4" id="2meLF$kyod4" role="dSSB$">
+        <property role="dSSCJ" value="110" />
+        <node concept="dSSE7" id="2meLF$kyod5" role="dSSCx">
+          <property role="dSSE6" value="204" />
+          <property role="dSSES" value="0" />
+          <property role="dSSEX" value="204" />
+        </node>
+      </node>
+    </node>
+    <node concept="dSSBz" id="2meLF$kyo4S" role="dSFt1">
+      <property role="dSSBy" value="185000" />
+      <property role="CBNxP" value="80" />
+      <property role="CBNxQ" value="75" />
+      <node concept="dSSE4" id="2meLF$kyoda" role="dSSB$">
+        <property role="dSSCJ" value="10" />
+        <node concept="dSSE7" id="2meLF$kyodb" role="dSSCx">
+          <property role="dSSE6" value="0" />
+          <property role="dSSES" value="128" />
+          <property role="dSSEX" value="255" />
+        </node>
+      </node>
+      <node concept="dSSE4" id="2meLF$kyode" role="dSSB$">
+        <property role="dSSCJ" value="110" />
+        <node concept="dSSE7" id="2meLF$kyodf" role="dSSCx">
+          <property role="dSSE6" value="127" />
+          <property role="dSSES" value="0" />
+          <property role="dSSEX" value="255" />
+        </node>
+      </node>
+    </node>
+    <node concept="dSSBz" id="2meLF$kyo3v" role="dSFt1">
+      <property role="dSSBy" value="200000" />
+      <property role="CBNxP" value="80" />
+      <property role="CBNxQ" value="70" />
+      <node concept="dSSE4" id="2meLF$kyonp" role="dSSB$">
+        <property role="dSSCJ" value="10" />
+        <node concept="dSSE7" id="2meLF$kyonq" role="dSSCx">
+          <property role="dSSE6" value="153" />
+          <property role="dSSES" value="153" />
+          <property role="dSSEX" value="0" />
+        </node>
+      </node>
+      <node concept="dSSE4" id="2meLF$kyont" role="dSSB$">
+        <property role="dSSCJ" value="110" />
+        <node concept="dSSE7" id="2meLF$kyonu" role="dSSCx">
+          <property role="dSSE6" value="0" />
+          <property role="dSSES" value="153" />
+          <property role="dSSEX" value="204" />
+        </node>
+      </node>
+    </node>
+    <node concept="dSSBz" id="2meLF$kyolm" role="dSFt1">
+      <property role="dSSBy" value="210000" />
+      <property role="CBNxP" value="80" />
+      <property role="CBNxQ" value="65" />
+      <node concept="dSSE4" id="2meLF$kyonz" role="dSSB$">
+        <property role="dSSCJ" value="10" />
+        <node concept="dSSE7" id="2meLF$kyon$" role="dSSCx">
+          <property role="dSSE6" value="153" />
+          <property role="dSSES" value="76" />
+          <property role="dSSEX" value="0" />
+        </node>
+      </node>
+      <node concept="dSSE4" id="2meLF$kyonB" role="dSSB$">
+        <property role="dSSCJ" value="110" />
+        <node concept="dSSE7" id="2meLF$kyonC" role="dSSCx">
+          <property role="dSSE6" value="0" />
+          <property role="dSSES" value="76" />
+          <property role="dSSEX" value="153" />
+        </node>
+      </node>
+    </node>
+    <node concept="dSSBz" id="2meLF$kyFPT" role="dSFt1">
+      <property role="dSSBy" value="218400" />
+      <property role="CBNxP" value="75" />
+      <property role="CBNxQ" value="75" />
+      <node concept="dSSE4" id="2meLF$kyFTk" role="dSSB$">
+        <property role="dSSCJ" value="0" />
+        <node concept="dSSE7" id="2meLF$kyFTl" role="dSSCx">
+          <property role="dSSE6" value="96" />
+          <property role="dSSES" value="0" />
+          <property role="dSSEX" value="96" />
+        </node>
+      </node>
+    </node>
+    <node concept="dSSBz" id="2meLF$kyFMv" role="dSFt1">
+      <property role="dSSBy" value="235900" />
+      <property role="CBNxP" value="80" />
+      <property role="CBNxQ" value="80" />
+      <node concept="dSSE4" id="2meLF$kyFTw" role="dSSB$">
+        <property role="dSSCJ" value="10" />
+        <node concept="dSSE7" id="2meLF$kyFTx" role="dSSCx">
+          <property role="dSSE6" value="128" />
+          <property role="dSSES" value="0" />
+          <property role="dSSEX" value="96" />
+        </node>
+      </node>
+      <node concept="dSSE4" id="2meLF$kyFT$" role="dSSB$">
+        <property role="dSSCJ" value="110" />
+        <node concept="dSSE7" id="2meLF$kyFT_" role="dSSCx">
+          <property role="dSSE6" value="100" />
+          <property role="dSSES" value="0" />
+          <property role="dSSEX" value="96" />
+        </node>
+      </node>
+    </node>
+    <node concept="dSSBz" id="2meLF$kyFIQ" role="dSFt1">
+      <property role="dSSBy" value="236300" />
+      <property role="CBNxP" value="75" />
+      <property role="CBNxQ" value="75" />
+      <node concept="dSSE4" id="2meLF$kyFMr" role="dSSB$">
+        <property role="dSSCJ" value="0" />
+        <node concept="dSSE7" id="2meLF$kyFMs" role="dSSCx">
+          <property role="dSSE6" value="96" />
+          <property role="dSSES" value="0" />
+          <property role="dSSEX" value="96" />
+        </node>
+      </node>
+    </node>
+    <node concept="dSSBz" id="2meLF$kyFFE" role="dSFt1">
+      <property role="dSSBy" value="242300" />
+      <property role="CBNxP" value="75" />
+      <property role="CBNxQ" value="70" />
+      <node concept="dSSE4" id="2meLF$kyFMn" role="dSSB$">
+        <property role="dSSCJ" value="0" />
+        <node concept="dSSE7" id="2meLF$kyFMo" role="dSSCx">
+          <property role="dSSE6" value="64" />
+          <property role="dSSES" value="0" />
+          <property role="dSSEX" value="64" />
+        </node>
+      </node>
+    </node>
+    <node concept="dSSBz" id="2meLF$kyFCv" role="dSFt1">
+      <property role="dSSBy" value="244900" />
+      <property role="CBNxP" value="80" />
+      <property role="CBNxQ" value="75" />
+      <node concept="dSSE4" id="2meLF$kyFMd" role="dSSB$">
+        <property role="dSSCJ" value="10" />
+        <node concept="dSSE7" id="2meLF$kyFMe" role="dSSCx">
+          <property role="dSSE6" value="100" />
+          <property role="dSSES" value="0" />
+          <property role="dSSEX" value="32" />
+        </node>
+      </node>
+      <node concept="dSSE4" id="2meLF$kyFMh" role="dSSB$">
+        <property role="dSSCJ" value="110" />
+        <node concept="dSSE7" id="2meLF$kyFMi" role="dSSCx">
+          <property role="dSSE6" value="128" />
+          <property role="dSSES" value="0" />
+          <property role="dSSEX" value="32" />
+        </node>
+      </node>
+    </node>
+    <node concept="dSSBz" id="2meLF$kyF_l" role="dSFt1">
+      <property role="dSSBy" value="261900" />
+      <property role="CBNxP" value="85" />
+      <property role="CBNxQ" value="80" />
+      <node concept="dSSE4" id="2meLF$kyFM3" role="dSSB$">
+        <property role="dSSCJ" value="10" />
+        <node concept="dSSE7" id="2meLF$kyFM4" role="dSSCx">
+          <property role="dSSE6" value="128" />
+          <property role="dSSES" value="0" />
+          <property role="dSSEX" value="0" />
+        </node>
+      </node>
+      <node concept="dSSE4" id="2meLF$kyFM7" role="dSSB$">
+        <property role="dSSCJ" value="110" />
+        <node concept="dSSE7" id="2meLF$kyFM8" role="dSSCx">
+          <property role="dSSE6" value="153" />
+          <property role="dSSES" value="0" />
+          <property role="dSSEX" value="0" />
+        </node>
+      </node>
+    </node>
+    <node concept="dSSBz" id="2meLF$kyFxQ" role="dSFt1">
+      <property role="dSSBy" value="264250" />
+      <property role="CBNxP" value="80" />
+      <property role="CBNxQ" value="80" />
+      <node concept="dSSE4" id="2meLF$kyF_h" role="dSSB$">
+        <property role="dSSCJ" value="0" />
+        <node concept="dSSE7" id="2meLF$kyF_i" role="dSSCx">
+          <property role="dSSE6" value="128" />
+          <property role="dSSES" value="0" />
+          <property role="dSSEX" value="0" />
+        </node>
+      </node>
+    </node>
+    <node concept="dSSBz" id="2meLF$kyFuY" role="dSFt1">
+      <property role="dSSBy" value="269000" />
+      <property role="CBNxP" value="85" />
+      <property role="CBNxQ" value="85" />
+      <node concept="dSSE4" id="2meLF$kyF_d" role="dSSB$">
+        <property role="dSSCJ" value="0" />
+        <node concept="dSSE7" id="2meLF$kyF_e" role="dSSCx">
+          <property role="dSSE6" value="128" />
+          <property role="dSSES" value="0" />
+          <property role="dSSEX" value="0" />
+        </node>
+      </node>
+    </node>
+    <node concept="dSSBz" id="2meLF$kyFs7" role="dSFt1">
+      <property role="dSSBy" value="279700" />
+      <property role="CBNxP" value="90" />
+      <property role="CBNxQ" value="85" />
+      <node concept="dSSE4" id="2meLF$kyF_3" role="dSSB$">
+        <property role="dSSCJ" value="10" />
+        <node concept="dSSE7" id="2meLF$kyF_4" role="dSSCx">
+          <property role="dSSE6" value="153" />
+          <property role="dSSES" value="0" />
+          <property role="dSSEX" value="0" />
+        </node>
+      </node>
+      <node concept="dSSE4" id="2meLF$kyF_7" role="dSSB$">
+        <property role="dSSCJ" value="110" />
+        <node concept="dSSE7" id="2meLF$kyF_8" role="dSSCx">
+          <property role="dSSE6" value="128" />
+          <property role="dSSES" value="0" />
+          <property role="dSSEX" value="0" />
+        </node>
+      </node>
+    </node>
+    <node concept="dSSBz" id="2meLF$kyFph" role="dSFt1">
+      <property role="dSSBy" value="296900" />
+      <property role="CBNxP" value="95" />
+      <property role="CBNxQ" value="90" />
+      <node concept="dSSE4" id="2meLF$kyF$T" role="dSSB$">
+        <property role="dSSCJ" value="10" />
+        <node concept="dSSE7" id="2meLF$kyF$U" role="dSSCx">
+          <property role="dSSE6" value="204" />
+          <property role="dSSES" value="0" />
+          <property role="dSSEX" value="0" />
+        </node>
+      </node>
+      <node concept="dSSE4" id="2meLF$kyF$X" role="dSSB$">
+        <property role="dSSCJ" value="110" />
+        <node concept="dSSE7" id="2meLF$kyF$Y" role="dSSCx">
+          <property role="dSSE6" value="153" />
+          <property role="dSSES" value="0" />
+          <property role="dSSEX" value="0" />
+        </node>
+      </node>
+    </node>
+    <node concept="dSSBz" id="2meLF$kyFju" role="dSFt1">
+      <property role="dSSBy" value="301400" />
+      <property role="CBNxP" value="85" />
+      <property role="CBNxQ" value="85" />
+      <node concept="dSSE4" id="2meLF$kyF$J" role="dSSB$">
+        <property role="dSSCJ" value="10" />
+        <node concept="dSSE7" id="2meLF$kyF$K" role="dSSCx">
+          <property role="dSSE6" value="153" />
+          <property role="dSSES" value="0" />
+          <property role="dSSEX" value="0" />
+        </node>
+      </node>
+      <node concept="dSSE4" id="2meLF$kyF$N" role="dSSB$">
+        <property role="dSSCJ" value="110" />
+        <node concept="dSSE7" id="2meLF$kyF$O" role="dSSCx">
+          <property role="dSSE6" value="102" />
+          <property role="dSSES" value="0" />
+          <property role="dSSEX" value="0" />
+        </node>
+      </node>
+    </node>
+    <node concept="dSSBz" id="2meLF$kyFgX" role="dSFt1">
+      <property role="dSSBy" value="305800" />
+      <property role="CBNxP" value="90" />
+      <property role="CBNxQ" value="90" />
+      <node concept="dSSE4" id="2meLF$kyFp1" role="dSSB$">
+        <property role="dSSCJ" value="10" />
+        <node concept="dSSE7" id="2meLF$kyFp2" role="dSSCx">
+          <property role="dSSE6" value="204" />
+          <property role="dSSES" value="0" />
+          <property role="dSSEX" value="0" />
+        </node>
+      </node>
+      <node concept="dSSE4" id="2meLF$kyFp5" role="dSSB$">
+        <property role="dSSCJ" value="110" />
+        <node concept="dSSE7" id="2meLF$kyFp6" role="dSSCx">
+          <property role="dSSE6" value="153" />
+          <property role="dSSES" value="0" />
+          <property role="dSSEX" value="0" />
+        </node>
+      </node>
+    </node>
+    <node concept="dSSBz" id="2meLF$kyFet" role="dSFt1">
+      <property role="dSSBy" value="323000" />
+      <property role="CBNxP" value="100" />
+      <property role="CBNxQ" value="100" />
+      <node concept="dSSE4" id="2meLF$kyFoX" role="dSSB$">
+        <property role="dSSCJ" value="10" />
+        <node concept="dSSE7" id="2meLF$kyFoY" role="dSSCx">
+          <property role="dSSE6" value="255" />
+          <property role="dSSES" value="32" />
+          <property role="dSSEX" value="32" />
+        </node>
+      </node>
+      <node concept="dSSE4" id="2meLF$kyFpb" role="dSSB$">
+        <property role="dSSCJ" value="110" />
+        <node concept="dSSE7" id="2meLF$kyFpc" role="dSSCx">
+          <property role="dSSE6" value="255" />
+          <property role="dSSES" value="0" />
+          <property role="dSSEX" value="0" />
+        </node>
+      </node>
+    </node>
+    <node concept="dSSBz" id="2meLF$kyPpe" role="dSFt1">
+      <property role="dSSBy" value="333000" />
+      <property role="CBNxP" value="95" />
+      <property role="CBNxQ" value="90" />
+      <node concept="dSSE4" id="2meLF$kyPsh" role="dSSB$">
+        <property role="dSSCJ" value="0" />
+        <node concept="dSSE7" id="2meLF$kyPsi" role="dSSCx">
+          <property role="dSSE6" value="204" />
+          <property role="dSSES" value="0" />
+          <property role="dSSEX" value="0" />
+        </node>
+      </node>
+    </node>
+    <node concept="dSSBz" id="2meLF$kyPmc" role="dSFt1">
+      <property role="dSSBy" value="350000" />
+      <property role="CBNxP" value="90" />
+      <property role="CBNxQ" value="80" />
+      <node concept="dSSE4" id="2meLF$kyPsl" role="dSSB$">
+        <property role="dSSCJ" value="10" />
+        <node concept="dSSE7" id="2meLF$kyPsm" role="dSSCx">
+          <property role="dSSE6" value="153" />
+          <property role="dSSES" value="0" />
+          <property role="dSSEX" value="64" />
+        </node>
+      </node>
+      <node concept="dSSE4" id="2meLF$kyPsp" role="dSSB$">
+        <property role="dSSCJ" value="110" />
+        <node concept="dSSE7" id="2meLF$kyPsq" role="dSSCx">
+          <property role="dSSE6" value="102" />
+          <property role="dSSES" value="0" />
+          <property role="dSSEX" value="64" />
+        </node>
+      </node>
+    </node>
+    <node concept="dSSBz" id="2meLF$kyPjb" role="dSFt1">
+      <property role="dSSBy" value="360000" />
+      <property role="CBNxP" value="85" />
+      <property role="CBNxQ" value="75" />
+      <node concept="dSSE4" id="2meLF$kyPsv" role="dSSB$">
+        <property role="dSSCJ" value="0" />
+        <node concept="dSSE7" id="2meLF$kyPsw" role="dSSCx">
+          <property role="dSSE6" value="102" />
+          <property role="dSSES" value="0" />
+          <property role="dSSEX" value="96" />
+        </node>
+      </node>
+    </node>
+    <node concept="dSSBz" id="2meLF$kyotf" role="dSFt1">
+      <property role="dSSBy" value="385000" />
+      <property role="CBNxP" value="80" />
+      <property role="CBNxQ" value="70" />
+      <node concept="dSSE4" id="2meLF$kyovH" role="dSSB$">
+        <property role="dSSCJ" value="0" />
+        <node concept="dSSE7" id="2meLF$kyovI" role="dSSCx">
+          <property role="dSSE6" value="96" />
+          <property role="dSSES" value="0" />
+          <property role="dSSEX" value="102" />
+        </node>
+      </node>
     </node>
   </node>
   <node concept="dSSFY" id="66RAJRWjC7f">

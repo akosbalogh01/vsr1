@@ -30,6 +30,7 @@ namespace vs {
         bool pollEvent(sf::Event&);
         void procEvent(const sf::Event&);
 
+        void eventTimestamp(const sf::Event&);
         void eventPaused(const sf::Event&);
         void togglePaused();
 

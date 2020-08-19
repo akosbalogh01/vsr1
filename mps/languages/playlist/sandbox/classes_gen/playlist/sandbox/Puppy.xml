@@ -1,9 +1,4 @@
 <Playlist>
-    <Song file="D:\Music\bt.flac">
-      <ControlPoint timestamp="0" volume="100" brightness="100">
-      </ControlPoint>
-    </Song>
-
     <Song file="D:\Music\Cobuas\Electric Shock.flac">
       <ControlPoint timestamp="0" volume="50" brightness="50">
         <bin index="10" color="RGBA(0, 0, 102, 255)"></bin>
