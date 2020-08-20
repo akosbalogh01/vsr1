@@ -42,6 +42,9 @@
   </registry>
   <node concept="dSSFv" id="1TjGC7i4$$X">
     <property role="TrG5h" value="Puppy" />
+    <node concept="3SaUF2" id="3AFM1ZJeW_m" role="dSSEv">
+      <ref role="3SaUF3" node="66RAJRWj2Zi" resolve="TEST_CHIRP_MONO" />
+    </node>
     <node concept="3SaUF2" id="66RAJRWjLuY" role="dSSEv">
       <ref role="3SaUF3" node="66RAJRWjC7d" resolve="06 - YKK" />
     </node>
