@@ -15,6 +15,8 @@ namespace vs {
     public:
         playlistman(const vs::t::mptr&);
 
+        bool isEmpty() const;
+
         void add(const vs::music&);
         void init();
         void reset();

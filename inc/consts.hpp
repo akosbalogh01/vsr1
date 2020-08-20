@@ -75,7 +75,8 @@ namespace vs {
     }
 
     namespace except {
-        const std::invalid_argument playlist("Playlist file not found.");
+        const std::invalid_argument playlist_file("Playlist file not found.");
+        const std::invalid_argument playlist_empty("Playlist file empty.");
     }
 }
 

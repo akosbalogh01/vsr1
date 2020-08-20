@@ -5,6 +5,12 @@ void vs::playlistman::prev() {
         std::cout << "Playlist restart" << std::endl;
         reset();
     }
+    else if (songlist.size() <= vs::audio::bufsize) {
+        current--;
+        playing->copyData(songlist[current]);
+        std::cout << "Start prev song: " << playing->getMeta() << std::endl;
+        playing->play();
+    }
     else {
         unsigned constexpr range = (vs::audio::bufsize / 2);
         dropBuffer(current + range);

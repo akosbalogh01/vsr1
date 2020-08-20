@@ -35,9 +35,11 @@ vs::logic::logic(const int argc, const char** argv, vs::t::mptr m): player(m), a
     if (playlist.good()) {
         std::vector <char> xmlbuffer((std::istreambuf_iterator<char>(playlist)), std::istreambuf_iterator<char>());
         xmlbuffer.push_back('\0');
-        aman.buildPlaylist(xmlbuffer);
+        if (aman.buildPlaylist(xmlbuffer)) {
+            throw vs::except::playlist_empty;
+        }
     }
     else {
-        throw vs::except::playlist;
+        throw vs::except::playlist_file;
     }
 }

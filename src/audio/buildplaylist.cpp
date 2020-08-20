@@ -5,7 +5,7 @@
 #include "point.hpp"
 #include "audio.hpp"
 
-void vs::audioman::buildPlaylist(std::vector<char>& xmlbuffer) {
+bool vs::audioman::buildPlaylist(std::vector<char>& xmlbuffer) {
     rapidxml::xml_document<> xml;
     rapidxml::xml_node<>* root;
 
@@ -39,5 +39,6 @@ void vs::audioman::buildPlaylist(std::vector<char>& xmlbuffer) {
     }
 
     pman.init();
+    return pman.isEmpty();
 }
 
