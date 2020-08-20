@@ -54,6 +54,7 @@ dkms.conf
 
 # CodeBlocks
 visualiser.layout
+visualiser.depend
 
 # MPS
 
