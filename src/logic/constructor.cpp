@@ -18,6 +18,8 @@ vs::logic::logic(const int argc, const char** argv, vs::t::mptr m): player(m), a
         settings.value(vs::settings::fullscreen.first, vs::settings::fullscreen.second)
     );
 
+    wman.setSerialPortName(settings.value(vs::settings::serialport.first, vs::settings::serialport.second));
+
     eman.add(sf::Event::Resized, vs::fpair (std::bind(&vs::windowman::windowResize, &wman, _1), std::bind(&vs::windowman::windowResize, &wman, _1)));
     eman.add(sf::Event::Closed,  vs::fpair (std::bind(&vs::windowman::windowClose, &wman, _1),  std::bind(&vs::windowman::windowClose, &wman,  _1)));
     eman.add(sf::Event::KeyReleased, vs::fpair (std::bind(&vs::windowman::windowClose, &wman, _1),  std::bind(&vs::windowman::windowClose, &wman,  _1)));

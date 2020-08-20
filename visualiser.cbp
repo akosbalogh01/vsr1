@@ -41,9 +41,6 @@
 				<Option type="0" />
 				<Option compiler="gcc" />
 				<Option parameters="Puppy.xml" />
-				<Compiler>
-					<Add option="-O2" />
-				</Compiler>
 				<Linker>
 					<Add option="-s" />
 					<Add library="sfml-graphics-s" />
@@ -143,7 +140,9 @@
 		<Unit filename="src/playlist/prev.cpp" />
 		<Unit filename="src/point/constructor.cpp" />
 		<Unit filename="src/point/point.cpp" />
+		<Unit filename="src/vis/constructor.cpp" />
 		<Unit filename="src/vis/render.cpp" />
+		<Unit filename="src/vis/tx.cpp" />
 		<Unit filename="src/vis/visualiser.cpp" />
 		<Unit filename="src/window/events.cpp" />
 		<Unit filename="src/window/render.cpp" />

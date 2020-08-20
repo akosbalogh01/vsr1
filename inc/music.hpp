@@ -43,6 +43,7 @@ namespace vs {
 
         const sf::Color getBinColor(const unsigned) const;
         const unsigned getBinHeight(const unsigned) const;
+        const unsigned getBrightness() const;
         const unsigned getMaxVolume() const;
         const unsigned getModVolume() const;
         const double getSampleRate() const;

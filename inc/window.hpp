@@ -25,6 +25,7 @@ namespace vs {
         void windowClose(const sf::Event&);
         void windowResize(const sf::Event&);
 
+        void setSerialPortName(const std::string&);
         void setBrightness(const sf::Event&);
         void toggleVisualisation(const sf::Event&);
         void toggleTransmission(const sf::Event&);

@@ -43,3 +43,7 @@ void vs::windowman::update() {
     gui.update();
 }
 
+void vs::windowman::setSerialPortName(const std::string& pname) {
+    gui.setSerialPortName(pname);
+}
+

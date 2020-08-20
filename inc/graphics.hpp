@@ -31,6 +31,7 @@ namespace vs {
         ~graphics();
 
         void resizeInterface(const sf::Vector2u&);
+        void setSerialPortName(const std::string&);
         void setBrightness(const sf::Event&);
         void toggleVisualisation(const sf::Event&);
         void toggleTransmission(const sf::Event&);

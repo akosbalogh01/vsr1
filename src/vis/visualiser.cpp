@@ -2,10 +2,8 @@
 #include "graphics.hpp"
 #include "visualiser.hpp"
 
-vs::visualiser::visualiser(vs::t::mptr m, vs::t::rtarget w): renderable(w), player(m) {
-    brightness = vs::gfx::brightness::b0;
-    bars = std::vector<vs::bar>(vs::gfx::ledcount, vs::bar(w));
-    en = true;
+void vs::visualiser::setPortName(const std::string& pname) {
+    portname = pname;
 }
 
 void vs::visualiser::setBrightness(const sf::Event& event) {
@@ -35,11 +33,11 @@ void vs::visualiser::toggleTransmission(const sf::Event& event) {
     if (event.key.code == sf::Keyboard::V) {
         if (tx) {
             std::cout << "Disabled VS transmission" << std::endl;
-            tx = false;
+            txdeinit();
         }
         else {
             std::cout << "Enabled VS transmission" << std::endl;
-            tx = true;
+            txinit();
         }
     }
 }
@@ -61,5 +59,9 @@ void vs::visualiser::update() {
     for (unsigned i = 0; i < vs::gfx::ledcount; ++i) {
         bars[i].setColor(playing->getBinColor(i));
         bars[i].setHeight(playing->getBinHeight(i));
+    }
+
+    if (tx) {
+        transmit();
     }
 }
