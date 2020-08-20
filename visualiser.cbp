@@ -72,6 +72,8 @@
 			<Add directory="C:/Projects/lib/taglib/include" />
 			<Add directory="C:/Users/akosb/Programming/SFML-2.5.1/include" />
 			<Add directory="C:/Users/akosb/Programming/taglib/include" />
+			<Add directory="C:/Users/user001/Documents/proj/visualiser/lib/SFML-2.5.1/include" />
+			<Add directory="C:/Users/user001/Documents/proj/visualiser/lib/taglib1.11/include" />
 			<Add directory="inc" />
 		</Compiler>
 		<Linker>
@@ -79,6 +81,8 @@
 			<Add directory="C:/Projects/lib/taglib" />
 			<Add directory="C:/Users/akosb/Programming/SFML-2.5.1/lib" />
 			<Add directory="C:/Users/akosb/Programming/taglib/lib" />
+			<Add directory="C:/Users/user001/Documents/proj/visualiser/lib/SFML-2.5.1/lib" />
+			<Add directory="C:/Users/user001/Documents/proj/visualiser/lib/taglib1.11/lib" />
 		</Linker>
 		<Unit filename="inc/audio.hpp" />
 		<Unit filename="inc/bar.hpp" />

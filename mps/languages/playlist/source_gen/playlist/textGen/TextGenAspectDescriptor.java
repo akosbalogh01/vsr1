@@ -40,7 +40,7 @@ public class TextGenAspectDescriptor extends TextGenAspectBase {
   @Override
   public void breakdownToUnits(@NotNull TextGenModelOutline outline) {
     for (SNode root : outline.getModel().getRootNodes()) {
-      if (root.getConcept().equals(CONCEPTS.Song$ms)) {
+      if (root.getConcept().equals(CONCEPTS.Song$uH)) {
         String fname = getFileName_Song(root);
         String ext = getFileExtension_Song(root);
         outline.registerTextUnit((ext == null ? fname : (fname + '.' + ext)), root);
@@ -56,6 +56,6 @@ public class TextGenAspectDescriptor extends TextGenAspectBase {
   }
 
   private static final class CONCEPTS {
-    /*package*/ static final SConcept Song$ms = MetaAdapterFactory.getConcept(0xe808b2f670da436eL, 0xbf6b14e1ed6cce5fL, 0x44617bd94982f127L, "playlist.structure.Song");
+    /*package*/ static final SConcept Song$uH = MetaAdapterFactory.getConcept(0xe808b2f670da436eL, 0xbf6b14e1ed6cce5fL, 0x44617bd94982f127L, "playlist.structure.Song");
   }
 }

@@ -14,17 +14,17 @@ public class Color_TextGen extends TextGenDescriptorBase {
   public void generateText(final TextGenContext ctx) {
     final TextGenSupport tgs = new TextGenSupport(ctx);
     tgs.append("RGBA(");
-    tgs.append("" + SPropertyOperations.getInteger(ctx.getPrimaryInput(), PROPS.r$uJ20));
+    tgs.append("" + SPropertyOperations.getInteger(ctx.getPrimaryInput(), PROPS.r$9n6h));
     tgs.append(", ");
-    tgs.append("" + SPropertyOperations.getInteger(ctx.getPrimaryInput(), PROPS.g$uO8u));
+    tgs.append("" + SPropertyOperations.getInteger(ctx.getPrimaryInput(), PROPS.g$bPeN));
     tgs.append(", ");
-    tgs.append("" + SPropertyOperations.getInteger(ctx.getPrimaryInput(), PROPS.b$uO9V));
+    tgs.append("" + SPropertyOperations.getInteger(ctx.getPrimaryInput(), PROPS.b$bPVQ));
     tgs.append(", 255)");
   }
 
   private static final class PROPS {
-    /*package*/ static final SProperty r$uJ20 = MetaAdapterFactory.getProperty(0xe808b2f670da436eL, 0xbf6b14e1ed6cce5fL, 0x44617bd94982f15eL, 0x44617bd94982f15fL, "r");
-    /*package*/ static final SProperty g$uO8u = MetaAdapterFactory.getProperty(0xe808b2f670da436eL, 0xbf6b14e1ed6cce5fL, 0x44617bd94982f15eL, 0x44617bd94982f161L, "g");
-    /*package*/ static final SProperty b$uO9V = MetaAdapterFactory.getProperty(0xe808b2f670da436eL, 0xbf6b14e1ed6cce5fL, 0x44617bd94982f15eL, 0x44617bd94982f164L, "b");
+    /*package*/ static final SProperty r$9n6h = MetaAdapterFactory.getProperty(0xe808b2f670da436eL, 0xbf6b14e1ed6cce5fL, 0x44617bd94982f15eL, 0x44617bd94982f15fL, "r");
+    /*package*/ static final SProperty g$bPeN = MetaAdapterFactory.getProperty(0xe808b2f670da436eL, 0xbf6b14e1ed6cce5fL, 0x44617bd94982f15eL, 0x44617bd94982f161L, "g");
+    /*package*/ static final SProperty b$bPVQ = MetaAdapterFactory.getProperty(0xe808b2f670da436eL, 0xbf6b14e1ed6cce5fL, 0x44617bd94982f15eL, 0x44617bd94982f164L, "b");
   }
 }

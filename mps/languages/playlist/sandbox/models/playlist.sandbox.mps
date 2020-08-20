@@ -4407,5 +4407,68 @@
       </node>
     </node>
   </node>
+  <node concept="dSSFY" id="3JNaydkShpd">
+    <property role="TrG5h" value="Dadada" />
+    <property role="dSSFN" value="C:\Users\user001\Music\Various Artists\Root to Branch, Vol. 5\02 - Polar Inc. - Pastel.flac" />
+    <node concept="dSSBz" id="3JNaydkShpe" role="dSFt1">
+      <property role="dSSBy" value="0" />
+      <property role="CBNxP" value="100" />
+      <property role="CBNxQ" value="25" />
+      <node concept="dSSE4" id="3JNaydkShpJ" role="dSSB$">
+        <property role="dSSCJ" value="42" />
+        <node concept="dSSE7" id="3JNaydkShpK" role="dSSCx">
+          <property role="dSSE6" value="255" />
+          <property role="dSSES" value="127" />
+          <property role="dSSEX" value="0" />
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="dSSFY" id="3JNaydkShpN">
+    <property role="TrG5h" value="Nindaranna" />
+    <property role="dSSFN" value="C:\Users\user001\Music\QuiQui\2020 - Pillars Of Creation\03 - Nindaranna.flac" />
+    <node concept="dSSBz" id="3JNaydkShpO" role="dSFt1">
+      <property role="dSSBy" value="0" />
+      <property role="CBNxP" value="50" />
+      <property role="CBNxQ" value="100" />
+      <node concept="dSSE4" id="3JNaydkShpP" role="dSSB$">
+        <property role="dSSCJ" value="3" />
+        <node concept="dSSE7" id="3JNaydkShpQ" role="dSSCx">
+          <property role="dSSE6" value="127" />
+          <property role="dSSES" value="0" />
+          <property role="dSSEX" value="255" />
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="dSSFY" id="3JNaydkShpT">
+    <property role="TrG5h" value="Anything" />
+    <property role="dSSFN" value="C:\Users\user001\Music\Teho\2020 - Polytone\03 - Anything (feat. Carott).flac" />
+    <node concept="dSSBz" id="3JNaydkShpU" role="dSFt1">
+      <property role="dSSBy" value="10000" />
+      <property role="CBNxP" value="50" />
+      <property role="CBNxQ" value="100" />
+      <node concept="dSSE4" id="3JNaydkShpV" role="dSSB$">
+        <property role="dSSCJ" value="80" />
+        <node concept="dSSE7" id="3JNaydkShpW" role="dSSCx">
+          <property role="dSSE6" value="255" />
+          <property role="dSSES" value="127" />
+          <property role="dSSEX" value="0" />
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="dSSFv" id="3JNaydkShpZ">
+    <property role="TrG5h" value="Dunno" />
+    <node concept="3SaUF2" id="3JNaydkShq4" role="dSSEv">
+      <ref role="3SaUF3" node="3JNaydkShpd" resolve="Dadada" />
+    </node>
+    <node concept="3SaUF2" id="3JNaydkShq8" role="dSSEv">
+      <ref role="3SaUF3" node="3JNaydkShpN" resolve="Nindaranna" />
+    </node>
+    <node concept="3SaUF2" id="3JNaydkShqg" role="dSSEv">
+      <ref role="3SaUF3" node="3JNaydkShpT" resolve="Anything" />
+    </node>
+  </node>
 </model>
 
