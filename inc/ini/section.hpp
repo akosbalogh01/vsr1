@@ -12,7 +12,7 @@ namespace ini {
         std::list <key> list_keys;
 
     public:
-        section(const std::string&);
+        explicit section(const std::string&);
 
 	const std::string& id() const;
 	const std::list <ini::key>& keys() const;

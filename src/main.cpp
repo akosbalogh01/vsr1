@@ -8,6 +8,7 @@
     TODO: fix bar height setter
     TODO: add tx timer to debug window
     TODO: bin height calculation random spikes?
+    TODO: debug overlay slows down fft rendering
 */
 
 int main(const int argc, const char* argv[]) {

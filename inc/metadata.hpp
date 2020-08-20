@@ -15,7 +15,7 @@ namespace vs {
 
     public:
         metadata() = delete;
-        metadata(const std::string&);
+        explicit metadata(const std::string&);
 
         const std::string& getTitle() const;
         const std::string& getArtist() const;

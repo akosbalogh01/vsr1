@@ -69,7 +69,7 @@ bool ini::section::operator== (const ini::section& param) {
     if (this->list_keys.size() != param.list_keys.size()) return false;
 
 
-    for (std::list <ini::key>::const_iterator v_index = this->list_keys.begin(), p_index = param.list_keys.begin(); v_index != list_keys.end(); v_index++, p_index++)
+    for (std::list <ini::key>::const_iterator v_index = this->list_keys.begin(), p_index = param.list_keys.begin(); v_index != list_keys.end(); ++v_index, ++p_index)
         if (*v_index != *p_index) return false;
 
 

@@ -12,7 +12,7 @@ void vs::debug::toggleOverlay(const sf::Event& event) {
             std::cout << "Enabled debug overlay." << std::endl;
             overlay.create(sf::VideoMode(500, 500), "Debug overlay", sf::Style::Titlebar);
             overlay.setFramerateLimit(vs::gfx::framelimit);
-            overlay.setActive(false);
+            //overlay.setActive(false);
         }
     }
 }
