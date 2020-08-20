@@ -100,10 +100,10 @@
       <node id="4927355640491471120" at="172,34,173,69" concept="1" />
       <node id="4927355640491471120" at="173,69,174,146" concept="1" />
       <node id="4927355640491471120" at="178,34,179,91" concept="1" />
-      <node id="4927355640491471120" at="186,0,187,0" concept="8" trace="name$tAp1" />
-      <node id="4927355640491471120" at="190,0,191,0" concept="8" trace="PropertyAttribute$jT" />
-      <node id="4927355640491471120" at="191,0,192,0" concept="8" trace="SongRef$B3" />
-      <node id="4927355640491471120" at="195,0,196,0" concept="8" trace="songs$uItz" />
+      <node id="4927355640491471120" at="186,0,187,0" concept="8" trace="name$MnvL" />
+      <node id="4927355640491471120" at="190,0,191,0" concept="8" trace="PropertyAttribute$Gb" />
+      <node id="4927355640491471120" at="191,0,192,0" concept="8" trace="SongRef$Jk" />
+      <node id="4927355640491471120" at="195,0,196,0" concept="8" trace="songs$95se" />
       <node id="4927355640491471120" at="45,0,47,0" concept="2" trace="myNode" />
       <node id="4927355640491471120" at="118,0,120,0" concept="2" trace="myNode" />
       <node id="4927355640491471120" at="59,0,62,0" concept="4" trace="createCell#()Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
@@ -341,11 +341,11 @@
       <node id="4927355640491471155" at="235,34,236,69" concept="1" />
       <node id="4927355640491471155" at="236,69,237,146" concept="1" />
       <node id="4927355640491471155" at="241,34,242,91" concept="1" />
-      <node id="4927355640491471155" at="249,0,250,0" concept="8" trace="name$tAp1" />
-      <node id="4927355640491471155" at="250,0,251,0" concept="8" trace="filepath$uHMY" />
-      <node id="4927355640491471155" at="254,0,255,0" concept="8" trace="PropertyAttribute$jT" />
-      <node id="4927355640491471155" at="255,0,256,0" concept="8" trace="Timestamp$wh" />
-      <node id="4927355640491471155" at="259,0,260,0" concept="8" trace="timestamps$b$DG" />
+      <node id="4927355640491471155" at="249,0,250,0" concept="8" trace="name$MnvL" />
+      <node id="4927355640491471155" at="250,0,251,0" concept="8" trace="filepath$8KOj" />
+      <node id="4927355640491471155" at="254,0,255,0" concept="8" trace="PropertyAttribute$Gb" />
+      <node id="4927355640491471155" at="255,0,256,0" concept="8" trace="Timestamp$Cy" />
+      <node id="4927355640491471155" at="259,0,260,0" concept="8" trace="timestamps$Rlk_" />
       <node id="4927355640491471155" at="45,0,47,0" concept="2" trace="myNode" />
       <node id="4927355640491471155" at="181,0,183,0" concept="2" trace="myNode" />
       <node id="4927355640491471155" at="59,0,62,0" concept="4" trace="createCell#()Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
@@ -588,10 +588,10 @@
       <node id="4927355640491471339" at="157,94,158,47" concept="1" />
       <node id="4927355640491471339" at="158,47,159,34" concept="1" />
       <node id="4927355640491471339" at="159,34,160,22" concept="6" />
-      <node id="4927355640491471220" at="164,0,165,0" concept="8" trace="r$uJ20" />
-      <node id="4927355640491471220" at="165,0,166,0" concept="8" trace="g$uO8u" />
-      <node id="4927355640491471220" at="166,0,167,0" concept="8" trace="b$uO9V" />
-      <node id="4927355640491471220" at="170,0,171,0" concept="8" trace="PropertyAttribute$jT" />
+      <node id="4927355640491471220" at="164,0,165,0" concept="8" trace="r$9n6h" />
+      <node id="4927355640491471220" at="165,0,166,0" concept="8" trace="g$bPeN" />
+      <node id="4927355640491471220" at="166,0,167,0" concept="8" trace="b$bPVQ" />
+      <node id="4927355640491471220" at="170,0,171,0" concept="8" trace="PropertyAttribute$Gb" />
       <node id="4927355640491471220" at="31,0,33,0" concept="2" trace="myNode" />
       <node id="4927355640491471220" at="45,0,48,0" concept="4" trace="createCell#()Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
       <node id="4927355640491471235" at="81,0,84,0" concept="4" trace="accept#(Lorg/jetbrains/mps/openapi/model/SNode;)Z" />
@@ -769,9 +769,9 @@
       <node id="4927355640491471361" at="150,35,151,26" concept="6" />
       <node id="4927355640491471361" at="152,17,153,42" concept="1" />
       <node id="4927355640491471361" at="156,40,157,26" concept="6" />
-      <node id="4927355640491471361" at="162,0,163,0" concept="8" trace="index$uW$y" />
-      <node id="4927355640491471361" at="166,0,167,0" concept="8" trace="PropertyAttribute$jT" />
-      <node id="4927355640491471361" at="170,0,171,0" concept="8" trace="color$uW_w" />
+      <node id="4927355640491471361" at="162,0,163,0" concept="8" trace="index$fUOJ" />
+      <node id="4927355640491471361" at="166,0,167,0" concept="8" trace="PropertyAttribute$Gb" />
+      <node id="4927355640491471361" at="170,0,171,0" concept="8" trace="color$fViL" />
       <node id="4927355640491471361" at="39,0,41,0" concept="2" trace="myNode" />
       <node id="4927355640491471361" at="110,0,112,0" concept="2" trace="myNode" />
       <node id="4927355640491471361" at="53,0,56,0" concept="4" trace="createCell#()Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
@@ -1002,12 +1002,12 @@
       <node id="4927355640491471437" at="253,34,254,69" concept="1" />
       <node id="4927355640491471437" at="254,69,255,146" concept="1" />
       <node id="4927355640491471437" at="259,34,260,91" concept="1" />
-      <node id="4927355640491471437" at="267,0,268,0" concept="8" trace="stamp$v3Bw" />
-      <node id="4927355640491471437" at="268,0,269,0" concept="8" trace="volume$NnBk" />
-      <node id="4927355640491471437" at="269,0,270,0" concept="8" trace="brightness$Nn_R" />
-      <node id="4927355640491471437" at="273,0,274,0" concept="8" trace="PropertyAttribute$jT" />
-      <node id="4927355640491471437" at="274,0,275,0" concept="8" trace="Bin$zt" />
-      <node id="4927355640491471437" at="278,0,279,0" concept="8" trace="bins$v3MD" />
+      <node id="4927355640491471437" at="267,0,268,0" concept="8" trace="stamp$jlgL" />
+      <node id="4927355640491471437" at="268,0,269,0" concept="8" trace="volume$91aX" />
+      <node id="4927355640491471437" at="269,0,270,0" concept="8" trace="brightness$90tU" />
+      <node id="4927355640491471437" at="273,0,274,0" concept="8" trace="PropertyAttribute$Gb" />
+      <node id="4927355640491471437" at="274,0,275,0" concept="8" trace="Bin$FI" />
+      <node id="4927355640491471437" at="278,0,279,0" concept="8" trace="bins$jqE8" />
       <node id="4927355640491471437" at="45,0,47,0" concept="2" trace="myNode" />
       <node id="4927355640491471437" at="199,0,201,0" concept="2" trace="myNode" />
       <node id="4927355640491471437" at="59,0,62,0" concept="4" trace="createCell#()Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
@@ -1253,10 +1253,10 @@
       <node id="6111851491469427312" at="153,91,154,147" concept="6" />
       <node id="6111851491469427312" at="155,14,156,26" concept="6" />
       <node id="6111851491469427312" at="157,17,158,42" concept="1" />
-      <node id="6111851491469427288" at="164,0,165,0" concept="8" trace="target$dzIw" />
-      <node id="6111851491469427288" at="168,0,169,0" concept="8" trace="LinkAttribute$7j" />
-      <node id="6111851491469427288" at="169,0,170,0" concept="8" trace="PropertyAttribute$jT" />
-      <node id="6111851491469427288" at="173,0,174,0" concept="8" trace="name$tAp1" />
+      <node id="6111851491469427288" at="164,0,165,0" concept="8" trace="target$OSDL" />
+      <node id="6111851491469427288" at="168,0,169,0" concept="8" trace="LinkAttribute$v_" />
+      <node id="6111851491469427288" at="169,0,170,0" concept="8" trace="PropertyAttribute$Gb" />
+      <node id="6111851491469427288" at="173,0,174,0" concept="8" trace="name$MnvL" />
       <node id="6111851491469427288" at="43,0,45,0" concept="2" trace="myNode" />
       <node id="6111851491469427302" at="113,0,115,0" concept="2" trace="myNode" />
       <node id="6111851491469427288" at="57,0,60,0" concept="4" trace="createCell#()Ljetbrains/mps/openapi/editor/cells/EditorCell;" />

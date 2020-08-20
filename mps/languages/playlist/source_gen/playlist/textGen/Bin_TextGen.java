@@ -17,19 +17,19 @@ public class Bin_TextGen extends TextGenDescriptorBase {
     final TextGenSupport tgs = new TextGenSupport(ctx);
     tgs.indent();
     tgs.append("<bin index=\"");
-    tgs.append("" + SPropertyOperations.getInteger(ctx.getPrimaryInput(), PROPS.index$uW$y));
+    tgs.append("" + SPropertyOperations.getInteger(ctx.getPrimaryInput(), PROPS.index$fUOJ));
     tgs.append("\" color=\"");
-    tgs.appendNode(SLinkOperations.getTarget(ctx.getPrimaryInput(), LINKS.color$uW_w));
+    tgs.appendNode(SLinkOperations.getTarget(ctx.getPrimaryInput(), LINKS.color$fViL));
     tgs.append("\">");
     tgs.append("</bin>");
     tgs.newLine();
   }
 
   private static final class PROPS {
-    /*package*/ static final SProperty index$uW$y = MetaAdapterFactory.getProperty(0xe808b2f670da436eL, 0xbf6b14e1ed6cce5fL, 0x44617bd94982f15dL, 0x44617bd94982f1f6L, "index");
+    /*package*/ static final SProperty index$fUOJ = MetaAdapterFactory.getProperty(0xe808b2f670da436eL, 0xbf6b14e1ed6cce5fL, 0x44617bd94982f15dL, 0x44617bd94982f1f6L, "index");
   }
 
   private static final class LINKS {
-    /*package*/ static final SContainmentLink color$uW_w = MetaAdapterFactory.getContainmentLink(0xe808b2f670da436eL, 0xbf6b14e1ed6cce5fL, 0x44617bd94982f15dL, 0x44617bd94982f1f8L, "color");
+    /*package*/ static final SContainmentLink color$fViL = MetaAdapterFactory.getContainmentLink(0xe808b2f670da436eL, 0xbf6b14e1ed6cce5fL, 0x44617bd94982f15dL, 0x44617bd94982f1f8L, "color");
   }
 }

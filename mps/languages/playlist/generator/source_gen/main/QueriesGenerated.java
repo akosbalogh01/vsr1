@@ -30,10 +30,10 @@ public class QueriesGenerated extends QueryProviderBase {
     super(1);
   }
   public static Object propertyMacro_GetValue_1_0(final PropertyMacroContext _context) {
-    return SPropertyOperations.getString(_context.getNode(), PROPS.name$tAp1);
+    return SPropertyOperations.getString(_context.getNode(), PROPS.name$MnvL);
   }
   public static Iterable<SNode> sourceNodesQuery_1_0(final SourceSubstituteMacroNodesContext _context) {
-    return SLinkOperations.getChildren(_context.getNode(), LINKS.songs$uItz);
+    return SLinkOperations.getChildren(_context.getNode(), LINKS.songs$95se);
   }
   private final Map<String, SourceNodesQuery> snsqMethods = new HashMap<String, SourceNodesQuery>();
   {
@@ -96,10 +96,10 @@ public class QueriesGenerated extends QueryProviderBase {
   }
 
   private static final class PROPS {
-    /*package*/ static final SProperty name$tAp1 = MetaAdapterFactory.getProperty(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L, 0x110396ec041L, "name");
+    /*package*/ static final SProperty name$MnvL = MetaAdapterFactory.getProperty(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L, 0x110396ec041L, "name");
   }
 
   private static final class LINKS {
-    /*package*/ static final SContainmentLink songs$uItz = MetaAdapterFactory.getContainmentLink(0xe808b2f670da436eL, 0xbf6b14e1ed6cce5fL, 0x44617bd94982f106L, 0x44617bd94982f146L, "songs");
+    /*package*/ static final SContainmentLink songs$95se = MetaAdapterFactory.getContainmentLink(0xe808b2f670da436eL, 0xbf6b14e1ed6cce5fL, 0x44617bd94982f106L, 0x44617bd94982f146L, "songs");
   }
 }

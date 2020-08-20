@@ -18,12 +18,12 @@ import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 
 public class Bin_Constraints extends BaseConstraintsDescriptor {
   public Bin_Constraints() {
-    super(CONCEPTS.Bin$zt);
+    super(CONCEPTS.Bin$FI);
   }
 
   public static class Index_Property extends BasePropertyConstraintsDescriptor {
     public Index_Property(ConstraintsDescriptor container) {
-      super(PROPS.index$uW$y, container);
+      super(PROPS.index$fUOJ, container);
     }
     @Override
     public boolean hasOwnValidator() {
@@ -48,15 +48,15 @@ public class Bin_Constraints extends BaseConstraintsDescriptor {
   @Override
   protected Map<SProperty, PropertyConstraintsDescriptor> getSpecifiedProperties() {
     Map<SProperty, PropertyConstraintsDescriptor> properties = new HashMap<SProperty, PropertyConstraintsDescriptor>();
-    properties.put(PROPS.index$uW$y, new Index_Property(this));
+    properties.put(PROPS.index$fUOJ, new Index_Property(this));
     return properties;
   }
 
   private static final class CONCEPTS {
-    /*package*/ static final SConcept Bin$zt = MetaAdapterFactory.getConcept(0xe808b2f670da436eL, 0xbf6b14e1ed6cce5fL, 0x44617bd94982f15dL, "playlist.structure.Bin");
+    /*package*/ static final SConcept Bin$FI = MetaAdapterFactory.getConcept(0xe808b2f670da436eL, 0xbf6b14e1ed6cce5fL, 0x44617bd94982f15dL, "playlist.structure.Bin");
   }
 
   private static final class PROPS {
-    /*package*/ static final SProperty index$uW$y = MetaAdapterFactory.getProperty(0xe808b2f670da436eL, 0xbf6b14e1ed6cce5fL, 0x44617bd94982f15dL, 0x44617bd94982f1f6L, "index");
+    /*package*/ static final SProperty index$fUOJ = MetaAdapterFactory.getProperty(0xe808b2f670da436eL, 0xbf6b14e1ed6cce5fL, 0x44617bd94982f15dL, 0x44617bd94982f1f6L, "index");
   }
 }

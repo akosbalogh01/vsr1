@@ -19,11 +19,11 @@ public class Song_TextGen extends TextGenDescriptorBase {
     tgs.newLine();
     tgs.indent();
     tgs.append("<Song file=\"");
-    tgs.append(SPropertyOperations.getString(ctx.getPrimaryInput(), PROPS.filepath$uHMY));
+    tgs.append(SPropertyOperations.getString(ctx.getPrimaryInput(), PROPS.filepath$8KOj));
     tgs.append("\">");
     tgs.newLine();
     ctx.getBuffer().area().increaseIndent();
-    for (SNode item : SLinkOperations.getChildren(ctx.getPrimaryInput(), LINKS.timestamps$b$DG)) {
+    for (SNode item : SLinkOperations.getChildren(ctx.getPrimaryInput(), LINKS.timestamps$Rlk_)) {
       tgs.appendNode(item);
     }
     ctx.getBuffer().area().decreaseIndent();
@@ -33,10 +33,10 @@ public class Song_TextGen extends TextGenDescriptorBase {
   }
 
   private static final class PROPS {
-    /*package*/ static final SProperty filepath$uHMY = MetaAdapterFactory.getProperty(0xe808b2f670da436eL, 0xbf6b14e1ed6cce5fL, 0x44617bd94982f127L, 0x44617bd94982f12aL, "filepath");
+    /*package*/ static final SProperty filepath$8KOj = MetaAdapterFactory.getProperty(0xe808b2f670da436eL, 0xbf6b14e1ed6cce5fL, 0x44617bd94982f127L, 0x44617bd94982f12aL, "filepath");
   }
 
   private static final class LINKS {
-    /*package*/ static final SContainmentLink timestamps$b$DG = MetaAdapterFactory.getContainmentLink(0xe808b2f670da436eL, 0xbf6b14e1ed6cce5fL, 0x44617bd94982f127L, 0x44617bd94983cc98L, "timestamps");
+    /*package*/ static final SContainmentLink timestamps$Rlk_ = MetaAdapterFactory.getContainmentLink(0xe808b2f670da436eL, 0xbf6b14e1ed6cce5fL, 0x44617bd94982f127L, 0x44617bd94983cc98L, "timestamps");
   }
 }
