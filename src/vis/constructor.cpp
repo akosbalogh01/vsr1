@@ -2,8 +2,8 @@
 
 void vs::visualiser::txinit() {
     char port[20] = {0};
-    strcpy(port, portname.c_str());
-    serial = CreateFile("\\\\.\\COM5", GENERIC_READ | GENERIC_WRITE, 0, 0, OPEN_EXISTING, 0, 0);
+    sprintf(port, "\\\\.\\%s", portname.c_str());
+    serial = CreateFile(port, GENERIC_READ | GENERIC_WRITE, 0, 0, OPEN_EXISTING, 0, 0);
     if (serial == INVALID_HANDLE_VALUE) {
         std::cout << "Failed to open port: " << port << std::endl;
         tx = false;
