@@ -21,6 +21,7 @@ const std::vector<float> vs::music::warp(const float lambda, const std::vector<f
         for (unsigned j = 0; j < in.size()-1; j++) {
             sample = allpass(lambda, out[j+1], out[j], sample);
         }
+        out[out.size()-1] = allpass(lambda, 0, out[out.size()-1], sample);
     }
     return out;
 }
