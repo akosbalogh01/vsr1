@@ -18,12 +18,12 @@ import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 
 public class Timestamp_Constraints extends BaseConstraintsDescriptor {
   public Timestamp_Constraints() {
-    super(CONCEPTS.Timestamp$Cy);
+    super(CONCEPTS.Timestamp$wh);
   }
 
   public static class Volume_Property extends BasePropertyConstraintsDescriptor {
     public Volume_Property(ConstraintsDescriptor container) {
-      super(PROPS.volume$91aX, container);
+      super(PROPS.volume$NnBk, container);
     }
     @Override
     public boolean hasOwnValidator() {
@@ -47,7 +47,7 @@ public class Timestamp_Constraints extends BaseConstraintsDescriptor {
   }
   public static class Brightness_Property extends BasePropertyConstraintsDescriptor {
     public Brightness_Property(ConstraintsDescriptor container) {
-      super(PROPS.brightness$90tU, container);
+      super(PROPS.brightness$Nn_R, container);
     }
     @Override
     public boolean hasOwnValidator() {
@@ -72,17 +72,17 @@ public class Timestamp_Constraints extends BaseConstraintsDescriptor {
   @Override
   protected Map<SProperty, PropertyConstraintsDescriptor> getSpecifiedProperties() {
     Map<SProperty, PropertyConstraintsDescriptor> properties = new HashMap<SProperty, PropertyConstraintsDescriptor>();
-    properties.put(PROPS.volume$91aX, new Volume_Property(this));
-    properties.put(PROPS.brightness$90tU, new Brightness_Property(this));
+    properties.put(PROPS.volume$NnBk, new Volume_Property(this));
+    properties.put(PROPS.brightness$Nn_R, new Brightness_Property(this));
     return properties;
   }
 
   private static final class CONCEPTS {
-    /*package*/ static final SConcept Timestamp$Cy = MetaAdapterFactory.getConcept(0xe808b2f670da436eL, 0xbf6b14e1ed6cce5fL, 0x44617bd94982f23aL, "playlist.structure.Timestamp");
+    /*package*/ static final SConcept Timestamp$wh = MetaAdapterFactory.getConcept(0xe808b2f670da436eL, 0xbf6b14e1ed6cce5fL, 0x44617bd94982f23aL, "playlist.structure.Timestamp");
   }
 
   private static final class PROPS {
-    /*package*/ static final SProperty volume$91aX = MetaAdapterFactory.getProperty(0xe808b2f670da436eL, 0xbf6b14e1ed6cce5fL, 0x44617bd94982f23aL, 0x54b5cde27c2af597L, "volume");
-    /*package*/ static final SProperty brightness$90tU = MetaAdapterFactory.getProperty(0xe808b2f670da436eL, 0xbf6b14e1ed6cce5fL, 0x44617bd94982f23aL, 0x54b5cde27c2af594L, "brightness");
+    /*package*/ static final SProperty volume$NnBk = MetaAdapterFactory.getProperty(0xe808b2f670da436eL, 0xbf6b14e1ed6cce5fL, 0x44617bd94982f23aL, 0x54b5cde27c2af597L, "volume");
+    /*package*/ static final SProperty brightness$Nn_R = MetaAdapterFactory.getProperty(0xe808b2f670da436eL, 0xbf6b14e1ed6cce5fL, 0x44617bd94982f23aL, 0x54b5cde27c2af594L, "brightness");
   }
 }

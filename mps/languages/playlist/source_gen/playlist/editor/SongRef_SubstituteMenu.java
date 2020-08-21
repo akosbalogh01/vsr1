@@ -28,7 +28,7 @@ public class SongRef_SubstituteMenu extends SubstituteMenuBase {
   @Override
   protected List<MenuPart<SubstituteMenuItem, SubstituteMenuContext>> getParts(final SubstituteMenuContext _context) {
     List<MenuPart<SubstituteMenuItem, SubstituteMenuContext>> result = new ArrayList<MenuPart<SubstituteMenuItem, SubstituteMenuContext>>();
-    result.add(new ConstraintsFilteringSubstituteMenuPartDecorator(new SMP_ReferenceScope_yssi0t_a(), CONCEPTS.SongRef$Jk));
+    result.add(new ConstraintsFilteringSubstituteMenuPartDecorator(new SMP_ReferenceScope_yssi0t_a(), CONCEPTS.SongRef$B3));
     result.add(new SMP_Subconcepts_yssi0t_b());
     return result;
   }
@@ -50,7 +50,7 @@ public class SongRef_SubstituteMenu extends SubstituteMenuBase {
 
     public SMP_ReferenceScope_yssi0t_a() {
       // that cast is needed for prevent the users from https://youtrack.jetbrains.com/issue/MPS-29051 
-      super((SAbstractConcept) CONCEPTS.SongRef$Jk, LINKS.target$OSDL);
+      super((SAbstractConcept) CONCEPTS.SongRef$B3, LINKS.target$dzIw);
     }
     @NotNull
     @Override
@@ -67,7 +67,7 @@ public class SongRef_SubstituteMenu extends SubstituteMenuBase {
   }
   public class SMP_Subconcepts_yssi0t_b extends ConceptMenusPart<SubstituteMenuItem, SubstituteMenuContext> {
     protected Collection getConcepts(final SubstituteMenuContext _context) {
-      return ConceptDescendantsCache.getInstance().getDirectDescendants(CONCEPTS.SongRef$Jk);
+      return ConceptDescendantsCache.getInstance().getDirectDescendants(CONCEPTS.SongRef$B3);
     }
     @NotNull
     @Override
@@ -88,10 +88,10 @@ public class SongRef_SubstituteMenu extends SubstituteMenuBase {
   }
 
   private static final class CONCEPTS {
-    /*package*/ static final SConcept SongRef$Jk = MetaAdapterFactory.getConcept(0xe808b2f670da436eL, 0xbf6b14e1ed6cce5fL, 0x54d1a88cacfa024eL, "playlist.structure.SongRef");
+    /*package*/ static final SConcept SongRef$B3 = MetaAdapterFactory.getConcept(0xe808b2f670da436eL, 0xbf6b14e1ed6cce5fL, 0x54d1a88cacfa024eL, "playlist.structure.SongRef");
   }
 
   private static final class LINKS {
-    /*package*/ static final SReferenceLink target$OSDL = MetaAdapterFactory.getReferenceLink(0xe808b2f670da436eL, 0xbf6b14e1ed6cce5fL, 0x54d1a88cacfa024eL, 0x54d1a88cacfa024fL, "target");
+    /*package*/ static final SReferenceLink target$dzIw = MetaAdapterFactory.getReferenceLink(0xe808b2f670da436eL, 0xbf6b14e1ed6cce5fL, 0x54d1a88cacfa024eL, 0x54d1a88cacfa024fL, "target");
   }
 }

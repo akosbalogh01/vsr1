@@ -13,10 +13,10 @@ public class SongRef_TextGen extends TextGenDescriptorBase {
   @Override
   public void generateText(final TextGenContext ctx) {
     final TextGenSupport tgs = new TextGenSupport(ctx);
-    tgs.appendNode(SLinkOperations.getTarget(ctx.getPrimaryInput(), LINKS.target$OSDL));
+    tgs.appendNode(SLinkOperations.getTarget(ctx.getPrimaryInput(), LINKS.target$dzIw));
   }
 
   private static final class LINKS {
-    /*package*/ static final SReferenceLink target$OSDL = MetaAdapterFactory.getReferenceLink(0xe808b2f670da436eL, 0xbf6b14e1ed6cce5fL, 0x54d1a88cacfa024eL, 0x54d1a88cacfa024fL, "target");
+    /*package*/ static final SReferenceLink target$dzIw = MetaAdapterFactory.getReferenceLink(0xe808b2f670da436eL, 0xbf6b14e1ed6cce5fL, 0x54d1a88cacfa024eL, 0x54d1a88cacfa024fL, "target");
   }
 }

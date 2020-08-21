@@ -37,9 +37,9 @@
       <node id="6104011242600198916" at="74,119,75,65" concept="1" />
       <node id="6104011242600200959" at="75,65,76,73" concept="1" />
       <node id="6104011242600198915" at="76,73,77,22" concept="5" />
-      <node id="6104011242600198915" at="81,0,82,0" concept="6" trace="Timestamp$Cy" />
-      <node id="6104011242600198915" at="85,0,86,0" concept="6" trace="volume$91aX" />
-      <node id="6104011242600198915" at="86,0,87,0" concept="6" trace="brightness$90tU" />
+      <node id="6104011242600198915" at="81,0,82,0" concept="6" trace="Timestamp$wh" />
+      <node id="6104011242600198915" at="85,0,86,0" concept="6" trace="volume$NnBk" />
+      <node id="6104011242600198915" at="86,0,87,0" concept="6" trace="brightness$Nn_R" />
       <node id="6104011242600198915" at="20,0,23,0" concept="0" trace="Timestamp_Constraints#()V" />
       <node id="6104011242600198916" at="25,0,28,0" concept="0" trace="Volume_Property#(Ljetbrains/mps/smodel/runtime/ConstraintsDescriptor;)V" />
       <node id="6104011242600198916" at="35,100,38,7" concept="2" />
@@ -123,8 +123,8 @@
       <node id="7381120681571977006" at="49,84,50,119" concept="4" />
       <node id="7381120681571977007" at="50,119,51,63" concept="1" />
       <node id="7381120681571977006" at="51,63,52,22" concept="5" />
-      <node id="7381120681571977006" at="56,0,57,0" concept="6" trace="Bin$FI" />
-      <node id="7381120681571977006" at="60,0,61,0" concept="6" trace="index$fUOJ" />
+      <node id="7381120681571977006" at="56,0,57,0" concept="6" trace="Bin$zt" />
+      <node id="7381120681571977006" at="60,0,61,0" concept="6" trace="index$uW$y" />
       <node id="7381120681571977006" at="20,0,23,0" concept="0" trace="Bin_Constraints#()V" />
       <node id="7381120681571977007" at="25,0,28,0" concept="0" trace="Index_Property#(Ljetbrains/mps/smodel/runtime/ConstraintsDescriptor;)V" />
       <node id="7381120681571977007" at="35,100,38,7" concept="2" />
@@ -207,11 +207,11 @@
       <node id="7381120681571993381" at="124,55,125,55" concept="1" />
       <node id="7381120681571994119" at="125,55,126,63" concept="1" />
       <node id="7381120681571984830" at="126,63,127,22" concept="5" />
-      <node id="7381120681571984830" at="131,0,132,0" concept="6" trace="Color$Gd" />
-      <node id="7381120681571984830" at="135,0,136,0" concept="6" trace="r$9n6h" />
-      <node id="7381120681571984830" at="136,0,137,0" concept="6" trace="g$bPeN" />
-      <node id="7381120681571984830" at="137,0,138,0" concept="6" trace="b$bPVQ" />
-      <node id="7381120681571984830" at="138,0,139,0" concept="6" trace="alpha$bQRU" />
+      <node id="7381120681571984830" at="131,0,132,0" concept="6" trace="Color$zW" />
+      <node id="7381120681571984830" at="135,0,136,0" concept="6" trace="r$uJ20" />
+      <node id="7381120681571984830" at="136,0,137,0" concept="6" trace="g$uO8u" />
+      <node id="7381120681571984830" at="137,0,138,0" concept="6" trace="b$uO9V" />
+      <node id="7381120681571984830" at="138,0,139,0" concept="6" trace="alpha$uObR" />
       <node id="7381120681571984830" at="20,0,23,0" concept="0" trace="Color_Constraints#()V" />
       <node id="7381120681571984831" at="25,0,28,0" concept="0" trace="R_Property#(Ljetbrains/mps/smodel/runtime/ConstraintsDescriptor;)V" />
       <node id="7381120681571984831" at="35,100,38,7" concept="2" />

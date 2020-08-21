@@ -18,12 +18,12 @@ import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 
 public class Color_Constraints extends BaseConstraintsDescriptor {
   public Color_Constraints() {
-    super(CONCEPTS.Color$Gd);
+    super(CONCEPTS.Color$zW);
   }
 
   public static class R_Property extends BasePropertyConstraintsDescriptor {
     public R_Property(ConstraintsDescriptor container) {
-      super(PROPS.r$9n6h, container);
+      super(PROPS.r$uJ20, container);
     }
     @Override
     public boolean hasOwnValidator() {
@@ -47,7 +47,7 @@ public class Color_Constraints extends BaseConstraintsDescriptor {
   }
   public static class G_Property extends BasePropertyConstraintsDescriptor {
     public G_Property(ConstraintsDescriptor container) {
-      super(PROPS.g$bPeN, container);
+      super(PROPS.g$uO8u, container);
     }
     @Override
     public boolean hasOwnValidator() {
@@ -71,7 +71,7 @@ public class Color_Constraints extends BaseConstraintsDescriptor {
   }
   public static class B_Property extends BasePropertyConstraintsDescriptor {
     public B_Property(ConstraintsDescriptor container) {
-      super(PROPS.b$bPVQ, container);
+      super(PROPS.b$uO9V, container);
     }
     @Override
     public boolean hasOwnValidator() {
@@ -95,7 +95,7 @@ public class Color_Constraints extends BaseConstraintsDescriptor {
   }
   public static class Alpha_Property extends BasePropertyConstraintsDescriptor {
     public Alpha_Property(ConstraintsDescriptor container) {
-      super(PROPS.alpha$bQRU, container);
+      super(PROPS.alpha$uObR, container);
     }
     @Override
     public boolean hasOwnValidator() {
@@ -120,21 +120,21 @@ public class Color_Constraints extends BaseConstraintsDescriptor {
   @Override
   protected Map<SProperty, PropertyConstraintsDescriptor> getSpecifiedProperties() {
     Map<SProperty, PropertyConstraintsDescriptor> properties = new HashMap<SProperty, PropertyConstraintsDescriptor>();
-    properties.put(PROPS.r$9n6h, new R_Property(this));
-    properties.put(PROPS.g$bPeN, new G_Property(this));
-    properties.put(PROPS.b$bPVQ, new B_Property(this));
-    properties.put(PROPS.alpha$bQRU, new Alpha_Property(this));
+    properties.put(PROPS.r$uJ20, new R_Property(this));
+    properties.put(PROPS.g$uO8u, new G_Property(this));
+    properties.put(PROPS.b$uO9V, new B_Property(this));
+    properties.put(PROPS.alpha$uObR, new Alpha_Property(this));
     return properties;
   }
 
   private static final class CONCEPTS {
-    /*package*/ static final SConcept Color$Gd = MetaAdapterFactory.getConcept(0xe808b2f670da436eL, 0xbf6b14e1ed6cce5fL, 0x44617bd94982f15eL, "playlist.structure.Color");
+    /*package*/ static final SConcept Color$zW = MetaAdapterFactory.getConcept(0xe808b2f670da436eL, 0xbf6b14e1ed6cce5fL, 0x44617bd94982f15eL, "playlist.structure.Color");
   }
 
   private static final class PROPS {
-    /*package*/ static final SProperty r$9n6h = MetaAdapterFactory.getProperty(0xe808b2f670da436eL, 0xbf6b14e1ed6cce5fL, 0x44617bd94982f15eL, 0x44617bd94982f15fL, "r");
-    /*package*/ static final SProperty g$bPeN = MetaAdapterFactory.getProperty(0xe808b2f670da436eL, 0xbf6b14e1ed6cce5fL, 0x44617bd94982f15eL, 0x44617bd94982f161L, "g");
-    /*package*/ static final SProperty b$bPVQ = MetaAdapterFactory.getProperty(0xe808b2f670da436eL, 0xbf6b14e1ed6cce5fL, 0x44617bd94982f15eL, 0x44617bd94982f164L, "b");
-    /*package*/ static final SProperty alpha$bQRU = MetaAdapterFactory.getProperty(0xe808b2f670da436eL, 0xbf6b14e1ed6cce5fL, 0x44617bd94982f15eL, 0x44617bd94982f168L, "alpha");
+    /*package*/ static final SProperty r$uJ20 = MetaAdapterFactory.getProperty(0xe808b2f670da436eL, 0xbf6b14e1ed6cce5fL, 0x44617bd94982f15eL, 0x44617bd94982f15fL, "r");
+    /*package*/ static final SProperty g$uO8u = MetaAdapterFactory.getProperty(0xe808b2f670da436eL, 0xbf6b14e1ed6cce5fL, 0x44617bd94982f15eL, 0x44617bd94982f161L, "g");
+    /*package*/ static final SProperty b$uO9V = MetaAdapterFactory.getProperty(0xe808b2f670da436eL, 0xbf6b14e1ed6cce5fL, 0x44617bd94982f15eL, 0x44617bd94982f164L, "b");
+    /*package*/ static final SProperty alpha$uObR = MetaAdapterFactory.getProperty(0xe808b2f670da436eL, 0xbf6b14e1ed6cce5fL, 0x44617bd94982f15eL, 0x44617bd94982f168L, "alpha");
   }
 }

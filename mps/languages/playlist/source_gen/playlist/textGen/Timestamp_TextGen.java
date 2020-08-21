@@ -18,15 +18,15 @@ public class Timestamp_TextGen extends TextGenDescriptorBase {
     final TextGenSupport tgs = new TextGenSupport(ctx);
     tgs.indent();
     tgs.append("<ControlPoint timestamp=\"");
-    tgs.append("" + SPropertyOperations.getInteger(ctx.getPrimaryInput(), PROPS.stamp$jlgL));
+    tgs.append("" + SPropertyOperations.getInteger(ctx.getPrimaryInput(), PROPS.stamp$v3Bw));
     tgs.append("\" volume=\"");
-    tgs.append("" + SPropertyOperations.getInteger(ctx.getPrimaryInput(), PROPS.volume$91aX));
+    tgs.append("" + SPropertyOperations.getInteger(ctx.getPrimaryInput(), PROPS.volume$NnBk));
     tgs.append("\" brightness=\"");
-    tgs.append("" + SPropertyOperations.getInteger(ctx.getPrimaryInput(), PROPS.brightness$90tU));
+    tgs.append("" + SPropertyOperations.getInteger(ctx.getPrimaryInput(), PROPS.brightness$Nn_R));
     tgs.append("\">");
     tgs.newLine();
     ctx.getBuffer().area().increaseIndent();
-    for (SNode item : SLinkOperations.getChildren(ctx.getPrimaryInput(), LINKS.bins$jqE8)) {
+    for (SNode item : SLinkOperations.getChildren(ctx.getPrimaryInput(), LINKS.bins$v3MD)) {
       tgs.appendNode(item);
     }
     ctx.getBuffer().area().decreaseIndent();
@@ -36,12 +36,12 @@ public class Timestamp_TextGen extends TextGenDescriptorBase {
   }
 
   private static final class PROPS {
-    /*package*/ static final SProperty stamp$jlgL = MetaAdapterFactory.getProperty(0xe808b2f670da436eL, 0xbf6b14e1ed6cce5fL, 0x44617bd94982f23aL, 0x44617bd94982f23bL, "stamp");
-    /*package*/ static final SProperty volume$91aX = MetaAdapterFactory.getProperty(0xe808b2f670da436eL, 0xbf6b14e1ed6cce5fL, 0x44617bd94982f23aL, 0x54b5cde27c2af597L, "volume");
-    /*package*/ static final SProperty brightness$90tU = MetaAdapterFactory.getProperty(0xe808b2f670da436eL, 0xbf6b14e1ed6cce5fL, 0x44617bd94982f23aL, 0x54b5cde27c2af594L, "brightness");
+    /*package*/ static final SProperty stamp$v3Bw = MetaAdapterFactory.getProperty(0xe808b2f670da436eL, 0xbf6b14e1ed6cce5fL, 0x44617bd94982f23aL, 0x44617bd94982f23bL, "stamp");
+    /*package*/ static final SProperty volume$NnBk = MetaAdapterFactory.getProperty(0xe808b2f670da436eL, 0xbf6b14e1ed6cce5fL, 0x44617bd94982f23aL, 0x54b5cde27c2af597L, "volume");
+    /*package*/ static final SProperty brightness$Nn_R = MetaAdapterFactory.getProperty(0xe808b2f670da436eL, 0xbf6b14e1ed6cce5fL, 0x44617bd94982f23aL, 0x54b5cde27c2af594L, "brightness");
   }
 
   private static final class LINKS {
-    /*package*/ static final SContainmentLink bins$jqE8 = MetaAdapterFactory.getContainmentLink(0xe808b2f670da436eL, 0xbf6b14e1ed6cce5fL, 0x44617bd94982f23aL, 0x44617bd94982f23dL, "bins");
+    /*package*/ static final SContainmentLink bins$v3MD = MetaAdapterFactory.getContainmentLink(0xe808b2f670da436eL, 0xbf6b14e1ed6cce5fL, 0x44617bd94982f23aL, 0x44617bd94982f23dL, "bins");
   }
 }

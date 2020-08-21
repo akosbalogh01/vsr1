@@ -10,6 +10,7 @@
     TODO: bin height calculation random spikes?
     TODO: debug overlay slows down fft rendering
     TODO: song starts twice randomly
+    TODO: control point LED spikes
 */
 
 int main(const int argc, const char* argv[]) {
