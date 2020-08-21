@@ -41,7 +41,7 @@ namespace vs {
         const unsigned bufsize = 3;
 
         namespace volume {
-            const unsigned vm = 0;
+            const unsigned vm = 10;
             const unsigned v0 = 0;
             const unsigned coeff = 5;
         }
@@ -69,7 +69,8 @@ namespace vs {
         }
 
         namespace brightness {
-            const unsigned b0 = 30;
+            const unsigned bm = 10;
+            const unsigned b0 = 0;
             const unsigned coeff = 5;
         }
     }

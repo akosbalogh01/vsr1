@@ -15,7 +15,7 @@ namespace vs {
         std::string portname;
         sf::Vector2u wsize, area;
         std::vector <vs::bar> bars;
-        unsigned brightness;
+        unsigned maxbr, curbr; // maximum and current brightness level
         bool tx, en;
 
         void txinit();
@@ -29,7 +29,7 @@ namespace vs {
         ~visualiser();
 
         void setPortName(const std::string&);
-        void setBrightness(const sf::Event&);
+        void setMaxBrightness(const sf::Event&);
         void toggleEnabled(const sf::Event&);
         void toggleTransmission(const sf::Event&);
 

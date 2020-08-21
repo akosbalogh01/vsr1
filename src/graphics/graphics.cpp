@@ -10,7 +10,7 @@ void vs::graphics::setSerialPortName(const std::string& pname) {
 }
 
 void vs::graphics::setBrightness(const sf::Event& event) {
-    vis.setBrightness(event);
+    vis.setMaxBrightness(event);
 }
 
 void vs::graphics::toggleTransmission(const sf::Event& event) {

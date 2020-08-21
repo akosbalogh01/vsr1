@@ -11,6 +11,7 @@ namespace vs {
         EVENT = 1,
         UPDATE = 2,
         RENDER = 3,
+        TRANSMIT = 4,
         _SIZE
     } dclock;
 
