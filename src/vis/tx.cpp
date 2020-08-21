@@ -2,7 +2,6 @@
 
 void vs::visualiser::transmit() {
     const unsigned bufsize = vs::gfx::ledcount * 3;
-    const unsigned clrmax = 255;
     uint8_t  buffer[bufsize] = {0};
     DWORD    written = 0;
 
