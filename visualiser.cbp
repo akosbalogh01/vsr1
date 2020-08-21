@@ -135,6 +135,7 @@
 		<Unit filename="src/music/binheight.cpp" />
 		<Unit filename="src/music/constructor.cpp" />
 		<Unit filename="src/music/fft.cpp" />
+		<Unit filename="src/music/getbrightness.cpp" />
 		<Unit filename="src/music/meta.cpp" />
 		<Unit filename="src/music/music.cpp" />
 		<Unit filename="src/music/update.cpp" />
