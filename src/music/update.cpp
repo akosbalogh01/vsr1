@@ -9,17 +9,16 @@ void vs::music::update() {
         unsigned ccount = buffer.getChannelCount();
 
         uint64_t current = t.asMicroseconds() * (srate / 1000000);
-        sf::Int16 data[vs::audio::fft::scount] = {0};
+        std::vector<float> data(vs::audio::fft::scount, 0.0f);
 
         if ((current > vs::audio::fft::scount) && (current < (scount - vs::audio::fft::scount))) {
             for (unsigned i = 0; i < vs::audio::fft::scount; ++i) {
-                data[i] = *(buffer.getSamples() + current + i*ccount);
+                data[i] = (float) *(buffer.getSamples() + current + i*ccount);
             }
-
+            data = warp(.9f, data);
             fft(data);
         }
 
         modVolume();
-        //modBrightness();
     }
 }

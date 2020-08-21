@@ -8,6 +8,23 @@
     https://www.geeksforgeeks.org/iterative-fast-fourier-transformation-polynomial-multiplication/
 */
 
+float inline allpass(const float lambda, const float feedback, float& feedforward, float in) {
+    float ret = feedforward + lambda * (feedback - in);
+    feedforward = in;
+    return ret;
+}
+
+const std::vector<float> vs::music::warp(const float lambda, const std::vector<float>& in) {
+    std::vector<float> out(in.size(), 0);
+    for (unsigned i = 0; i < in.size(); i++) {
+        auto sample = in[i];
+        for (unsigned j = 0; j < in.size()-1; j++) {
+            sample = allpass(lambda, out[j+1], out[j], sample);
+        }
+    }
+    return out;
+}
+
 static inline const unsigned bitReverse(unsigned x, const unsigned log2n) {
     unsigned n = 0;
     for (unsigned i = 0; i < log2n; i++)
@@ -19,7 +36,7 @@ static inline const unsigned bitReverse(unsigned x, const unsigned log2n) {
     return n;
 }
 
-void vs::music::fft(const sf::Int16* a) {
+void vs::music::fft(const std::vector<float>& a) {
     const float PI = 3.1415926535;
 
     // bit reversal of the given array
