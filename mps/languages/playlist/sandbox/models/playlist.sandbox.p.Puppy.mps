@@ -9,10 +9,11 @@
   </imports>
   <registry>
     <language id="e808b2f6-70da-436e-bf6b-14e1ed6cce5f" name="playlist">
-      <concept id="4927355640491471418" name="playlist.structure.Timestamp" flags="ng" index="dSSBz">
+      <concept id="4927355640491471418" name="playlist.structure.ControlPoint" flags="ng" index="dSSBz">
         <property id="4927355640491471419" name="stamp" index="dSSBy" />
         <property id="6104011242600068503" name="volume" index="CBNxP" />
         <property id="6104011242600068500" name="brightness" index="CBNxQ" />
+        <property id="6597507175067897123" name="freq" index="1ez43L" />
         <child id="4927355640491471421" name="bins" index="dSSB$" />
       </concept>
       <concept id="4927355640491471197" name="playlist.structure.Bin" flags="ng" index="dSSE4">
@@ -88,6 +89,7 @@
       <property role="dSSBy" value="0" />
       <property role="CBNxP" value="50" />
       <property role="CBNxQ" value="50" />
+      <property role="1ez43L" value="10000" />
       <node concept="dSSE4" id="2lFi3Qm7P0x" role="dSSB$">
         <property role="dSSCJ" value="10" />
         <node concept="dSSE7" id="2lFi3Qm7P0y" role="dSSCx">
@@ -109,6 +111,7 @@
       <property role="dSSBy" value="6000" />
       <property role="CBNxP" value="75" />
       <property role="CBNxQ" value="60" />
+      <property role="1ez43L" value="10000" />
       <node concept="dSSE4" id="2lFi3Qm7P0A" role="dSSB$">
         <property role="dSSCJ" value="10" />
         <node concept="dSSE7" id="2lFi3Qm7P0B" role="dSSCx">
@@ -130,6 +133,7 @@
       <property role="dSSBy" value="15500" />
       <property role="CBNxP" value="80" />
       <property role="CBNxQ" value="65" />
+      <property role="1ez43L" value="10000" />
       <node concept="dSSE4" id="2lFi3Qm7P0F" role="dSSB$">
         <property role="dSSCJ" value="20" />
         <node concept="dSSE7" id="2lFi3Qm7P0G" role="dSSCx">
@@ -151,6 +155,7 @@
       <property role="dSSBy" value="31000" />
       <property role="CBNxP" value="80" />
       <property role="CBNxQ" value="65" />
+      <property role="1ez43L" value="10000" />
       <node concept="dSSE4" id="2lFi3Qm7P0K" role="dSSB$">
         <property role="dSSCJ" value="20" />
         <node concept="dSSE7" id="2lFi3Qm7P0L" role="dSSCx">
@@ -172,6 +177,7 @@
       <property role="dSSBy" value="32500" />
       <property role="CBNxP" value="85" />
       <property role="CBNxQ" value="70" />
+      <property role="1ez43L" value="10000" />
       <node concept="dSSE4" id="2lFi3Qm7P0P" role="dSSB$">
         <property role="dSSCJ" value="10" />
         <node concept="dSSE7" id="2lFi3Qm7P0Q" role="dSSCx">
@@ -209,6 +215,7 @@
       <property role="dSSBy" value="62500" />
       <property role="CBNxP" value="85" />
       <property role="CBNxQ" value="70" />
+      <property role="1ez43L" value="10000" />
       <node concept="dSSE4" id="2lFi3Qm7P0Y" role="dSSB$">
         <property role="dSSCJ" value="10" />
         <node concept="dSSE7" id="2lFi3Qm7P0Z" role="dSSCx">
@@ -246,6 +253,7 @@
       <property role="dSSBy" value="66000" />
       <property role="CBNxP" value="75" />
       <property role="CBNxQ" value="55" />
+      <property role="1ez43L" value="10000" />
       <node concept="dSSE4" id="2lFi3Qm7P17" role="dSSB$">
         <property role="dSSCJ" value="10" />
         <node concept="dSSE7" id="2lFi3Qm7P18" role="dSSCx">
@@ -283,6 +291,7 @@
       <property role="dSSBy" value="93000" />
       <property role="CBNxP" value="75" />
       <property role="CBNxQ" value="55" />
+      <property role="1ez43L" value="10000" />
       <node concept="dSSE4" id="2lFi3Qm7P1g" role="dSSB$">
         <property role="dSSCJ" value="10" />
         <node concept="dSSE7" id="2lFi3Qm7P1h" role="dSSCx">
@@ -320,6 +329,7 @@
       <property role="dSSBy" value="108000" />
       <property role="CBNxP" value="90" />
       <property role="CBNxQ" value="90" />
+      <property role="1ez43L" value="10000" />
       <node concept="dSSE4" id="2lFi3Qm7P1p" role="dSSB$">
         <property role="dSSCJ" value="10" />
         <node concept="dSSE7" id="2lFi3Qm7P1q" role="dSSCx">
@@ -357,6 +367,7 @@
       <property role="dSSBy" value="115000" />
       <property role="CBNxP" value="95" />
       <property role="CBNxQ" value="95" />
+      <property role="1ez43L" value="10000" />
       <node concept="dSSE4" id="2lFi3Qm7P1y" role="dSSB$">
         <property role="dSSCJ" value="10" />
         <node concept="dSSE7" id="2lFi3Qm7P1z" role="dSSCx">
@@ -394,6 +405,7 @@
       <property role="dSSBy" value="124000" />
       <property role="CBNxP" value="100" />
       <property role="CBNxQ" value="100" />
+      <property role="1ez43L" value="10000" />
       <node concept="dSSE4" id="2lFi3Qm7P1F" role="dSSB$">
         <property role="dSSCJ" value="10" />
         <node concept="dSSE7" id="2lFi3Qm7P1G" role="dSSCx">
@@ -431,6 +443,7 @@
       <property role="dSSBy" value="130000" />
       <property role="CBNxP" value="100" />
       <property role="CBNxQ" value="100" />
+      <property role="1ez43L" value="10000" />
       <node concept="dSSE4" id="2lFi3Qm7P1O" role="dSSB$">
         <property role="dSSCJ" value="10" />
         <node concept="dSSE7" id="2lFi3Qm7P1P" role="dSSCx">
@@ -468,6 +481,7 @@
       <property role="dSSBy" value="139500" />
       <property role="CBNxP" value="100" />
       <property role="CBNxQ" value="100" />
+      <property role="1ez43L" value="10000" />
       <node concept="dSSE4" id="2lFi3Qm7P1X" role="dSSB$">
         <property role="dSSCJ" value="10" />
         <node concept="dSSE7" id="2lFi3Qm7P1Y" role="dSSCx">
@@ -505,6 +519,7 @@
       <property role="dSSBy" value="141500" />
       <property role="CBNxP" value="95" />
       <property role="CBNxQ" value="90" />
+      <property role="1ez43L" value="10000" />
       <node concept="dSSE4" id="2lFi3Qm7P26" role="dSSB$">
         <property role="dSSCJ" value="10" />
         <node concept="dSSE7" id="2lFi3Qm7P27" role="dSSCx">
@@ -542,6 +557,7 @@
       <property role="dSSBy" value="175000" />
       <property role="CBNxP" value="85" />
       <property role="CBNxQ" value="80" />
+      <property role="1ez43L" value="10000" />
       <node concept="dSSE4" id="2lFi3Qm7P2f" role="dSSB$">
         <property role="dSSCJ" value="10" />
         <node concept="dSSE7" id="2lFi3Qm7P2g" role="dSSCx">
@@ -571,6 +587,7 @@
       <property role="dSSBy" value="186000" />
       <property role="CBNxP" value="80" />
       <property role="CBNxQ" value="75" />
+      <property role="1ez43L" value="10000" />
       <node concept="dSSE4" id="2lFi3Qm7P2m" role="dSSB$">
         <property role="dSSCJ" value="10" />
         <node concept="dSSE7" id="2lFi3Qm7P2n" role="dSSCx">
@@ -600,6 +617,7 @@
       <property role="dSSBy" value="187000" />
       <property role="CBNxP" value="80" />
       <property role="CBNxQ" value="75" />
+      <property role="1ez43L" value="10000" />
       <node concept="dSSE4" id="2lFi3Qm7P2t" role="dSSB$">
         <property role="dSSCJ" value="10" />
         <node concept="dSSE7" id="2lFi3Qm7P2u" role="dSSCx">
@@ -629,6 +647,7 @@
       <property role="dSSBy" value="200000" />
       <property role="CBNxP" value="85" />
       <property role="CBNxQ" value="80" />
+      <property role="1ez43L" value="10000" />
       <node concept="dSSE4" id="2lFi3Qm7P2$" role="dSSB$">
         <property role="dSSCJ" value="10" />
         <node concept="dSSE7" id="2lFi3Qm7P2_" role="dSSCx">
@@ -650,6 +669,7 @@
       <property role="dSSBy" value="240000" />
       <property role="CBNxQ" value="75" />
       <property role="CBNxP" value="80" />
+      <property role="1ez43L" value="10000" />
       <node concept="dSSE4" id="2lFi3Qm7P2D" role="dSSB$">
         <property role="dSSCJ" value="10" />
         <node concept="dSSE7" id="2lFi3Qm7P2E" role="dSSCx">
@@ -675,6 +695,7 @@
       <property role="dSSBy" value="0" />
       <property role="CBNxP" value="25" />
       <property role="CBNxQ" value="0" />
+      <property role="1ez43L" value="10000" />
       <node concept="dSSE4" id="5jhE8MGYpUI" role="dSSB$">
         <property role="dSSCJ" value="0" />
         <node concept="dSSE7" id="5jhE8MGYpUJ" role="dSSCx">
@@ -698,6 +719,7 @@
       <property role="dSSBy" value="6000" />
       <property role="CBNxP" value="90" />
       <property role="CBNxQ" value="50" />
+      <property role="1ez43L" value="10000" />
       <node concept="dSSE4" id="5jhE8MGYpUN" role="dSSB$">
         <property role="dSSCJ" value="0" />
         <node concept="dSSE7" id="5jhE8MGYpUO" role="dSSCx">
@@ -721,6 +743,7 @@
       <property role="dSSBy" value="10000" />
       <property role="CBNxP" value="90" />
       <property role="CBNxQ" value="50" />
+      <property role="1ez43L" value="10000" />
       <node concept="dSSE4" id="5jhE8MGYpUS" role="dSSB$">
         <property role="dSSCJ" value="0" />
         <node concept="dSSE7" id="5jhE8MGYpUT" role="dSSCx">
@@ -744,6 +767,7 @@
       <property role="dSSBy" value="15000" />
       <property role="CBNxP" value="90" />
       <property role="CBNxQ" value="50" />
+      <property role="1ez43L" value="10000" />
       <node concept="dSSE4" id="5jhE8MGYpUX" role="dSSB$">
         <property role="dSSCJ" value="5" />
         <node concept="dSSE7" id="5jhE8MGYpUY" role="dSSCx">
@@ -767,6 +791,7 @@
       <property role="dSSBy" value="20000" />
       <property role="CBNxP" value="90" />
       <property role="CBNxQ" value="50" />
+      <property role="1ez43L" value="10000" />
       <node concept="dSSE4" id="5jhE8MGYpV2" role="dSSB$">
         <property role="dSSCJ" value="10" />
         <node concept="dSSE7" id="5jhE8MGYpV3" role="dSSCx">
@@ -799,6 +824,7 @@
       <property role="dSSBy" value="29750" />
       <property role="CBNxP" value="90" />
       <property role="CBNxQ" value="50" />
+      <property role="1ez43L" value="10000" />
       <node concept="dSSE4" id="5jhE8MGYpV9" role="dSSB$">
         <property role="dSSCJ" value="5" />
         <node concept="dSSE7" id="5jhE8MGYpVa" role="dSSCx">
@@ -849,6 +875,7 @@
       <property role="dSSBy" value="30500" />
       <property role="CBNxP" value="90" />
       <property role="CBNxQ" value="75" />
+      <property role="1ez43L" value="10000" />
       <node concept="dSSE4" id="5jhE8MGYpVk" role="dSSB$">
         <property role="dSSCJ" value="5" />
         <node concept="dSSE7" id="5jhE8MGYpVl" role="dSSCx">
@@ -899,6 +926,7 @@
       <property role="dSSBy" value="60000" />
       <property role="CBNxP" value="90" />
       <property role="CBNxQ" value="75" />
+      <property role="1ez43L" value="10000" />
       <node concept="dSSE4" id="5jhE8MGYpVv" role="dSSB$">
         <property role="dSSCJ" value="10" />
         <node concept="dSSE7" id="5jhE8MGYpVw" role="dSSCx">
@@ -940,6 +968,7 @@
       <property role="dSSBy" value="80000" />
       <property role="CBNxP" value="90" />
       <property role="CBNxQ" value="75" />
+      <property role="1ez43L" value="10000" />
       <node concept="dSSE4" id="5jhE8MGYpVC" role="dSSB$">
         <property role="dSSCJ" value="10" />
         <node concept="dSSE7" id="5jhE8MGYpVD" role="dSSCx">
@@ -981,6 +1010,7 @@
       <property role="dSSBy" value="120000" />
       <property role="CBNxP" value="85" />
       <property role="CBNxQ" value="65" />
+      <property role="1ez43L" value="10000" />
       <node concept="dSSE4" id="5jhE8MGYpVL" role="dSSB$">
         <property role="dSSCJ" value="10" />
         <node concept="dSSE7" id="5jhE8MGYpVM" role="dSSCx">
@@ -1004,6 +1034,7 @@
       <property role="dSSBy" value="140000" />
       <property role="CBNxP" value="80" />
       <property role="CBNxQ" value="60" />
+      <property role="1ez43L" value="10000" />
       <node concept="dSSE4" id="5jhE8MGYpVQ" role="dSSB$">
         <property role="dSSCJ" value="10" />
         <node concept="dSSE7" id="5jhE8MGYpVR" role="dSSCx">
@@ -1027,6 +1058,7 @@
       <property role="dSSBy" value="170000" />
       <property role="CBNxQ" value="65" />
       <property role="CBNxP" value="85" />
+      <property role="1ez43L" value="10000" />
       <node concept="dSSE4" id="5jhE8MGYpVV" role="dSSB$">
         <property role="dSSCJ" value="10" />
         <node concept="dSSE7" id="5jhE8MGYpVW" role="dSSCx">
@@ -1050,6 +1082,7 @@
       <property role="dSSBy" value="180000" />
       <property role="CBNxP" value="90" />
       <property role="CBNxQ" value="70" />
+      <property role="1ez43L" value="10000" />
       <node concept="dSSE4" id="5jhE8MGYpW0" role="dSSB$">
         <property role="dSSCJ" value="10" />
         <node concept="dSSE7" id="5jhE8MGYpW1" role="dSSCx">
@@ -1082,6 +1115,7 @@
       <property role="dSSBy" value="210000" />
       <property role="CBNxP" value="90" />
       <property role="CBNxQ" value="75" />
+      <property role="1ez43L" value="10000" />
       <node concept="dSSE4" id="5jhE8MGYpW7" role="dSSB$">
         <property role="dSSCJ" value="10" />
         <node concept="dSSE7" id="5jhE8MGYpW8" role="dSSCx">
@@ -1114,6 +1148,7 @@
       <property role="dSSBy" value="240000" />
       <property role="CBNxP" value="90" />
       <property role="CBNxQ" value="75" />
+      <property role="1ez43L" value="10000" />
       <node concept="dSSE4" id="5jhE8MGYpWe" role="dSSB$">
         <property role="dSSCJ" value="10" />
         <node concept="dSSE7" id="5jhE8MGYpWf" role="dSSCx">
@@ -1137,6 +1172,7 @@
       <property role="dSSBy" value="244000" />
       <property role="CBNxP" value="90" />
       <property role="CBNxQ" value="75" />
+      <property role="1ez43L" value="10000" />
       <node concept="dSSE4" id="5jhE8MGYpWj" role="dSSB$">
         <property role="dSSCJ" value="10" />
         <node concept="dSSE7" id="5jhE8MGYpWk" role="dSSCx">
@@ -1160,6 +1196,7 @@
       <property role="dSSBy" value="248000" />
       <property role="CBNxP" value="80" />
       <property role="CBNxQ" value="50" />
+      <property role="1ez43L" value="10000" />
       <node concept="dSSE4" id="5jhE8MGYpWo" role="dSSB$">
         <property role="dSSCJ" value="0" />
         <node concept="dSSE7" id="5jhE8MGYpWp" role="dSSCx">
@@ -1187,6 +1224,7 @@
       <property role="dSSBy" value="0" />
       <property role="CBNxP" value="70" />
       <property role="CBNxQ" value="50" />
+      <property role="1ez43L" value="10000" />
       <node concept="dSSE4" id="hnUhpVYbIz" role="dSSB$">
         <property role="dSSCJ" value="0" />
         <node concept="dSSE7" id="hnUhpVYbI$" role="dSSCx">
@@ -1210,6 +1248,7 @@
       <property role="dSSBy" value="6000" />
       <property role="CBNxP" value="75" />
       <property role="CBNxQ" value="65" />
+      <property role="1ez43L" value="10000" />
       <node concept="dSSE4" id="hnUhpVYbJL" role="dSSB$">
         <property role="dSSCJ" value="10" />
         <node concept="dSSE7" id="hnUhpVYbJM" role="dSSCx">
@@ -1233,6 +1272,7 @@
       <property role="dSSBy" value="14000" />
       <property role="CBNxP" value="75" />
       <property role="CBNxQ" value="70" />
+      <property role="1ez43L" value="10000" />
       <node concept="dSSE4" id="hnUhpVYbJT" role="dSSB$">
         <property role="dSSCJ" value="10" />
         <node concept="dSSE7" id="hnUhpVYbJU" role="dSSCx">
@@ -1256,6 +1296,7 @@
       <property role="dSSBy" value="24000" />
       <property role="CBNxP" value="75" />
       <property role="CBNxQ" value="70" />
+      <property role="1ez43L" value="10000" />
       <node concept="dSSE4" id="hnUhpVYbKl" role="dSSB$">
         <property role="dSSCJ" value="10" />
         <node concept="dSSE7" id="hnUhpVYbKm" role="dSSCx">
@@ -1279,6 +1320,7 @@
       <property role="dSSBy" value="35000" />
       <property role="CBNxP" value="75" />
       <property role="CBNxQ" value="70" />
+      <property role="1ez43L" value="10000" />
       <node concept="dSSE4" id="hnUhpVYbKQ" role="dSSB$">
         <property role="dSSCJ" value="10" />
         <node concept="dSSE7" id="hnUhpVYbKR" role="dSSCx">
@@ -1311,6 +1353,7 @@
       <property role="dSSBy" value="44000" />
       <property role="CBNxP" value="80" />
       <property role="CBNxQ" value="75" />
+      <property role="1ez43L" value="10000" />
       <node concept="dSSE4" id="hnUhpVYbM_" role="dSSB$">
         <property role="dSSCJ" value="10" />
         <node concept="dSSE7" id="hnUhpVYbMA" role="dSSCx">
@@ -1343,6 +1386,7 @@
       <property role="dSSBy" value="52000" />
       <property role="CBNxP" value="85" />
       <property role="CBNxQ" value="80" />
+      <property role="1ez43L" value="10000" />
       <node concept="dSSE4" id="hnUhpVYbML" role="dSSB$">
         <property role="dSSCJ" value="10" />
         <node concept="dSSE7" id="hnUhpVYbMM" role="dSSCx">
@@ -1375,6 +1419,7 @@
       <property role="dSSBy" value="60000" />
       <property role="CBNxP" value="85" />
       <property role="CBNxQ" value="80" />
+      <property role="1ez43L" value="10000" />
       <node concept="dSSE4" id="hnUhpVYbMX" role="dSSB$">
         <property role="dSSCJ" value="10" />
         <node concept="dSSE7" id="hnUhpVYbMY" role="dSSCx">
@@ -1407,6 +1452,7 @@
       <property role="dSSBy" value="75000" />
       <property role="CBNxP" value="85" />
       <property role="CBNxQ" value="80" />
+      <property role="1ez43L" value="10000" />
       <node concept="dSSE4" id="hnUhpVYbNW" role="dSSB$">
         <property role="dSSCJ" value="10" />
         <node concept="dSSE7" id="hnUhpVYbNX" role="dSSCx">
@@ -1430,6 +1476,7 @@
       <property role="dSSBy" value="135000" />
       <property role="CBNxP" value="85" />
       <property role="CBNxQ" value="80" />
+      <property role="1ez43L" value="10000" />
       <node concept="dSSE4" id="hnUhpVYbWO" role="dSSB$">
         <property role="dSSCJ" value="10" />
         <node concept="dSSE7" id="hnUhpVYbWP" role="dSSCx">
@@ -1453,6 +1500,7 @@
       <property role="dSSBy" value="142500" />
       <property role="CBNxP" value="75" />
       <property role="CBNxQ" value="60" />
+      <property role="1ez43L" value="10000" />
       <node concept="dSSE4" id="hnUhpVYbWY" role="dSSB$">
         <property role="dSSCJ" value="10" />
         <node concept="dSSE7" id="hnUhpVYbWZ" role="dSSCx">
@@ -1476,6 +1524,7 @@
       <property role="dSSBy" value="150000" />
       <property role="CBNxP" value="75" />
       <property role="CBNxQ" value="75" />
+      <property role="1ez43L" value="10000" />
       <node concept="dSSE4" id="hnUhpVYbXQ" role="dSSB$">
         <property role="dSSCJ" value="10" />
         <node concept="dSSE7" id="hnUhpVYbXR" role="dSSCx">
@@ -1499,6 +1548,7 @@
       <property role="dSSBy" value="170000" />
       <property role="CBNxP" value="80" />
       <property role="CBNxQ" value="80" />
+      <property role="1ez43L" value="10000" />
       <node concept="dSSE4" id="hnUhpVYbXi" role="dSSB$">
         <property role="dSSCJ" value="0" />
         <node concept="dSSE7" id="hnUhpVYbXj" role="dSSCx">
@@ -1522,6 +1572,7 @@
       <property role="dSSBy" value="195000" />
       <property role="CBNxP" value="85" />
       <property role="CBNxQ" value="80" />
+      <property role="1ez43L" value="10000" />
       <node concept="dSSE4" id="hnUhpVYbXy" role="dSSB$">
         <property role="dSSCJ" value="10" />
         <node concept="dSSE7" id="hnUhpVYbXz" role="dSSCx">
@@ -1545,6 +1596,7 @@
       <property role="dSSBy" value="240000" />
       <property role="CBNxP" value="85" />
       <property role="CBNxQ" value="80" />
+      <property role="1ez43L" value="10000" />
       <node concept="dSSE4" id="hnUhpVYbXG" role="dSSB$">
         <property role="dSSCJ" value="10" />
         <node concept="dSSE7" id="hnUhpVYbXH" role="dSSCx">
@@ -1568,6 +1620,7 @@
       <property role="dSSBy" value="247500" />
       <property role="CBNxP" value="75" />
       <property role="CBNxQ" value="60" />
+      <property role="1ez43L" value="10000" />
       <node concept="dSSE4" id="hnUhpVYbXq" role="dSSB$">
         <property role="dSSCJ" value="10" />
         <node concept="dSSE7" id="hnUhpVYbXr" role="dSSCx">
@@ -1591,6 +1644,7 @@
       <property role="dSSBy" value="255000" />
       <property role="CBNxP" value="75" />
       <property role="CBNxQ" value="75" />
+      <property role="1ez43L" value="10000" />
       <node concept="dSSE4" id="hnUhpVYbY0" role="dSSB$">
         <property role="dSSCJ" value="10" />
         <node concept="dSSE7" id="hnUhpVYbY1" role="dSSCx">
@@ -1614,6 +1668,7 @@
       <property role="dSSBy" value="270000" />
       <property role="CBNxP" value="80" />
       <property role="CBNxQ" value="80" />
+      <property role="1ez43L" value="10000" />
       <node concept="dSSE4" id="hnUhpVYbWy" role="dSSB$">
         <property role="dSSCJ" value="0" />
         <node concept="dSSE7" id="hnUhpVYbWz" role="dSSCx">
@@ -1637,6 +1692,7 @@
       <property role="dSSBy" value="273000" />
       <property role="CBNxQ" value="80" />
       <property role="CBNxP" value="80" />
+      <property role="1ez43L" value="10000" />
       <node concept="dSSE4" id="hnUhpVYiv_" role="dSSB$">
         <property role="dSSCJ" value="10" />
         <node concept="dSSE7" id="hnUhpVYivA" role="dSSCx">
@@ -1669,6 +1725,7 @@
       <property role="dSSBy" value="280000" />
       <property role="CBNxQ" value="75" />
       <property role="CBNxP" value="80" />
+      <property role="1ez43L" value="10000" />
       <node concept="dSSE4" id="hnUhpVYivR" role="dSSB$">
         <property role="dSSCJ" value="10" />
         <node concept="dSSE7" id="hnUhpVYivS" role="dSSCx">
@@ -1701,6 +1758,7 @@
       <property role="dSSBy" value="325000" />
       <property role="CBNxQ" value="70" />
       <property role="CBNxP" value="75" />
+      <property role="1ez43L" value="10000" />
       <node concept="dSSE4" id="hnUhpVYiw9" role="dSSB$">
         <property role="dSSCJ" value="10" />
         <node concept="dSSE7" id="hnUhpVYiwa" role="dSSCx">
@@ -1733,6 +1791,7 @@
       <property role="dSSBy" value="328000" />
       <property role="CBNxQ" value="65" />
       <property role="CBNxP" value="75" />
+      <property role="1ez43L" value="10000" />
       <node concept="dSSE4" id="hnUhpVYiwl" role="dSSB$">
         <property role="dSSCJ" value="10" />
         <node concept="dSSE7" id="hnUhpVYiwm" role="dSSCx">
@@ -1765,6 +1824,7 @@
       <property role="dSSBy" value="360000" />
       <property role="CBNxQ" value="60" />
       <property role="CBNxP" value="70" />
+      <property role="1ez43L" value="10000" />
       <node concept="dSSE4" id="hnUhpVYiwx" role="dSSB$">
         <property role="dSSCJ" value="10" />
         <node concept="dSSE7" id="hnUhpVYiwy" role="dSSCx">
@@ -1797,6 +1857,7 @@
       <property role="dSSBy" value="420000" />
       <property role="CBNxQ" value="55" />
       <property role="CBNxP" value="65" />
+      <property role="1ez43L" value="10000" />
       <node concept="dSSE4" id="hnUhpVYiwH" role="dSSB$">
         <property role="dSSCJ" value="10" />
         <node concept="dSSE7" id="hnUhpVYiwI" role="dSSCx">
@@ -1829,6 +1890,7 @@
       <property role="dSSBy" value="440000" />
       <property role="CBNxQ" value="50" />
       <property role="CBNxP" value="60" />
+      <property role="1ez43L" value="10000" />
       <node concept="dSSE4" id="hnUhpVYiwT" role="dSSB$">
         <property role="dSSCJ" value="10" />
         <node concept="dSSE7" id="hnUhpVYiwU" role="dSSCx">
@@ -1865,6 +1927,7 @@
       <property role="dSSBy" value="10000" />
       <property role="CBNxP" value="60" />
       <property role="CBNxQ" value="50" />
+      <property role="1ez43L" value="10000" />
       <node concept="dSSE4" id="hnUhpVYoRw" role="dSSB$">
         <property role="dSSCJ" value="10" />
         <node concept="dSSE7" id="hnUhpVYoRx" role="dSSCx">
@@ -1897,6 +1960,7 @@
       <property role="dSSBy" value="30000" />
       <property role="CBNxP" value="75" />
       <property role="CBNxQ" value="70" />
+      <property role="1ez43L" value="10000" />
       <node concept="dSSE4" id="hnUhpVYoRG" role="dSSB$">
         <property role="dSSCJ" value="10" />
         <node concept="dSSE7" id="hnUhpVYoRH" role="dSSCx">
@@ -1929,6 +1993,7 @@
       <property role="dSSBy" value="42500" />
       <property role="CBNxP" value="80" />
       <property role="CBNxQ" value="75" />
+      <property role="1ez43L" value="10000" />
       <node concept="dSSE4" id="hnUhpVYoRS" role="dSSB$">
         <property role="dSSCJ" value="10" />
         <node concept="dSSE7" id="hnUhpVYoRT" role="dSSCx">
@@ -1961,6 +2026,7 @@
       <property role="dSSBy" value="45000" />
       <property role="CBNxP" value="85" />
       <property role="CBNxQ" value="75" />
+      <property role="1ez43L" value="10000" />
       <node concept="dSSE4" id="hnUhpVYoS4" role="dSSB$">
         <property role="dSSCJ" value="10" />
         <node concept="dSSE7" id="hnUhpVYoS5" role="dSSCx">
@@ -1984,6 +2050,7 @@
       <property role="dSSBy" value="60000" />
       <property role="CBNxP" value="85" />
       <property role="CBNxQ" value="75" />
+      <property role="1ez43L" value="10000" />
       <node concept="dSSE4" id="hnUhpVYoSe" role="dSSB$">
         <property role="dSSCJ" value="10" />
         <node concept="dSSE7" id="hnUhpVYoSf" role="dSSCx">
@@ -2007,6 +2074,7 @@
       <property role="dSSBy" value="78000" />
       <property role="CBNxP" value="85" />
       <property role="CBNxQ" value="75" />
+      <property role="1ez43L" value="10000" />
       <node concept="dSSE4" id="hnUhpVYoSo" role="dSSB$">
         <property role="dSSCJ" value="10" />
         <node concept="dSSE7" id="hnUhpVYoSp" role="dSSCx">
@@ -2030,6 +2098,7 @@
       <property role="dSSBy" value="80000" />
       <property role="CBNxP" value="85" />
       <property role="CBNxQ" value="80" />
+      <property role="1ez43L" value="10000" />
       <node concept="dSSE4" id="hnUhpVYoSw" role="dSSB$">
         <property role="dSSCJ" value="10" />
         <node concept="dSSE7" id="hnUhpVYoSx" role="dSSCx">
@@ -2053,6 +2122,7 @@
       <property role="dSSBy" value="110000" />
       <property role="CBNxP" value="85" />
       <property role="CBNxQ" value="80" />
+      <property role="1ez43L" value="10000" />
       <node concept="dSSE4" id="hnUhpVYoSO" role="dSSB$">
         <property role="dSSCJ" value="10" />
         <node concept="dSSE7" id="hnUhpVYoSP" role="dSSCx">
@@ -2076,6 +2146,7 @@
       <property role="dSSBy" value="140000" />
       <property role="CBNxP" value="85" />
       <property role="CBNxQ" value="80" />
+      <property role="1ez43L" value="10000" />
       <node concept="dSSE4" id="hnUhpVYoSW" role="dSSB$">
         <property role="dSSCJ" value="10" />
         <node concept="dSSE7" id="hnUhpVYoSX" role="dSSCx">
@@ -2099,6 +2170,7 @@
       <property role="dSSBy" value="170000" />
       <property role="CBNxP" value="85" />
       <property role="CBNxQ" value="80" />
+      <property role="1ez43L" value="10000" />
       <node concept="dSSE4" id="hnUhpVYoT4" role="dSSB$">
         <property role="dSSCJ" value="10" />
         <node concept="dSSE7" id="hnUhpVYoT5" role="dSSCx">
@@ -2122,6 +2194,7 @@
       <property role="dSSBy" value="200000" />
       <property role="CBNxP" value="85" />
       <property role="CBNxQ" value="75" />
+      <property role="1ez43L" value="10000" />
       <node concept="dSSE4" id="hnUhpVYoTo" role="dSSB$">
         <property role="dSSCJ" value="10" />
         <node concept="dSSE7" id="hnUhpVYoTp" role="dSSCx">
@@ -2145,6 +2218,7 @@
       <property role="dSSBy" value="205000" />
       <property role="CBNxP" value="85" />
       <property role="CBNxQ" value="75" />
+      <property role="1ez43L" value="10000" />
       <node concept="dSSE4" id="hnUhpVYoTw" role="dSSB$">
         <property role="dSSCJ" value="10" />
         <node concept="dSSE7" id="hnUhpVYoTx" role="dSSCx">
@@ -2168,6 +2242,7 @@
       <property role="dSSBy" value="230000" />
       <property role="CBNxP" value="85" />
       <property role="CBNxQ" value="75" />
+      <property role="1ez43L" value="10000" />
       <node concept="dSSE4" id="hnUhpVYoTC" role="dSSB$">
         <property role="dSSCJ" value="10" />
         <node concept="dSSE7" id="hnUhpVYoTD" role="dSSCx">
@@ -2191,6 +2266,7 @@
       <property role="dSSBy" value="255000" />
       <property role="CBNxP" value="85" />
       <property role="CBNxQ" value="75" />
+      <property role="1ez43L" value="10000" />
       <node concept="dSSE4" id="hnUhpVYoW1" role="dSSB$">
         <property role="dSSCJ" value="10" />
         <node concept="dSSE7" id="hnUhpVYoW2" role="dSSCx">
@@ -2218,6 +2294,7 @@
       <property role="dSSBy" value="20000" />
       <property role="CBNxP" value="75" />
       <property role="CBNxQ" value="60" />
+      <property role="1ez43L" value="10000" />
       <node concept="dSSE4" id="hnUhpVYoXN" role="dSSB$">
         <property role="dSSCJ" value="10" />
         <node concept="dSSE7" id="hnUhpVYoXO" role="dSSCx">
@@ -2241,6 +2318,7 @@
       <property role="dSSBy" value="25000" />
       <property role="CBNxP" value="75" />
       <property role="CBNxQ" value="60" />
+      <property role="1ez43L" value="10000" />
       <node concept="dSSE4" id="hnUhpVYoXV" role="dSSB$">
         <property role="dSSCJ" value="10" />
         <node concept="dSSE7" id="hnUhpVYoXW" role="dSSCx">
@@ -2264,6 +2342,7 @@
       <property role="dSSBy" value="55000" />
       <property role="CBNxP" value="75" />
       <property role="CBNxQ" value="60" />
+      <property role="1ez43L" value="10000" />
       <node concept="dSSE4" id="hnUhpVYoY3" role="dSSB$">
         <property role="dSSCJ" value="10" />
         <node concept="dSSE7" id="hnUhpVYoY4" role="dSSCx">
@@ -2287,6 +2366,7 @@
       <property role="dSSBy" value="85000" />
       <property role="CBNxP" value="75" />
       <property role="CBNxQ" value="60" />
+      <property role="1ez43L" value="10000" />
       <node concept="dSSE4" id="hnUhpVYoYb" role="dSSB$">
         <property role="dSSCJ" value="10" />
         <node concept="dSSE7" id="hnUhpVYoYc" role="dSSCx">
@@ -2310,6 +2390,7 @@
       <property role="dSSBy" value="90000" />
       <property role="CBNxP" value="75" />
       <property role="CBNxQ" value="60" />
+      <property role="1ez43L" value="10000" />
       <node concept="dSSE4" id="hnUhpVYoYj" role="dSSB$">
         <property role="dSSCJ" value="10" />
         <node concept="dSSE7" id="hnUhpVYoYk" role="dSSCx">
@@ -2333,6 +2414,7 @@
       <property role="dSSBy" value="100000" />
       <property role="CBNxP" value="75" />
       <property role="CBNxQ" value="60" />
+      <property role="1ez43L" value="10000" />
       <node concept="dSSE4" id="hnUhpVYoYr" role="dSSB$">
         <property role="dSSCJ" value="10" />
         <node concept="dSSE7" id="hnUhpVYoYs" role="dSSCx">
@@ -2356,6 +2438,7 @@
       <property role="dSSBy" value="105000" />
       <property role="CBNxP" value="75" />
       <property role="CBNxQ" value="60" />
+      <property role="1ez43L" value="10000" />
       <node concept="dSSE4" id="hnUhpVYoYz" role="dSSB$">
         <property role="dSSCJ" value="10" />
         <node concept="dSSE7" id="hnUhpVYoY$" role="dSSCx">
@@ -2379,6 +2462,7 @@
       <property role="dSSBy" value="110000" />
       <property role="CBNxP" value="75" />
       <property role="CBNxQ" value="60" />
+      <property role="1ez43L" value="10000" />
       <node concept="dSSE4" id="hnUhpVYoYF" role="dSSB$">
         <property role="dSSCJ" value="10" />
         <node concept="dSSE7" id="hnUhpVYoYG" role="dSSCx">
@@ -2402,6 +2486,7 @@
       <property role="dSSBy" value="115000" />
       <property role="CBNxP" value="85" />
       <property role="CBNxQ" value="75" />
+      <property role="1ez43L" value="10000" />
       <node concept="dSSE4" id="hnUhpVYoYR" role="dSSB$">
         <property role="dSSCJ" value="10" />
         <node concept="dSSE7" id="hnUhpVYoYS" role="dSSCx">
@@ -2425,6 +2510,7 @@
       <property role="dSSBy" value="170000" />
       <property role="CBNxP" value="85" />
       <property role="CBNxQ" value="75" />
+      <property role="1ez43L" value="10000" />
       <node concept="dSSE4" id="hnUhpVYoYZ" role="dSSB$">
         <property role="dSSCJ" value="10" />
         <node concept="dSSE7" id="hnUhpVYoZ0" role="dSSCx">
@@ -2448,6 +2534,7 @@
       <property role="dSSBy" value="180000" />
       <property role="CBNxP" value="85" />
       <property role="CBNxQ" value="75" />
+      <property role="1ez43L" value="10000" />
       <node concept="dSSE4" id="hnUhpVYp4r" role="dSSB$">
         <property role="dSSCJ" value="10" />
         <node concept="dSSE7" id="hnUhpVYp4s" role="dSSCx">
@@ -2471,6 +2558,7 @@
       <property role="dSSBy" value="200000" />
       <property role="CBNxP" value="85" />
       <property role="CBNxQ" value="70" />
+      <property role="1ez43L" value="10000" />
       <node concept="dSSE4" id="hnUhpVYp4z" role="dSSB$">
         <property role="dSSCJ" value="10" />
         <node concept="dSSE7" id="hnUhpVYp4$" role="dSSCx">
@@ -2494,6 +2582,7 @@
       <property role="dSSBy" value="220000" />
       <property role="CBNxP" value="85" />
       <property role="CBNxQ" value="75" />
+      <property role="1ez43L" value="10000" />
       <node concept="dSSE4" id="hnUhpVYp4F" role="dSSB$">
         <property role="dSSCJ" value="10" />
         <node concept="dSSE7" id="hnUhpVYp4G" role="dSSCx">
@@ -2517,6 +2606,7 @@
       <property role="dSSBy" value="245000" />
       <property role="CBNxP" value="85" />
       <property role="CBNxQ" value="75" />
+      <property role="1ez43L" value="10000" />
       <node concept="dSSE4" id="hnUhpVYp4N" role="dSSB$">
         <property role="dSSCJ" value="10" />
         <node concept="dSSE7" id="hnUhpVYp4O" role="dSSCx">
@@ -2540,6 +2630,7 @@
       <property role="dSSBy" value="270000" />
       <property role="CBNxP" value="85" />
       <property role="CBNxQ" value="75" />
+      <property role="1ez43L" value="10000" />
       <node concept="dSSE4" id="hnUhpVYp4V" role="dSSB$">
         <property role="dSSCJ" value="10" />
         <node concept="dSSE7" id="hnUhpVYp4W" role="dSSCx">
@@ -2563,6 +2654,7 @@
       <property role="dSSBy" value="300000" />
       <property role="CBNxP" value="75" />
       <property role="CBNxQ" value="65" />
+      <property role="1ez43L" value="10000" />
       <node concept="dSSE4" id="hnUhpVYp6n" role="dSSB$">
         <property role="dSSCJ" value="10" />
         <node concept="dSSE7" id="hnUhpVYp6o" role="dSSCx">
@@ -2590,6 +2682,7 @@
       <property role="dSSBy" value="9000" />
       <property role="CBNxP" value="75" />
       <property role="CBNxQ" value="65" />
+      <property role="1ez43L" value="10000" />
       <node concept="dSSE4" id="5jhE8MGXQbl" role="dSSB$">
         <property role="dSSCJ" value="10" />
         <node concept="dSSE7" id="5jhE8MGXQbm" role="dSSCx">
@@ -2613,6 +2706,7 @@
       <property role="dSSBy" value="20000" />
       <property role="CBNxQ" value="70" />
       <property role="CBNxP" value="75" />
+      <property role="1ez43L" value="10000" />
       <node concept="dSSE4" id="5jhE8MGXQbt" role="dSSB$">
         <property role="dSSCJ" value="10" />
         <node concept="dSSE7" id="5jhE8MGXQbu" role="dSSCx">
@@ -2636,6 +2730,7 @@
       <property role="dSSBy" value="32000" />
       <property role="CBNxP" value="75" />
       <property role="CBNxQ" value="70" />
+      <property role="1ez43L" value="10000" />
       <node concept="dSSE4" id="5jhE8MGXQbB" role="dSSB$">
         <property role="dSSCJ" value="10" />
         <node concept="dSSE7" id="5jhE8MGXQbC" role="dSSCx">
@@ -2659,6 +2754,7 @@
       <property role="dSSBy" value="50000" />
       <property role="CBNxQ" value="70" />
       <property role="CBNxP" value="75" />
+      <property role="1ez43L" value="10000" />
       <node concept="dSSE4" id="5jhE8MGXQbL" role="dSSB$">
         <property role="dSSCJ" value="10" />
         <node concept="dSSE7" id="5jhE8MGXQbM" role="dSSCx">
@@ -2682,6 +2778,7 @@
       <property role="dSSBy" value="80000" />
       <property role="CBNxQ" value="70" />
       <property role="CBNxP" value="75" />
+      <property role="1ez43L" value="10000" />
       <node concept="dSSE4" id="5jhE8MGXQbV" role="dSSB$">
         <property role="dSSCJ" value="10" />
         <node concept="dSSE7" id="5jhE8MGXQbW" role="dSSCx">
@@ -2705,6 +2802,7 @@
       <property role="dSSBy" value="92000" />
       <property role="CBNxQ" value="70" />
       <property role="CBNxP" value="75" />
+      <property role="1ez43L" value="10000" />
       <node concept="dSSE4" id="5jhE8MGXQc5" role="dSSB$">
         <property role="dSSCJ" value="10" />
         <node concept="dSSE7" id="5jhE8MGXQc6" role="dSSCx">
@@ -2728,6 +2826,7 @@
       <property role="dSSBy" value="95000" />
       <property role="CBNxQ" value="70" />
       <property role="CBNxP" value="75" />
+      <property role="1ez43L" value="10000" />
       <node concept="dSSE4" id="5jhE8MGXQcd" role="dSSB$">
         <property role="dSSCJ" value="10" />
         <node concept="dSSE7" id="5jhE8MGXQce" role="dSSCx">
@@ -2751,6 +2850,7 @@
       <property role="dSSBy" value="99000" />
       <property role="CBNxQ" value="70" />
       <property role="CBNxP" value="75" />
+      <property role="1ez43L" value="10000" />
       <node concept="dSSE4" id="5jhE8MGXQcl" role="dSSB$">
         <property role="dSSCJ" value="10" />
         <node concept="dSSE7" id="5jhE8MGXQcm" role="dSSCx">
@@ -2774,6 +2874,7 @@
       <property role="dSSBy" value="100000" />
       <property role="CBNxP" value="75" />
       <property role="CBNxQ" value="70" />
+      <property role="1ez43L" value="10000" />
       <node concept="dSSE4" id="5jhE8MGXPN7" role="dSSB$">
         <property role="dSSCJ" value="10" />
         <node concept="dSSE7" id="5jhE8MGXPN8" role="dSSCx">
@@ -2797,6 +2898,7 @@
       <property role="dSSBy" value="115000" />
       <property role="CBNxP" value="80" />
       <property role="CBNxQ" value="75" />
+      <property role="1ez43L" value="10000" />
       <node concept="dSSE4" id="5jhE8MGXPNh" role="dSSB$">
         <property role="dSSCJ" value="10" />
         <node concept="dSSE7" id="5jhE8MGXPNi" role="dSSCx">
@@ -2820,6 +2922,7 @@
       <property role="dSSBy" value="135000" />
       <property role="CBNxP" value="85" />
       <property role="CBNxQ" value="80" />
+      <property role="1ez43L" value="10000" />
       <node concept="dSSE4" id="5jhE8MGXPMP" role="dSSB$">
         <property role="dSSCJ" value="10" />
         <node concept="dSSE7" id="5jhE8MGXPMQ" role="dSSCx">
@@ -2843,6 +2946,7 @@
       <property role="dSSBy" value="150000" />
       <property role="CBNxQ" value="80" />
       <property role="CBNxP" value="85" />
+      <property role="1ez43L" value="10000" />
       <node concept="dSSE4" id="5jhE8MGXPMZ" role="dSSB$">
         <property role="dSSCJ" value="10" />
         <node concept="dSSE7" id="5jhE8MGXPN0" role="dSSCx">
@@ -2866,6 +2970,7 @@
       <property role="dSSBy" value="153000" />
       <property role="CBNxQ" value="80" />
       <property role="CBNxP" value="85" />
+      <property role="1ez43L" value="10000" />
       <node concept="dSSE4" id="5jhE8MGXPMz" role="dSSB$">
         <property role="dSSCJ" value="10" />
         <node concept="dSSE7" id="5jhE8MGXPM$" role="dSSCx">
@@ -2889,6 +2994,7 @@
       <property role="dSSBy" value="166000" />
       <property role="CBNxQ" value="80" />
       <property role="CBNxP" value="85" />
+      <property role="1ez43L" value="10000" />
       <node concept="dSSE4" id="5jhE8MGXPMH" role="dSSB$">
         <property role="dSSCJ" value="10" />
         <node concept="dSSE7" id="5jhE8MGXPMI" role="dSSCx">
@@ -2912,6 +3018,7 @@
       <property role="dSSBy" value="180000" />
       <property role="CBNxP" value="80" />
       <property role="CBNxQ" value="65" />
+      <property role="1ez43L" value="10000" />
       <node concept="dSSE4" id="5jhE8MGXPB0" role="dSSB$">
         <property role="dSSCJ" value="10" />
         <node concept="dSSE7" id="5jhE8MGXPB1" role="dSSCx">
@@ -2935,6 +3042,7 @@
       <property role="dSSBy" value="200000" />
       <property role="CBNxQ" value="70" />
       <property role="CBNxP" value="80" />
+      <property role="1ez43L" value="10000" />
       <node concept="dSSE4" id="5jhE8MGXP$K" role="dSSB$">
         <property role="dSSCJ" value="10" />
         <node concept="dSSE7" id="5jhE8MGXP$L" role="dSSCx">
@@ -2958,6 +3066,7 @@
       <property role="dSSBy" value="225000" />
       <property role="CBNxQ" value="75" />
       <property role="CBNxP" value="80" />
+      <property role="1ez43L" value="10000" />
       <node concept="dSSE4" id="5jhE8MGXP$U" role="dSSB$">
         <property role="dSSCJ" value="10" />
         <node concept="dSSE7" id="5jhE8MGXP$V" role="dSSCx">
@@ -2981,6 +3090,7 @@
       <property role="dSSBy" value="235000" />
       <property role="CBNxQ" value="80" />
       <property role="CBNxP" value="80" />
+      <property role="1ez43L" value="10000" />
       <node concept="dSSE4" id="5jhE8MGXP$A" role="dSSB$">
         <property role="dSSCJ" value="10" />
         <node concept="dSSE7" id="5jhE8MGXP$B" role="dSSCx">
@@ -3004,6 +3114,7 @@
       <property role="dSSBy" value="249000" />
       <property role="CBNxQ" value="80" />
       <property role="CBNxP" value="80" />
+      <property role="1ez43L" value="10000" />
       <node concept="dSSE4" id="5jhE8MGXP$s" role="dSSB$">
         <property role="dSSCJ" value="10" />
         <node concept="dSSE7" id="5jhE8MGXP$t" role="dSSCx">
@@ -3027,6 +3138,7 @@
       <property role="dSSBy" value="280000" />
       <property role="CBNxP" value="80" />
       <property role="CBNxQ" value="80" />
+      <property role="1ez43L" value="10000" />
       <node concept="dSSE4" id="5jhE8MGXPuk" role="dSSB$">
         <property role="dSSCJ" value="10" />
         <node concept="dSSE7" id="5jhE8MGXPul" role="dSSCx">
@@ -3050,6 +3162,7 @@
       <property role="dSSBy" value="300000" />
       <property role="CBNxP" value="80" />
       <property role="CBNxQ" value="75" />
+      <property role="1ez43L" value="10000" />
       <node concept="dSSE4" id="5jhE8MGXPsD" role="dSSB$">
         <property role="dSSCJ" value="10" />
         <node concept="dSSE7" id="5jhE8MGXPsE" role="dSSCx">
@@ -3073,6 +3186,7 @@
       <property role="dSSBy" value="317000" />
       <property role="CBNxP" value="80" />
       <property role="CBNxQ" value="75" />
+      <property role="1ez43L" value="10000" />
       <node concept="dSSE4" id="5jhE8MGXPsN" role="dSSB$">
         <property role="dSSCJ" value="10" />
         <node concept="dSSE7" id="5jhE8MGXPsO" role="dSSCx">
@@ -3096,6 +3210,7 @@
       <property role="dSSBy" value="320000" />
       <property role="CBNxP" value="80" />
       <property role="CBNxQ" value="75" />
+      <property role="1ez43L" value="10000" />
       <node concept="dSSE4" id="5jhE8MGXPq0" role="dSSB$">
         <property role="dSSCJ" value="10" />
         <node concept="dSSE7" id="5jhE8MGXPq1" role="dSSCx">
@@ -3119,6 +3234,7 @@
       <property role="dSSBy" value="327000" />
       <property role="CBNxP" value="80" />
       <property role="CBNxQ" value="75" />
+      <property role="1ez43L" value="10000" />
       <node concept="dSSE4" id="5jhE8MGXPoA" role="dSSB$">
         <property role="dSSCJ" value="10" />
         <node concept="dSSE7" id="5jhE8MGXPoB" role="dSSCx">
@@ -3151,6 +3267,7 @@
       <property role="dSSBy" value="335000" />
       <property role="CBNxP" value="80" />
       <property role="CBNxQ" value="75" />
+      <property role="1ez43L" value="10000" />
       <node concept="dSSE4" id="5jhE8MGXPnh" role="dSSB$">
         <property role="dSSCJ" value="10" />
         <node concept="dSSE7" id="5jhE8MGXPni" role="dSSCx">
@@ -3174,6 +3291,7 @@
       <property role="dSSBy" value="350000" />
       <property role="CBNxP" value="80" />
       <property role="CBNxQ" value="75" />
+      <property role="1ez43L" value="10000" />
       <node concept="dSSE4" id="5jhE8MGXPnr" role="dSSB$">
         <property role="dSSCJ" value="10" />
         <node concept="dSSE7" id="5jhE8MGXPns" role="dSSCx">
@@ -3197,6 +3315,7 @@
       <property role="dSSBy" value="367000" />
       <property role="CBNxP" value="85" />
       <property role="CBNxQ" value="80" />
+      <property role="1ez43L" value="10000" />
       <node concept="dSSE4" id="5jhE8MGXPl6" role="dSSB$">
         <property role="dSSCJ" value="10" />
         <node concept="dSSE7" id="5jhE8MGXPl7" role="dSSCx">
@@ -3220,6 +3339,7 @@
       <property role="dSSBy" value="403000" />
       <property role="CBNxP" value="90" />
       <property role="CBNxQ" value="90" />
+      <property role="1ez43L" value="10000" />
       <node concept="dSSE4" id="5jhE8MGXPk8" role="dSSB$">
         <property role="dSSCJ" value="10" />
         <node concept="dSSE7" id="5jhE8MGXPk9" role="dSSCx">
@@ -3243,6 +3363,7 @@
       <property role="dSSBy" value="410000" />
       <property role="CBNxP" value="80" />
       <property role="CBNxQ" value="75" />
+      <property role="1ez43L" value="10000" />
       <node concept="dSSE4" id="5jhE8MGXPjf" role="dSSB$">
         <property role="dSSCJ" value="0" />
         <node concept="dSSE7" id="5jhE8MGXPjg" role="dSSCx">
@@ -3266,6 +3387,7 @@
       <property role="dSSBy" value="445000" />
       <property role="CBNxP" value="80" />
       <property role="CBNxQ" value="75" />
+      <property role="1ez43L" value="10000" />
       <node concept="dSSE4" id="5jhE8MGXPir" role="dSSB$">
         <property role="dSSCJ" value="10" />
         <node concept="dSSE7" id="5jhE8MGXPis" role="dSSCx">
@@ -3289,6 +3411,7 @@
       <property role="dSSBy" value="462000" />
       <property role="CBNxP" value="80" />
       <property role="CBNxQ" value="75" />
+      <property role="1ez43L" value="10000" />
       <node concept="dSSE4" id="5jhE8MGXPhG" role="dSSB$">
         <property role="dSSCJ" value="10" />
         <node concept="dSSE7" id="5jhE8MGXPhH" role="dSSCx">
@@ -3312,6 +3435,7 @@
       <property role="dSSBy" value="480000" />
       <property role="CBNxP" value="80" />
       <property role="CBNxQ" value="75" />
+      <property role="1ez43L" value="10000" />
       <node concept="dSSE4" id="5jhE8MGXPh2" role="dSSB$">
         <property role="dSSCJ" value="10" />
         <node concept="dSSE7" id="5jhE8MGXPh3" role="dSSCx">
@@ -3335,6 +3459,7 @@
       <property role="dSSBy" value="497000" />
       <property role="CBNxP" value="80" />
       <property role="CBNxQ" value="75" />
+      <property role="1ez43L" value="10000" />
       <node concept="dSSE4" id="5jhE8MGXPgv" role="dSSB$">
         <property role="dSSCJ" value="10" />
         <node concept="dSSE7" id="5jhE8MGXPgw" role="dSSCx">
@@ -3358,6 +3483,7 @@
       <property role="dSSBy" value="520000" />
       <property role="CBNxP" value="85" />
       <property role="CBNxQ" value="80" />
+      <property role="1ez43L" value="10000" />
       <node concept="dSSE4" id="5jhE8MGXPfZ" role="dSSB$">
         <property role="dSSCJ" value="10" />
         <node concept="dSSE7" id="5jhE8MGXPg0" role="dSSCx">
@@ -3381,6 +3507,7 @@
       <property role="dSSBy" value="540000" />
       <property role="CBNxP" value="90" />
       <property role="CBNxQ" value="90" />
+      <property role="1ez43L" value="10000" />
       <node concept="dSSE4" id="5jhE8MGXPfA" role="dSSB$">
         <property role="dSSCJ" value="0" />
         <node concept="dSSE7" id="5jhE8MGXPfB" role="dSSCx">
@@ -3404,6 +3531,7 @@
       <property role="dSSBy" value="564000" />
       <property role="CBNxQ" value="90" />
       <property role="CBNxP" value="90" />
+      <property role="1ez43L" value="10000" />
       <node concept="dSSE4" id="5jhE8MGXPfg" role="dSSB$">
         <property role="dSSCJ" value="0" />
         <node concept="dSSE7" id="5jhE8MGXPfh" role="dSSCx">
@@ -3427,6 +3555,7 @@
       <property role="CBNxP" value="65" />
       <property role="CBNxQ" value="0" />
       <property role="dSSBy" value="570000" />
+      <property role="1ez43L" value="10000" />
       <node concept="dSSE4" id="5jhE8MGXPeZ" role="dSSB$">
         <property role="dSSCJ" value="0" />
         <node concept="dSSE7" id="5jhE8MGXPf0" role="dSSCx">
@@ -3454,6 +3583,7 @@
       <property role="dSSBy" value="0" />
       <property role="CBNxP" value="65" />
       <property role="CBNxQ" value="0" />
+      <property role="1ez43L" value="10000" />
       <node concept="dSSE4" id="2meLF$kynNL" role="dSSB$">
         <property role="dSSCJ" value="0" />
         <node concept="dSSE7" id="2meLF$kynNM" role="dSSCx">
@@ -3467,6 +3597,7 @@
       <property role="dSSBy" value="10000" />
       <property role="CBNxP" value="65" />
       <property role="CBNxQ" value="50" />
+      <property role="1ez43L" value="10000" />
       <node concept="dSSE4" id="2meLF$kynNP" role="dSSB$">
         <property role="dSSCJ" value="0" />
         <node concept="dSSE7" id="2meLF$kynNQ" role="dSSCx">
@@ -3480,6 +3611,7 @@
       <property role="dSSBy" value="21700" />
       <property role="CBNxP" value="70" />
       <property role="CBNxQ" value="60" />
+      <property role="1ez43L" value="10000" />
       <node concept="dSSE4" id="2meLF$kynNT" role="dSSB$">
         <property role="dSSCJ" value="0" />
         <node concept="dSSE7" id="2meLF$kynNU" role="dSSCx">
@@ -3493,6 +3625,7 @@
       <property role="dSSBy" value="21900" />
       <property role="CBNxP" value="80" />
       <property role="CBNxQ" value="70" />
+      <property role="1ez43L" value="10000" />
       <node concept="dSSE4" id="2meLF$kynNX" role="dSSB$">
         <property role="dSSCJ" value="10" />
         <node concept="dSSE7" id="2meLF$kynNY" role="dSSCx">
@@ -3514,6 +3647,7 @@
       <property role="dSSBy" value="22200" />
       <property role="CBNxP" value="70" />
       <property role="CBNxQ" value="65" />
+      <property role="1ez43L" value="10000" />
       <node concept="dSSE4" id="2meLF$kynQ0" role="dSSB$">
         <property role="dSSCJ" value="0" />
         <node concept="dSSE7" id="2meLF$kynQ1" role="dSSCx">
@@ -3527,6 +3661,7 @@
       <property role="dSSBy" value="25900" />
       <property role="CBNxP" value="70" />
       <property role="CBNxQ" value="65" />
+      <property role="1ez43L" value="10000" />
       <node concept="dSSE4" id="2meLF$kynQ4" role="dSSB$">
         <property role="dSSCJ" value="0" />
         <node concept="dSSE7" id="2meLF$kynQ5" role="dSSCx">
@@ -3540,6 +3675,7 @@
       <property role="dSSBy" value="26100" />
       <property role="CBNxP" value="85" />
       <property role="CBNxQ" value="75" />
+      <property role="1ez43L" value="10000" />
       <node concept="dSSE4" id="2meLF$kynQ8" role="dSSB$">
         <property role="dSSCJ" value="10" />
         <node concept="dSSE7" id="2meLF$kynQ9" role="dSSCx">
@@ -3561,6 +3697,7 @@
       <property role="dSSBy" value="26400" />
       <property role="CBNxP" value="80" />
       <property role="CBNxQ" value="70" />
+      <property role="1ez43L" value="10000" />
       <node concept="dSSE4" id="2meLF$kynQg" role="dSSB$">
         <property role="dSSCJ" value="0" />
         <node concept="dSSE7" id="2meLF$kynQh" role="dSSCx">
@@ -3574,6 +3711,7 @@
       <property role="dSSBy" value="30400" />
       <property role="CBNxP" value="80" />
       <property role="CBNxQ" value="70" />
+      <property role="1ez43L" value="10000" />
       <node concept="dSSE4" id="2meLF$kynQk" role="dSSB$">
         <property role="dSSCJ" value="0" />
         <node concept="dSSE7" id="2meLF$kynQl" role="dSSCx">
@@ -3587,6 +3725,7 @@
       <property role="dSSBy" value="30600" />
       <property role="CBNxP" value="85" />
       <property role="CBNxQ" value="75" />
+      <property role="1ez43L" value="10000" />
       <node concept="dSSE4" id="2meLF$kynTg" role="dSSB$">
         <property role="dSSCJ" value="10" />
         <node concept="dSSE7" id="2meLF$kynTh" role="dSSCx">
@@ -3608,6 +3747,7 @@
       <property role="dSSBy" value="30900" />
       <property role="CBNxP" value="80" />
       <property role="CBNxQ" value="70" />
+      <property role="1ez43L" value="10000" />
       <node concept="dSSE4" id="2meLF$kynTo" role="dSSB$">
         <property role="dSSCJ" value="0" />
         <node concept="dSSE7" id="2meLF$kynTp" role="dSSCx">
@@ -3621,6 +3761,7 @@
       <property role="dSSBy" value="34600" />
       <property role="CBNxP" value="80" />
       <property role="CBNxQ" value="70" />
+      <property role="1ez43L" value="10000" />
       <node concept="dSSE4" id="2meLF$kynTs" role="dSSB$">
         <property role="dSSCJ" value="0" />
         <node concept="dSSE7" id="2meLF$kynTt" role="dSSCx">
@@ -3634,6 +3775,7 @@
       <property role="dSSBy" value="34800" />
       <property role="CBNxP" value="85" />
       <property role="CBNxQ" value="75" />
+      <property role="1ez43L" value="10000" />
       <node concept="dSSE4" id="2meLF$kynTE" role="dSSB$">
         <property role="dSSCJ" value="10" />
         <node concept="dSSE7" id="2meLF$kynTF" role="dSSCx">
@@ -3655,6 +3797,7 @@
       <property role="dSSBy" value="35100" />
       <property role="CBNxP" value="80" />
       <property role="CBNxQ" value="70" />
+      <property role="1ez43L" value="10000" />
       <node concept="dSSE4" id="2meLF$kyo2t" role="dSSB$">
         <property role="dSSCJ" value="0" />
         <node concept="dSSE7" id="2meLF$kyo2u" role="dSSCx">
@@ -3668,6 +3811,7 @@
       <property role="dSSBy" value="39100" />
       <property role="CBNxP" value="80" />
       <property role="CBNxQ" value="70" />
+      <property role="1ez43L" value="10000" />
       <node concept="dSSE4" id="2meLF$kyo2x" role="dSSB$">
         <property role="dSSCJ" value="0" />
         <node concept="dSSE7" id="2meLF$kyo2y" role="dSSCx">
@@ -3681,6 +3825,7 @@
       <property role="dSSBy" value="39300" />
       <property role="CBNxP" value="80" />
       <property role="CBNxQ" value="70" />
+      <property role="1ez43L" value="10000" />
       <node concept="dSSE4" id="2meLF$kyo2H" role="dSSB$">
         <property role="dSSCJ" value="10" />
         <node concept="dSSE7" id="2meLF$kyo2I" role="dSSCx">
@@ -3702,6 +3847,7 @@
       <property role="dSSBy" value="51500" />
       <property role="CBNxP" value="80" />
       <property role="CBNxQ" value="70" />
+      <property role="1ez43L" value="10000" />
       <node concept="dSSE4" id="2meLF$kyo2R" role="dSSB$">
         <property role="dSSCJ" value="10" />
         <node concept="dSSE7" id="2meLF$kyo2S" role="dSSCx">
@@ -3723,6 +3869,7 @@
       <property role="dSSBy" value="52500" />
       <property role="CBNxP" value="80" />
       <property role="CBNxQ" value="70" />
+      <property role="1ez43L" value="10000" />
       <node concept="dSSE4" id="2meLF$kyo2Z" role="dSSB$">
         <property role="dSSCJ" value="10" />
         <node concept="dSSE7" id="2meLF$kyo30" role="dSSCx">
@@ -3744,6 +3891,7 @@
       <property role="dSSBy" value="69000" />
       <property role="CBNxP" value="80" />
       <property role="CBNxQ" value="70" />
+      <property role="1ez43L" value="10000" />
       <node concept="dSSE4" id="2meLF$kyo37" role="dSSB$">
         <property role="dSSCJ" value="10" />
         <node concept="dSSE7" id="2meLF$kyo38" role="dSSCx">
@@ -3765,6 +3913,7 @@
       <property role="dSSBy" value="70500" />
       <property role="CBNxP" value="80" />
       <property role="CBNxQ" value="70" />
+      <property role="1ez43L" value="10000" />
       <node concept="dSSE4" id="2meLF$kyo3f" role="dSSB$">
         <property role="dSSCJ" value="10" />
         <node concept="dSSE7" id="2meLF$kyo3g" role="dSSCx">
@@ -3786,6 +3935,7 @@
       <property role="dSSBy" value="88000" />
       <property role="CBNxP" value="80" />
       <property role="CBNxQ" value="70" />
+      <property role="1ez43L" value="10000" />
       <node concept="dSSE4" id="2meLF$kyo3n" role="dSSB$">
         <property role="dSSCJ" value="10" />
         <node concept="dSSE7" id="2meLF$kyo3o" role="dSSCx">
@@ -3807,6 +3957,7 @@
       <property role="dSSBy" value="104000" />
       <property role="CBNxP" value="80" />
       <property role="CBNxQ" value="70" />
+      <property role="1ez43L" value="10000" />
       <node concept="dSSE4" id="2meLF$kyoc4" role="dSSB$">
         <property role="dSSCJ" value="10" />
         <node concept="dSSE7" id="2meLF$kyoc5" role="dSSCx">
@@ -3828,6 +3979,7 @@
       <property role="dSSBy" value="105000" />
       <property role="CBNxP" value="80" />
       <property role="CBNxQ" value="70" />
+      <property role="1ez43L" value="10000" />
       <node concept="dSSE4" id="2meLF$kyoce" role="dSSB$">
         <property role="dSSCJ" value="10" />
         <node concept="dSSE7" id="2meLF$kyocf" role="dSSCx">
@@ -3849,6 +4001,7 @@
       <property role="dSSBy" value="122000" />
       <property role="CBNxP" value="80" />
       <property role="CBNxQ" value="70" />
+      <property role="1ez43L" value="10000" />
       <node concept="dSSE4" id="2meLF$kyoco" role="dSSB$">
         <property role="dSSCJ" value="10" />
         <node concept="dSSE7" id="2meLF$kyocp" role="dSSCx">
@@ -3870,6 +4023,7 @@
       <property role="dSSBy" value="139000" />
       <property role="CBNxP" value="80" />
       <property role="CBNxQ" value="70" />
+      <property role="1ez43L" value="10000" />
       <node concept="dSSE4" id="2meLF$kyocy" role="dSSB$">
         <property role="dSSCJ" value="10" />
         <node concept="dSSE7" id="2meLF$kyocz" role="dSSCx">
@@ -3891,6 +4045,7 @@
       <property role="dSSBy" value="141000" />
       <property role="CBNxP" value="80" />
       <property role="CBNxQ" value="70" />
+      <property role="1ez43L" value="10000" />
       <node concept="dSSE4" id="2meLF$kyocG" role="dSSB$">
         <property role="dSSCJ" value="10" />
         <node concept="dSSE7" id="2meLF$kyocH" role="dSSCx">
@@ -3912,6 +4067,7 @@
       <property role="dSSBy" value="166000" />
       <property role="CBNxP" value="80" />
       <property role="CBNxQ" value="70" />
+      <property role="1ez43L" value="10000" />
       <node concept="dSSE4" id="2meLF$kyocQ" role="dSSB$">
         <property role="dSSCJ" value="10" />
         <node concept="dSSE7" id="2meLF$kyocR" role="dSSCx">
@@ -3933,6 +4089,7 @@
       <property role="dSSBy" value="166500" />
       <property role="CBNxP" value="80" />
       <property role="CBNxQ" value="75" />
+      <property role="1ez43L" value="10000" />
       <node concept="dSSE4" id="2meLF$kyod0" role="dSSB$">
         <property role="dSSCJ" value="10" />
         <node concept="dSSE7" id="2meLF$kyod1" role="dSSCx">
@@ -3954,6 +4111,7 @@
       <property role="dSSBy" value="185000" />
       <property role="CBNxP" value="80" />
       <property role="CBNxQ" value="75" />
+      <property role="1ez43L" value="10000" />
       <node concept="dSSE4" id="2meLF$kyoda" role="dSSB$">
         <property role="dSSCJ" value="10" />
         <node concept="dSSE7" id="2meLF$kyodb" role="dSSCx">
@@ -3975,6 +4133,7 @@
       <property role="dSSBy" value="200000" />
       <property role="CBNxP" value="80" />
       <property role="CBNxQ" value="70" />
+      <property role="1ez43L" value="10000" />
       <node concept="dSSE4" id="2meLF$kyonp" role="dSSB$">
         <property role="dSSCJ" value="10" />
         <node concept="dSSE7" id="2meLF$kyonq" role="dSSCx">
@@ -3996,6 +4155,7 @@
       <property role="dSSBy" value="210000" />
       <property role="CBNxP" value="80" />
       <property role="CBNxQ" value="65" />
+      <property role="1ez43L" value="10000" />
       <node concept="dSSE4" id="2meLF$kyonz" role="dSSB$">
         <property role="dSSCJ" value="10" />
         <node concept="dSSE7" id="2meLF$kyon$" role="dSSCx">
@@ -4017,6 +4177,7 @@
       <property role="dSSBy" value="218400" />
       <property role="CBNxP" value="75" />
       <property role="CBNxQ" value="75" />
+      <property role="1ez43L" value="10000" />
       <node concept="dSSE4" id="2meLF$kyFTk" role="dSSB$">
         <property role="dSSCJ" value="0" />
         <node concept="dSSE7" id="2meLF$kyFTl" role="dSSCx">
@@ -4030,6 +4191,7 @@
       <property role="dSSBy" value="235900" />
       <property role="CBNxP" value="80" />
       <property role="CBNxQ" value="80" />
+      <property role="1ez43L" value="10000" />
       <node concept="dSSE4" id="2meLF$kyFTw" role="dSSB$">
         <property role="dSSCJ" value="10" />
         <node concept="dSSE7" id="2meLF$kyFTx" role="dSSCx">
@@ -4051,6 +4213,7 @@
       <property role="dSSBy" value="236300" />
       <property role="CBNxP" value="75" />
       <property role="CBNxQ" value="75" />
+      <property role="1ez43L" value="10000" />
       <node concept="dSSE4" id="2meLF$kyFMr" role="dSSB$">
         <property role="dSSCJ" value="0" />
         <node concept="dSSE7" id="2meLF$kyFMs" role="dSSCx">
@@ -4064,6 +4227,7 @@
       <property role="dSSBy" value="242300" />
       <property role="CBNxP" value="75" />
       <property role="CBNxQ" value="70" />
+      <property role="1ez43L" value="10000" />
       <node concept="dSSE4" id="2meLF$kyFMn" role="dSSB$">
         <property role="dSSCJ" value="0" />
         <node concept="dSSE7" id="2meLF$kyFMo" role="dSSCx">
@@ -4077,6 +4241,7 @@
       <property role="dSSBy" value="244900" />
       <property role="CBNxP" value="80" />
       <property role="CBNxQ" value="75" />
+      <property role="1ez43L" value="10000" />
       <node concept="dSSE4" id="2meLF$kyFMd" role="dSSB$">
         <property role="dSSCJ" value="10" />
         <node concept="dSSE7" id="2meLF$kyFMe" role="dSSCx">
@@ -4098,6 +4263,7 @@
       <property role="dSSBy" value="261900" />
       <property role="CBNxP" value="85" />
       <property role="CBNxQ" value="80" />
+      <property role="1ez43L" value="10000" />
       <node concept="dSSE4" id="2meLF$kyFM3" role="dSSB$">
         <property role="dSSCJ" value="10" />
         <node concept="dSSE7" id="2meLF$kyFM4" role="dSSCx">
@@ -4119,6 +4285,7 @@
       <property role="dSSBy" value="264250" />
       <property role="CBNxP" value="80" />
       <property role="CBNxQ" value="80" />
+      <property role="1ez43L" value="10000" />
       <node concept="dSSE4" id="2meLF$kyF_h" role="dSSB$">
         <property role="dSSCJ" value="0" />
         <node concept="dSSE7" id="2meLF$kyF_i" role="dSSCx">
@@ -4132,6 +4299,7 @@
       <property role="dSSBy" value="269000" />
       <property role="CBNxP" value="85" />
       <property role="CBNxQ" value="85" />
+      <property role="1ez43L" value="10000" />
       <node concept="dSSE4" id="2meLF$kyF_d" role="dSSB$">
         <property role="dSSCJ" value="0" />
         <node concept="dSSE7" id="2meLF$kyF_e" role="dSSCx">
@@ -4145,6 +4313,7 @@
       <property role="dSSBy" value="279700" />
       <property role="CBNxP" value="90" />
       <property role="CBNxQ" value="85" />
+      <property role="1ez43L" value="10000" />
       <node concept="dSSE4" id="2meLF$kyF_3" role="dSSB$">
         <property role="dSSCJ" value="10" />
         <node concept="dSSE7" id="2meLF$kyF_4" role="dSSCx">
@@ -4166,6 +4335,7 @@
       <property role="dSSBy" value="296900" />
       <property role="CBNxP" value="95" />
       <property role="CBNxQ" value="90" />
+      <property role="1ez43L" value="10000" />
       <node concept="dSSE4" id="2meLF$kyF$T" role="dSSB$">
         <property role="dSSCJ" value="10" />
         <node concept="dSSE7" id="2meLF$kyF$U" role="dSSCx">
@@ -4187,6 +4357,7 @@
       <property role="dSSBy" value="301400" />
       <property role="CBNxP" value="85" />
       <property role="CBNxQ" value="85" />
+      <property role="1ez43L" value="10000" />
       <node concept="dSSE4" id="2meLF$kyF$J" role="dSSB$">
         <property role="dSSCJ" value="10" />
         <node concept="dSSE7" id="2meLF$kyF$K" role="dSSCx">
@@ -4208,6 +4379,7 @@
       <property role="dSSBy" value="305800" />
       <property role="CBNxP" value="90" />
       <property role="CBNxQ" value="90" />
+      <property role="1ez43L" value="10000" />
       <node concept="dSSE4" id="2meLF$kyFp1" role="dSSB$">
         <property role="dSSCJ" value="10" />
         <node concept="dSSE7" id="2meLF$kyFp2" role="dSSCx">
@@ -4229,6 +4401,7 @@
       <property role="dSSBy" value="323000" />
       <property role="CBNxP" value="100" />
       <property role="CBNxQ" value="100" />
+      <property role="1ez43L" value="10000" />
       <node concept="dSSE4" id="2meLF$kyFoX" role="dSSB$">
         <property role="dSSCJ" value="10" />
         <node concept="dSSE7" id="2meLF$kyFoY" role="dSSCx">
@@ -4250,6 +4423,7 @@
       <property role="dSSBy" value="333000" />
       <property role="CBNxP" value="95" />
       <property role="CBNxQ" value="90" />
+      <property role="1ez43L" value="10000" />
       <node concept="dSSE4" id="2meLF$kyPsh" role="dSSB$">
         <property role="dSSCJ" value="0" />
         <node concept="dSSE7" id="2meLF$kyPsi" role="dSSCx">
@@ -4263,6 +4437,7 @@
       <property role="dSSBy" value="350000" />
       <property role="CBNxP" value="90" />
       <property role="CBNxQ" value="80" />
+      <property role="1ez43L" value="10000" />
       <node concept="dSSE4" id="2meLF$kyPsl" role="dSSB$">
         <property role="dSSCJ" value="10" />
         <node concept="dSSE7" id="2meLF$kyPsm" role="dSSCx">
@@ -4284,6 +4459,7 @@
       <property role="dSSBy" value="360000" />
       <property role="CBNxP" value="85" />
       <property role="CBNxQ" value="75" />
+      <property role="1ez43L" value="10000" />
       <node concept="dSSE4" id="2meLF$kyPsv" role="dSSB$">
         <property role="dSSCJ" value="0" />
         <node concept="dSSE7" id="2meLF$kyPsw" role="dSSCx">
@@ -4297,6 +4473,7 @@
       <property role="dSSBy" value="385000" />
       <property role="CBNxP" value="80" />
       <property role="CBNxQ" value="70" />
+      <property role="1ez43L" value="10000" />
       <node concept="dSSE4" id="2meLF$kyovH" role="dSSB$">
         <property role="dSSCJ" value="0" />
         <node concept="dSSE7" id="2meLF$kyovI" role="dSSCx">
@@ -4314,6 +4491,7 @@
       <property role="dSSBy" value="0" />
       <property role="CBNxP" value="50" />
       <property role="CBNxQ" value="50" />
+      <property role="1ez43L" value="10000" />
     </node>
   </node>
   <node concept="dSSFY" id="66RAJRWjC7h">
@@ -4323,6 +4501,7 @@
       <property role="dSSBy" value="0" />
       <property role="CBNxP" value="50" />
       <property role="CBNxQ" value="50" />
+      <property role="1ez43L" value="10000" />
     </node>
   </node>
   <node concept="dSSFY" id="66RAJRWjC7j">
@@ -4332,6 +4511,7 @@
       <property role="dSSBy" value="0" />
       <property role="CBNxP" value="50" />
       <property role="CBNxQ" value="50" />
+      <property role="1ez43L" value="10000" />
     </node>
   </node>
   <node concept="dSSFY" id="66RAJRWjC7l">
@@ -4341,6 +4521,7 @@
       <property role="dSSBy" value="0" />
       <property role="CBNxP" value="50" />
       <property role="CBNxQ" value="50" />
+      <property role="1ez43L" value="10000" />
     </node>
   </node>
   <node concept="dSSFY" id="66RAJRWjC7n">
@@ -4350,6 +4531,7 @@
       <property role="dSSBy" value="0" />
       <property role="CBNxP" value="50" />
       <property role="CBNxQ" value="50" />
+      <property role="1ez43L" value="10000" />
     </node>
   </node>
 </model>

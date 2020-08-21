@@ -254,7 +254,7 @@
     </node>
   </node>
   <node concept="1M2fIO" id="5iPNu9Wbfc3">
-    <ref role="1M2myG" to="sj14:4hxuX_9wJ8U" resolve="Timestamp" />
+    <ref role="1M2myG" to="sj14:4hxuX_9wJ8U" resolve="ControlPoint" />
     <node concept="EnEH3" id="5iPNu9Wbfc4" role="1MhHOB">
       <ref role="EomxK" to="sj14:5iPNu9WaJmn" resolve="volume" />
       <node concept="QB0g5" id="5iPNu9Wbfdq" role="QCWH9">

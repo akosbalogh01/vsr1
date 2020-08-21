@@ -11,19 +11,19 @@ public final class LanguageConceptSwitch {
   private final LanguageConceptIndex myIndex;
   public static final int Bin = 0;
   public static final int Color = 1;
-  public static final int Playlist = 2;
-  public static final int Song = 3;
-  public static final int SongRef = 4;
-  public static final int Timestamp = 5;
+  public static final int ControlPoint = 2;
+  public static final int Playlist = 3;
+  public static final int Song = 4;
+  public static final int SongRef = 5;
 
   public LanguageConceptSwitch() {
     LanguageConceptIndexBuilder builder = new LanguageConceptIndexBuilder(0xe808b2f670da436eL, 0xbf6b14e1ed6cce5fL);
     builder.put(0x44617bd94982f15dL, Bin);
     builder.put(0x44617bd94982f15eL, Color);
+    builder.put(0x44617bd94982f23aL, ControlPoint);
     builder.put(0x44617bd94982f106L, Playlist);
     builder.put(0x44617bd94982f127L, Song);
     builder.put(0x54d1a88cacfa024eL, SongRef);
-    builder.put(0x44617bd94982f23aL, Timestamp);
     myIndex = builder.seal();
   }
 

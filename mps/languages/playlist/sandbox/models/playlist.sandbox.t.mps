@@ -7,10 +7,11 @@
   <imports />
   <registry>
     <language id="e808b2f6-70da-436e-bf6b-14e1ed6cce5f" name="playlist">
-      <concept id="4927355640491471418" name="playlist.structure.Timestamp" flags="ng" index="dSSBz">
+      <concept id="4927355640491471418" name="playlist.structure.ControlPoint" flags="ng" index="dSSBz">
         <property id="4927355640491471419" name="stamp" index="dSSBy" />
         <property id="6104011242600068503" name="volume" index="CBNxP" />
         <property id="6104011242600068500" name="brightness" index="CBNxQ" />
+        <property id="6597507175067897123" name="freq" index="1ez43L" />
         <child id="4927355640491471421" name="bins" index="dSSB$" />
       </concept>
       <concept id="4927355640491471197" name="playlist.structure.Bin" flags="ng" index="dSSE4">
@@ -46,6 +47,7 @@
       <property role="dSSBy" value="10000" />
       <property role="CBNxP" value="50" />
       <property role="CBNxQ" value="100" />
+      <property role="1ez43L" value="10000" />
       <node concept="dSSE4" id="3JNaydkShpV" role="dSSB$">
         <property role="dSSCJ" value="80" />
         <node concept="dSSE7" id="3JNaydkShpW" role="dSSCx">
@@ -63,6 +65,7 @@
       <property role="dSSBy" value="0" />
       <property role="CBNxP" value="100" />
       <property role="CBNxQ" value="25" />
+      <property role="1ez43L" value="10000" />
       <node concept="dSSE4" id="3JNaydkShpJ" role="dSSB$">
         <property role="dSSCJ" value="42" />
         <node concept="dSSE7" id="3JNaydkShpK" role="dSSCx">
@@ -92,6 +95,7 @@
       <property role="dSSBy" value="0" />
       <property role="CBNxP" value="50" />
       <property role="CBNxQ" value="100" />
+      <property role="1ez43L" value="10000" />
       <node concept="dSSE4" id="3JNaydkShpP" role="dSSB$">
         <property role="dSSCJ" value="3" />
         <node concept="dSSE7" id="3JNaydkShpQ" role="dSSCx">

@@ -13,6 +13,7 @@
       <concept id="1169125787135" name="jetbrains.mps.lang.structure.structure.AbstractConceptDeclaration" flags="ig" index="PkWjJ">
         <property id="6714410169261853888" name="conceptId" index="EcuMT" />
         <property id="4628067390765907488" name="conceptShortDescription" index="R4oN_" />
+        <property id="5092175715804935370" name="conceptAlias" index="34LRSv" />
         <child id="1071489727083" name="linkDeclaration" index="1TKVEi" />
         <child id="1071489727084" name="propertyDeclaration" index="1TKVEl" />
       </concept>
@@ -75,7 +76,7 @@
       <property role="20lmBu" value="fLJjDmT/aggregation" />
       <property role="20kJfa" value="timestamps" />
       <property role="20lbJX" value="fLJekj6/_1__n" />
-      <ref role="20lvS9" node="4hxuX_9wJ8U" resolve="Timestamp" />
+      <ref role="20lvS9" node="4hxuX_9wJ8U" resolve="ControlPoint" />
     </node>
     <node concept="PrWs8" id="5jhE8MGYq5X" role="PzmwI">
       <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
@@ -127,8 +128,9 @@
   </node>
   <node concept="1TIwiD" id="4hxuX_9wJ8U">
     <property role="EcuMT" value="4927355640491471418" />
-    <property role="TrG5h" value="Timestamp" />
-    <property role="R4oN_" value="timestamp" />
+    <property role="TrG5h" value="ControlPoint" />
+    <property role="R4oN_" value="control point" />
+    <property role="34LRSv" value="cp" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyi" id="4hxuX_9wJ8V" role="1TKVEl">
       <property role="IQ2nx" value="4927355640491471419" />
@@ -143,6 +145,11 @@
     <node concept="1TJgyi" id="5iPNu9WaJmn" role="1TKVEl">
       <property role="IQ2nx" value="6104011242600068503" />
       <property role="TrG5h" value="volume" />
+      <ref role="AX2Wp" to="tpck:fKAQMTA" resolve="integer" />
+    </node>
+    <node concept="1TJgyi" id="5If3t8l0OOz" role="1TKVEl">
+      <property role="IQ2nx" value="6597507175067897123" />
+      <property role="TrG5h" value="freq" />
       <ref role="AX2Wp" to="tpck:fKAQMTA" resolve="integer" />
     </node>
     <node concept="1TJgyj" id="4hxuX_9wJ8X" role="1TKVEi">

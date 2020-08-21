@@ -27,12 +27,12 @@ public class TextGenAspectDescriptor extends TextGenAspectBase {
         return new Bin_TextGen();
       case LanguageConceptSwitch.Color:
         return new Color_TextGen();
+      case LanguageConceptSwitch.ControlPoint:
+        return new ControlPoint_TextGen();
       case LanguageConceptSwitch.Song:
         return new Song_TextGen();
       case LanguageConceptSwitch.SongRef:
         return new SongRef_TextGen();
-      case LanguageConceptSwitch.Timestamp:
-        return new Timestamp_TextGen();
     }
     return null;
   }

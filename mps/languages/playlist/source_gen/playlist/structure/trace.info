@@ -15,80 +15,80 @@
       <unit at="10,0,38,0" name="playlist.structure.LanguageConceptSwitch" />
     </file>
     <file name="StructureAspectDescriptor.java">
-      <unit at="15,0,124,0" name="playlist.structure.StructureAspectDescriptor" />
+      <unit at="15,0,126,0" name="playlist.structure.StructureAspectDescriptor" />
     </file>
   </root>
   <root nodeRef="r:de050263-7aec-4e3f-a874-7935d74b9031(playlist.structure)/4927355640491471110">
     <file name="ConceptPresentationAspectImpl.java">
-      <node id="4927355640491471110" at="14,0,15,0" concept="1" trace="props_Playlist" />
-      <node id="4927355640491471110" at="41,37,42,76" concept="3" />
-      <node id="4927355640491471110" at="42,76,43,36" concept="0" />
-      <node id="4927355640491471110" at="43,36,44,35" concept="0" />
-      <node id="4927355640491471110" at="44,35,45,40" concept="0" />
-      <node id="4927355640491471110" at="46,9,47,30" concept="4" />
-      <node id="4927355640491471110" at="40,42,46,9" concept="2" />
-      <scope id="4927355640491471110" at="41,37,45,40">
+      <node id="4927355640491471110" at="15,0,16,0" concept="1" trace="props_Playlist" />
+      <node id="4927355640491471110" at="49,37,50,76" concept="3" />
+      <node id="4927355640491471110" at="50,76,51,36" concept="0" />
+      <node id="4927355640491471110" at="51,36,52,35" concept="0" />
+      <node id="4927355640491471110" at="52,35,53,40" concept="0" />
+      <node id="4927355640491471110" at="54,9,55,30" concept="4" />
+      <node id="4927355640491471110" at="48,42,54,9" concept="2" />
+      <scope id="4927355640491471110" at="49,37,53,40">
         <var name="cpb" id="4927355640491471110" />
       </scope>
-      <scope id="4927355640491471110" at="40,42,47,30" />
+      <scope id="4927355640491471110" at="48,42,55,30" />
     </file>
     <file name="LanguageConceptSwitch.java">
-      <node id="4927355640491471110" at="14,0,15,0" concept="5" trace="Playlist" />
-      <node id="4927355640491471110" at="22,44,23,47" concept="0" />
+      <node id="4927355640491471110" at="15,0,16,0" concept="5" trace="Playlist" />
+      <node id="4927355640491471110" at="23,51,24,47" concept="0" />
     </file>
     <file name="StructureAspectDescriptor.java">
-      <node id="4927355640491471110" at="18,0,19,0" concept="1" trace="myConceptPlaylist" />
-      <node id="4927355640491471110" at="47,42,48,33" concept="4" />
-      <node id="4927355640491471110" at="85,66,86,151" concept="3" />
-      <node id="4927355640491471110" at="86,151,87,33" concept="0" />
-      <node id="4927355640491471110" at="87,33,88,71" concept="0" />
-      <node id="4927355640491471110" at="88,71,89,95" concept="0" />
-      <node id="4927355640491471110" at="89,95,90,17" concept="0" />
-      <node id="4927355640491471174" at="90,17,91,198" concept="0" />
-      <node id="4927355640491471110" at="91,198,92,22" concept="4" />
-      <node id="4927355640491471110" at="85,0,94,0" concept="6" trace="createDescriptorForPlaylist#()Ljetbrains/mps/smodel/runtime/ConceptDescriptor;" />
-      <scope id="4927355640491471110" at="47,42,48,33" />
-      <scope id="4927355640491471110" at="85,66,92,22">
+      <node id="4927355640491471110" at="19,0,20,0" concept="1" trace="myConceptPlaylist" />
+      <node id="4927355640491471110" at="49,42,50,33" concept="4" />
+      <node id="4927355640491471110" at="98,66,99,151" concept="3" />
+      <node id="4927355640491471110" at="99,151,100,33" concept="0" />
+      <node id="4927355640491471110" at="100,33,101,71" concept="0" />
+      <node id="4927355640491471110" at="101,71,102,95" concept="0" />
+      <node id="4927355640491471110" at="102,95,103,17" concept="0" />
+      <node id="4927355640491471174" at="103,17,104,198" concept="0" />
+      <node id="4927355640491471110" at="104,198,105,22" concept="4" />
+      <node id="4927355640491471110" at="98,0,107,0" concept="6" trace="createDescriptorForPlaylist#()Ljetbrains/mps/smodel/runtime/ConceptDescriptor;" />
+      <scope id="4927355640491471110" at="49,42,50,33" />
+      <scope id="4927355640491471110" at="98,66,105,22">
         <var name="b" id="4927355640491471110" />
       </scope>
-      <scope id="4927355640491471110" at="85,0,94,0" />
+      <scope id="4927355640491471110" at="98,0,107,0" />
     </file>
   </root>
   <root nodeRef="r:de050263-7aec-4e3f-a874-7935d74b9031(playlist.structure)/4927355640491471143">
     <file name="ConceptPresentationAspectImpl.java">
-      <node id="4927355640491471143" at="15,0,16,0" concept="1" trace="props_Song" />
-      <node id="4927355640491471143" at="49,33,50,76" concept="3" />
-      <node id="4927355640491471143" at="50,76,51,32" concept="0" />
-      <node id="4927355640491471143" at="51,32,52,35" concept="0" />
-      <node id="4927355640491471143" at="52,35,53,36" concept="0" />
-      <node id="4927355640491471143" at="54,9,55,26" concept="4" />
-      <node id="4927355640491471143" at="48,38,54,9" concept="2" />
-      <scope id="4927355640491471143" at="49,33,53,36">
+      <node id="4927355640491471143" at="16,0,17,0" concept="1" trace="props_Song" />
+      <node id="4927355640491471143" at="57,33,58,76" concept="3" />
+      <node id="4927355640491471143" at="58,76,59,32" concept="0" />
+      <node id="4927355640491471143" at="59,32,60,35" concept="0" />
+      <node id="4927355640491471143" at="60,35,61,36" concept="0" />
+      <node id="4927355640491471143" at="62,9,63,26" concept="4" />
+      <node id="4927355640491471143" at="56,38,62,9" concept="2" />
+      <scope id="4927355640491471143" at="57,33,61,36">
         <var name="cpb" id="4927355640491471143" />
       </scope>
-      <scope id="4927355640491471143" at="48,38,55,26" />
+      <scope id="4927355640491471143" at="56,38,63,26" />
     </file>
     <file name="LanguageConceptSwitch.java">
-      <node id="4927355640491471143" at="15,0,16,0" concept="5" trace="Song" />
-      <node id="4927355640491471143" at="23,47,24,43" concept="0" />
+      <node id="4927355640491471143" at="16,0,17,0" concept="5" trace="Song" />
+      <node id="4927355640491471143" at="24,47,25,43" concept="0" />
     </file>
     <file name="StructureAspectDescriptor.java">
-      <node id="4927355640491471143" at="19,0,20,0" concept="1" trace="myConceptSong" />
-      <node id="4927355640491471143" at="49,38,50,29" concept="4" />
-      <node id="4927355640491471143" at="94,62,95,147" concept="3" />
-      <node id="4927355640491471143" at="95,147,96,33" concept="0" />
-      <node id="4927355640491471143" at="96,33,97,71" concept="0" />
-      <node id="4927355640491471143" at="97,71,98,95" concept="0" />
-      <node id="4927355640491471143" at="98,95,99,17" concept="0" />
-      <node id="4927355640491471146" at="99,17,100,114" concept="0" />
-      <node id="4927355640491527320" at="100,114,101,203" concept="0" />
-      <node id="4927355640491471143" at="101,203,102,22" concept="4" />
-      <node id="4927355640491471143" at="94,0,104,0" concept="6" trace="createDescriptorForSong#()Ljetbrains/mps/smodel/runtime/ConceptDescriptor;" />
-      <scope id="4927355640491471143" at="49,38,50,29" />
-      <scope id="4927355640491471143" at="94,62,102,22">
+      <node id="4927355640491471143" at="20,0,21,0" concept="1" trace="myConceptSong" />
+      <node id="4927355640491471143" at="51,38,52,29" concept="4" />
+      <node id="4927355640491471143" at="107,62,108,147" concept="3" />
+      <node id="4927355640491471143" at="108,147,109,33" concept="0" />
+      <node id="4927355640491471143" at="109,33,110,71" concept="0" />
+      <node id="4927355640491471143" at="110,71,111,95" concept="0" />
+      <node id="4927355640491471143" at="111,95,112,17" concept="0" />
+      <node id="4927355640491471146" at="112,17,113,114" concept="0" />
+      <node id="4927355640491527320" at="113,114,114,203" concept="0" />
+      <node id="4927355640491471143" at="114,203,115,22" concept="4" />
+      <node id="4927355640491471143" at="107,0,117,0" concept="6" trace="createDescriptorForSong#()Ljetbrains/mps/smodel/runtime/ConceptDescriptor;" />
+      <scope id="4927355640491471143" at="51,38,52,29" />
+      <scope id="4927355640491471143" at="107,62,115,22">
         <var name="b" id="4927355640491471143" />
       </scope>
-      <scope id="4927355640491471143" at="94,0,104,0" />
+      <scope id="4927355640491471143" at="107,0,117,0" />
     </file>
   </root>
   <root nodeRef="r:de050263-7aec-4e3f-a874-7935d74b9031(playlist.structure)/4927355640491471197">
@@ -167,75 +167,77 @@
   </root>
   <root nodeRef="r:de050263-7aec-4e3f-a874-7935d74b9031(playlist.structure)/4927355640491471418">
     <file name="ConceptPresentationAspectImpl.java">
-      <node id="4927355640491471418" at="17,0,18,0" concept="1" trace="props_Timestamp" />
-      <node id="4927355640491471418" at="65,38,66,76" concept="3" />
-      <node id="4927355640491471418" at="66,76,67,37" concept="0" />
-      <node id="4927355640491471418" at="67,37,68,43" concept="0" />
-      <node id="4927355640491471418" at="68,43,69,41" concept="0" />
-      <node id="4927355640491471418" at="70,9,71,31" concept="4" />
-      <node id="4927355640491471418" at="64,43,70,9" concept="2" />
-      <scope id="4927355640491471418" at="65,38,69,41">
+      <node id="4927355640491471418" at="14,0,15,0" concept="1" trace="props_ControlPoint" />
+      <node id="4927355640491471418" at="41,41,42,76" concept="3" />
+      <node id="4927355640491471418" at="42,76,43,41" concept="0" />
+      <node id="4927355640491471418" at="43,41,44,36" concept="0" />
+      <node id="4927355640491471418" at="44,36,45,44" concept="0" />
+      <node id="4927355640491471418" at="46,9,47,34" concept="4" />
+      <node id="4927355640491471418" at="40,46,46,9" concept="2" />
+      <scope id="4927355640491471418" at="41,41,45,44">
         <var name="cpb" id="4927355640491471418" />
       </scope>
-      <scope id="4927355640491471418" at="64,43,71,31" />
+      <scope id="4927355640491471418" at="40,46,47,34" />
     </file>
     <file name="LanguageConceptSwitch.java">
-      <node id="4927355640491471418" at="17,0,18,0" concept="5" trace="Timestamp" />
-      <node id="4927355640491471418" at="25,46,26,48" concept="0" />
+      <node id="4927355640491471418" at="14,0,15,0" concept="5" trace="ControlPoint" />
+      <node id="4927355640491471418" at="22,44,23,51" concept="0" />
     </file>
     <file name="StructureAspectDescriptor.java">
-      <node id="4927355640491471418" at="21,0,22,0" concept="1" trace="myConceptTimestamp" />
-      <node id="4927355640491471418" at="53,43,54,34" concept="4" />
-      <node id="4927355640491471418" at="112,67,113,152" concept="3" />
-      <node id="4927355640491471418" at="113,152,114,34" concept="0" />
-      <node id="4927355640491471418" at="114,34,115,95" concept="0" />
-      <node id="4927355640491471418" at="115,95,116,17" concept="0" />
-      <node id="4927355640491471419" at="116,17,117,112" concept="0" />
-      <node id="6104011242600068500" at="117,112,118,117" concept="0" />
-      <node id="6104011242600068503" at="118,117,119,113" concept="0" />
-      <node id="4927355640491471421" at="119,113,120,196" concept="0" />
-      <node id="4927355640491471418" at="120,196,121,22" concept="4" />
-      <node id="4927355640491471418" at="112,0,123,0" concept="6" trace="createDescriptorForTimestamp#()Ljetbrains/mps/smodel/runtime/ConceptDescriptor;" />
-      <scope id="4927355640491471418" at="53,43,54,34" />
-      <scope id="4927355640491471418" at="112,67,121,22">
+      <node id="4927355640491471418" at="18,0,19,0" concept="1" trace="myConceptControlPoint" />
+      <node id="4927355640491471418" at="47,46,48,37" concept="4" />
+      <node id="4927355640491471418" at="85,70,86,155" concept="3" />
+      <node id="4927355640491471418" at="86,155,87,34" concept="0" />
+      <node id="4927355640491471418" at="87,34,88,95" concept="0" />
+      <node id="4927355640491471418" at="88,95,89,17" concept="0" />
+      <node id="4927355640491471419" at="89,17,90,112" concept="0" />
+      <node id="6104011242600068500" at="90,112,91,117" concept="0" />
+      <node id="6104011242600068503" at="91,117,92,113" concept="0" />
+      <node id="6597507175067897123" at="92,113,93,111" concept="0" />
+      <node id="4927355640491471421" at="93,111,94,196" concept="0" />
+      <node id="4927355640491471418" at="94,196,95,18" concept="0" />
+      <node id="4927355640491471418" at="95,18,96,22" concept="4" />
+      <node id="4927355640491471418" at="85,0,98,0" concept="6" trace="createDescriptorForControlPoint#()Ljetbrains/mps/smodel/runtime/ConceptDescriptor;" />
+      <scope id="4927355640491471418" at="47,46,48,37" />
+      <scope id="4927355640491471418" at="85,70,96,22">
         <var name="b" id="4927355640491471418" />
       </scope>
-      <scope id="4927355640491471418" at="112,0,123,0" />
+      <scope id="4927355640491471418" at="85,0,98,0" />
     </file>
   </root>
   <root nodeRef="r:de050263-7aec-4e3f-a874-7935d74b9031(playlist.structure)/6111851491469427278">
     <file name="ConceptPresentationAspectImpl.java">
-      <node id="6111851491469427278" at="16,0,17,0" concept="1" trace="props_SongRef" />
-      <node id="6111851491469427278" at="57,36,58,76" concept="3" />
-      <node id="6111851491469427278" at="58,76,59,42" concept="0" />
-      <node id="6111851491469427278" at="59,42,60,140" concept="0" />
-      <node id="6111851491469427278" at="60,140,61,39" concept="0" />
-      <node id="6111851491469427278" at="62,9,63,29" concept="4" />
-      <node id="6111851491469427278" at="56,41,62,9" concept="2" />
-      <scope id="6111851491469427278" at="57,36,61,39">
+      <node id="6111851491469427278" at="17,0,18,0" concept="1" trace="props_SongRef" />
+      <node id="6111851491469427278" at="65,36,66,76" concept="3" />
+      <node id="6111851491469427278" at="66,76,67,42" concept="0" />
+      <node id="6111851491469427278" at="67,42,68,140" concept="0" />
+      <node id="6111851491469427278" at="68,140,69,39" concept="0" />
+      <node id="6111851491469427278" at="70,9,71,29" concept="4" />
+      <node id="6111851491469427278" at="64,41,70,9" concept="2" />
+      <scope id="6111851491469427278" at="65,36,69,39">
         <var name="cpb" id="6111851491469427278" />
       </scope>
-      <scope id="6111851491469427278" at="56,41,63,29" />
+      <scope id="6111851491469427278" at="64,41,71,29" />
     </file>
     <file name="LanguageConceptSwitch.java">
-      <node id="6111851491469427278" at="16,0,17,0" concept="5" trace="SongRef" />
-      <node id="6111851491469427278" at="24,43,25,46" concept="0" />
+      <node id="6111851491469427278" at="17,0,18,0" concept="5" trace="SongRef" />
+      <node id="6111851491469427278" at="25,43,26,46" concept="0" />
     </file>
     <file name="StructureAspectDescriptor.java">
-      <node id="6111851491469427278" at="20,0,21,0" concept="1" trace="myConceptSongRef" />
-      <node id="6111851491469427278" at="51,41,52,32" concept="4" />
-      <node id="6111851491469427278" at="104,65,105,150" concept="3" />
-      <node id="6111851491469427278" at="105,150,106,34" concept="0" />
-      <node id="6111851491469427278" at="106,34,107,95" concept="0" />
-      <node id="6111851491469427278" at="107,95,108,17" concept="0" />
-      <node id="6111851491469427279" at="108,17,109,170" concept="0" />
-      <node id="6111851491469427278" at="109,170,110,22" concept="4" />
-      <node id="6111851491469427278" at="104,0,112,0" concept="6" trace="createDescriptorForSongRef#()Ljetbrains/mps/smodel/runtime/ConceptDescriptor;" />
-      <scope id="6111851491469427278" at="51,41,52,32" />
-      <scope id="6111851491469427278" at="104,65,110,22">
+      <node id="6111851491469427278" at="21,0,22,0" concept="1" trace="myConceptSongRef" />
+      <node id="6111851491469427278" at="53,41,54,32" concept="4" />
+      <node id="6111851491469427278" at="117,65,118,150" concept="3" />
+      <node id="6111851491469427278" at="118,150,119,34" concept="0" />
+      <node id="6111851491469427278" at="119,34,120,95" concept="0" />
+      <node id="6111851491469427278" at="120,95,121,17" concept="0" />
+      <node id="6111851491469427279" at="121,17,122,170" concept="0" />
+      <node id="6111851491469427278" at="122,170,123,22" concept="4" />
+      <node id="6111851491469427278" at="117,0,125,0" concept="6" trace="createDescriptorForSongRef#()Ljetbrains/mps/smodel/runtime/ConceptDescriptor;" />
+      <scope id="6111851491469427278" at="53,41,54,32" />
+      <scope id="6111851491469427278" at="117,65,123,22">
         <var name="b" id="6111851491469427278" />
       </scope>
-      <scope id="6111851491469427278" at="104,0,112,0" />
+      <scope id="6111851491469427278" at="117,0,125,0" />
     </file>
   </root>
 </debug-info>

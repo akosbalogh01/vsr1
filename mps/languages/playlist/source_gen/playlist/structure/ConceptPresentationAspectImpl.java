@@ -11,10 +11,10 @@ import jetbrains.mps.smodel.runtime.ConceptPresentationBuilder;
 public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase {
   private ConceptPresentation props_Bin;
   private ConceptPresentation props_Color;
+  private ConceptPresentation props_ControlPoint;
   private ConceptPresentation props_Playlist;
   private ConceptPresentation props_Song;
   private ConceptPresentation props_SongRef;
-  private ConceptPresentation props_Timestamp;
 
   @Override
   @Nullable
@@ -37,6 +37,14 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
           props_Color = cpb.create();
         }
         return props_Color;
+      case LanguageConceptSwitch.ControlPoint:
+        if (props_ControlPoint == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.shortDesc("control point");
+          cpb.rawPresentation("cp");
+          props_ControlPoint = cpb.create();
+        }
+        return props_ControlPoint;
       case LanguageConceptSwitch.Playlist:
         if (props_Playlist == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
@@ -61,14 +69,6 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
           props_SongRef = cpb.create();
         }
         return props_SongRef;
-      case LanguageConceptSwitch.Timestamp:
-        if (props_Timestamp == null) {
-          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
-          cpb.shortDesc("timestamp");
-          cpb.rawPresentation("Timestamp");
-          props_Timestamp = cpb.create();
-        }
-        return props_Timestamp;
     }
     return null;
   }

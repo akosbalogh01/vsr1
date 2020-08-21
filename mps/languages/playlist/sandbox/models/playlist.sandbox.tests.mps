@@ -7,10 +7,11 @@
   <imports />
   <registry>
     <language id="e808b2f6-70da-436e-bf6b-14e1ed6cce5f" name="playlist">
-      <concept id="4927355640491471418" name="playlist.structure.Timestamp" flags="ng" index="dSSBz">
+      <concept id="4927355640491471418" name="playlist.structure.ControlPoint" flags="ng" index="dSSBz">
         <property id="4927355640491471419" name="stamp" index="dSSBy" />
         <property id="6104011242600068503" name="volume" index="CBNxP" />
         <property id="6104011242600068500" name="brightness" index="CBNxQ" />
+        <property id="6597507175067897123" name="freq" index="1ez43L" />
       </concept>
       <concept id="4927355640491471110" name="playlist.structure.Playlist" flags="ng" index="dSSFv">
         <child id="4927355640491471174" name="songs" index="dSSEv" />
@@ -42,6 +43,7 @@
       <property role="dSSBy" value="0" />
       <property role="CBNxP" value="50" />
       <property role="CBNxQ" value="50" />
+      <property role="1ez43L" value="10000" />
     </node>
   </node>
   <node concept="dSSFY" id="2lFi3Qm7FBc">
@@ -51,6 +53,7 @@
       <property role="dSSBy" value="0" />
       <property role="CBNxP" value="50" />
       <property role="CBNxQ" value="50" />
+      <property role="1ez43L" value="10000" />
     </node>
   </node>
   <node concept="dSSFY" id="2lFi3Qm7FBe">
@@ -60,6 +63,7 @@
       <property role="dSSBy" value="0" />
       <property role="CBNxP" value="50" />
       <property role="CBNxQ" value="50" />
+      <property role="1ez43L" value="10000" />
     </node>
   </node>
 </model>

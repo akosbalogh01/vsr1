@@ -44,10 +44,10 @@
     <classNode dependClassName="org.jetbrains.mps.openapi.language.SAbstractConcept" />
     <classNode dependClassName="playlist.constraints.Bin_Constraints" />
     <classNode dependClassName="playlist.constraints.Color_Constraints" />
-    <classNode dependClassName="playlist.constraints.Timestamp_Constraints" />
+    <classNode dependClassName="playlist.constraints.ControlPoint_Constraints" />
     <classNode extendsClassName="jetbrains.mps.smodel.runtime.BaseConstraintsAspectDescriptor" />
   </dependency>
-  <dependency className="playlist.constraints.Timestamp_Constraints">
+  <dependency className="playlist.constraints.ControlPoint_Constraints">
     <classNode dependClassName="java.lang.Object" />
     <classNode dependClassName="java.lang.Override" />
     <classNode dependClassName="java.util.HashMap" />

@@ -23,7 +23,7 @@ public class ConstraintsAspectDescriptor extends BaseConstraintsAspectDescriptor
       case 1:
         return new Color_Constraints();
       case 2:
-        return new Timestamp_Constraints();
+        return new ControlPoint_Constraints();
       default:
     }
     return new BaseConstraintsDescriptor(concept);

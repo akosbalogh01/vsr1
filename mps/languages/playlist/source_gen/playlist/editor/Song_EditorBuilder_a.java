@@ -194,7 +194,7 @@ import org.jetbrains.mps.openapi.language.SConcept;
       return LINKS.timestamps$b$DG;
     }
     public SAbstractConcept getChildSConcept() {
-      return CONCEPTS.Timestamp$wh;
+      return CONCEPTS.ControlPoint$wh;
     }
 
     public EditorCell createNodeCell(SNode elementNode) {
@@ -252,7 +252,7 @@ import org.jetbrains.mps.openapi.language.SConcept;
 
   private static final class CONCEPTS {
     /*package*/ static final SConcept PropertyAttribute$jT = MetaAdapterFactory.getConcept(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x2eb1ad060897da56L, "jetbrains.mps.lang.core.structure.PropertyAttribute");
-    /*package*/ static final SConcept Timestamp$wh = MetaAdapterFactory.getConcept(0xe808b2f670da436eL, 0xbf6b14e1ed6cce5fL, 0x44617bd94982f23aL, "playlist.structure.Timestamp");
+    /*package*/ static final SConcept ControlPoint$wh = MetaAdapterFactory.getConcept(0xe808b2f670da436eL, 0xbf6b14e1ed6cce5fL, 0x44617bd94982f23aL, "playlist.structure.ControlPoint");
   }
 
   private static final class LINKS {

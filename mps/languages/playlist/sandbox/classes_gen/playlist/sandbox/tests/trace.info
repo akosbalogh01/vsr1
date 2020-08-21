@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<debug-info version="2">
+  <root nodeRef="r:4d45d74e-d05d-4611-847a-20896f8d660a(playlist.sandbox.tests)/2696328231259979422">
+    <file name="TEST.xml">
+      <unit id="2696328231259979422" at="1,0,6,11" name="playlist.sandbox.tests.TEST" />
+    </file>
+  </root>
+</debug-info>
+

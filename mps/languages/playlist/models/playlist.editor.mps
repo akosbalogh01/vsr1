@@ -172,7 +172,7 @@
     </node>
   </node>
   <node concept="24kQdi" id="4hxuX_9wJ9d">
-    <ref role="1XX52x" to="sj14:4hxuX_9wJ8U" resolve="Timestamp" />
+    <ref role="1XX52x" to="sj14:4hxuX_9wJ8U" resolve="ControlPoint" />
     <node concept="3EZMnI" id="4hxuX_9wJ9k" role="2wV5jI">
       <node concept="3F0ifn" id="4hxuX_9wJ9r" role="3EZMnx">
         <property role="3F0ifm" value="@" />
@@ -182,21 +182,39 @@
       </node>
       <node concept="3F0ifn" id="5iPNu9WaJn9" role="3EZMnx">
         <property role="3F0ifm" value="ms" />
+        <node concept="ljvvj" id="5If3t8l0jnP" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
       </node>
       <node concept="3F0ifn" id="4hxuX_9wJ9H" role="3EZMnx">
-        <property role="3F0ifm" value="(" />
+        <property role="3F0ifm" value="vol:" />
       </node>
       <node concept="3F0A7n" id="5iPNu9WaJnF" role="3EZMnx">
         <ref role="1NtTu8" to="sj14:5iPNu9WaJmn" resolve="volume" />
+        <node concept="ljvvj" id="5If3t8l0jnR" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
       </node>
       <node concept="3F0ifn" id="5iPNu9WaJof" role="3EZMnx">
-        <property role="3F0ifm" value="|" />
+        <property role="3F0ifm" value="brn:" />
       </node>
       <node concept="3F0A7n" id="5iPNu9WaJp9" role="3EZMnx">
         <ref role="1NtTu8" to="sj14:5iPNu9WaJmk" resolve="brightness" />
+        <node concept="ljvvj" id="5If3t8l0jnT" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+      </node>
+      <node concept="3F0ifn" id="5If3t8l0jn_" role="3EZMnx">
+        <property role="3F0ifm" value="frq:" />
+      </node>
+      <node concept="3F0A7n" id="5If3t8l0OPw" role="3EZMnx">
+        <ref role="1NtTu8" to="sj14:5If3t8l0OOz" resolve="freq" />
+        <node concept="ljvvj" id="5If3t8l0OPO" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
       </node>
       <node concept="3F0ifn" id="5iPNu9WaJpL" role="3EZMnx">
-        <property role="3F0ifm" value=")" />
+        <property role="3F0ifm" value="bins:" />
         <node concept="ljvvj" id="5iPNu9WaJq6" role="3F10Kt">
           <property role="VOm3f" value="true" />
         </node>

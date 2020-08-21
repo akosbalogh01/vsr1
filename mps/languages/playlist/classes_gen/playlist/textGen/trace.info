@@ -49,7 +49,7 @@
       <unit id="6104011242600228976" at="15,0,43,0" name="playlist.textGen.Song_TextGen" />
     </file>
     <file name="TextGenAspectDescriptor.java">
-      <node id="6104011242600228976" at="30,38,31,34" concept="6" />
+      <node id="6104011242600228976" at="32,38,33,34" concept="6" />
       <node id="6104011242600228976" at="43,55,44,46" concept="5" />
       <node id="6104011242600228976" at="44,46,45,49" concept="5" />
       <node id="6104011242600228976" at="45,49,46,84" concept="1" />
@@ -59,7 +59,7 @@
       <node id="6104011242600228976" at="51,0,54,0" concept="8" trace="getFileName_Song#(Lorg/jetbrains/mps/openapi/model/SNode;)Ljava/lang/String;" />
       <node id="6104011242600228976" at="54,0,57,0" concept="8" trace="getFileExtension_Song#(Lorg/jetbrains/mps/openapi/model/SNode;)Ljava/lang/String;" />
       <node id="6104011242600228976" at="42,58,48,7" concept="3" />
-      <scope id="6104011242600228976" at="30,38,31,34" />
+      <scope id="6104011242600228976" at="32,38,33,34" />
       <scope id="6104011242600228976" at="51,54,52,26" />
       <scope id="6104011242600228976" at="54,59,55,16" />
       <scope id="6104011242600228976" at="51,0,54,0">
@@ -75,11 +75,7 @@
     </file>
   </root>
   <root nodeRef="r:ee06dbe2-97cf-4a7c-b90e-d77aaa4d9eca(playlist.textGen)/6104011242600258059">
-    <file name="TextGenAspectDescriptor.java">
-      <node id="6104011242600258059" at="34,43,35,39" concept="6" />
-      <scope id="6104011242600258059" at="34,43,35,39" />
-    </file>
-    <file name="Timestamp_TextGen.java">
+    <file name="ControlPoint_TextGen.java">
       <node id="6104011242600258059" at="17,54,18,55" concept="5" />
       <node id="6104011242600516371" at="18,55,19,17" concept="1" />
       <node id="6104011242600258148" at="19,17,20,45" concept="1" />
@@ -88,33 +84,40 @@
       <node id="6104011242600264951" at="22,31,23,94" concept="1" />
       <node id="2185286514849653142" at="23,94,24,35" concept="1" />
       <node id="6104011242600266787" at="24,35,25,98" concept="1" />
-      <node id="2185286514849653709" at="25,98,26,22" concept="1" />
-      <node id="6104011242600258231" at="26,22,27,18" concept="1" />
-      <node id="6104011242600258059" at="27,18,28,44" concept="1" />
-      <node id="6104011242600268162" at="29,92,30,27" concept="1" />
-      <node id="6104011242600258059" at="31,5,32,44" concept="1" />
-      <node id="6104011242600516412" at="32,44,33,17" concept="1" />
-      <node id="6104011242600258329" at="33,17,34,34" concept="1" />
-      <node id="6104011242600258412" at="34,34,35,18" concept="1" />
-      <node id="6104011242600258059" at="39,0,40,0" concept="7" trace="stamp$v3Bw" />
-      <node id="6104011242600258059" at="40,0,41,0" concept="7" trace="volume$NnBk" />
-      <node id="6104011242600258059" at="41,0,42,0" concept="7" trace="brightness$Nn_R" />
-      <node id="6104011242600258059" at="45,0,46,0" concept="7" trace="bins$v3MD" />
-      <node id="6104011242600268162" at="28,44,31,5" concept="2" />
-      <node id="6104011242600258059" at="16,0,37,0" concept="4" trace="generateText#(Ljetbrains/mps/text/rt/TextGenContext;)V" />
-      <scope id="6104011242600268162" at="29,92,30,27" />
-      <scope id="6104011242600268162" at="28,44,31,5">
+      <node id="6597507175068017003" at="25,98,26,29" concept="1" />
+      <node id="6597507175068018273" at="26,29,27,92" concept="1" />
+      <node id="2185286514849653709" at="27,92,28,22" concept="1" />
+      <node id="6104011242600258231" at="28,22,29,18" concept="1" />
+      <node id="6104011242600258059" at="29,18,30,44" concept="1" />
+      <node id="6104011242600268162" at="31,92,32,27" concept="1" />
+      <node id="6104011242600258059" at="33,5,34,44" concept="1" />
+      <node id="6104011242600516412" at="34,44,35,17" concept="1" />
+      <node id="6104011242600258329" at="35,17,36,34" concept="1" />
+      <node id="6104011242600258412" at="36,34,37,18" concept="1" />
+      <node id="6104011242600258059" at="41,0,42,0" concept="7" trace="stamp$v3Bw" />
+      <node id="6104011242600258059" at="42,0,43,0" concept="7" trace="volume$NnBk" />
+      <node id="6104011242600258059" at="43,0,44,0" concept="7" trace="brightness$Nn_R" />
+      <node id="6104011242600258059" at="44,0,45,0" concept="7" trace="freq$kehO" />
+      <node id="6104011242600258059" at="48,0,49,0" concept="7" trace="bins$v3MD" />
+      <node id="6104011242600268162" at="30,44,33,5" concept="2" />
+      <node id="6104011242600258059" at="16,0,39,0" concept="4" trace="generateText#(Ljetbrains/mps/text/rt/TextGenContext;)V" />
+      <scope id="6104011242600268162" at="31,92,32,27" />
+      <scope id="6104011242600268162" at="30,44,33,5">
         <var name="item" id="6104011242600268162" />
       </scope>
-      <scope id="6104011242600258059" at="17,54,35,18">
+      <scope id="6104011242600258059" at="17,54,37,18">
         <var name="tgs" id="6104011242600258059" />
       </scope>
-      <scope id="6104011242600258059" at="16,0,37,0">
+      <scope id="6104011242600258059" at="16,0,39,0">
         <var name="ctx" id="6104011242600258059" />
       </scope>
-      <unit id="6104011242600258059" at="44,0,47,0" name="playlist.textGen.Timestamp_TextGen$LINKS" />
-      <unit id="6104011242600258059" at="38,0,43,0" name="playlist.textGen.Timestamp_TextGen$PROPS" />
-      <unit id="6104011242600258059" at="15,0,48,0" name="playlist.textGen.Timestamp_TextGen" />
+      <unit id="6104011242600258059" at="47,0,50,0" name="playlist.textGen.ControlPoint_TextGen$LINKS" />
+      <unit id="6104011242600258059" at="40,0,46,0" name="playlist.textGen.ControlPoint_TextGen$PROPS" />
+      <unit id="6104011242600258059" at="15,0,51,0" name="playlist.textGen.ControlPoint_TextGen" />
+    </file>
+    <file name="TextGenAspectDescriptor.java">
+      <node id="6104011242600258059" at="30,46,31,42" concept="6" />
+      <scope id="6104011242600258059" at="30,46,31,42" />
     </file>
   </root>
   <root nodeRef="r:ee06dbe2-97cf-4a7c-b90e-d77aaa4d9eca(playlist.textGen)/6104011242600276725">
@@ -162,8 +165,8 @@
       <unit id="6111851491469458778" at="12,0,23,0" name="playlist.textGen.SongRef_TextGen" />
     </file>
     <file name="TextGenAspectDescriptor.java">
-      <node id="6111851491469458778" at="32,41,33,37" concept="6" />
-      <scope id="6111851491469458778" at="32,41,33,37" />
+      <node id="6111851491469458778" at="34,41,35,37" concept="6" />
+      <scope id="6111851491469458778" at="34,41,35,37" />
     </file>
   </root>
   <root nodeRef="r:ee06dbe2-97cf-4a7c-b90e-d77aaa4d9eca(playlist.textGen)/7381120681572022609">

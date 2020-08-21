@@ -15,10 +15,10 @@ import jetbrains.mps.smodel.adapter.ids.PrimitiveTypeId;
 public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
   /*package*/ final ConceptDescriptor myConceptBin = createDescriptorForBin();
   /*package*/ final ConceptDescriptor myConceptColor = createDescriptorForColor();
+  /*package*/ final ConceptDescriptor myConceptControlPoint = createDescriptorForControlPoint();
   /*package*/ final ConceptDescriptor myConceptPlaylist = createDescriptorForPlaylist();
   /*package*/ final ConceptDescriptor myConceptSong = createDescriptorForSong();
   /*package*/ final ConceptDescriptor myConceptSongRef = createDescriptorForSongRef();
-  /*package*/ final ConceptDescriptor myConceptTimestamp = createDescriptorForTimestamp();
   private final LanguageConceptSwitch myIndexSwitch;
 
   public StructureAspectDescriptor() {
@@ -33,7 +33,7 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
 
   @Override
   public Collection<ConceptDescriptor> getDescriptors() {
-    return Arrays.asList(myConceptBin, myConceptColor, myConceptPlaylist, myConceptSong, myConceptSongRef, myConceptTimestamp);
+    return Arrays.asList(myConceptBin, myConceptColor, myConceptControlPoint, myConceptPlaylist, myConceptSong, myConceptSongRef);
   }
 
   @Override
@@ -44,14 +44,14 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
         return myConceptBin;
       case LanguageConceptSwitch.Color:
         return myConceptColor;
+      case LanguageConceptSwitch.ControlPoint:
+        return myConceptControlPoint;
       case LanguageConceptSwitch.Playlist:
         return myConceptPlaylist;
       case LanguageConceptSwitch.Song:
         return myConceptSong;
       case LanguageConceptSwitch.SongRef:
         return myConceptSongRef;
-      case LanguageConceptSwitch.Timestamp:
-        return myConceptTimestamp;
       default:
         return null;
     }
@@ -82,6 +82,19 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.property("alpha", 0x44617bd94982f168L).type(PrimitiveTypeId.INTEGER).origin("4927355640491471208").done();
     return b.create();
   }
+  private static ConceptDescriptor createDescriptorForControlPoint() {
+    ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("playlist", "ControlPoint", 0xe808b2f670da436eL, 0xbf6b14e1ed6cce5fL, 0x44617bd94982f23aL);
+    b.class_(false, false, false);
+    b.origin("r:de050263-7aec-4e3f-a874-7935d74b9031(playlist.structure)/4927355640491471418");
+    b.version(2);
+    b.property("stamp", 0x44617bd94982f23bL).type(PrimitiveTypeId.INTEGER).origin("4927355640491471419").done();
+    b.property("brightness", 0x54b5cde27c2af594L).type(PrimitiveTypeId.INTEGER).origin("6104011242600068500").done();
+    b.property("volume", 0x54b5cde27c2af597L).type(PrimitiveTypeId.INTEGER).origin("6104011242600068503").done();
+    b.property("freq", 0x5b8f0dd215034d23L).type(PrimitiveTypeId.INTEGER).origin("6597507175067897123").done();
+    b.aggregate("bins", 0x44617bd94982f23dL).target(0xe808b2f670da436eL, 0xbf6b14e1ed6cce5fL, 0x44617bd94982f15dL).optional(true).ordered(true).multiple(true).origin("4927355640491471421").done();
+    b.alias("cp");
+    return b.create();
+  }
   private static ConceptDescriptor createDescriptorForPlaylist() {
     ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("playlist", "Playlist", 0xe808b2f670da436eL, 0xbf6b14e1ed6cce5fL, 0x44617bd94982f106L);
     b.class_(false, false, true);
@@ -107,17 +120,6 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.origin("r:de050263-7aec-4e3f-a874-7935d74b9031(playlist.structure)/6111851491469427278");
     b.version(2);
     b.associate("target", 0x54d1a88cacfa024fL).target(0xe808b2f670da436eL, 0xbf6b14e1ed6cce5fL, 0x44617bd94982f127L).optional(false).origin("6111851491469427279").done();
-    return b.create();
-  }
-  private static ConceptDescriptor createDescriptorForTimestamp() {
-    ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("playlist", "Timestamp", 0xe808b2f670da436eL, 0xbf6b14e1ed6cce5fL, 0x44617bd94982f23aL);
-    b.class_(false, false, false);
-    b.origin("r:de050263-7aec-4e3f-a874-7935d74b9031(playlist.structure)/4927355640491471418");
-    b.version(2);
-    b.property("stamp", 0x44617bd94982f23bL).type(PrimitiveTypeId.INTEGER).origin("4927355640491471419").done();
-    b.property("brightness", 0x54b5cde27c2af594L).type(PrimitiveTypeId.INTEGER).origin("6104011242600068500").done();
-    b.property("volume", 0x54b5cde27c2af597L).type(PrimitiveTypeId.INTEGER).origin("6104011242600068503").done();
-    b.aggregate("bins", 0x44617bd94982f23dL).target(0xe808b2f670da436eL, 0xbf6b14e1ed6cce5fL, 0x44617bd94982f15dL).optional(true).ordered(true).multiple(true).origin("4927355640491471421").done();
     return b.create();
   }
 }
