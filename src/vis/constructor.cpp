@@ -43,12 +43,14 @@ vs::visualiser::visualiser(vs::t::mptr m, vs::t::rtarget w): renderable(w), play
 }
 
 void vs::visualiser::txdeinit() {
-    tx = false;
-    uint8_t  buffer[vs::gfx::ledcount * 3] = {0};
-    DWORD    written = 0;
-    WriteFile(serial, buffer, vs::gfx::ledcount * 3, &written, NULL);
+    if (tx) {
+        tx = false;
+        uint8_t  buffer[vs::gfx::ledcount * 3] = {0};
+        DWORD    written = 0;
+        WriteFile(serial, buffer, vs::gfx::ledcount * 3, &written, NULL);
 
-    CloseHandle(serial);
+        CloseHandle(serial);
+    }
 }
 
 vs::visualiser::~visualiser() {
