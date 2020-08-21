@@ -18,6 +18,7 @@ namespace vs {
         sf::Sound sound;
         std::vector <vs::point> cvec;
         std::vector <std::complex<float>> bins;
+        void window(std::vector<float>& xs);
         const std::vector<float> warp(const float lambda, const std::vector<float>& in);
         void fft(const std::vector<float>& data);
         void modVolume();

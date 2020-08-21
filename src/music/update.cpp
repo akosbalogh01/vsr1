@@ -15,7 +15,9 @@ void vs::music::update() {
             for (unsigned i = 0; i < vs::audio::fft::scount; ++i) {
                 data[i] = (float) *(buffer.getSamples() + current + i*ccount);
             }
-            data = warp(.9f, data);
+            window(data);
+            data = warp(.7f, data);
+            data = warp(0.0f, data);
             fft(data);
         }
 
