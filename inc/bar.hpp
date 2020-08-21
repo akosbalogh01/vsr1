@@ -20,6 +20,8 @@ namespace vs {
         void setHeight(const unsigned);
         void setVertices(const sf::Vector2f&, const sf::Vector2f&);
 
+        const sf::Color& getColor() const;
+
         void render() override;
     };
 }

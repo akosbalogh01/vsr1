@@ -7,7 +7,7 @@ void vs::visualiser::transmit() {
     DWORD    written = 0;
 
     for (unsigned i = 0; i < vs::gfx::ledcount; ++i) {
-        sf::Color c = playing->getBinColor(i);
+        sf::Color c  = bars[i].getColor();
         unsigned bha = playing->getBinHeight(i);
         float    bhr = (float) bha/vs::gfx::layout::bheight; //0-1
         buffer[(i*3)]     = c.g * bhr;// + ((clrmax - c.g)*bhr);

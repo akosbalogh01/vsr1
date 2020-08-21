@@ -10,6 +10,10 @@ void vs::bar::setColor(const sf::Color& color) {
     }
 }
 
+const sf::Color& vs::bar::getColor() const {
+    return quad[0].color;
+}
+
 void vs::bar::setHeight(const unsigned height) {
     if (height <= vs::gfx::layout::bheight) {
         prev = alpha*prev + (1 - alpha)*height;
