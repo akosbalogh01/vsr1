@@ -8,6 +8,12 @@
     https://www.geeksforgeeks.org/iterative-fast-fourier-transformation-polynomial-multiplication/
 */
 
+void vs::music::window(std::vector<float>& xs) {
+    for (unsigned i = 0; i < xs.size(); i++) {
+        xs[i] *= vs::audio::fft::window[i];
+    }
+}
+
 float inline allpass(const float lambda, const float feedback, float& feedforward, float in) {
     float ret = feedforward + lambda * (feedback - in);
     feedforward = in;
@@ -43,7 +49,7 @@ void vs::music::fft(const std::vector<float>& a) {
     // bit reversal of the given array
     for (unsigned int i = 0; i < vs::audio::fft::scount; ++i) {
         int rev = bitReverse(i, vs::audio::fft::log2sc);
-        bins[i] = a[rev] * vs::audio::fft::window[rev];
+        bins[i] = a[rev];
     }
 
     // j is iota
