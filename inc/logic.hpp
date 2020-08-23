@@ -5,10 +5,10 @@
 #include "man/settings.hpp"
 #include "man/window.hpp"
 #include "parents.hpp"
-#include "events.hpp"
-#include "audio.hpp"
+#include "man/event.hpp"
+#include "man/audio.hpp"
 #include "music.hpp"
-#include "debug.hpp"
+#include "man/debug.hpp"
 
 namespace vs {
     class logic : public pausable, public player {

@@ -1,7 +1,7 @@
 #include <fstream>
 #include <iostream>
-#include "audio.hpp"
-#include "playlist.hpp"
+#include "man/audio.hpp"
+#include "man/playlist.hpp"
 
 vs::playlistman::playlistman(const vs::t::mptr& m): player(m) {
     current = 0;

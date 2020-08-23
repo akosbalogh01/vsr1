@@ -1,7 +1,7 @@
 #include <iostream>
 #include "SFML/Graphics.hpp"
 #include "SFML/Window/Keyboard.hpp"
-#include "events.hpp"
+#include "man/event.hpp"
 
 void vs::eventman::add(const sf::Event::EventType type, const fpair& functions) {
     eventmap.insert(std::pair<sf::Event::EventType, vs::fpair>(type, functions));

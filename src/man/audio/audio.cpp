@@ -1,6 +1,6 @@
 #include <fstream>
 #include <iostream>
-#include "audio.hpp"
+#include "man/audio.hpp"
 
 void vs::audioman::setMaxVolume(const sf::Event& event) {
     unsigned volume = playing->getMaxVolume();

@@ -1,4 +1,4 @@
-#ifndef VISU_DEBUG
+#ifndef VISU_MAN_DEBUG
 #define VISU_DEBUG
 
 #include "SFML/Graphics.hpp"

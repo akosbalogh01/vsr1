@@ -1,5 +1,4 @@
-#include "consts.hpp"
-#include "debug.hpp"
+#include "man/debug.hpp"
 
 vs::debug::debug(const vs::t::mptr m): player(m) {
     for (unsigned i = 0; i < vs::dclock::_SIZE; ++i) {
@@ -13,13 +12,4 @@ vs::debug::debug(const vs::t::mptr m): player(m) {
     text.setFillColor(sf::Color::Red);
 
     runtime.restart();
-}
-
-void vs::debug::signal(const vs::dclock t) {
-    prev[t] = runtime.getElapsedTime().asMicroseconds() - timers[t].asMicroseconds();
-    timers[t] = runtime.getElapsedTime();
-}
-
-void vs::debug::closeOverlay() {
-    overlay.close();
 }

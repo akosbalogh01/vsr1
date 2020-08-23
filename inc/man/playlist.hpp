@@ -1,5 +1,5 @@
-#ifndef VISU_PLAYLIST
-#define VISU_PLAYLIST
+#ifndef VISU_MAN_PLAYLIST
+#define VISU_MAN_PLAYLIST
 
 #include <string>
 #include <vector>

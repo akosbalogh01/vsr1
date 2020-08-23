@@ -1,4 +1,4 @@
-#ifndef VISU_EVENTS
+#ifndef VISU_MAN_EVENTS
 #define VISU_EVENTS
 
 #include <map>

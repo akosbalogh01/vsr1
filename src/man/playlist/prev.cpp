@@ -1,4 +1,4 @@
-#include "playlist.hpp"
+#include "man/playlist.hpp"
 
 void vs::playlistman::prev() {
     if (current == 0) {

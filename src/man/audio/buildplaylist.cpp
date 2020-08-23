@@ -3,7 +3,7 @@
 #include <fstream>
 #include "xml/rapidxml.hpp"
 #include "point.hpp"
-#include "audio.hpp"
+#include "man/audio.hpp"
 
 bool vs::audioman::buildPlaylist(std::vector<char>& xmlbuffer) {
     rapidxml::xml_document<> xml;

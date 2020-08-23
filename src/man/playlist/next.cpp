@@ -1,5 +1,5 @@
-#include "audio.hpp"
-#include "playlist.hpp"
+#include "man/audio.hpp"
+#include "man/playlist.hpp"
 
 void vs::playlistman::next() {
     if (current == songlist.size() - 1) {

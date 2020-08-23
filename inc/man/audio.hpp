@@ -1,12 +1,12 @@
-#ifndef VISU_AUDIO
-#define VISU_AUDIO
+#ifndef VISU_MAN_AUDIO
+#define VISU_MAN_AUDIO
 
 #include <vector>
 #include <string>
 #include "SFML/Window/Event.hpp"
 #include "SFML/Audio.hpp"
 #include "parents.hpp"
-#include "playlist.hpp"
+#include "man/playlist.hpp"
 
 namespace vs {
     class audioman : public pausable, public player {

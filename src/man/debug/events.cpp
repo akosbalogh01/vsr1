@@ -1,6 +1,6 @@
 #include <iostream>
 #include "consts.hpp"
-#include "debug.hpp"
+#include "man/debug.hpp"
 
 void vs::debug::toggleOverlay(const sf::Event& event) {
     if (event.key.code == sf::Keyboard::D) {

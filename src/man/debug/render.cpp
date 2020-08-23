@@ -1,4 +1,4 @@
-#include "debug.hpp"
+#include "man/debug.hpp"
 
 static inline std::string toString(const sf::Time& time) {
     char buf[10];

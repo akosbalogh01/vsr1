@@ -1,5 +1,5 @@
 #include <iostream>
-#include "audio.hpp"
+#include "man/audio.hpp"
 
 void vs::audioman::eventNextSong(const sf::Event& event) {
     if (event.key.code == sf::Keyboard::Right) {
