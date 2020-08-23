@@ -1,6 +1,7 @@
 #include <complex>
 #include <math.h>
 #include "consts.hpp"
+#include "fft/fft.hpp"
 #include "music.hpp"
 
 /*
@@ -10,7 +11,7 @@
 
 void vs::music::window(std::vector<float>& xs) {
     for (unsigned i = 0; i < xs.size(); i++) {
-        xs[i] *= vs::audio::fft::window[i];
+        xs[i] *= vs::fft::func::window[i];
     }
 }
 
@@ -47,14 +48,14 @@ void vs::music::fft(const std::vector<float>& a) {
     const float PI = 3.1415926535;
 
     // bit reversal of the given array
-    for (unsigned int i = 0; i < vs::audio::fft::scount; ++i) {
-        int rev = bitReverse(i, vs::audio::fft::log2sc);
+    for (unsigned int i = 0; i < vs::fft::scount; ++i) {
+        int rev = bitReverse(i, vs::fft::log2sc);
         bins[i] = a[rev];
     }
 
     // j is iota
     const vs::t::cx J(0, 1);
-    for (int s = 1; s <= vs::audio::fft::log2sc; ++s) {
+    for (int s = 1; s <= vs::fft::log2sc; ++s) {
         int m = 1 << s; // 2 power s
         int m2 = m >> 1; // m2 = m/2 -1
         vs::t::cx w(1, 0);
@@ -63,7 +64,7 @@ void vs::music::fft(const std::vector<float>& a) {
         // root of unity.
         vs::t::cx wm = exp(J * (PI / m2));
         for (int j = 0; j < m2; ++j) {
-            for (int k = j; k < vs::audio::fft::scount; k += m) {
+            for (int k = j; k < vs::fft::scount; k += m) {
 
                 // t = twiddle factor
                 vs::t::cx t = w * bins[k + m2];

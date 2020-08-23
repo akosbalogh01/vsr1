@@ -89,7 +89,7 @@
 		<Unit filename="inc/consts.hpp" />
 		<Unit filename="inc/debug.hpp" />
 		<Unit filename="inc/events.hpp" />
-		<Unit filename="inc/fft.hpp" />
+		<Unit filename="inc/fft/fft.hpp" />
 		<Unit filename="inc/graphics.hpp" />
 		<Unit filename="inc/ini/inifile.hpp" />
 		<Unit filename="inc/ini/key.hpp" />
@@ -115,6 +115,9 @@
 		<Unit filename="src/debug/events.cpp" />
 		<Unit filename="src/debug/render.cpp" />
 		<Unit filename="src/events.cpp" />
+		<Unit filename="src/fft/fft.cpp" />
+		<Unit filename="src/fft/warp.cpp" />
+		<Unit filename="src/fft/window.cpp" />
 		<Unit filename="src/graphics/constructor.cpp" />
 		<Unit filename="src/graphics/graphics.cpp" />
 		<Unit filename="src/graphics/internal.cpp" />

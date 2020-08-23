@@ -1,4 +1,5 @@
 #include "consts.hpp"
+#include "fft/fft.hpp"
 #include "music.hpp"
 
 void vs::music::update() {
@@ -9,10 +10,10 @@ void vs::music::update() {
         unsigned ccount = buffer.getChannelCount();
 
         uint64_t current = t.asMicroseconds() * (srate / 1000000);
-        std::vector<float> data(vs::audio::fft::scount, 0.0f);
+        std::vector<float> data(vs::fft::scount, 0.0f);
 
-        if ((current > vs::audio::fft::scount) && (current < (scount - vs::audio::fft::scount))) {
-            for (unsigned i = 0; i < vs::audio::fft::scount; ++i) {
+        if ((current > vs::fft::scount) && (current < (scount - vs::fft::scount))) {
+            for (unsigned i = 0; i < vs::fft::scount; ++i) {
                 data[i] = (float) *(buffer.getSamples() + current + i*ccount);
             }
             window(data);
