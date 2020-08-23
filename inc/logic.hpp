@@ -3,10 +3,10 @@
 
 #include <vector>
 #include "man/settings.hpp"
+#include "man/window.hpp"
 #include "parents.hpp"
 #include "events.hpp"
 #include "audio.hpp"
-#include "window.hpp"
 #include "music.hpp"
 #include "debug.hpp"
 
@@ -15,9 +15,9 @@ namespace vs {
     private:
         bool started;
         man::settings sman;
+        man::window   wman;
         eventman eman;
         audioman aman;
-        windowman wman;
         debug dman;
 
     public:
