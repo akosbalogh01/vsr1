@@ -1,7 +1,7 @@
 #include "man/debug.hpp"
 
-vs::debug::debug(const vs::t::mptr m): player(m) {
-    for (unsigned i = 0; i < vs::dclock::_SIZE; ++i) {
+vs::man::debug::debug(const vs::t::mptr m): player(m) {
+    for (unsigned i = 0; i < vs::man::debug::_SIZE; ++i) {
         timers[i] = sf::Time::Zero;
         prev[i] = 0;
     }
@@ -12,4 +12,8 @@ vs::debug::debug(const vs::t::mptr m): player(m) {
     text.setFillColor(sf::Color::Red);
 
     runtime.restart();
+}
+
+vs::man::debug::~debug() {
+    closeOverlay();
 }

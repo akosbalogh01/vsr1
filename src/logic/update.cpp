@@ -2,7 +2,7 @@
 #include "logic.hpp"
 
 void vs::logic::update() {
-    dman.signal(vs::dclock::UPDATE);
+    dman.signal(vs::man::debug::UPDATE);
 
     if (started) {
         if ((!paused) && (playing->isOver())) {
@@ -19,5 +19,5 @@ void vs::logic::update() {
     wman.update();
     playing->update();
 
-    dman.signal(vs::dclock::UPDATE);
+    dman.signal(vs::man::debug::UPDATE);
 }

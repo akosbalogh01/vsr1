@@ -18,7 +18,7 @@ namespace vs {
         man::window   wman;
         eventman eman;
         audioman aman;
-        debug dman;
+        man::debug    dman;
 
     public:
         logic() = delete;

@@ -2,7 +2,7 @@
 #include "consts.hpp"
 #include "man/debug.hpp"
 
-void vs::debug::toggleOverlay(const sf::Event& event) {
+void vs::man::debug::toggleOverlay(const sf::Event& event) {
     if (event.key.code == sf::Keyboard::D) {
         if (overlay.isOpen()) {
             std::cout << "Disabled debug overlay." << std::endl;

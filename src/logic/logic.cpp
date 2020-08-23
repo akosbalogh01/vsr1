@@ -7,10 +7,10 @@ bool vs::logic::pollEvent(sf::Event& event) {
 }
 
 void vs::logic::procEvent(const sf::Event& event) {
-    dman.signal(vs::dclock::EVENT);
+    dman.signal(vs::man::debug::EVENT);
     wman.displayMetadata();
     eman.exec(event);
-    dman.signal(vs::dclock::EVENT);
+    dman.signal(vs::man::debug::EVENT);
 }
 
 bool vs::logic::isRunning() const {
@@ -51,9 +51,9 @@ void vs::logic::togglePaused() {
 }
 
 void vs::logic::render() {
-    dman.signal(vs::dclock::RENDER);
+    dman.signal(vs::man::debug::RENDER);
     wman.render();
     dman.renderOverlay();
-    dman.signal(vs::dclock::RENDER);
-    dman.signal(vs::dclock::FRAME);
+    dman.signal(vs::man::debug::RENDER);
+    dman.signal(vs::man::debug::FRAME);
 }
