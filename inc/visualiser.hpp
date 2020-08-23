@@ -12,7 +12,6 @@ namespace vs {
     class visualiser : public renderable, public player {
     private:
         HANDLE serial;
-        std::string portname;
         sf::Vector2u wsize, area;
         std::vector <vs::bar> bars;
         unsigned maxbr, curbr; // maximum and current brightness level
@@ -28,7 +27,6 @@ namespace vs {
         visualiser(vs::t::mptr, vs::t::rtarget const);
         ~visualiser();
 
-        void setPortName(const std::string&);
         void setMaxBrightness(const sf::Event&);
         void toggleEnabled(const sf::Event&);
         void toggleTransmission(const sf::Event&);

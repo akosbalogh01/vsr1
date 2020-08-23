@@ -4,10 +4,10 @@
 #include <fstream>
 #include "logic.hpp"
 
-using namespace std::placeholders;
-
 vs::logic::logic(const int argc, const char** argv, vs::t::mptr m): player(m), sman(argv[1]), wman(m, argv[2]), aman(m), dman(m) {
     using namespace vs;
+    using namespace std::placeholders;
+
     eman.add(sf::Event::Resized, fpair(std::bind(&man::window::windowResize, &wman, _1), std::bind(&man::window::windowResize, &wman, _1)));
     eman.add(sf::Event::Closed, fpair(std::bind(&man::window::windowClose, &wman, _1), std::bind(&man::window::windowClose, &wman, _1)));
     eman.add(sf::Event::KeyReleased, fpair(std::bind(&man::window::windowClose, &wman, _1), std::bind(&man::window::windowClose, &wman, _1)));

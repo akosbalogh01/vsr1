@@ -3,7 +3,7 @@
 
 void vs::visualiser::txinit() {
     char port[20] = {0};
-    sprintf(port, "\\\\.\\%s", portname.c_str());
+    sprintf(port, "\\\\.\\%s", vs::man::settings::smap[vs::man::settings::COMPORTID].c_str());
     serial = CreateFile(port, GENERIC_READ | GENERIC_WRITE, 0, 0, OPEN_EXISTING, 0, 0);
     if (serial == INVALID_HANDLE_VALUE) {
         std::cout << "Failed to open port: " << port << std::endl;

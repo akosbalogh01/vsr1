@@ -5,10 +5,6 @@ void vs::graphics::resizeInterface(const sf::Vector2u& size) {
     wsize = size;
 }
 
-void vs::graphics::setSerialPortName(const std::string& pname) {
-    vis.setPortName(pname);
-}
-
 void vs::graphics::setBrightness(const sf::Event& event) {
     vis.setMaxBrightness(event);
 }

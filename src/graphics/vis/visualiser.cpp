@@ -2,10 +2,6 @@
 #include "graphics.hpp"
 #include "visualiser.hpp"
 
-void vs::visualiser::setPortName(const std::string& pname) {
-    portname = pname;
-}
-
 void vs::visualiser::setMaxBrightness(const sf::Event& event) {
     const int delta = vs::gfx::brightness::coeff * (int) event.mouseWheelScroll.delta;
     const int temp = maxbr + delta;
