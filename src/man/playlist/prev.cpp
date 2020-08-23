@@ -1,6 +1,6 @@
 #include "man/playlist.hpp"
 
-void vs::playlistman::prev() {
+void vs::man::playlist::prev() {
     if (current == 0) {
         std::cout << "Playlist restart" << std::endl;
         reset();

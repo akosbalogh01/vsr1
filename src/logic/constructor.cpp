@@ -1,11 +1,8 @@
-#include <stdexcept>
-#include <iterator>
-#include <iostream>
-#include <fstream>
 #include "logic.hpp"
 
-vs::logic::logic(const int argc, const char** argv, vs::t::mptr m): player(m), sman(argv[1]), wman(m, argv[2]), aman(m), dman(m) {
+vs::logic::logic(const int argc, const char** argv, vs::t::mptr m): player(m), sman(argv[1]), wman(m, argv[2]), aman(m, argv[2]), dman(m) {
     using namespace vs;
+    using namespace vs::man;
     using namespace std::placeholders;
 
     eman.add(sf::Event::Resized, fpair(std::bind(&man::window::windowResize, &wman, _1), std::bind(&man::window::windowResize, &wman, _1)));
@@ -18,18 +15,6 @@ vs::logic::logic(const int argc, const char** argv, vs::t::mptr m): player(m), s
     eman.add(sf::Event::KeyReleased, fpair(std::bind(&man::debug::toggleOverlay, &dman, _1), std::bind(&man::debug::toggleOverlay, &dman, _1)));
     eman.add(sf::Event::MouseWheelScrolled, fpair(std::bind(&audioman::setMaxVolume, &aman, _1), std::bind(&man::window::setBrightness, &wman, _1)));
     eman.add(sf::Event::MouseButtonReleased, fpair(std::bind(&logic::eventTimestamp, this, _1), std::bind(&logic::eventTimestamp, this, _1)));
-
-    std::ifstream playlist(argv[2]);
-    if (playlist.good()) {
-        std::vector <char> xmlbuffer((std::istreambuf_iterator<char>(playlist)), std::istreambuf_iterator<char>());
-        xmlbuffer.push_back('\0');
-        if (aman.buildPlaylist(xmlbuffer)) {
-            throw vs::except::playlist_empty;
-        }
-    }
-    else {
-        throw vs::except::playlist_file;
-    }
 
     started = false;
     paused = true;

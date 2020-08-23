@@ -1,7 +1,7 @@
 #include "man/audio.hpp"
 #include "man/playlist.hpp"
 
-void vs::playlistman::next() {
+void vs::man::playlist::next() {
     if (current == songlist.size() - 1) {
         std::cout << "Playlist over" << std::endl;
         reset();

@@ -12,12 +12,12 @@ namespace vs {
     class audioman : public pausable, public player {
     private:
         bool autoplay;
-        playlistman pman;
+        man::playlist pman;
 
     public:
         audioman() = delete;
         audioman(const audioman&) = delete;
-        explicit audioman(vs::t::mptr);
+        explicit audioman(vs::t::mptr, const std::string&);
 
         bool buildPlaylist(std::vector<char>&);
 

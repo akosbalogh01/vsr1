@@ -7,25 +7,25 @@
 #include "music.hpp"
 
 namespace vs {
-    class playlistman: public player {
-    private:
-        unsigned current;
-        std::vector <music> songlist;
+    namespace man {
+        class playlist: public player {
+        private:
+            unsigned current, bufsize;
+            std::vector <music> songlist;
 
-    public:
-        playlistman(const vs::t::mptr&);
+        public:
+            playlist() = delete;
+            playlist(const playlist&) = delete;
+            explicit playlist(const vs::t::mptr&, const std::string&);
 
-        bool isEmpty() const;
+            void reset();
+            void initBuffer(const unsigned);
+            void dropBuffer(const unsigned);
 
-        void add(const vs::music&);
-        void init();
-        void reset();
-        void initBuffer(const unsigned);
-        void dropBuffer(const unsigned);
-
-        void next();
-        void prev();
-    };
+            void next();
+            void prev();
+        };
+    }
 }
 
 #endif // VISU_PLAYLIST

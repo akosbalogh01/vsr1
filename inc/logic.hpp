@@ -16,7 +16,7 @@ namespace vs {
         bool started;
         man::settings sman;
         man::window   wman;
-        eventman eman;
+        man::event    eman;
         audioman aman;
         man::debug    dman;
 
