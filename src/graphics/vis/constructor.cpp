@@ -1,3 +1,4 @@
+#include "man/settings.hpp"
 #include "visualiser.hpp"
 
 void vs::visualiser::txinit() {
@@ -18,10 +19,10 @@ void vs::visualiser::txinit() {
     sparams.DCBlength = sizeof(sparams);
 
     GetCommState(serial, &sparams);
-    sparams.BaudRate = vs::settings::com::baudrate;
-    sparams.ByteSize = vs::settings::com::bytesize;
-    sparams.StopBits = vs::settings::com::stopbits;
-    sparams.Parity = vs::settings::com::parity;
+    sparams.BaudRate = std::stoi(vs::man::settings::smap[vs::man::settings::COMBAUDRATE]);
+    sparams.ByteSize = std::stoi(vs::man::settings::smap[vs::man::settings::COMBYTESIZE]);
+    sparams.StopBits = ONESTOPBIT;
+    sparams.Parity   = NOPARITY;
     SetCommState(serial, &sparams);
 
     COMMTIMEOUTS timeout = {0};

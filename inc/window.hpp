@@ -16,16 +16,14 @@ namespace vs {
     public:
         windowman() = delete;
         windowman(const windowman&) = delete;
-        explicit windowman(vs::t::mptr);
+        explicit windowman(vs::t::mptr, const std::string&);
 
         bool pollEvent(sf::Event&);
         bool isOpen() const;
 
-        void windowCreate(const std::string&, const unsigned, const unsigned, const std::string&);
         void windowClose(const sf::Event&);
         void windowResize(const sf::Event&);
 
-        void setSerialPortName(const std::string&);
         void setBrightness(const sf::Event&);
         void toggleVisualisation(const sf::Event&);
         void toggleTransmission(const sf::Event&);

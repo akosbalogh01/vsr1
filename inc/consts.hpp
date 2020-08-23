@@ -22,6 +22,7 @@ namespace vs {
         const std::string settings = "settings.ini";
     }
 
+    /*
     namespace settings {
         const auto width = std::pair<std::string, std::string> ("Window", "width");
         const auto height = std::pair<std::string, std::string> ("Window", "height");
@@ -36,6 +37,7 @@ namespace vs {
             const unsigned parity = NOPARITY;
         }
     }
+    */
 
     namespace audio {
         const unsigned bufsize = 3;

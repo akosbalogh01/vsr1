@@ -110,7 +110,6 @@
 		<Unit filename="src/audio/buildplaylist.cpp" />
 		<Unit filename="src/audio/constructor.cpp" />
 		<Unit filename="src/audio/events.cpp" />
-		<Unit filename="src/bar.cpp" />
 		<Unit filename="src/debug/debug.cpp" />
 		<Unit filename="src/debug/events.cpp" />
 		<Unit filename="src/debug/render.cpp" />
@@ -118,10 +117,18 @@
 		<Unit filename="src/fft/fft.cpp" />
 		<Unit filename="src/fft/warp.cpp" />
 		<Unit filename="src/fft/window.cpp" />
-		<Unit filename="src/graphics/constructor.cpp" />
-		<Unit filename="src/graphics/graphics.cpp" />
-		<Unit filename="src/graphics/internal.cpp" />
-		<Unit filename="src/graphics/render.cpp" />
+		<Unit filename="src/graphics/bar/bar.cpp" />
+		<Unit filename="src/graphics/gui/constructor.cpp" />
+		<Unit filename="src/graphics/gui/graphics.cpp" />
+		<Unit filename="src/graphics/gui/internal.cpp" />
+		<Unit filename="src/graphics/gui/render.cpp" />
+		<Unit filename="src/graphics/vis/constructor.cpp" />
+		<Unit filename="src/graphics/vis/render.cpp" />
+		<Unit filename="src/graphics/vis/tx.cpp" />
+		<Unit filename="src/graphics/vis/visualiser.cpp" />
+		<Unit filename="src/graphics/window/events.cpp" />
+		<Unit filename="src/graphics/window/render.cpp" />
+		<Unit filename="src/graphics/window/window.cpp" />
 		<Unit filename="src/ini/inifile.cpp" />
 		<Unit filename="src/ini/key.cpp" />
 		<Unit filename="src/ini/load.cpp" />
@@ -148,13 +155,6 @@
 		<Unit filename="src/playlist/prev.cpp" />
 		<Unit filename="src/point/constructor.cpp" />
 		<Unit filename="src/point/point.cpp" />
-		<Unit filename="src/vis/constructor.cpp" />
-		<Unit filename="src/vis/render.cpp" />
-		<Unit filename="src/vis/tx.cpp" />
-		<Unit filename="src/vis/visualiser.cpp" />
-		<Unit filename="src/window/events.cpp" />
-		<Unit filename="src/window/render.cpp" />
-		<Unit filename="src/window/window.cpp" />
 		<Extensions>
 			<code_completion />
 			<envvars />
