@@ -4,20 +4,20 @@
 #include <vector>
 #include "man/settings.hpp"
 #include "man/window.hpp"
-#include "parents.hpp"
-#include "man/event.hpp"
 #include "man/audio.hpp"
-#include "music.hpp"
+#include "man/event.hpp"
 #include "man/debug.hpp"
+#include "parents.hpp"
+#include "music.hpp"
 
 namespace vs {
-    class logic : public pausable, public player {
+    class logic: public pausable, public player {
     private:
         bool started;
         man::settings sman;
         man::window   wman;
         man::event    eman;
-        audioman aman;
+        man::audio    aman;
         man::debug    dman;
 
     public:

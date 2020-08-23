@@ -1,19 +1,19 @@
 #include <iostream>
 #include "man/audio.hpp"
 
-void vs::audioman::eventNextSong(const sf::Event& event) {
+void vs::man::audio::eventNextSong(const sf::Event& event) {
     if (event.key.code == sf::Keyboard::Right) {
         nextSong();
     }
 }
 
-void vs::audioman::eventPrevSong(const sf::Event& event) {
+void vs::man::audio::eventPrevSong(const sf::Event& event) {
     if (event.key.code == sf::Keyboard::Left) {
         prevSong();
     }
 }
 
-void vs::audioman::jumpBack(const sf::Event& event) {
+void vs::man::audio::jumpBack(const sf::Event& event) {
     if (event.key.code == sf::Keyboard::Left) {
         std::cout << "Jump back 10 sec" << std::endl;
         sf::Time t1 = playing->getTime().first;
@@ -26,7 +26,7 @@ void vs::audioman::jumpBack(const sf::Event& event) {
     }
 }
 
-void vs::audioman::jumpForward(const sf::Event& event) {
+void vs::man::audio::jumpForward(const sf::Event& event) {
     if (event.key.code == sf::Keyboard::Right) {
         std::cout << "Jump forward 10 sec" << std::endl;
         sf::Time t1 = playing->getTime().first;
@@ -37,7 +37,7 @@ void vs::audioman::jumpForward(const sf::Event& event) {
     }
 }
 
-void vs::audioman::toggleAutoplay(const sf::Event& event) {
+void vs::man::audio::toggleAutoplay(const sf::Event& event) {
     if (event.key.code == sf::Keyboard::Space) {
         if (autoplay) {
             std::cout << "Autoplay disabled"  << std::endl;

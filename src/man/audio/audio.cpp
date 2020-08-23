@@ -2,7 +2,7 @@
 #include <iostream>
 #include "man/audio.hpp"
 
-void vs::audioman::setMaxVolume(const sf::Event& event) {
+void vs::man::audio::setMaxVolume(const sf::Event& event) {
     unsigned volume = playing->getMaxVolume();
     const int delta = vs::audio::volume::coeff * (int) event.mouseWheelScroll.delta;
     const int temp = volume + delta;
@@ -14,7 +14,7 @@ void vs::audioman::setMaxVolume(const sf::Event& event) {
     std::cout << "Set max volume: " << volume << std::endl;
 }
 
-void vs::audioman::togglePaused() {
+void vs::man::audio::togglePaused() {
     if (paused) {
         playing->play();
         paused = false;
@@ -25,7 +25,7 @@ void vs::audioman::togglePaused() {
     }
 }
 
-void vs::audioman::prevSong() {
+void vs::man::audio::prevSong() {
     pman.prev();
     if (paused) {
         playing->pause();
@@ -35,7 +35,7 @@ void vs::audioman::prevSong() {
     }
 }
 
-void vs::audioman::nextSong() {
+void vs::man::audio::nextSong() {
     pman.next();
     if (paused) {
         playing->pause();
@@ -45,10 +45,10 @@ void vs::audioman::nextSong() {
     }
 }
 
-const bool vs::audioman::getAutoplay() const {
+const bool vs::man::audio::getAutoplay() const {
     return autoplay;
 }
 
-void vs::audioman::stopPlayback() {
+void vs::man::audio::stopPlayback() {
     playing->dropBuffer();
 }

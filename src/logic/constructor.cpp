@@ -8,12 +8,12 @@ vs::logic::logic(const int argc, const char** argv, vs::t::mptr m): player(m), s
     eman.add(sf::Event::Resized, fpair(std::bind(&man::window::windowResize, &wman, _1), std::bind(&man::window::windowResize, &wman, _1)));
     eman.add(sf::Event::Closed, fpair(std::bind(&man::window::windowClose, &wman, _1), std::bind(&man::window::windowClose, &wman, _1)));
     eman.add(sf::Event::KeyReleased, fpair(std::bind(&man::window::windowClose, &wman, _1), std::bind(&man::window::windowClose, &wman, _1)));
-    eman.add(sf::Event::KeyReleased, fpair(std::bind(&logic::eventPaused, this, _1), std::bind(&audioman::toggleAutoplay, &aman, _1)));
-    eman.add(sf::Event::KeyReleased, fpair(std::bind(&audioman::eventPrevSong, &aman, _1), std::bind(&audioman::jumpBack, &aman, _1)));
-    eman.add(sf::Event::KeyReleased, fpair(std::bind(&audioman::eventNextSong, &aman, _1), std::bind(&audioman::jumpForward, &aman, _1)));
+    eman.add(sf::Event::KeyReleased, fpair(std::bind(&logic::eventPaused, this, _1), std::bind(&man::audio::toggleAutoplay, &aman, _1)));
+    eman.add(sf::Event::KeyReleased, fpair(std::bind(&man::audio::eventPrevSong, &aman, _1), std::bind(&man::audio::jumpBack, &aman, _1)));
+    eman.add(sf::Event::KeyReleased, fpair(std::bind(&man::audio::eventNextSong, &aman, _1), std::bind(&man::audio::jumpForward, &aman, _1)));
     eman.add(sf::Event::KeyReleased, fpair(std::bind(&man::window::toggleVisualisation, &wman, _1), std::bind(&man::window::toggleTransmission, &wman, _1)));
     eman.add(sf::Event::KeyReleased, fpair(std::bind(&man::debug::toggleOverlay, &dman, _1), std::bind(&man::debug::toggleOverlay, &dman, _1)));
-    eman.add(sf::Event::MouseWheelScrolled, fpair(std::bind(&audioman::setMaxVolume, &aman, _1), std::bind(&man::window::setBrightness, &wman, _1)));
+    eman.add(sf::Event::MouseWheelScrolled, fpair(std::bind(&man::audio::setMaxVolume, &aman, _1), std::bind(&man::window::setBrightness, &wman, _1)));
     eman.add(sf::Event::MouseButtonReleased, fpair(std::bind(&logic::eventTimestamp, this, _1), std::bind(&logic::eventTimestamp, this, _1)));
 
     started = false;
