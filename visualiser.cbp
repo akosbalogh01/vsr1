@@ -95,6 +95,7 @@
 		<Unit filename="inc/man/audio.hpp" />
 		<Unit filename="inc/man/debug.hpp" />
 		<Unit filename="inc/man/event.hpp" />
+		<Unit filename="inc/man/flow.hpp" />
 		<Unit filename="inc/man/playlist.hpp" />
 		<Unit filename="inc/man/settings.hpp" />
 		<Unit filename="inc/man/window.hpp" />
@@ -109,11 +110,9 @@
 		<Unit filename="inc/xml/rapidxml_utils.hpp" />
 		<Unit filename="src/audio/meta/constructor.cpp" />
 		<Unit filename="src/audio/meta/metadata.cpp" />
-		<Unit filename="src/audio/music/bincolor.cpp" />
 		<Unit filename="src/audio/music/binheight.cpp" />
 		<Unit filename="src/audio/music/constructor.cpp" />
 		<Unit filename="src/audio/music/fft.cpp" />
-		<Unit filename="src/audio/music/getbrightness.cpp" />
 		<Unit filename="src/audio/music/meta.cpp" />
 		<Unit filename="src/audio/music/music.cpp" />
 		<Unit filename="src/audio/music/update.cpp" />
@@ -143,7 +142,6 @@
 		<Unit filename="src/logic/update.cpp" />
 		<Unit filename="src/main.cpp" />
 		<Unit filename="src/man/audio/audio.cpp" />
-		<Unit filename="src/man/audio/buildplaylist.cpp" />
 		<Unit filename="src/man/audio/constructor.cpp" />
 		<Unit filename="src/man/audio/events.cpp" />
 		<Unit filename="src/man/debug/constructor.cpp" />
@@ -151,6 +149,12 @@
 		<Unit filename="src/man/debug/events.cpp" />
 		<Unit filename="src/man/debug/render.cpp" />
 		<Unit filename="src/man/event/events.cpp" />
+		<Unit filename="src/man/flow/brightness.cpp" />
+		<Unit filename="src/man/flow/color.cpp" />
+		<Unit filename="src/man/flow/constructor.cpp" />
+		<Unit filename="src/man/flow/lambda.cpp" />
+		<Unit filename="src/man/flow/update.cpp" />
+		<Unit filename="src/man/flow/volume.cpp" />
 		<Unit filename="src/man/playlist/constructor.cpp" />
 		<Unit filename="src/man/playlist/next.cpp" />
 		<Unit filename="src/man/playlist/playlist.cpp" />

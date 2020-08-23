@@ -5,9 +5,8 @@
 #include <memory>
 #include <stdexcept>
 #include <windows.h>
-#include "math.h"
-#include "SFML/Graphics.hpp"
-//#include "fft.hpp"
+#include <math.h>
+#include <SFML/Graphics.hpp>
 #include "music.hpp"
 
 namespace vs {
@@ -21,23 +20,6 @@ namespace vs {
         const std::string font = "Roboto-Regular.ttf";
         const std::string settings = "settings.ini";
     }
-
-    /*
-    namespace settings {
-        const auto width = std::pair<std::string, std::string> ("Window", "width");
-        const auto height = std::pair<std::string, std::string> ("Window", "height");
-        const auto fullscreen = std::pair<std::string, std::string> ("Window", "fullscreen");
-        const auto serialport = std::pair<std::string, std::string> ("COM", "port");
-
-        namespace com {
-            //char port[] = "\\\\.\\COM1";
-            const unsigned baudrate = 1000000;
-            const unsigned bytesize = 8;
-            const unsigned stopbits = ONESTOPBIT;
-            const unsigned parity = NOPARITY;
-        }
-    }
-    */
 
     namespace audio {
         const unsigned bufsize = 3;

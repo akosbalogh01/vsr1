@@ -3,7 +3,6 @@
 #include <fstream>
 #include "xml/rapidxml.hpp"
 #include "man/playlist.hpp"
-#include "point.hpp"
 
 vs::man::playlist::playlist(const vs::t::mptr& m, const std::string& xmlpath): player(m) {
     std::ifstream playlist(xmlpath);
@@ -22,19 +21,7 @@ vs::man::playlist::playlist(const vs::t::mptr& m, const std::string& xmlpath): p
 
             std::ifstream f(fpath);
             if (f.good()) {
-                std::vector <vs::point> points;
-                for (rapidxml::xml_node<>* ctrlpoint = song->first_node("ControlPoint"); ctrlpoint; ctrlpoint = ctrlpoint->next_sibling()) {
-                    vs::point cp(ctrlpoint);
-                    points.push_back(cp);
-                }
-
-                if (points[0].getStamp() != sf::milliseconds(0)) {
-                    vs::point p0 = points[0];
-                    p0.setStamp(sf::milliseconds(0));
-                    points.insert(points.begin(), p0);
-                }
-
-                vs::music m(fpath, points);
+                vs::music m(fpath, song->first_node("ControlPoint"));
                 songlist.push_back(m);
             }
             else {

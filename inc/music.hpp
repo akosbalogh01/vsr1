@@ -4,9 +4,10 @@
 #include <complex>
 #include <string>
 #include <memory>
-#include "SFML/Audio.hpp"
+#include <SFML/Audio.hpp>
+#include "xml/rapidxml.hpp"
+#include "man/flow.hpp"
 #include "metadata.hpp"
-#include "point.hpp"
 
 namespace vs {
     class music {
@@ -16,7 +17,7 @@ namespace vs {
         vs::metadata meta;
         sf::SoundBuffer buffer;
         sf::Sound sound;
-        std::vector <vs::point> cvec;
+        vs::man::flow ctrl;
         std::vector <std::complex<float>> bins;
         void window(std::vector<float>& xs);
         const std::vector<float> warp(const float lambda, const std::vector<float>& in);
@@ -26,7 +27,7 @@ namespace vs {
     public:
         music() = delete;
         music(const std::string&);
-        music(const std::string&, const std::vector <vs::point>&);
+        music(const std::string&, const rapidxml::xml_node<>*);
         music(const vs::music&);
         music(vs::music&&);
         ~music();

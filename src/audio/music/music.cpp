@@ -43,7 +43,7 @@ const bool vs::music::isBuffered() const {
 
 const bool vs::music::copyData(const vs::music& other) {
     meta = other.meta;
-    cvec = other.cvec;
+    ctrl = other.ctrl;
 
     if (other.buffered) {
         buffered = true;
@@ -84,3 +84,10 @@ const unsigned vs::music::getChannelCount() const {
     return buffer.getChannelCount();
 }
 
+const sf::Color vs::music::getBinColor(const unsigned bin) const {
+    return ctrl.getBinColor(bin);
+}
+
+const unsigned vs::music::getBrightness() const {
+    return ctrl.getBrightness();
+}

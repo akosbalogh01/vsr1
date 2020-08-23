@@ -5,6 +5,7 @@
 void vs::music::update() {
     if (sound.getStatus() == sf::Music::Playing) {
         sf::Time t = sound.getPlayingOffset();
+        ctrl.update(t);
         double srate  = buffer.getSampleRate() * buffer.getChannelCount();
         uint64_t scount = buffer.getSampleCount();
         unsigned ccount = buffer.getChannelCount();

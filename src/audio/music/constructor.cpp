@@ -11,13 +11,13 @@ vs::music::music(const std::string& fpath): meta(fpath) {
     sound.setVolume(volume);
 }
 
-vs::music::music(const std::string& fpath, const std::vector <vs::point>& points): meta(fpath) {
+vs::music::music(const std::string& fpath, const rapidxml::xml_node<>* root): meta(fpath), ctrl(root) {
+    bins.resize(vs::fft::scount);
     maxvol = vs::audio::volume::vm;
     volume = vs::audio::volume::v0;
-    buffered = false;
-    cvec = points;
-    bins.resize(vs::fft::scount);
     sound.setVolume(volume);
+
+    buffered = false;
 }
 
 vs::music::music(const vs::music& other): meta(other.meta) {
@@ -26,18 +26,17 @@ vs::music::music(const vs::music& other): meta(other.meta) {
     volume = other.volume;
     this->buffer = sf::SoundBuffer();
     this->sound = sf::Sound();
-    this->cvec = other.cvec;
+    this->ctrl = other.ctrl;
 }
 
 vs::music::music(vs::music&& other): meta(other.meta) {
     maxvol = other.maxvol;
     volume = other.volume;
     buffered = false;
-    this->cvec = other.cvec;
+    this->ctrl = other.ctrl;
 }
 
 vs::music::~music() {
     dropBuffer();
-    cvec.clear();
     bins.clear();
 }
