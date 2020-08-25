@@ -1,6 +1,12 @@
 #include "fft/fft.hpp"
 
-const float vs::fft::func::window[vs::fft::scount] = {
+void vs::fft::func::window(std::vector<float>& xs) {
+    for (unsigned i = 0; i < xs.size(); i++) {
+        xs[i] *= vs::fft::func::wdata[i];
+    }
+}
+
+const float vs::fft::func::wdata[vs::fft::scount] = {
     1.095096e-03,
     3.191670e-04,
     3.654047e-04,

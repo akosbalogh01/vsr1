@@ -19,9 +19,6 @@ namespace vs {
         sf::Sound sound;
         vs::man::flow ctrl;
         std::vector <std::complex<float>> bins;
-        void window(std::vector<float>& xs);
-        const std::vector<float> warp(const float lambda, const std::vector<float>& in);
-        void fft(const std::vector<float>& data);
         void modVolume();
 
     public:
@@ -43,6 +40,7 @@ namespace vs {
         const std::string& getFile() const;
         const vs::metadata& getMeta() const;
         const std::pair<const sf::Time&, const sf::Time&> getTime() const;
+        const std::vector<float> getSamples() const;
 
         const sf::Color getBinColor(const unsigned) const;
         const unsigned getBinHeight(const unsigned) const;

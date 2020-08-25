@@ -14,6 +14,7 @@ namespace vs {
         HANDLE serial;
         sf::Vector2u wsize, area;
         std::vector <vs::bar> bars;
+        std::vector <std::complex<float>> bins;
         unsigned maxbr, curbr; // maximum and current brightness level
         bool tx, en;
 

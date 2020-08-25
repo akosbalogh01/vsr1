@@ -112,9 +112,9 @@
 		<Unit filename="src/audio/meta/metadata.cpp" />
 		<Unit filename="src/audio/music/binheight.cpp" />
 		<Unit filename="src/audio/music/constructor.cpp" />
-		<Unit filename="src/audio/music/fft.cpp" />
 		<Unit filename="src/audio/music/meta.cpp" />
 		<Unit filename="src/audio/music/music.cpp" />
+		<Unit filename="src/audio/music/samples.cpp" />
 		<Unit filename="src/audio/music/update.cpp" />
 		<Unit filename="src/audio/music/volume.cpp" />
 		<Unit filename="src/graphics/bar/bar.cpp" />
@@ -124,7 +124,9 @@
 		<Unit filename="src/graphics/gui/render.cpp" />
 		<Unit filename="src/graphics/vis/constructor.cpp" />
 		<Unit filename="src/graphics/vis/render.cpp" />
+		<Unit filename="src/graphics/vis/reset.cpp" />
 		<Unit filename="src/graphics/vis/tx.cpp" />
+		<Unit filename="src/graphics/vis/update.cpp" />
 		<Unit filename="src/graphics/vis/visualiser.cpp" />
 		<Unit filename="src/logic/constructor.cpp" />
 		<Unit filename="src/logic/fft/fft.cpp" />
