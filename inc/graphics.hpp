@@ -3,7 +3,6 @@
 
 #include "SFML/Graphics.hpp"
 #include "parents.hpp"
-#include "visualiser.hpp"
 #include "metadata.hpp"
 #include "music.hpp"
 

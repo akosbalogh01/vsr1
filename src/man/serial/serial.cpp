@@ -36,6 +36,10 @@ void vs::man::serial::init() {
         timeout.WriteTotalTimeoutMultiplier = 10;
 
         SetCommTimeouts(shandle, &timeout);
+
+        uint8_t buf[vs::gfx::ledcount*3] = {0};
+        buf[0] = 255;
+        transmit(buf, vs::gfx::ledcount*3);
     }
 }
 
