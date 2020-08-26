@@ -97,6 +97,7 @@
 		<Unit filename="inc/man/event.hpp" />
 		<Unit filename="inc/man/flow.hpp" />
 		<Unit filename="inc/man/playlist.hpp" />
+		<Unit filename="inc/man/serial.hpp" />
 		<Unit filename="inc/man/settings.hpp" />
 		<Unit filename="inc/man/window.hpp" />
 		<Unit filename="inc/metadata.hpp" />
@@ -161,6 +162,9 @@
 		<Unit filename="src/man/playlist/next.cpp" />
 		<Unit filename="src/man/playlist/playlist.cpp" />
 		<Unit filename="src/man/playlist/prev.cpp" />
+		<Unit filename="src/man/serial/constructor.cpp" />
+		<Unit filename="src/man/serial/events.cpp" />
+		<Unit filename="src/man/serial/serial.cpp" />
 		<Unit filename="src/man/settings/constructor.cpp" />
 		<Unit filename="src/man/settings/map.cpp" />
 		<Unit filename="src/man/window/constructor.cpp" />

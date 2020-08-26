@@ -9,10 +9,6 @@ void vs::graphics::setBrightness(const sf::Event& event) {
     vis.setMaxBrightness(event);
 }
 
-void vs::graphics::toggleTransmission(const sf::Event& event) {
-    vis.toggleTransmission(event);
-}
-
 void vs::graphics::toggleVisualisation(const sf::Event& event) {
     vis.toggleEnabled(event);
 }

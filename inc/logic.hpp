@@ -6,6 +6,7 @@
 #include "man/window.hpp"
 #include "man/audio.hpp"
 #include "man/event.hpp"
+#include "man/serial.hpp"
 #include "man/debug.hpp"
 #include "parents.hpp"
 #include "music.hpp"
@@ -18,6 +19,7 @@ namespace vs {
         man::window   wman;
         man::event    eman;
         man::audio    aman;
+        man::serial   tman;
         man::debug    dman;
 
     public:

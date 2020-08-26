@@ -19,5 +19,9 @@ void vs::logic::update() {
     wman.update();
     playing->update();
 
+    dman.signal(vs::man::debug::TRANSMIT);
+    tman.transmit(NULL, 0);
+    dman.signal(vs::man::debug::TRANSMIT);
+
     dman.signal(vs::man::debug::UPDATE);
 }

@@ -11,8 +11,4 @@ void vs::visualiser::update() {
         bars[i].setColor(sf::Color(r, g, b));
         bars[i].setHeight(playing->getBinHeight(i));
     }
-
-    if (tx) {
-        transmit();
-    }
 }

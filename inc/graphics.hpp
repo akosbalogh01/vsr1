@@ -33,7 +33,6 @@ namespace vs {
         void resizeInterface(const sf::Vector2u&);
         void setBrightness(const sf::Event&);
         void toggleVisualisation(const sf::Event&);
-        void toggleTransmission(const sf::Event&);
         void toggleMetadata();
 
         void update();

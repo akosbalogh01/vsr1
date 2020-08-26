@@ -11,26 +11,19 @@
 namespace vs {
     class visualiser : public renderable, public player {
     private:
-        HANDLE serial;
         sf::Vector2u wsize, area;
         std::vector <vs::bar> bars;
         std::vector <std::complex<float>> bins;
         unsigned maxbr, curbr; // maximum and current brightness level
-        bool tx, en;
-
-        void txinit();
-        void txdeinit();
-        void transmit();
+        bool en;
 
     public:
         visualiser() = delete;
         visualiser(const visualiser&) = delete;
         visualiser(vs::t::mptr, vs::t::rtarget const);
-        ~visualiser();
 
         void setMaxBrightness(const sf::Event&);
         void toggleEnabled(const sf::Event&);
-        void toggleTransmission(const sf::Event&);
 
         void reset();
         void update();

@@ -24,16 +24,3 @@ void vs::visualiser::toggleEnabled(const sf::Event& event) {
         }
     }
 }
-
-void vs::visualiser::toggleTransmission(const sf::Event& event) {
-    if (event.key.code == sf::Keyboard::V) {
-        if (tx) {
-            std::cout << "Disabled VS transmission" << std::endl;
-            txdeinit();
-        }
-        else {
-            std::cout << "Enabled VS transmission" << std::endl;
-            txinit();
-        }
-    }
-}

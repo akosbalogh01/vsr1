@@ -13,10 +13,6 @@ void vs::man::window::toggleVisualisation(const sf::Event& event) {
     gui.toggleVisualisation(event);
 }
 
-void vs::man::window::toggleTransmission(const sf::Event& event) {
-    gui.toggleTransmission(event);
-}
-
 void vs::man::window::displayMetadata() {
     gui.toggleMetadata();
 }

@@ -1,5 +1,5 @@
 #include "visualiser.hpp"
-
+/*
 void vs::visualiser::transmit() {
     const unsigned bufsize = vs::gfx::ledcount * 3;
     uint8_t  buffer[bufsize] = {0};
@@ -16,3 +16,4 @@ void vs::visualiser::transmit() {
 
     WriteFile(serial, buffer, bufsize, &written, NULL);
 }
+*/
