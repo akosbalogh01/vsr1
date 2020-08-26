@@ -29,7 +29,8 @@ void vs::man::debug::renderOverlay() {
         drawText(310, std::to_string(playing->getTime().second.asMilliseconds()) + "ms");
         drawText(330, "max vol: " + std::to_string(playing->getMaxVolume()) + "%");
         drawText(350, "cur vol: " + std::to_string(playing->getModVolume()) + "%");
-        drawText(370, "cur brt: " + std::to_string(playing->getBrightness()) + "%");
+        drawText(370, "max brt: " + std::to_string(playing->getMaxBrightness()) + "%");
+        drawText(390, "cur brt: " + std::to_string(playing->getModBrightness()) + "%");
         //drawText(370, "channels: " + std::to_string(playing->getChannelCount()));
         //drawText(390, "sample count: " + std::to_string(playing->getSampleCount()));
         //drawText(410, "sample rate: " + std::to_string(playing->getSampleRate()));

@@ -13,7 +13,7 @@ vs::logic::logic(const int argc, const char** argv, vs::t::mptr m): player(m), s
     eman.add(sf::Event::KeyReleased, fpair(std::bind(&man::audio::eventNextSong, &aman, _1), std::bind(&man::audio::jumpForward, &aman, _1)));
     eman.add(sf::Event::KeyReleased, fpair(std::bind(&man::window::toggleVisualisation, &wman, _1), std::bind(&man::serial::toggleEnabled, &tman, _1)));
     eman.add(sf::Event::KeyReleased, fpair(std::bind(&man::debug::toggleOverlay, &dman, _1), std::bind(&man::debug::toggleOverlay, &dman, _1)));
-    eman.add(sf::Event::MouseWheelScrolled, fpair(std::bind(&man::audio::setMaxVolume, &aman, _1), std::bind(&man::window::setBrightness, &wman, _1)));
+    eman.add(sf::Event::MouseWheelScrolled, fpair(std::bind(&man::audio::setMaxVolume, &aman, _1), std::bind(&man::audio::setMaxBrightness, &aman, _1)));
     eman.add(sf::Event::MouseButtonReleased, fpair(std::bind(&logic::eventTimestamp, this, _1), std::bind(&logic::eventTimestamp, this, _1)));
 
     started = false;

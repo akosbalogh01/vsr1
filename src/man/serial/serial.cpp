@@ -45,6 +45,12 @@ void vs::man::serial::transmit(const uint8_t* buffer, const unsigned bufsize) {
     }
 }
 
+void vs::man::serial::transmit(const std::vector<uint8_t>& buffer) {
+    if (en) {
+        WriteFile(shandle, buffer.data(), buffer.size(), NULL, NULL);
+    }
+}
+
 void vs::man::serial::disable() {
     if (en) {
         uint8_t  buffer[vs::gfx::ledcount * 3] = {0};

@@ -4,25 +4,16 @@
 void vs::graphics::resizeInterface(const sf::Vector2u& size) {
     wsize = size;
 }
-
+/*
 void vs::graphics::setBrightness(const sf::Event& event) {
     vis.setMaxBrightness(event);
 }
-
-void vs::graphics::toggleVisualisation(const sf::Event& event) {
-    vis.toggleEnabled(event);
-}
+*/
 
 void vs::graphics::toggleMetadata() {
     mtimer.restart();
 }
 
 void vs::graphics::update() {
-    vis.update();
+
 }
-
-void vs::graphics::resetVisualiser() {
-    vis.reset();
-}
-
-

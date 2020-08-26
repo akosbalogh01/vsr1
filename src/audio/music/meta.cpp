@@ -1,4 +1,3 @@
-#include <iostream>
 #include "music.hpp"
 
 const std::string& vs::music::getTitle() const {

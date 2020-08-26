@@ -23,6 +23,7 @@ namespace vs {
             void eventPaused(const sf::Event&);
             void togglePaused();
             void setMaxVolume(const sf::Event&);
+            void setMaxBrightness(const sf::Event&);
             void toggleAutoplay(const sf::Event&);
             void eventPrevSong(const sf::Event&);
             void prevSong();

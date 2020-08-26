@@ -12,7 +12,6 @@ namespace vs {
     private:
         sf::Clock mtimer;
         sf::Vector2u wsize;
-        visualiser vis;
         sf::Font font;
         sf::Text text;
         sf::RectangleShape rect;
@@ -32,12 +31,10 @@ namespace vs {
 
         void resizeInterface(const sf::Vector2u&);
         void setBrightness(const sf::Event&);
-        void toggleVisualisation(const sf::Event&);
         void toggleMetadata();
 
         void update();
         void render();
-        void resetVisualiser();
     };
 }
 

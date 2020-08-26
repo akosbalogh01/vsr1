@@ -16,11 +16,11 @@ void vs::logic::update() {
         }
     }
 
-    wman.update();
     playing->update();
+    wman.update();
 
     dman.signal(vs::man::debug::TRANSMIT);
-    tman.transmit(NULL, 0);
+    tman.transmit(wman.leds());
     dman.signal(vs::man::debug::TRANSMIT);
 
     dman.signal(vs::man::debug::UPDATE);

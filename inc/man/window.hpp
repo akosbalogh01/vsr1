@@ -2,8 +2,10 @@
 #define VISU_MAN_WINDOW
 
 #include <string>
-#include "SFML/Graphics.hpp"
-#include "SFML/Window/Event.hpp"
+#include <vector>
+#include <SFML/Graphics.hpp>
+#include <SFML/Window/Event.hpp>
+#include "man/visualiser.hpp"
 #include "parents.hpp"
 #include "graphics.hpp"
 
@@ -13,6 +15,7 @@ namespace vs {
         private:
             sf::RenderWindow target;
             graphics gui;
+            man::visualiser vman;
 
         public:
             window() = delete;
@@ -31,6 +34,8 @@ namespace vs {
 
             void render();
             void update();
+
+            std::vector<uint8_t> leds() const;
         };
     }
 }

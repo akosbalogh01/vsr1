@@ -1,7 +1,7 @@
 #include "man/settings.hpp"
 #include "man/window.hpp"
 
-vs::man::window::window(vs::t::mptr m, const std::string& title): player(m), gui(&target, m) {
+vs::man::window::window(vs::t::mptr m, const std::string& title): player(m), gui(&target, m), vman(&target, m) {
     using namespace vs::man;
 
     std::string header = title.substr(0, title.length() - 4);
@@ -17,5 +17,4 @@ vs::man::window::window(vs::t::mptr m, const std::string& title): player(m), gui
 
     target.setFramerateLimit(vs::gfx::framelimit);
     gui.resizeInterface(sf::Vector2u(x, y));
-    gui.resetVisualiser();
 }

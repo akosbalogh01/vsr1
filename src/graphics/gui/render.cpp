@@ -9,5 +9,4 @@ void vs::graphics::render() {
 
     drawTimedata();
     drawMetadata();
-    vis.render();
 }

@@ -16,6 +16,7 @@ namespace vs {
 
             void init();
             void transmit(const uint8_t*, const unsigned);
+            void transmit(const std::vector<uint8_t>&);
             void disable();
 
             void toggleEnabled(const sf::Event&);

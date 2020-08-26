@@ -15,7 +15,8 @@ void vs::music::setMaxVolume(const unsigned vmax) {
 }
 
 void vs::music::modVolume() {
-    volume = ctrl.getVolume();
-    volume *= ((double) maxvol/100);
-    sound.setVolume(volume);
+    curvol = ctrl.getVolume();
+    curvol *= ((float) maxvol/100);
+    sound.setVolume(curvol);
 }
+

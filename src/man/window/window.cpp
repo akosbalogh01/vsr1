@@ -24,5 +24,10 @@ void vs::man::window::windowResize(const sf::Event& event) {
 }
 
 void vs::man::window::update() {
+    vman.update();
     gui.update();
+}
+
+std::vector<uint8_t> vs::man::window::leds() const {
+    return vman.leds();
 }

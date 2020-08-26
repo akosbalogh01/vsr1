@@ -12,14 +12,14 @@
 namespace vs {
     class music {
     private:
-        unsigned maxvol, volume;
+        unsigned maxvol, curvol, maxbr, curbr;
         bool buffered;
         vs::metadata meta;
         sf::SoundBuffer buffer;
         sf::Sound sound;
         vs::man::flow ctrl;
-        std::vector <std::complex<float>> bins;
         void modVolume();
+        void modBrightness();
 
     public:
         music() = delete;
@@ -43,11 +43,12 @@ namespace vs {
         const std::vector<float> getSamples() const;
 
         const sf::Color getBinColor(const unsigned) const;
-        const unsigned getBinHeight(const unsigned) const;
-        const unsigned getBrightness() const;
+        const unsigned getMaxBrightness() const;
+        const unsigned getModBrightness() const;
         const unsigned getMaxVolume() const;
         const unsigned getModVolume() const;
-        const double getSampleRate() const;
+
+        const double   getSampleRate() const;
         const unsigned getSampleCount() const;
         const unsigned getChannelCount() const;
 
@@ -58,6 +59,7 @@ namespace vs {
         void setMetadata(const vs::metadata&);
         void setOffset(const sf::Time&);
         void setMaxVolume(const unsigned);
+        void setMaxBrightness(const unsigned);
         void play();
         void pause();
         void update();

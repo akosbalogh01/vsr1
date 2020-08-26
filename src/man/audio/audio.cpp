@@ -14,6 +14,18 @@ void vs::man::audio::setMaxVolume(const sf::Event& event) {
     std::cout << "Set max volume: " << volume << std::endl;
 }
 
+void vs::man::audio::setMaxBrightness(const sf::Event& event) {
+    unsigned brightness = playing->getMaxBrightness();
+    const int delta = vs::gfx::brightness::coeff * (int) event.mouseWheelScroll.delta;
+    const int temp = brightness + delta;
+    if ((temp >= 0) && (temp <= 100)) {
+        brightness = temp;
+    }
+
+    playing->setMaxBrightness(brightness);
+    std::cout << "Set max brightness: " << brightness << std::endl;
+}
+
 void vs::man::audio::togglePaused() {
     if (paused) {
         playing->play();
