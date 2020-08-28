@@ -4,7 +4,7 @@
 
 void vs::man::audio::setMaxVolume(const sf::Event& event) {
     unsigned volume = playing->getMaxVolume();
-    const int delta = vs::audio::volume::coeff * (int) event.mouseWheelScroll.delta;
+    const int delta = vcoef * (int) event.mouseWheelScroll.delta;
     const int temp = volume + delta;
     if ((temp >= 0) && (temp <= 100)) {
         volume = temp;

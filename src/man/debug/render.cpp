@@ -22,7 +22,8 @@ void vs::man::debug::renderOverlay() {
         drawText(30, "frame: " + std::to_string(prev[vs::man::debug::FRAME]/1000) + "ms");
         drawText(50, "event: " + std::to_string(prev[vs::man::debug::EVENT]) + "us");
         drawText(70, "update: " + std::to_string(prev[vs::man::debug::UPDATE]) + "us");
-        drawText(90, "render: " + std::to_string(prev[vs::man::debug::RENDER]) + "us");
+        drawText(90, "transmit: " + std::to_string(prev[vs::man::debug::TRANSMIT]) + "us");
+        drawText(110, "render: " + std::to_string(prev[vs::man::debug::RENDER]) + "us");
         drawText(250, "playing");
         drawText(270, playing->getTitle());
         drawText(290, std::to_string(playing->getTime().first.asMilliseconds()) + "ms");

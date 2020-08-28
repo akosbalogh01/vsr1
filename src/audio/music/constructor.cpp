@@ -1,9 +1,11 @@
+#include "man/settings.hpp"
 #include "consts.hpp"
 #include "music.hpp"
 
 vs::music::music(const std::string& fpath): meta(fpath) {
-    maxvol = vs::audio::volume::vm;
-    curvol = vs::audio::volume::v0;
+    using namespace vs::man;
+    maxvol = std::stoi(settings::smap[settings::AVOLMAX]);
+    curvol = std::stoi(settings::smap[settings::AVOL0]);
     maxbr = vs::gfx::brightness::bm;
     curbr = vs::gfx::brightness::b0;
     sound.setVolume(curvol);
@@ -12,8 +14,9 @@ vs::music::music(const std::string& fpath): meta(fpath) {
 }
 
 vs::music::music(const std::string& fpath, const rapidxml::xml_node<>* root): meta(fpath), ctrl(root) {
-    maxvol = vs::audio::volume::vm;
-    curvol = vs::audio::volume::v0;
+    using namespace vs::man;
+    maxvol = std::stoi(settings::smap[settings::AVOLMAX]);
+    curvol = std::stoi(settings::smap[settings::AVOL0]);
     maxbr = vs::gfx::brightness::bm;
     curbr = vs::gfx::brightness::b0;
     sound.setVolume(curvol);

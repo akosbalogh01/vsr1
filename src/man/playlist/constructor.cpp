@@ -2,6 +2,7 @@
 #include <iostream>
 #include <fstream>
 #include "xml/rapidxml.hpp"
+#include "man/settings.hpp"
 #include "man/playlist.hpp"
 
 vs::man::playlist::playlist(const vs::t::mptr& m, const std::string& xmlpath): player(m) {
@@ -38,7 +39,8 @@ vs::man::playlist::playlist(const vs::t::mptr& m, const std::string& xmlpath): p
         throw vs::except::playlist_file;
     }
 
-    bufsize = (songlist.size() <= vs::audio::bufsize) ? (songlist.size()) : (vs::audio::bufsize);
+    unsigned bufset = std::stoi(vs::man::settings::smap[vs::man::settings::ABUFSIZE]);
+    bufsize = (songlist.size() <= bufset) ? (songlist.size()) : (bufset);
     for (unsigned i = 0; i < bufsize; ++i) songlist[i].initBuffer();
     playing->copyData(songlist[0]);
     current = 0;

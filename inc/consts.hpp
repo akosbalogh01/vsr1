@@ -18,17 +18,6 @@ namespace vs {
 
     namespace path {
         const std::string font = "Roboto-Regular.ttf";
-        const std::string settings = "settings.ini";
-    }
-
-    namespace audio {
-        const unsigned bufsize = 3;
-
-        namespace volume {
-            const unsigned vm = 10;
-            const unsigned v0 = 0;
-            const unsigned coeff = 5;
-        }
     }
 
     namespace gfx {
@@ -53,8 +42,8 @@ namespace vs {
         }
 
         namespace brightness {
-            const unsigned bm = 10;
-            const unsigned b0 = 0;
+            const unsigned bm = 100;
+            const unsigned b0 = 100;
             const unsigned coeff = 5;
         }
     }

@@ -12,6 +12,7 @@ namespace vs {
     namespace man {
         class audio: public pausable, public player {
         private:
+            unsigned vcoef;
             bool autoplay;
             man::playlist pman;
 

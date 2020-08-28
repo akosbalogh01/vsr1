@@ -16,6 +16,10 @@ namespace vs {
                     WINWIDTH,
                     WINHEIGHT,
                     WFULLSCREEN,
+                    ABUFSIZE,
+                    AVOLMAX,
+                    AVOL0,
+                    AVOLC,
                     COMBAUDRATE,
                     COMBYTESIZE,
                     COMPORTID
