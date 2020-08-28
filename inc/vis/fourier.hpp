@@ -4,14 +4,14 @@
 #include <vector>
 #include <complex>
 #include "parents.hpp"
-#include "bar.hpp"
+#include "man/bars.hpp"
 
 namespace vs {
     namespace vis {
         class fourier: public visualisable {
         private:
             unsigned maxbr, curbr; // maximum and current brightness level
-            std::vector <vs::bar>   bars;
+            vs::man::bars bman;
             std::vector <vs::t::cx> bins;
 
             const unsigned binHeight(const unsigned) const;

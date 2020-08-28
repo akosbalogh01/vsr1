@@ -15,7 +15,7 @@ void vs::vis::fourier::update() {
         float r = (float) br/100 * cr.r;
         float g = (float) br/100 * cr.g;
         float b = (float) br/100 * cr.b;
-        bars[i].setColor(sf::Color(r, g, b));
-        bars[i].setHeight(binHeight(i));
+        bman[i].setColor(sf::Color(r, g, b));
+        bman[i].setHeight(binHeight(i));
     }
 }

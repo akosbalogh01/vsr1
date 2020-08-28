@@ -11,7 +11,8 @@ namespace vs {
         class visualiser: public renderable, public player {
         public:
             typedef enum {
-                CONSTANT,
+                GLOW,
+                FADE,
                 PULSE,
                 WAVE,
                 RAINBOW,
@@ -31,6 +32,7 @@ namespace vs {
             void update() override;
             void render() override;
 
+            void selectVisualisation(const sf::Event&);
             void toggleEnabled(const sf::Event&);
             const std::vector<uint8_t> leds() const;
         };

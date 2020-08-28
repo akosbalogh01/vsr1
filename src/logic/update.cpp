@@ -5,23 +5,26 @@ void vs::logic::update() {
     dman.signal(vs::man::debug::UPDATE);
 
     if (started) {
-        if ((!paused) && (playing->isOver())) {
-            std::cout << "Song over" << std::endl;
-            if (aman.getAutoplay()) {
-                aman.nextSong();
+        if (!paused) {
+            if (playing->isOver()) {
+                std::cout << "Song over" << std::endl;
+                if (aman.getAutoplay()) {
+                    aman.nextSong();
+                }
+                else {
+                    togglePaused();
+                }
             }
             else {
-                togglePaused();
+                playing->update();
+                wman.update();
+
+                dman.signal(vs::man::debug::TRANSMIT);
+                tman.transmit(wman.leds());
+                dman.signal(vs::man::debug::TRANSMIT);
             }
         }
     }
-
-    playing->update();
-    wman.update();
-
-    dman.signal(vs::man::debug::TRANSMIT);
-    tman.transmit(wman.leds());
-    dman.signal(vs::man::debug::TRANSMIT);
 
     dman.signal(vs::man::debug::UPDATE);
 }

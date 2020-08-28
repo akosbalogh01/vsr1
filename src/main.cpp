@@ -4,11 +4,6 @@
 /**
     TODO: fix window resizing
     TODO: fix release mode time bar rendering -O1 fucks it up??
-    TODO: fix application crash
-    TODO: fix bar height setter
-    TODO: add tx timer to debug window
-    TODO: bin height calculation random spikes?
-    TODO: debug overlay slows down fft rendering
     TODO: song starts twice randomly
     TODO: control point LED spikes
 */

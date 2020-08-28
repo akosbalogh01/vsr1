@@ -14,10 +14,12 @@ namespace vs {
 
     public:
         bar() = delete;
+        bar(const bar&);
+        bar(const bar&&);
         bar(vs::t::rtarget const);
 
         void setColor(const sf::Color&);
-        void setHeight(const unsigned);
+        void setHeight(const unsigned, const bool = true);
         void setVertices(const sf::Vector2f&, const sf::Vector2f&);
 
         const sf::Color& getColor() const;

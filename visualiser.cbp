@@ -93,6 +93,7 @@
 		<Unit filename="inc/ini/section.hpp" />
 		<Unit filename="inc/logic.hpp" />
 		<Unit filename="inc/man/audio.hpp" />
+		<Unit filename="inc/man/bars.hpp" />
 		<Unit filename="inc/man/debug.hpp" />
 		<Unit filename="inc/man/event.hpp" />
 		<Unit filename="inc/man/flow.hpp" />
@@ -106,6 +107,7 @@
 		<Unit filename="inc/parents.hpp" />
 		<Unit filename="inc/point.hpp" />
 		<Unit filename="inc/vis/fourier.hpp" />
+		<Unit filename="inc/vis/glow.hpp" />
 		<Unit filename="inc/xml/rapidxml.hpp" />
 		<Unit filename="inc/xml/rapidxml_iterators.hpp" />
 		<Unit filename="inc/xml/rapidxml_print.hpp" />
@@ -120,6 +122,7 @@
 		<Unit filename="src/audio/music/update.cpp" />
 		<Unit filename="src/audio/music/volume.cpp" />
 		<Unit filename="src/graphics/bar/bar.cpp" />
+		<Unit filename="src/graphics/bar/constructor.cpp" />
 		<Unit filename="src/graphics/gui/constructor.cpp" />
 		<Unit filename="src/graphics/gui/graphics.cpp" />
 		<Unit filename="src/graphics/gui/internal.cpp" />
@@ -129,6 +132,10 @@
 		<Unit filename="src/graphics/vis/fourier/leds.cpp" />
 		<Unit filename="src/graphics/vis/fourier/render.cpp" />
 		<Unit filename="src/graphics/vis/fourier/update.cpp" />
+		<Unit filename="src/graphics/vis/glow/constructor.cpp" />
+		<Unit filename="src/graphics/vis/glow/leds.cpp" />
+		<Unit filename="src/graphics/vis/glow/render.cpp" />
+		<Unit filename="src/graphics/vis/glow/update.cpp" />
 		<Unit filename="src/logic/constructor.cpp" />
 		<Unit filename="src/logic/fft/fft.cpp" />
 		<Unit filename="src/logic/fft/warp.cpp" />
@@ -147,6 +154,9 @@
 		<Unit filename="src/man/audio/audio.cpp" />
 		<Unit filename="src/man/audio/constructor.cpp" />
 		<Unit filename="src/man/audio/events.cpp" />
+		<Unit filename="src/man/bar/constructor.cpp" />
+		<Unit filename="src/man/bar/operator.cpp" />
+		<Unit filename="src/man/bar/render.cpp" />
 		<Unit filename="src/man/debug/constructor.cpp" />
 		<Unit filename="src/man/debug/debug.cpp" />
 		<Unit filename="src/man/debug/events.cpp" />

@@ -29,6 +29,7 @@ namespace vs {
             void windowResize(const sf::Event&);
 
             void setBrightness(const sf::Event&);
+            void selectVisualisation(const sf::Event&);
             void toggleVisualisation(const sf::Event&);
             void displayMetadata();
 

@@ -1,9 +1,5 @@
 #include "bar.hpp"
 
-vs::bar::bar(vs::t::rtarget const window): renderable(window) {
-    quad = sf::VertexArray(sf::Quads, 4);
-}
-
 void vs::bar::setColor(const sf::Color& color) {
     for (unsigned i = 0; i < 4; ++i) {
         quad[i].color = color;
@@ -14,11 +10,17 @@ const sf::Color& vs::bar::getColor() const {
     return quad[0].color;
 }
 
-void vs::bar::setHeight(const unsigned height) {
+void vs::bar::setHeight(const unsigned height, const bool filtering) {
     if (height <= vs::gfx::layout::bheight) {
-        prev = alpha*prev + (1 - alpha)*height;
-        quad[2].position = quad[1].position + sf::Vector2f(0, -1.0f * prev);
-        quad[3].position = quad[0].position + sf::Vector2f(0, -1.0f * prev);
+        if (filtering) {
+            prev = alpha*prev + (1 - alpha)*height;
+            quad[2].position = quad[1].position + sf::Vector2f(0, -1.0f * prev);
+            quad[3].position = quad[0].position + sf::Vector2f(0, -1.0f * prev);
+        }
+        else {
+            quad[2].position = quad[1].position + sf::Vector2f(0, -1.0f * height);
+            quad[3].position = quad[0].position + sf::Vector2f(0, -1.0f * height);
+        }
     }
 }
 
