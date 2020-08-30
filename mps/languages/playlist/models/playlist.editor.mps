@@ -181,41 +181,20 @@
         <ref role="1NtTu8" to="sj14:4hxuX_9wJ8V" resolve="stamp" />
       </node>
       <node concept="3F0ifn" id="5iPNu9WaJn9" role="3EZMnx">
-        <property role="3F0ifm" value="ms" />
-        <node concept="ljvvj" id="5If3t8l0jnP" role="3F10Kt">
-          <property role="VOm3f" value="true" />
-        </node>
-      </node>
-      <node concept="3F0ifn" id="4hxuX_9wJ9H" role="3EZMnx">
-        <property role="3F0ifm" value="vol:" />
+        <property role="3F0ifm" value="ms (" />
       </node>
       <node concept="3F0A7n" id="5iPNu9WaJnF" role="3EZMnx">
         <ref role="1NtTu8" to="sj14:5iPNu9WaJmn" resolve="volume" />
-        <node concept="ljvvj" id="5If3t8l0jnR" role="3F10Kt">
-          <property role="VOm3f" value="true" />
-        </node>
       </node>
-      <node concept="3F0ifn" id="5iPNu9WaJof" role="3EZMnx">
-        <property role="3F0ifm" value="brn:" />
+      <node concept="3F0ifn" id="6bKrMkdk1Og" role="3EZMnx">
+        <property role="3F0ifm" value="|" />
       </node>
       <node concept="3F0A7n" id="5iPNu9WaJp9" role="3EZMnx">
         <ref role="1NtTu8" to="sj14:5iPNu9WaJmk" resolve="brightness" />
-        <node concept="ljvvj" id="5If3t8l0jnT" role="3F10Kt">
-          <property role="VOm3f" value="true" />
-        </node>
       </node>
-      <node concept="3F0ifn" id="5If3t8l0jn_" role="3EZMnx">
-        <property role="3F0ifm" value="frq:" />
-      </node>
-      <node concept="3F0A7n" id="5If3t8l0OPw" role="3EZMnx">
-        <ref role="1NtTu8" to="sj14:5If3t8l0OOz" resolve="freq" />
-        <node concept="ljvvj" id="5If3t8l0OPO" role="3F10Kt">
-          <property role="VOm3f" value="true" />
-        </node>
-      </node>
-      <node concept="3F0ifn" id="5iPNu9WaJpL" role="3EZMnx">
-        <property role="3F0ifm" value="bins:" />
-        <node concept="ljvvj" id="5iPNu9WaJq6" role="3F10Kt">
+      <node concept="3F0ifn" id="6bKrMkdk1OY" role="3EZMnx">
+        <property role="3F0ifm" value=")" />
+        <node concept="ljvvj" id="6bKrMkdk1Pe" role="3F10Kt">
           <property role="VOm3f" value="true" />
         </node>
       </node>
@@ -229,6 +208,9 @@
         <node concept="lj46D" id="4hxuX_9wJbF" role="3F10Kt">
           <property role="VOm3f" value="true" />
         </node>
+      </node>
+      <node concept="3F0ifn" id="6bKrMkdkb7q" role="3EZMnx">
+        <property role="3F0ifm" value="" />
       </node>
     </node>
   </node>

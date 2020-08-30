@@ -6,6 +6,6 @@ vs::man::visualiser::visualiser(vs::t::rtarget w, vs::t::mptr m): renderable(w),
     vmap.emplace(GLOW, std::make_unique<vs::vis::glow>(w, m));
     vmap.emplace(FOURIER, std::make_unique<vs::vis::fourier>(w, m));
 
-    current = GLOW;
+    current = FOURIER;
     en = true;
 }
