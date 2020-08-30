@@ -1,6 +1,6 @@
 <Visualisation name="Glow">
   <ControlPoint timestamp="0" volume="100" brightness="100">
-    <bin index="0" color="RGBA(204, 153, 51, 255)"></bin>
-    <bin index="119" color="RGBA(204, 153, 51, 255)"></bin>
+    <bin index="0" color="Color"></bin>
+    <bin index="119" color="Color"></bin>
   </ControlPoint>
 </Visualisation>

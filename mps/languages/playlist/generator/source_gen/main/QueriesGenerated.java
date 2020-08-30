@@ -40,7 +40,7 @@ public class QueriesGenerated extends QueryProviderBase {
     return "" + SPropertyOperations.getInteger(_context.getNode(), PROPS.index$uW$y);
   }
   public static Object propertyMacro_GetValue_1_3(final PropertyMacroContext _context) {
-    return "" + SLinkOperations.getTarget(_context.getNode(), LINKS.color$uW_w);
+    return "RGBA(" + SPropertyOperations.getInteger(SLinkOperations.getTarget(_context.getNode(), LINKS.color$uW_w), PROPS.r$uJ20) + ", " + SPropertyOperations.getInteger(SLinkOperations.getTarget(_context.getNode(), LINKS.color$uW_w), PROPS.g$uO8u) + ", " + SPropertyOperations.getInteger(SLinkOperations.getTarget(_context.getNode(), LINKS.color$uW_w), PROPS.b$uO9V) + ", 255)";
   }
   public static Object propertyMacro_GetValue_1_4(final PropertyMacroContext _context) {
     return "" + SPropertyOperations.getInteger(_context.getNode(), PROPS.volume$NnBk);
@@ -64,7 +64,7 @@ public class QueriesGenerated extends QueryProviderBase {
     return "" + SPropertyOperations.getInteger(_context.getNode(), PROPS.index$uW$y);
   }
   public static Object propertyMacro_GetValue_2_3(final PropertyMacroContext _context) {
-    return "" + SLinkOperations.getTarget(_context.getNode(), LINKS.color$uW_w);
+    return "RGBA(" + SPropertyOperations.getInteger(SLinkOperations.getTarget(_context.getNode(), LINKS.color$uW_w), PROPS.r$uJ20) + ", " + SPropertyOperations.getInteger(SLinkOperations.getTarget(_context.getNode(), LINKS.color$uW_w), PROPS.g$uO8u) + ", " + SPropertyOperations.getInteger(SLinkOperations.getTarget(_context.getNode(), LINKS.color$uW_w), PROPS.b$uO9V) + ", 255)";
   }
   public static Object propertyMacro_GetValue_2_4(final PropertyMacroContext _context) {
     return "" + SPropertyOperations.getInteger(_context.getNode(), PROPS.volume$NnBk);
@@ -145,7 +145,7 @@ public class QueriesGenerated extends QueryProviderBase {
     pvqMethods.put("5575290994418947968", new PVQ(i++, MetaAdapterFactory.getProperty(0x479c7a8c02f943b5L, 0x9139d910cb22f298L, 0x5c842a42c54cfd1fL, 0x5c842a42c54cfd20L, "text"), "name"));
     pvqMethods.put("5575290994418974890", new PVQ(i++, MetaAdapterFactory.getProperty(0x479c7a8c02f943b5L, 0x9139d910cb22f298L, 0x5c842a42c54cfd1fL, 0x5c842a42c54cfd20L, "text"), "100000"));
     pvqMethods.put("5575290994419004814", new PVQ(i++, MetaAdapterFactory.getProperty(0x479c7a8c02f943b5L, 0x9139d910cb22f298L, 0x5c842a42c54cfd1fL, 0x5c842a42c54cfd20L, "text"), "100"));
-    pvqMethods.put("5575290994419465175", new PVQ(i++, MetaAdapterFactory.getProperty(0x479c7a8c02f943b5L, 0x9139d910cb22f298L, 0x5c842a42c54cfd1fL, 0x5c842a42c54cfd20L, "text"), "RGBA(255, 255, 255, 255)"));
+    pvqMethods.put("8381014812345980282", new PVQ(i++, MetaAdapterFactory.getProperty(0x479c7a8c02f943b5L, 0x9139d910cb22f298L, 0x5c842a42c54cfd1fL, 0x5c842a42c54cfd20L, "text"), "RGBA(255, 255, 255, 255)"));
     pvqMethods.put("5575290994418994377", new PVQ(i++, MetaAdapterFactory.getProperty(0x479c7a8c02f943b5L, 0x9139d910cb22f298L, 0x5c842a42c54cfd1fL, 0x5c842a42c54cfd20L, "text"), "100"));
     pvqMethods.put("5575290994418998959", new PVQ(i++, MetaAdapterFactory.getProperty(0x479c7a8c02f943b5L, 0x9139d910cb22f298L, 0x5c842a42c54cfd1fL, 0x5c842a42c54cfd20L, "text"), "100"));
     pvqMethods.put("5575290994418945153", new PVQ(i++, MetaAdapterFactory.getProperty(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L, 0x110396ec041L, "name"), "Visualisation"));
@@ -208,6 +208,9 @@ public class QueriesGenerated extends QueryProviderBase {
     /*package*/ static final SProperty name$tAp1 = MetaAdapterFactory.getProperty(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L, 0x110396ec041L, "name");
     /*package*/ static final SProperty stamp$v3Bw = MetaAdapterFactory.getProperty(0xe808b2f670da436eL, 0xbf6b14e1ed6cce5fL, 0x44617bd94982f23aL, 0x44617bd94982f23bL, "stamp");
     /*package*/ static final SProperty index$uW$y = MetaAdapterFactory.getProperty(0xe808b2f670da436eL, 0xbf6b14e1ed6cce5fL, 0x44617bd94982f15dL, 0x44617bd94982f1f6L, "index");
+    /*package*/ static final SProperty r$uJ20 = MetaAdapterFactory.getProperty(0xe808b2f670da436eL, 0xbf6b14e1ed6cce5fL, 0x44617bd94982f15eL, 0x44617bd94982f15fL, "r");
+    /*package*/ static final SProperty g$uO8u = MetaAdapterFactory.getProperty(0xe808b2f670da436eL, 0xbf6b14e1ed6cce5fL, 0x44617bd94982f15eL, 0x44617bd94982f161L, "g");
+    /*package*/ static final SProperty b$uO9V = MetaAdapterFactory.getProperty(0xe808b2f670da436eL, 0xbf6b14e1ed6cce5fL, 0x44617bd94982f15eL, 0x44617bd94982f164L, "b");
     /*package*/ static final SProperty volume$NnBk = MetaAdapterFactory.getProperty(0xe808b2f670da436eL, 0xbf6b14e1ed6cce5fL, 0x44617bd94982f23aL, 0x54b5cde27c2af597L, "volume");
     /*package*/ static final SProperty brightness$Nn_R = MetaAdapterFactory.getProperty(0xe808b2f670da436eL, 0xbf6b14e1ed6cce5fL, 0x44617bd94982f23aL, 0x54b5cde27c2af594L, "brightness");
     /*package*/ static final SProperty filepath$uHMY = MetaAdapterFactory.getProperty(0xe808b2f670da436eL, 0xbf6b14e1ed6cce5fL, 0x44617bd94982f127L, 0x44617bd94982f12aL, "filepath");
