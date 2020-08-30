@@ -1,6 +1,0 @@
-
-<Song file="C:\Users\user001\Music\Various Artists\Root to Branch, Vol. 5\02 - Polar Inc. - Pastel.flac">
-  <ControlPoint timestamp="0" volume="100" brightness="25" cutoff=10000">
-    <bin index="42" color="RGBA(255, 127, 0, 255)"></bin>
-  </ControlPoint>
-</Song>

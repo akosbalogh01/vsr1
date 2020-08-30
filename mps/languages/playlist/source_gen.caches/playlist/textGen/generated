@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<product version="3" modelHash="3xy96br0187xmr9d1xivoaj9p2wyln8">
-  <files names="Bin_TextGen.java:Color_TextGen.java:ControlPoint_TextGen.java:SongRef_TextGen.java:Song_TextGen.java:TextGenAspectDescriptor.java" />
+<product version="3" modelHash="5ajs9au1qnr4uq0jdwfrh2yyp4mwn3y">
+  <files names="Color_TextGen.java:TextGenAspectDescriptor.java" />
 </product>
 

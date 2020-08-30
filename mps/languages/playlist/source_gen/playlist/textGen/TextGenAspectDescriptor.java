@@ -8,10 +8,6 @@ import org.jetbrains.annotations.Nullable;
 import jetbrains.mps.text.rt.TextGenDescriptor;
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.mps.openapi.language.SAbstractConcept;
-import jetbrains.mps.text.rt.TextGenModelOutline;
-import org.jetbrains.mps.openapi.model.SNode;
-import org.jetbrains.mps.openapi.language.SConcept;
-import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 
 public class TextGenAspectDescriptor extends TextGenAspectBase {
   private final LanguageConceptSwitch myIndex = new LanguageConceptSwitch();
@@ -23,52 +19,10 @@ public class TextGenAspectDescriptor extends TextGenAspectBase {
   @Override
   public TextGenDescriptor getDescriptor(@NotNull SAbstractConcept concept) {
     switch (myIndex.index(concept)) {
-      case LanguageConceptSwitch.Bin:
-        return new Bin_TextGen();
       case LanguageConceptSwitch.Color:
         return new Color_TextGen();
-      case LanguageConceptSwitch.ControlPoint:
-        return new ControlPoint_TextGen();
-      case LanguageConceptSwitch.Song:
-        return new Song_TextGen();
-      case LanguageConceptSwitch.SongRef:
-        return new SongRef_TextGen();
     }
     return null;
   }
 
-  @Override
-  public void breakdownToUnits(@NotNull TextGenModelOutline outline) {
-    for (SNode root : outline.getModel().getRootNodes()) {
-      if (root.getConcept().equals(CONCEPTS.Song$ms)) {
-        String fname = getFileName_Song(root);
-        String ext = getFileExtension_Song(root);
-        outline.registerTextUnit((ext == null ? fname : (fname + '.' + ext)), root);
-        continue;
-      }
-      if (root.getConcept().equals(CONCEPTS.Visualisation$wJ)) {
-        String fname = getFileName_Visualisation(root);
-        String ext = getFileExtension_Visualisation(root);
-        outline.registerTextUnit((ext == null ? fname : (fname + '.' + ext)), root);
-        continue;
-      }
-    }
-  }
-  private static String getFileName_Song(SNode node) {
-    return node.getName();
-  }
-  private static String getFileName_Visualisation(SNode node) {
-    return node.getName();
-  }
-  private static String getFileExtension_Song(SNode node) {
-    return null;
-  }
-  private static String getFileExtension_Visualisation(SNode node) {
-    return null;
-  }
-
-  private static final class CONCEPTS {
-    /*package*/ static final SConcept Song$ms = MetaAdapterFactory.getConcept(0xe808b2f670da436eL, 0xbf6b14e1ed6cce5fL, 0x44617bd94982f127L, "playlist.structure.Song");
-    /*package*/ static final SConcept Visualisation$wJ = MetaAdapterFactory.getConcept(0xe808b2f670da436eL, 0xbf6b14e1ed6cce5fL, 0x4d5f699ec9c68c55L, "playlist.structure.Visualisation");
-  }
 }
