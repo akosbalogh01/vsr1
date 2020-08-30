@@ -42,6 +42,7 @@
 				<Option compiler="gcc" />
 				<Option parameters="settings.ini Puppy.xml" />
 				<Linker>
+					<Add option="-O3" />
 					<Add option="-s" />
 					<Add library="sfml-graphics-s" />
 					<Add library="sfml-window-s" />
@@ -65,7 +66,7 @@
 		</Build>
 		<Compiler>
 			<Add option="-Wall" />
-			<Add option="-std=c++1y" />
+			<Add option="-std=c++1z" />
 			<Add option="-DSFML_STATIC" />
 			<Add option="-DTAGLIB_STATIC" />
 			<Add directory="C:/Projects/lib/SFML-2.5.1/include" />

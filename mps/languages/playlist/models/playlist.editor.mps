@@ -247,5 +247,30 @@
       <node concept="l2Vlx" id="5jhE8MGYw9t" role="2iSdaV" />
     </node>
   </node>
+  <node concept="24kQdi" id="4PvqpV9LCLv">
+    <ref role="1XX52x" to="sj14:4PvqpV9LCLl" resolve="Visualisation" />
+    <node concept="3EZMnI" id="4PvqpV9LCLx" role="2wV5jI">
+      <node concept="3F0ifn" id="4PvqpV9LCLC" role="3EZMnx">
+        <property role="3F0ifm" value="Visualisation program:" />
+      </node>
+      <node concept="3F0A7n" id="4PvqpV9LCLM" role="3EZMnx">
+        <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
+        <node concept="ljvvj" id="4PvqpV9MlWP" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+      </node>
+      <node concept="3F2HdR" id="4PvqpV9MlWX" role="3EZMnx">
+        <ref role="1NtTu8" to="sj14:4PvqpV9LCLQ" resolve="timestamps" />
+        <node concept="2iRkQZ" id="4PvqpV9MlX0" role="2czzBx" />
+        <node concept="pVoyu" id="4PvqpV9MlX6" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+        <node concept="lj46D" id="4PvqpV9MlX8" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+      </node>
+      <node concept="l2Vlx" id="4PvqpV9LCL$" role="2iSdaV" />
+    </node>
+  </node>
 </model>
 

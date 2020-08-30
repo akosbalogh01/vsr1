@@ -1,61 +1,61 @@
 
 <Song file="D:\Music\Fluke\Puppy\Fluke - Puppy - 03 - Another Kind of Blues.flac">
-  <ControlPoint timestamp="10000" volume="60" brightness="50">
+  <ControlPoint timestamp="10000" volume="60" brightness="50" cutoff=10000">
     <bin index="10" color="RGBA(0, 51, 102, 255)"></bin>
     <bin index="60" color="RGBA(0, 76, 153, 255)"></bin>
     <bin index="110" color="RGBA(0, 102, 204, 255)"></bin>
   </ControlPoint>
-  <ControlPoint timestamp="30000" volume="75" brightness="70">
+  <ControlPoint timestamp="30000" volume="75" brightness="70" cutoff=10000">
     <bin index="10" color="RGBA(0, 51, 102, 255)"></bin>
     <bin index="60" color="RGBA(0, 76, 153, 255)"></bin>
     <bin index="110" color="RGBA(0, 102, 204, 255)"></bin>
   </ControlPoint>
-  <ControlPoint timestamp="42500" volume="80" brightness="75">
+  <ControlPoint timestamp="42500" volume="80" brightness="75" cutoff=10000">
     <bin index="10" color="RGBA(0, 51, 102, 255)"></bin>
     <bin index="60" color="RGBA(0, 76, 153, 255)"></bin>
     <bin index="110" color="RGBA(0, 102, 204, 255)"></bin>
   </ControlPoint>
-  <ControlPoint timestamp="45000" volume="85" brightness="75">
+  <ControlPoint timestamp="45000" volume="85" brightness="75" cutoff=10000">
     <bin index="10" color="RGBA(51, 0, 102, 255)"></bin>
     <bin index="110" color="RGBA(0, 51, 102, 255)"></bin>
   </ControlPoint>
-  <ControlPoint timestamp="60000" volume="85" brightness="75">
+  <ControlPoint timestamp="60000" volume="85" brightness="75" cutoff=10000">
     <bin index="10" color="RGBA(0, 0, 153, 255)"></bin>
     <bin index="110" color="RGBA(204, 102, 0, 255)"></bin>
   </ControlPoint>
-  <ControlPoint timestamp="78000" volume="85" brightness="75">
+  <ControlPoint timestamp="78000" volume="85" brightness="75" cutoff=10000">
     <bin index="10" color="RGBA(0, 0, 153, 255)"></bin>
     <bin index="110" color="RGBA(204, 102, 0, 255)"></bin>
   </ControlPoint>
-  <ControlPoint timestamp="80000" volume="85" brightness="80">
+  <ControlPoint timestamp="80000" volume="85" brightness="80" cutoff=10000">
     <bin index="10" color="RGBA(0, 0, 153, 255)"></bin>
     <bin index="110" color="RGBA(255, 128, 0, 255)"></bin>
   </ControlPoint>
-  <ControlPoint timestamp="110000" volume="85" brightness="80">
+  <ControlPoint timestamp="110000" volume="85" brightness="80" cutoff=10000">
     <bin index="10" color="RGBA(0, 0, 255, 255)"></bin>
     <bin index="110" color="RGBA(153, 76, 0, 255)"></bin>
   </ControlPoint>
-  <ControlPoint timestamp="140000" volume="85" brightness="80">
+  <ControlPoint timestamp="140000" volume="85" brightness="80" cutoff=10000">
     <bin index="10" color="RGBA(255, 128, 0, 255)"></bin>
     <bin index="110" color="RGBA(153, 76, 0, 255)"></bin>
   </ControlPoint>
-  <ControlPoint timestamp="170000" volume="85" brightness="80">
+  <ControlPoint timestamp="170000" volume="85" brightness="80" cutoff=10000">
     <bin index="10" color="RGBA(255, 128, 153, 255)"></bin>
     <bin index="110" color="RGBA(0, 0, 153, 255)"></bin>
   </ControlPoint>
-  <ControlPoint timestamp="200000" volume="85" brightness="75">
+  <ControlPoint timestamp="200000" volume="85" brightness="75" cutoff=10000">
     <bin index="10" color="RGBA(153, 76, 0, 255)"></bin>
     <bin index="110" color="RGBA(76, 0, 153, 255)"></bin>
   </ControlPoint>
-  <ControlPoint timestamp="205000" volume="85" brightness="75">
+  <ControlPoint timestamp="205000" volume="85" brightness="75" cutoff=10000">
     <bin index="10" color="RGBA(76, 0, 153, 255)"></bin>
     <bin index="110" color="RGBA(0, 0, 153, 255)"></bin>
   </ControlPoint>
-  <ControlPoint timestamp="230000" volume="85" brightness="75">
+  <ControlPoint timestamp="230000" volume="85" brightness="75" cutoff=10000">
     <bin index="10" color="RGBA(76, 0, 153, 255)"></bin>
     <bin index="110" color="RGBA(0, 0, 153, 255)"></bin>
   </ControlPoint>
-  <ControlPoint timestamp="255000" volume="85" brightness="75">
+  <ControlPoint timestamp="255000" volume="85" brightness="75" cutoff=10000">
     <bin index="10" color="RGBA(153, 76, 0, 255)"></bin>
     <bin index="110" color="RGBA(76, 0, 153, 255)"></bin>
   </ControlPoint>

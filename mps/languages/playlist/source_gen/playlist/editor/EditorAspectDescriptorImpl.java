@@ -30,6 +30,8 @@ public class EditorAspectDescriptorImpl extends EditorAspectDescriptorBase {
         return Collections.<ConceptEditor>singletonList(new Song_Editor());
       case 5:
         return Collections.<ConceptEditor>singletonList(new SongRef_Editor());
+      case 6:
+        return Collections.<ConceptEditor>singletonList(new Visualisation_Editor());
       default:
     }
     return Collections.<ConceptEditor>emptyList();
@@ -48,6 +50,6 @@ public class EditorAspectDescriptorImpl extends EditorAspectDescriptorBase {
     return Collections.<SubstituteMenu>emptyList();
   }
 
-  private static final ConceptSwitchIndex conceptIndex = new ConceptSwitchIndexBuilder().put(MetaIdFactory.conceptId(0xe808b2f670da436eL, 0xbf6b14e1ed6cce5fL, 0x44617bd94982f15dL), MetaIdFactory.conceptId(0xe808b2f670da436eL, 0xbf6b14e1ed6cce5fL, 0x44617bd94982f15eL), MetaIdFactory.conceptId(0xe808b2f670da436eL, 0xbf6b14e1ed6cce5fL, 0x44617bd94982f23aL), MetaIdFactory.conceptId(0xe808b2f670da436eL, 0xbf6b14e1ed6cce5fL, 0x44617bd94982f106L), MetaIdFactory.conceptId(0xe808b2f670da436eL, 0xbf6b14e1ed6cce5fL, 0x44617bd94982f127L), MetaIdFactory.conceptId(0xe808b2f670da436eL, 0xbf6b14e1ed6cce5fL, 0x54d1a88cacfa024eL)).seal();
+  private static final ConceptSwitchIndex conceptIndex = new ConceptSwitchIndexBuilder().put(MetaIdFactory.conceptId(0xe808b2f670da436eL, 0xbf6b14e1ed6cce5fL, 0x44617bd94982f15dL), MetaIdFactory.conceptId(0xe808b2f670da436eL, 0xbf6b14e1ed6cce5fL, 0x44617bd94982f15eL), MetaIdFactory.conceptId(0xe808b2f670da436eL, 0xbf6b14e1ed6cce5fL, 0x44617bd94982f23aL), MetaIdFactory.conceptId(0xe808b2f670da436eL, 0xbf6b14e1ed6cce5fL, 0x44617bd94982f106L), MetaIdFactory.conceptId(0xe808b2f670da436eL, 0xbf6b14e1ed6cce5fL, 0x44617bd94982f127L), MetaIdFactory.conceptId(0xe808b2f670da436eL, 0xbf6b14e1ed6cce5fL, 0x54d1a88cacfa024eL), MetaIdFactory.conceptId(0xe808b2f670da436eL, 0xbf6b14e1ed6cce5fL, 0x4d5f699ec9c68c55L)).seal();
   private static final ConceptSwitchIndex conceptIndex1 = new ConceptSwitchIndexBuilder().put(MetaIdFactory.conceptId(0xe808b2f670da436eL, 0xbf6b14e1ed6cce5fL, 0x54d1a88cacfa024eL)).seal();
 }

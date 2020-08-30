@@ -15,6 +15,7 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
   private ConceptPresentation props_Playlist;
   private ConceptPresentation props_Song;
   private ConceptPresentation props_SongRef;
+  private ConceptPresentation props_Visualisation;
 
   @Override
   @Nullable
@@ -69,6 +70,14 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
           props_SongRef = cpb.create();
         }
         return props_SongRef;
+      case LanguageConceptSwitch.Visualisation:
+        if (props_Visualisation == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.shortDesc("root visualisation node");
+          cpb.presentationByName();
+          props_Visualisation = cpb.create();
+        }
+        return props_Visualisation;
     }
     return null;
   }

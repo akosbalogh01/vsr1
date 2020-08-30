@@ -4,8 +4,8 @@
 
 vs::music::music(const std::string& fpath): meta(fpath) {
     using namespace vs::man;
-    maxvol = std::stoi(settings::smap[settings::AVOLMAX]);
-    curvol = std::stoi(settings::smap[settings::AVOL0]);
+    maxvol = 100;//std::stoi(settings::smap[settings::AVOLMAX]);
+    curvol = 10;//std::stoi(settings::smap[settings::AVOL0]);
     maxbr = vs::gfx::brightness::bm;
     curbr = vs::gfx::brightness::b0;
     sound.setVolume(curvol);

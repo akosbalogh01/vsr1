@@ -15,6 +15,7 @@ public final class LanguageConceptSwitch {
   public static final int Playlist = 3;
   public static final int Song = 4;
   public static final int SongRef = 5;
+  public static final int Visualisation = 6;
 
   public LanguageConceptSwitch() {
     LanguageConceptIndexBuilder builder = new LanguageConceptIndexBuilder(0xe808b2f670da436eL, 0xbf6b14e1ed6cce5fL);
@@ -24,6 +25,7 @@ public final class LanguageConceptSwitch {
     builder.put(0x44617bd94982f106L, Playlist);
     builder.put(0x44617bd94982f127L, Song);
     builder.put(0x54d1a88cacfa024eL, SongRef);
+    builder.put(0x4d5f699ec9c68c55L, Visualisation);
     myIndex = builder.seal();
   }
 

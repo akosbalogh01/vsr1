@@ -1,6 +1,6 @@
 
 <Song file="C:\Users\user001\Music\Teho\2020 - Polytone\03 - Anything (feat. Carott).flac">
-  <ControlPoint timestamp="10000" volume="50" brightness="100">
+  <ControlPoint timestamp="10000" volume="50" brightness="100" cutoff=10000">
     <bin index="80" color="RGBA(255, 127, 0, 255)"></bin>
   </ControlPoint>
 </Song>

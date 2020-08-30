@@ -1,5 +1,5 @@
 
 <Song file="D:\Music\Fluke\Puppy\Fluke - Puppy - 10 - Nebulus.flac">
-  <ControlPoint timestamp="0" volume="50" brightness="50">
+  <ControlPoint timestamp="0" volume="50" brightness="50" cutoff=10000">
   </ControlPoint>
 </Song>

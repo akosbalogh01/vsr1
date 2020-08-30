@@ -1,6 +1,5 @@
-<Playlist>
-    <Song file="D:\Music\chirpm.flac">
-      <ControlPoint timestamp="0" volume="50" brightness="50" cutoff=10000">
-      </ControlPoint>
-    </Song>
+<Playlist name="TEST">
+  <Song file="D:\Music\chirpm.flac">
+    <ControlPoint timestamp="0" volume="50" brightness="50"></ControlPoint>
+  </Song>
 </Playlist>
