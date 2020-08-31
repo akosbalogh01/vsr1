@@ -22,8 +22,8 @@ namespace vs {
             void initBuffer(const unsigned);
             void dropBuffer(const unsigned);
 
-            void next();
-            void prev();
+            void next(const bool = false);
+            void prev(const bool = false);
         };
     }
 }

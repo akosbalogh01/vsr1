@@ -38,23 +38,11 @@ void vs::man::audio::togglePaused() {
 }
 
 void vs::man::audio::prevSong() {
-    pman.prev();
-    if (paused) {
-        playing->pause();
-    }
-    else {
-        playing->play();
-    }
+    pman.prev(paused);
 }
 
 void vs::man::audio::nextSong() {
-    pman.next();
-    if (paused) {
-        playing->pause();
-    }
-    else {
-        playing->play();
-    }
+    pman.next(paused);
 }
 
 const bool vs::man::audio::getAutoplay() const {

@@ -2,7 +2,7 @@
 <debug-info version="2">
   <root nodeRef="r:60c4783b-20c2-40fd-9e1a-45e66a6e7d31(playlist.sandbox.p.Puppy)/2185286514849761597">
     <file name="Puppy.xml">
-      <unit id="2185286514849761597" at="1,0,767,11" name="playlist.sandbox.p.Puppy.Puppy" />
+      <unit id="2185286514849761597" at="1,0,199,11" name="playlist.sandbox.p.Puppy.Puppy" />
     </file>
   </root>
 </debug-info>
