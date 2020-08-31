@@ -1,6 +1,7 @@
 #include "bar.hpp"
 
 vs::bar::bar(const vs::bar& other): renderable(other.target) {
+    curheight = 0;
     quad = sf::VertexArray(sf::Quads, 4);
     for (unsigned i = 0; i < 4; ++i) {
         quad[i].position = other.quad[i].position;

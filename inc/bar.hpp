@@ -7,7 +7,7 @@
 namespace vs {
     class bar : public renderable {
     private:
-        unsigned maxheight;
+        unsigned maxheight, curheight;
         sf::VertexArray quad;
         float prev;
         const float alpha = 0.95f;
@@ -23,7 +23,7 @@ namespace vs {
         void setVertices(const sf::Vector2f&, const sf::Vector2f&);
 
         const sf::Color& getColor() const;
-
+        const unsigned getHeight() const;
         void render() override;
     };
 }

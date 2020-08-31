@@ -5,7 +5,7 @@ const std::vector<uint8_t> vs::vis::fourier::leds() const {
 
     for (unsigned i = 0; i < vs::gfx::ledcount; ++i) {
         const sf::Color c = bman[i].getColor();
-        unsigned bha = binHeight(i);
+        unsigned bha = bman[i].getHeight();
         float    bhr = (float) bha/vs::gfx::layout::bheight; //0-1
         buffer[(i*3)]     = c.g * bhr;
         buffer[(i*3) + 1] = c.r * bhr;

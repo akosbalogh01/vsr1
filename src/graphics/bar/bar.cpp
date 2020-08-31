@@ -16,12 +16,18 @@ void vs::bar::setHeight(const unsigned height, const bool filtering) {
             prev = alpha*prev + (1 - alpha)*height;
             quad[2].position = quad[1].position + sf::Vector2f(0, -1.0f * prev);
             quad[3].position = quad[0].position + sf::Vector2f(0, -1.0f * prev);
+            curheight = prev;
         }
         else {
             quad[2].position = quad[1].position + sf::Vector2f(0, -1.0f * height);
             quad[3].position = quad[0].position + sf::Vector2f(0, -1.0f * height);
+            curheight = height;
         }
     }
+}
+
+const unsigned vs::bar::getHeight() const {
+    return curheight;
 }
 
 void vs::bar::setVertices(const sf::Vector2f& pos, const sf::Vector2f& maxsize) {
