@@ -1,0 +1,27 @@
+<Playlist name="Various" mroot="C:\Users\balogha\Music\">
+  <Song file="_temp\01 - Singularity.flac">
+    <ControlPoint timestamp="0" volume="100" brightness="100">
+      <bin index="0" color="RGBA(128, 128, 128, 255)"></bin>
+    </ControlPoint>
+  </Song>
+  <Song file="_temp\03 - Disintegrate Slowly.flac">
+    <ControlPoint timestamp="0" volume="100" brightness="100">
+      <bin index="0" color="RGBA(128, 128, 128, 255)"></bin>
+    </ControlPoint>
+  </Song>
+  <Song file="_temp\Sakura.flac">
+    <ControlPoint timestamp="0" volume="100" brightness="100">
+      <bin index="0" color="RGBA(128, 128, 128, 255)"></bin>
+    </ControlPoint>
+  </Song>
+  <Song file="_temp\03 - Trauma.flac">
+    <ControlPoint timestamp="0" volume="100" brightness="100">
+      <bin index="0" color="RGBA(128, 128, 128, 255)"></bin>
+    </ControlPoint>
+  </Song>
+  <Song file="_temp\03 - Decompression.flac">
+    <ControlPoint timestamp="0" volume="100" brightness="100">
+      <bin index="0" color="RGBA(128, 128, 128, 255)"></bin>
+    </ControlPoint>
+  </Song>
+</Playlist>

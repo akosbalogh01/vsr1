@@ -11,7 +11,7 @@
 				<Option object_output="obj/Debug/" />
 				<Option type="1" />
 				<Option compiler="gcc" />
-				<Option parameters="settings.ini xml/Puppy.xml" />
+				<Option parameters="settings.ini xml/Various.xml" />
 				<Compiler>
 					<Add option="-g" />
 				</Compiler>
@@ -40,7 +40,7 @@
 				<Option object_output="obj/Release/" />
 				<Option type="0" />
 				<Option compiler="gcc" />
-				<Option parameters="settings.ini xml/Puppy.xml" />
+				<Option parameters="settings.ini xml/Various.xml" />
 				<Linker>
 					<Add option="-O3" />
 					<Add option="-s" />

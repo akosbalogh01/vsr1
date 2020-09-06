@@ -1285,7 +1285,7 @@
       <bin index="20" color="RGBA(204, 102, 0, 255)"></bin>
       <bin index="37" color="RGBA(153, 153, 0, 255)"></bin>
       <bin index="55" color="RGBA(0, 102, 0, 255)"></bin>
-      <bin index="60" color="RGBA(0, 96, 0, 255)"></bin>
+      <bin index="60" color="RGBA(0, 102, 0, 255)"></bin>
       <bin index="80" color="RGBA(0, 0, 0, 255)"></bin>
     </ControlPoint>
     <ControlPoint timestamp="120000" volume="100" brightness="100">
@@ -1293,7 +1293,7 @@
       <bin index="20" color="RGBA(255, 128, 0, 255)"></bin>
       <bin index="37" color="RGBA(204, 204, 0, 255)"></bin>
       <bin index="55" color="RGBA(0, 153, 0, 255)"></bin>
-      <bin index="60" color="RGBA(0, 128, 0, 255)"></bin>
+      <bin index="60" color="RGBA(0, 153, 0, 255)"></bin>
       <bin index="80" color="RGBA(0, 102, 102, 255)"></bin>
       <bin index="100" color="RGBA(0, 0, 0, 255)"></bin>
     </ControlPoint>
@@ -1302,7 +1302,7 @@
       <bin index="20" color="RGBA(255, 128, 0, 255)"></bin>
       <bin index="37" color="RGBA(255, 255, 0, 255)"></bin>
       <bin index="55" color="RGBA(0, 204, 0, 255)"></bin>
-      <bin index="60" color="RGBA(0, 153, 0, 255)"></bin>
+      <bin index="60" color="RGBA(0, 204, 0, 255)"></bin>
       <bin index="80" color="RGBA(0, 153, 153, 255)"></bin>
       <bin index="100" color="RGBA(0, 0, 102, 255)"></bin>
       <bin index="115" color="RGBA(0, 0, 0, 255)"></bin>
@@ -1312,7 +1312,7 @@
       <bin index="20" color="RGBA(255, 128, 0, 255)"></bin>
       <bin index="37" color="RGBA(255, 255, 0, 255)"></bin>
       <bin index="55" color="RGBA(0, 255, 0, 255)"></bin>
-      <bin index="60" color="RGBA(0, 204, 0, 255)"></bin>
+      <bin index="60" color="RGBA(0, 255, 0, 255)"></bin>
       <bin index="80" color="RGBA(0, 204, 204, 255)"></bin>
       <bin index="100" color="RGBA(0, 0, 153, 255)"></bin>
       <bin index="115" color="RGBA(102, 0, 102, 255)"></bin>
