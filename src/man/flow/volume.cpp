@@ -1,7 +1,7 @@
 #include "man/flow.hpp"
 
 const unsigned vs::man::flow::getVolume() const {
-    if ((current == (cvec.size() - 1)) || (sf::Time(cvec[current].getStamp() - offset).asMilliseconds() <= 32)) {
+    if ((current == (cvec.size() - 1)) || (sf::Time(offset - cvec[current].getStamp()).asMilliseconds() <= 32)) {
         return cvec[current].getVolume();
     }
     else {

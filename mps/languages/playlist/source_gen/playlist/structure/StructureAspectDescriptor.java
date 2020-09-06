@@ -104,6 +104,7 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.parent(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L);
     b.origin("r:de050263-7aec-4e3f-a874-7935d74b9031(playlist.structure)/4927355640491471110");
     b.version(2);
+    b.property("musicpath", 0x580992e064276b8eL).type(PrimitiveTypeId.STRING).origin("6343763042578688910").done();
     b.aggregate("songs", 0x44617bd94982f146L).target(0xe808b2f670da436eL, 0xbf6b14e1ed6cce5fL, 0x54d1a88cacfa024eL).optional(false).ordered(true).multiple(true).origin("4927355640491471174").done();
     return b.create();
   }

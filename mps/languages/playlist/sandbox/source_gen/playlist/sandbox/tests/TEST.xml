@@ -1,4 +1,4 @@
-<Playlist name="TEST">
+<Playlist name="TEST" mroot="">
   <Song file="D:\Music\chirpm.flac">
     <ControlPoint timestamp="0" volume="50" brightness="50"></ControlPoint>
   </Song>

@@ -16,9 +16,10 @@ vs::man::playlist::playlist(const vs::t::mptr& m, const std::string& xmlpath): p
 
         xml.parse<0>(&xmlbuffer[0]);
         root = xml.first_node("Playlist");
+        std::string mroot = root->first_attribute("mroot")->value();
 
         for (rapidxml::xml_node<>* song = root->first_node("Song"); song; song = song->next_sibling()) {
-            std::string fpath = song->first_attribute("file")->value();
+            std::string fpath = mroot + song->first_attribute("file")->value();
 
             std::ifstream f(fpath);
             if (f.good()) {

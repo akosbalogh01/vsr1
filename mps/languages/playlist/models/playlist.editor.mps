@@ -64,6 +64,15 @@
           <property role="VOm3f" value="true" />
         </node>
       </node>
+      <node concept="3F0ifn" id="5w9$I1$9QIo" role="3EZMnx">
+        <property role="3F0ifm" value="music directory" />
+      </node>
+      <node concept="3F0A7n" id="5w9$I1$9QIE" role="3EZMnx">
+        <ref role="1NtTu8" to="sj14:5w9$I1$9QIe" resolve="musicpath" />
+        <node concept="ljvvj" id="5w9$I1$9QIO" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+      </node>
       <node concept="l2Vlx" id="4hxuX_9wJ4l" role="2iSdaV" />
       <node concept="3F2HdR" id="4hxuX_9wJ5h" role="3EZMnx">
         <ref role="1NtTu8" to="sj14:4hxuX_9wJ56" resolve="songs" />

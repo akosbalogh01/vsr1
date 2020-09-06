@@ -1,5 +1,5 @@
-<Playlist name="Puppy">
-  <Song file="D:\Music\Cobuas\Electric Shock.flac">
+<Playlist name="Puppy" mroot="C:\Users\balogha\Music\">
+  <Song file="Cobuas\Electric Shock.flac">
     <ControlPoint timestamp="0" volume="50" brightness="50">
       <bin index="10" color="RGBA(0, 0, 102, 255)"></bin>
       <bin index="110" color="RGBA(0, 0, 102, 255)"></bin>
@@ -100,7 +100,7 @@
       <bin index="110" color="RGBA(76, 0, 76, 255)"></bin>
     </ControlPoint>
   </Song>
-  <Song file="D:\Music\Fluke\2003 - Puppy\01 - Snapshot.flac">
+  <Song file="Fluke\2003 - Puppy\01 - Snapshot.flac">
     <ControlPoint timestamp="0" volume="25" brightness="0">
       <bin index="0" color="RGBA(96, 96, 96, 255)"></bin>
       <bin index="119" color="RGBA(96, 96, 96, 255)"></bin>
@@ -183,7 +183,7 @@
       <bin index="119" color="RGBA(96, 96, 96, 255)"></bin>
     </ControlPoint>
   </Song>
-  <Song file="D:\Music\Fluke\2003 - Puppy\02 - My Spine.flac">
+  <Song file="Fluke\2003 - Puppy\02 - My Spine.flac">
     <ControlPoint timestamp="0" volume="70" brightness="50">
       <bin index="0" color="RGBA(96, 96, 96, 255)"></bin>
       <bin index="119" color="RGBA(96, 96, 96, 255)"></bin>
@@ -296,7 +296,7 @@
       <bin index="110" color="RGBA(0, 102, 204, 255)"></bin>
     </ControlPoint>
   </Song>
-  <Song file="D:\Music\Fluke\2003 - Puppy\03 - Another Kind of Blues.flac">
+  <Song file="Fluke\2003 - Puppy\03 - Another Kind of Blues.flac">
     <ControlPoint timestamp="10000" volume="60" brightness="50">
       <bin index="10" color="RGBA(0, 51, 102, 255)"></bin>
       <bin index="60" color="RGBA(0, 76, 153, 255)"></bin>
@@ -357,7 +357,7 @@
       <bin index="110" color="RGBA(76, 0, 153, 255)"></bin>
     </ControlPoint>
   </Song>
-  <Song file="D:\Music\Fluke\2003 - Puppy\04 - Hang Tough.flac">
+  <Song file="Fluke\2003 - Puppy\04 - Hang Tough.flac">
     <ControlPoint timestamp="20000" volume="75" brightness="60">
       <bin index="10" color="RGBA(153, 76, 0, 255)"></bin>
       <bin index="110" color="RGBA(76, 0, 153, 255)"></bin>
@@ -423,7 +423,7 @@
       <bin index="110" color="RGBA(153, 0, 0, 255)"></bin>
     </ControlPoint>
   </Song>
-  <Song file="D:\Music\Fluke\2003 - Puppy\05 - Switch,Twitch.flac">
+  <Song file="Fluke\2003 - Puppy\05 - Switch,Twitch.flac">
     <ControlPoint timestamp="9000" volume="75" brightness="65">
       <bin index="10" color="RGBA(102, 0, 0, 255)"></bin>
       <bin index="110" color="RGBA(153, 0, 0, 255)"></bin>
@@ -574,7 +574,7 @@
       <bin index="119" color="RGBA(64, 64, 64, 255)"></bin>
     </ControlPoint>
   </Song>
-  <Song file="D:\Music\Fluke\2003 - Puppy\06 - YKK.flac">
+  <Song file="Fluke\2003 - Puppy\06 - YKK.flac">
     <ControlPoint timestamp="0" volume="65" brightness="0">
       <bin index="0" color="RGBA(0, 0, 0, 255)"></bin>
     </ControlPoint>
@@ -749,7 +749,7 @@
       <bin index="0" color="RGBA(96, 0, 102, 255)"></bin>
     </ControlPoint>
   </Song>
-  <Song file="D:\Music\Fluke\2003 - Puppy\07 - Expo.flac">
+  <Song file="Fluke\2003 - Puppy\07 - Expo.flac">
     <ControlPoint timestamp="2500" volume="80" brightness="70">
       <bin index="0" color="RGBA(96, 0, 102, 255)"></bin>
     </ControlPoint>
@@ -927,7 +927,7 @@
       <bin index="100" color="RGBA(96, 64, 96, 255)"></bin>
     </ControlPoint>
   </Song>
-  <Song file="D:\Music\Fluke\2003 - Puppy\08 - Electric Blue.flac">
+  <Song file="Fluke\2003 - Puppy\08 - Electric Blue.flac">
     <ControlPoint timestamp="5000" volume="80" brightness="75">
       <bin index="10" color="RGBA(64, 32, 96, 255)"></bin>
       <bin index="40" color="RGBA(64, 32, 102, 255)"></bin>
@@ -1039,7 +1039,7 @@
       <bin index="100" color="RGBA(64, 128, 0, 255)"></bin>
     </ControlPoint>
   </Song>
-  <Song file="D:\Music\Fluke\2003 - Puppy\09 - Baby Pain.flac">
+  <Song file="Fluke\2003 - Puppy\09 - Baby Pain.flac">
     <ControlPoint timestamp="9000" volume="85" brightness="80">
       <bin index="0" color="RGBA(0, 0, 0, 255)"></bin>
     </ControlPoint>
@@ -1176,7 +1176,7 @@
       <bin index="70" color="RGBA(0, 0, 64, 255)"></bin>
     </ControlPoint>
   </Song>
-  <Song file="D:\Music\Fluke\2003 - Puppy\10 - Nebulus.flac">
+  <Song file="Fluke\2003 - Puppy\10 - Nebulus.flac">
     <ControlPoint timestamp="0" volume="80" brightness="60">
       <bin index="0" color="RGBA(0, 0, 0, 255)"></bin>
     </ControlPoint>
@@ -1265,7 +1265,7 @@
       <bin index="70" color="RGBA(8, 0, 32, 255)"></bin>
     </ControlPoint>
   </Song>
-  <Song file="D:\Music\Fluke\2003 - Puppy\11 - Blue Sky.flac">
+  <Song file="Fluke\2003 - Puppy\11 - Blue Sky.flac">
     <ControlPoint timestamp="0" volume="100" brightness="100">
       <bin index="0" color="RGBA(0, 0, 0, 255)"></bin>
     </ControlPoint>
@@ -1283,14 +1283,16 @@
     <ControlPoint timestamp="90000" volume="100" brightness="100">
       <bin index="5" color="RGBA(255, 0, 0, 255)"></bin>
       <bin index="20" color="RGBA(204, 102, 0, 255)"></bin>
-      <bin index="40" color="RGBA(153, 153, 0, 255)"></bin>
+      <bin index="37" color="RGBA(153, 153, 0, 255)"></bin>
+      <bin index="55" color="RGBA(0, 102, 0, 255)"></bin>
       <bin index="60" color="RGBA(0, 102, 0, 255)"></bin>
       <bin index="80" color="RGBA(0, 0, 0, 255)"></bin>
     </ControlPoint>
     <ControlPoint timestamp="120000" volume="100" brightness="100">
       <bin index="5" color="RGBA(255, 0, 0, 255)"></bin>
       <bin index="20" color="RGBA(255, 128, 0, 255)"></bin>
-      <bin index="40" color="RGBA(204, 204, 0, 255)"></bin>
+      <bin index="37" color="RGBA(204, 204, 0, 255)"></bin>
+      <bin index="55" color="RGBA(0, 153, 0, 255)"></bin>
       <bin index="60" color="RGBA(0, 153, 0, 255)"></bin>
       <bin index="80" color="RGBA(0, 102, 102, 255)"></bin>
       <bin index="100" color="RGBA(0, 0, 0, 255)"></bin>
@@ -1298,7 +1300,8 @@
     <ControlPoint timestamp="150000" volume="100" brightness="100">
       <bin index="5" color="RGBA(255, 0, 0, 255)"></bin>
       <bin index="20" color="RGBA(255, 128, 0, 255)"></bin>
-      <bin index="40" color="RGBA(255, 255, 0, 255)"></bin>
+      <bin index="37" color="RGBA(255, 255, 0, 255)"></bin>
+      <bin index="55" color="RGBA(0, 204, 0, 255)"></bin>
       <bin index="60" color="RGBA(0, 204, 0, 255)"></bin>
       <bin index="80" color="RGBA(0, 153, 153, 255)"></bin>
       <bin index="100" color="RGBA(0, 0, 102, 255)"></bin>
@@ -1307,7 +1310,8 @@
     <ControlPoint timestamp="180000" volume="100" brightness="100">
       <bin index="5" color="RGBA(255, 0, 0, 255)"></bin>
       <bin index="20" color="RGBA(255, 128, 0, 255)"></bin>
-      <bin index="40" color="RGBA(255, 255, 0, 255)"></bin>
+      <bin index="37" color="RGBA(255, 255, 0, 255)"></bin>
+      <bin index="55" color="RGBA(0, 255, 0, 255)"></bin>
       <bin index="60" color="RGBA(0, 255, 0, 255)"></bin>
       <bin index="80" color="RGBA(0, 204, 204, 255)"></bin>
       <bin index="100" color="RGBA(0, 0, 153, 255)"></bin>
@@ -1316,7 +1320,8 @@
     <ControlPoint timestamp="210000" volume="100" brightness="100">
       <bin index="5" color="RGBA(255, 0, 0, 255)"></bin>
       <bin index="20" color="RGBA(255, 128, 0, 255)"></bin>
-      <bin index="40" color="RGBA(255, 255, 0, 255)"></bin>
+      <bin index="37" color="RGBA(255, 255, 0, 255)"></bin>
+      <bin index="55" color="RGBA(0, 255, 0, 255)"></bin>
       <bin index="60" color="RGBA(0, 255, 0, 255)"></bin>
       <bin index="80" color="RGBA(0, 255, 255, 255)"></bin>
       <bin index="100" color="RGBA(0, 0, 204, 255)"></bin>
@@ -1325,7 +1330,8 @@
     <ControlPoint timestamp="230000" volume="100" brightness="100">
       <bin index="5" color="RGBA(255, 0, 0, 255)"></bin>
       <bin index="20" color="RGBA(255, 128, 0, 255)"></bin>
-      <bin index="40" color="RGBA(255, 255, 0, 255)"></bin>
+      <bin index="37" color="RGBA(255, 255, 0, 255)"></bin>
+      <bin index="55" color="RGBA(0, 255, 0, 255)"></bin>
       <bin index="60" color="RGBA(0, 255, 0, 255)"></bin>
       <bin index="80" color="RGBA(0, 255, 255, 255)"></bin>
       <bin index="100" color="RGBA(0, 0, 255, 255)"></bin>
@@ -1334,7 +1340,8 @@
     <ControlPoint timestamp="250000" volume="100" brightness="100">
       <bin index="5" color="RGBA(255, 0, 0, 255)"></bin>
       <bin index="20" color="RGBA(255, 128, 0, 255)"></bin>
-      <bin index="40" color="RGBA(255, 255, 0, 255)"></bin>
+      <bin index="37" color="RGBA(255, 255, 0, 255)"></bin>
+      <bin index="55" color="RGBA(0, 255, 0, 255)"></bin>
       <bin index="60" color="RGBA(0, 255, 0, 255)"></bin>
       <bin index="80" color="RGBA(0, 255, 255, 255)"></bin>
       <bin index="100" color="RGBA(0, 0, 255, 255)"></bin>

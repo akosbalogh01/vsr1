@@ -140,6 +140,28 @@
             </node>
           </node>
         </node>
+        <node concept="2pNUuL" id="5w9$I1$aaj6" role="2pNNFR">
+          <property role="2pNUuO" value="mroot" />
+          <node concept="2pMdtt" id="5w9$I1$aaj7" role="2pMdts">
+            <property role="2pMdty" value="musicroot" />
+            <node concept="17Uvod" id="5w9$I1$aaxG" role="lGtFl">
+              <property role="2qtEX9" value="text" />
+              <property role="P4ACc" value="479c7a8c-02f9-43b5-9139-d910cb22f298/6666499814681541919/6666499814681541920" />
+              <node concept="3zFVjK" id="5w9$I1$aaxH" role="3zH0cK">
+                <node concept="3clFbS" id="5w9$I1$aaxI" role="2VODD2">
+                  <node concept="3clFbF" id="5w9$I1$aay6" role="3cqZAp">
+                    <node concept="2OqwBi" id="5w9$I1$aaIo" role="3clFbG">
+                      <node concept="30H73N" id="5w9$I1$aay5" role="2Oq$k0" />
+                      <node concept="3TrcHB" id="5w9$I1$aaVq" role="2OqNvi">
+                        <ref role="3TsBF5" to="sj14:5w9$I1$9QIe" resolve="musicpath" />
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
         <node concept="2pNNFK" id="4PvqpV9MEVr" role="3o6s8t">
           <property role="2pNNFO" value="Song" />
           <node concept="2pNNFK" id="4PvqpV9MZm0" role="3o6s8t">
@@ -371,7 +393,7 @@
                     <node concept="3clFbF" id="4PvqpV9MGYL" role="3cqZAp">
                       <node concept="2OqwBi" id="4PvqpV9MYeB" role="3clFbG">
                         <node concept="2OqwBi" id="4PvqpV9MVBV" role="2Oq$k0">
-                          <node concept="30H73N" id="4PvqpV9MVr_" role="2Oq$k0" />
+                          <node concept="30H73N" id="5w9$I1$a9JY" role="2Oq$k0" />
                           <node concept="3TrEf2" id="4PvqpV9MXZL" role="2OqNvi">
                             <ref role="3Tt5mk" to="sj14:5jhE8MGYw9f" resolve="target" />
                           </node>

@@ -1,7 +1,7 @@
 #include "man/flow.hpp"
 
 const sf::Color vs::man::flow::getBinColor(const unsigned bin) const {
-    if ((current == (cvec.size() - 1)) || (sf::Time(cvec[current].getStamp() - offset).asMilliseconds() <= 32)) {
+    if ((current == (cvec.size() - 1)) || (sf::Time(offset - cvec[current].getStamp()).asMilliseconds() <= 32)) {
         return cvec[current].getBinColor(bin);
     }
     else {

@@ -59,6 +59,11 @@
       <property role="20lbJX" value="fLJekj6/_1__n" />
       <ref role="20lvS9" node="5jhE8MGYw9e" resolve="SongRef" />
     </node>
+    <node concept="1TJgyi" id="5w9$I1$9QIe" role="1TKVEl">
+      <property role="IQ2nx" value="6343763042578688910" />
+      <property role="TrG5h" value="musicpath" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
   </node>
   <node concept="1TIwiD" id="4hxuX_9wJ4B">
     <property role="EcuMT" value="4927355640491471143" />
