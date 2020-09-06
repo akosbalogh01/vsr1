@@ -1,7 +1,7 @@
 #include "man/flow.hpp"
 
 const unsigned vs::man::flow::getBrightness() const {
-    if (current == (cvec.size() - 1)) {
+    if ((current == (cvec.size() - 1)) || (sf::Time(cvec[current].getStamp() - offset).asMilliseconds() <= 32)) {
         return cvec[current].getBrightness();
     }
     else {

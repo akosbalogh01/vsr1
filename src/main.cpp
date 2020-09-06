@@ -3,8 +3,6 @@
 
 /**
     TODO: fix window resizing
-    TODO: fix release mode time bar rendering -O1 fucks it up??
-    TODO: song starts twice randomly
     TODO: control point LED spikes
 */
 
