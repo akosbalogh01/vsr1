@@ -1,4 +1,113 @@
 <Playlist name="Various" mroot="C:\Users\balogha\Music\">
+  <Song file="_temp\03 - Decompression.flac">
+    <ControlPoint timestamp="0" volume="100" brightness="0">
+      <bin index="0" color="RGBA(128, 128, 128, 255)"></bin>
+    </ControlPoint>
+    <ControlPoint timestamp="10000" volume="100" brightness="100">
+      <bin index="10" color="RGBA(153, 76, 0, 255)"></bin>
+      <bin index="110" color="RGBA(255, 128, 0, 255)"></bin>
+    </ControlPoint>
+    <ControlPoint timestamp="40000" volume="100" brightness="100">
+      <bin index="20" color="RGBA(204, 153, 76, 255)"></bin>
+      <bin index="100" color="RGBA(255, 153, 0, 255)"></bin>
+    </ControlPoint>
+    <ControlPoint timestamp="83000" volume="100" brightness="100">
+      <bin index="20" color="RGBA(204, 153, 76, 255)"></bin>
+      <bin index="100" color="RGBA(255, 153, 0, 255)"></bin>
+    </ControlPoint>
+    <ControlPoint timestamp="93000" volume="100" brightness="100">
+      <bin index="20" color="RGBA(153, 0, 0, 255)"></bin>
+      <bin index="100" color="RGBA(153, 76, 0, 255)"></bin>
+    </ControlPoint>
+    <ControlPoint timestamp="130000" volume="100" brightness="100">
+      <bin index="20" color="RGBA(76, 76, 16, 255)"></bin>
+      <bin index="60" color="RGBA(64, 96, 16, 255)"></bin>
+      <bin index="100" color="RGBA(128, 76, 16, 255)"></bin>
+    </ControlPoint>
+    <ControlPoint timestamp="180000" volume="100" brightness="100">
+      <bin index="20" color="RGBA(76, 76, 32, 255)"></bin>
+      <bin index="60" color="RGBA(64, 96, 32, 255)"></bin>
+      <bin index="100" color="RGBA(128, 76, 32, 255)"></bin>
+    </ControlPoint>
+    <ControlPoint timestamp="250000" volume="100" brightness="100">
+      <bin index="20" color="RGBA(76, 76, 64, 255)"></bin>
+      <bin index="60" color="RGBA(64, 96, 64, 255)"></bin>
+      <bin index="100" color="RGBA(128, 76, 64, 255)"></bin>
+    </ControlPoint>
+    <ControlPoint timestamp="370000" volume="100" brightness="100">
+      <bin index="20" color="RGBA(64, 76, 96, 255)"></bin>
+      <bin index="60" color="RGBA(32, 96, 96, 255)"></bin>
+      <bin index="100" color="RGBA(96, 76, 96, 255)"></bin>
+    </ControlPoint>
+    <ControlPoint timestamp="410000" volume="100" brightness="100">
+      <bin index="20" color="RGBA(204, 153, 76, 255)"></bin>
+      <bin index="100" color="RGBA(255, 153, 0, 255)"></bin>
+    </ControlPoint>
+    <ControlPoint timestamp="450000" volume="100" brightness="100">
+      <bin index="20" color="RGBA(153, 0, 0, 255)"></bin>
+      <bin index="100" color="RGBA(153, 76, 0, 255)"></bin>
+    </ControlPoint>
+  </Song>
+  <Song file="_temp\10 - More Or Less.flac">
+    <ControlPoint timestamp="0" volume="100" brightness="0">
+      <bin index="0" color="RGBA(128, 128, 128, 255)"></bin>
+    </ControlPoint>
+    <ControlPoint timestamp="5000" volume="100" brightness="100">
+      <bin index="10" color="RGBA(102, 0, 51, 255)"></bin>
+      <bin index="110" color="RGBA(51, 0, 102, 255)"></bin>
+    </ControlPoint>
+    <ControlPoint timestamp="10000" volume="100" brightness="100">
+      <bin index="10" color="RGBA(153, 0, 76, 255)"></bin>
+      <bin index="110" color="RGBA(76, 0, 153, 255)"></bin>
+    </ControlPoint>
+    <ControlPoint timestamp="17500" volume="100" brightness="100">
+      <bin index="30" color="RGBA(153, 0, 64, 255)"></bin>
+      <bin index="90" color="RGBA(128, 0, 153, 255)"></bin>
+    </ControlPoint>
+    <ControlPoint timestamp="30000" volume="100" brightness="100">
+      <bin index="30" color="RGBA(176, 0, 32, 255)"></bin>
+      <bin index="90" color="RGBA(153, 0, 128, 255)"></bin>
+    </ControlPoint>
+    <ControlPoint timestamp="40000" volume="100" brightness="100">
+      <bin index="30" color="RGBA(176, 0, 32, 255)"></bin>
+      <bin index="90" color="RGBA(153, 0, 128, 255)"></bin>
+    </ControlPoint>
+    <ControlPoint timestamp="50000" volume="100" brightness="100">
+      <bin index="30" color="RGBA(96, 0, 176, 255)"></bin>
+      <bin index="90" color="RGBA(128, 0, 153, 255)"></bin>
+    </ControlPoint>
+    <ControlPoint timestamp="70000" volume="100" brightness="100">
+      <bin index="30" color="RGBA(64, 0, 128, 255)"></bin>
+      <bin index="90" color="RGBA(96, 0, 128, 255)"></bin>
+    </ControlPoint>
+    <ControlPoint timestamp="77500" volume="100" brightness="100">
+      <bin index="30" color="RGBA(64, 0, 128, 255)"></bin>
+      <bin index="90" color="RGBA(128, 96, 64, 255)"></bin>
+    </ControlPoint>
+    <ControlPoint timestamp="90000" volume="100" brightness="100">
+      <bin index="30" color="RGBA(96, 32, 128, 255)"></bin>
+      <bin index="90" color="RGBA(164, 128, 32, 255)"></bin>
+    </ControlPoint>
+    <ControlPoint timestamp="103400" volume="100" brightness="100">
+      <bin index="30" color="RGBA(176, 0, 32, 255)"></bin>
+      <bin index="90" color="RGBA(153, 0, 128, 255)"></bin>
+    </ControlPoint>
+    <ControlPoint timestamp="130000" volume="100" brightness="100">
+      <bin index="30" color="RGBA(96, 0, 176, 255)"></bin>
+      <bin index="90" color="RGBA(128, 0, 153, 255)"></bin>
+    </ControlPoint>
+    <ControlPoint timestamp="180000" volume="100" brightness="100">
+      <bin index="30" color="RGBA(153, 0, 64, 255)"></bin>
+      <bin index="90" color="RGBA(128, 0, 153, 255)"></bin>
+    </ControlPoint>
+    <ControlPoint timestamp="190000" volume="100" brightness="70">
+      <bin index="30" color="RGBA(153, 0, 64, 255)"></bin>
+      <bin index="90" color="RGBA(128, 0, 153, 255)"></bin>
+    </ControlPoint>
+    <ControlPoint timestamp="200000" volume="100" brightness="30">
+      <bin index="0" color="RGBA(96, 0, 32, 255)"></bin>
+    </ControlPoint>
+  </Song>
   <Song file="_temp\01 - Singularity.flac">
     <ControlPoint timestamp="0" volume="100" brightness="100">
       <bin index="0" color="RGBA(128, 128, 128, 255)"></bin>
@@ -15,11 +124,6 @@
     </ControlPoint>
   </Song>
   <Song file="_temp\03 - Trauma.flac">
-    <ControlPoint timestamp="0" volume="100" brightness="100">
-      <bin index="0" color="RGBA(128, 128, 128, 255)"></bin>
-    </ControlPoint>
-  </Song>
-  <Song file="_temp\03 - Decompression.flac">
     <ControlPoint timestamp="0" volume="100" brightness="100">
       <bin index="0" color="RGBA(128, 128, 128, 255)"></bin>
     </ControlPoint>
