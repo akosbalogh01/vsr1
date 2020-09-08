@@ -40,7 +40,7 @@
 				<Option object_output="obj/Release/" />
 				<Option type="0" />
 				<Option compiler="gcc" />
-				<Option parameters="settings.ini xml/Various.xml" />
+				<Option parameters="settings.ini xml/Puppy.xml" />
 				<Linker>
 					<Add option="-O3" />
 					<Add option="-s" />

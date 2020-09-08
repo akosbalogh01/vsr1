@@ -1,4 +1,70 @@
 <Playlist name="Various" mroot="C:\Users\balogha\Music\">
+  <Song file="_temp\Zoi (CA) - Aerial.flac">
+    <ControlPoint timestamp="0" volume="100" brightness="0">
+      <bin index="0" color="RGBA(64, 64, 64, 255)"></bin>
+    </ControlPoint>
+    <ControlPoint timestamp="5000" volume="100" brightness="100">
+      <bin index="10" color="RGBA(0, 51, 102, 255)"></bin>
+      <bin index="110" color="RGBA(0, 102, 102, 255)"></bin>
+    </ControlPoint>
+    <ControlPoint timestamp="25000" volume="100" brightness="100">
+      <bin index="20" color="RGBA(0, 153, 76, 255)"></bin>
+      <bin index="100" color="RGBA(0, 204, 204, 255)"></bin>
+    </ControlPoint>
+    <ControlPoint timestamp="33500" volume="100" brightness="100">
+      <bin index="20" color="RGBA(0, 204, 102, 255)"></bin>
+      <bin index="110" color="RGBA(0, 153, 204, 255)"></bin>
+    </ControlPoint>
+    <ControlPoint timestamp="60000" volume="100" brightness="100">
+      <bin index="20" color="RGBA(0, 204, 102, 255)"></bin>
+      <bin index="60" color="RGBA(0, 255, 128, 255)"></bin>
+      <bin index="100" color="RGBA(0, 153, 204, 255)"></bin>
+    </ControlPoint>
+    <ControlPoint timestamp="70000" volume="100" brightness="100">
+      <bin index="20" color="RGBA(64, 153, 96, 255)"></bin>
+      <bin index="60" color="RGBA(0, 255, 128, 255)"></bin>
+      <bin index="100" color="RGBA(0, 153, 204, 255)"></bin>
+    </ControlPoint>
+    <ControlPoint timestamp="78000" volume="100" brightness="100">
+      <bin index="20" color="RGBA(64, 153, 64, 255)"></bin>
+      <bin index="60" color="RGBA(32, 204, 128, 255)"></bin>
+      <bin index="100" color="RGBA(0, 153, 176, 255)"></bin>
+    </ControlPoint>
+    <ControlPoint timestamp="100000" volume="100" brightness="100">
+      <bin index="20" color="RGBA(128, 153, 32, 255)"></bin>
+      <bin index="80" color="RGBA(64, 176, 96, 255)"></bin>
+      <bin index="110" color="RGBA(0, 128, 153, 255)"></bin>
+    </ControlPoint>
+    <ControlPoint timestamp="110000" volume="100" brightness="100">
+      <bin index="20" color="RGBA(153, 128, 16, 255)"></bin>
+      <bin index="80" color="RGBA(128, 153, 64, 255)"></bin>
+      <bin index="110" color="RGBA(0, 96, 128, 255)"></bin>
+    </ControlPoint>
+    <ControlPoint timestamp="125000" volume="100" brightness="100">
+      <bin index="30" color="RGBA(153, 128, 0, 255)"></bin>
+      <bin index="90" color="RGBA(128, 153, 16, 255)"></bin>
+      <bin index="110" color="RGBA(32, 64, 96, 255)"></bin>
+    </ControlPoint>
+    <ControlPoint timestamp="135000" volume="100" brightness="100">
+      <bin index="30" color="RGBA(153, 128, 0, 255)"></bin>
+      <bin index="90" color="RGBA(128, 128, 16, 255)"></bin>
+      <bin index="110" color="RGBA(64, 32, 96, 255)"></bin>
+    </ControlPoint>
+    <ControlPoint timestamp="139750" volume="100" brightness="100">
+      <bin index="30" color="RGBA(153, 128, 0, 255)"></bin>
+      <bin index="90" color="RGBA(128, 128, 0, 255)"></bin>
+      <bin index="110" color="RGBA(96, 16, 96, 255)"></bin>
+    </ControlPoint>
+    <ControlPoint timestamp="140750" volume="100" brightness="100">
+      <bin index="30" color="RGBA(153, 128, 0, 255)"></bin>
+      <bin index="90" color="RGBA(128, 96, 0, 255)"></bin>
+      <bin index="110" color="RGBA(128, 0, 128, 255)"></bin>
+    </ControlPoint>
+    <ControlPoint timestamp="0" volume="100" brightness="100"></ControlPoint>
+  </Song>
+  <Song file="Lorn\2015 - VESSEL\02 - ANVIL.flac">
+    <ControlPoint timestamp="0" volume="100" brightness="100"></ControlPoint>
+  </Song>
   <Song file="_temp\03 - Decompression.flac">
     <ControlPoint timestamp="0" volume="100" brightness="0">
       <bin index="0" color="RGBA(128, 128, 128, 255)"></bin>
@@ -118,7 +184,7 @@
       <bin index="0" color="RGBA(128, 128, 128, 255)"></bin>
     </ControlPoint>
   </Song>
-  <Song file="_temp\Sakura.flac">
+  <Song file="_temp\01 - Sakura.flac">
     <ControlPoint timestamp="0" volume="100" brightness="100">
       <bin index="0" color="RGBA(128, 128, 128, 255)"></bin>
     </ControlPoint>
