@@ -4,7 +4,7 @@
 #define LED_MASK_0 0b10000000
 #define LED_MASK_1 0b11111100
 #define LED_BBSIZE (8*UART_BUFSIZE)
-#define LED_TXDIV 3
+#define LED_TXDIV 1
 #define LED_TXSIZE ((LED_BBSIZE/LED_TXDIV)+1)
 
 uint8_t bitbuf[LED_BBSIZE];
