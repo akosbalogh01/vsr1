@@ -4,6 +4,7 @@
 void vs::man::playlist::next(const bool paused) {
     if (current == songlist.size() - 1) {
         std::cout << "Playlist over" << std::endl;
+        playing->pause();
         //reset();
     }
     else if (songlist.size() <= bufsize) {

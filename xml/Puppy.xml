@@ -1,4 +1,4 @@
-<Playlist name="Puppy" mroot="C:\Users\balogha\Music\">
+<Playlist name="Puppy" mroot="D:\Music\">
   <Song file="_temp\Electric Shock.flac">
     <ControlPoint timestamp="0" volume="50" brightness="50">
       <bin index="10" color="RGBA(0, 0, 102, 255)"></bin>

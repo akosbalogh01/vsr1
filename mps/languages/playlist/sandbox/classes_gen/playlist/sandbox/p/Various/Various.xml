@@ -39,8 +39,6 @@
       <bin index="80" color="RGBA(32, 16, 64, 255)"></bin>
       <bin index="110" color="RGBA(16, 16, 64, 255)"></bin>
     </ControlPoint>
-    <ControlPoint timestamp="0" volume="0" brightness="0"></ControlPoint>
-    <ControlPoint timestamp="0" volume="0" brightness="0"></ControlPoint>
     <ControlPoint timestamp="0" volume="100" brightness="100"></ControlPoint>
   </Song>
   <Song file="_temp\03 - Decompression.flac">

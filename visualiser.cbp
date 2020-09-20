@@ -11,7 +11,7 @@
 				<Option object_output="obj/Debug/" />
 				<Option type="1" />
 				<Option compiler="gcc" />
-				<Option parameters="settings.ini xml/Various.xml" />
+				<Option parameters='settings.ini &quot;xml/Mire.xml&quot;' />
 				<Compiler>
 					<Add option="-g" />
 				</Compiler>
